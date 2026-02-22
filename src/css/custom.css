@@ -1,0 +1,63 @@
+:root {
+  --ifm-color-primary: #FF6B35;
+  --ifm-color-primary-dark: #e55a24;
+  --ifm-color-primary-darker: #d9521c;
+  --ifm-color-primary-darkest: #b34317;
+  --ifm-color-primary-light: #ff7d4f;
+  --ifm-color-primary-lighter: #ff8a60;
+  --ifm-color-primary-lightest: #ffab8a;
+  --ifm-code-font-size: 95%;
+  --ifm-heading-color: #4A5859;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #FF6B35;
+  --ifm-color-primary-dark: #e55a24;
+  --ifm-color-primary-darker: #d9521c;
+  --ifm-color-primary-darkest: #b34317;
+  --ifm-color-primary-light: #ff7d4f;
+  --ifm-color-primary-lighter: #ff8a60;
+  --ifm-color-primary-lightest: #ffab8a;
+}
+
+.navbar {
+  background-color: #4A5859;
+}
+
+.navbar__title {
+  color: #fff;
+}
+
+.navbar__link {
+  color: #fff !important;
+}
+
+.footer--dark {
+  background-color: #4A5859;
+}
+
+/* Admonitions styling */
+.admonition {
+  border-left-color: #FF6B35;
+}
+
+/* Hero section on landing */
+.hero-adventuriq {
+  background: linear-gradient(135deg, #FF6B35 0%, #4A5859 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero-adventuriq h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+img {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 100%;
+}
