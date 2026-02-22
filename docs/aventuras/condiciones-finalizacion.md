@@ -2,10 +2,12 @@
 sidebar_position: 8
 title: Condiciones de Finalización
 ---
-
 # Condiciones de Finalización
 
 ## Comportamiento por defecto
+
+![Configuración de condiciones de finalización en el Gamifier](/img/img-060.png)
+
 
 Si no se selecciona ninguna condición concreta, la Aventura **finaliza una vez se finalizan todas las Misiones** que la componen.
 

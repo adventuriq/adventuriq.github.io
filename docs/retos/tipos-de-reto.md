@@ -4,12 +4,14 @@ title: Tipos de Reto
 description: Los 5 tipos de retos en AdventuriQ - Pregunta/Respuesta, Preguntas Encadenadas, Respuesta Libre, Llamada a la Acción y Compartir Foto.
 keywords: [retos, gamificación, pregunta respuesta, tipos de reto, adventuriq]
 ---
-
 # Tipos de Reto
 
 Existen **5 tipos de Retos** completamente configurables, para usar en una Aventura tantas veces como sea necesario.
 
 ## Resumen de tipos
+
+![Escenario de reto - cueva encantada](/img/img-103.png)
+
 
 | Tipo | Descripción | Uso principal |
 |---|---|---|
@@ -20,6 +22,9 @@ Existen **5 tipos de Retos** completamente configurables, para usar en una Avent
 | **Compartir Foto** | Tomar o cargar una foto y compartirla | Creatividad visual, pruebas |
 
 ## Mecánicas de juego
+
+![Los 5 tipos de retos en AdventuriQ](/img/img-017.png)
+
 
 Los Retos son las **mecánicas de juego** que AdventuriQ pone a disposición para construir la dinámica del juego. Son los momentos donde el sistema puede:
 

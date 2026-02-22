@@ -2,10 +2,12 @@
 sidebar_position: 3
 title: Game Pin y Bloqueos
 ---
-
 # Game Pin y Bloqueos
 
 ## Game Pin
+
+![Panel de administración con Game Pin y opciones de bloqueo](/img/img-061.png)
+
 
 El **Game Pin** es el número que se genera automáticamente una vez se crea la Aventura. Es el código que los jugadores usan para cargar la Aventura en la Web App.
 

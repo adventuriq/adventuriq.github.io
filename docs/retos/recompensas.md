@@ -2,12 +2,14 @@
 sidebar_position: 5
 title: Recompensas del Reto
 ---
-
 # Recompensas a Nivel de Reto
 
 Las Recompensas a Nivel de Reto se diferencian de las de Nivel Misión en que son **configurables** (condiciones de entrega) y **no tienen la opción de "Llamada"**.
 
 ## Condiciones de entrega
+
+![Recompensa de reto - ejemplo de objeto entregable](/img/img-094.png)
+
 
 Las opciones disponibles para la configuración de entrega son múltiples:
 

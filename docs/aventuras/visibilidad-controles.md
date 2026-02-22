@@ -2,10 +2,12 @@
 sidebar_position: 4
 title: Visibilidad y Controles
 ---
-
 # Visibilidad y Controles
 
 ## Controles de configuración
+
+![Controles de visibilidad en la configuración de aventura](/img/img-060.png)
+
 
 La Aventura dispone de múltiples controles para configurar qué información es visible para los jugadores:
 

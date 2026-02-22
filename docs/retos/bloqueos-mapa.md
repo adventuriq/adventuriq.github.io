@@ -2,12 +2,14 @@
 sidebar_position: 4
 title: Bloqueos y Mapa
 ---
-
 # Bloqueos y Mapa del Reto
 
 En los Retos, las opciones de bloqueo **aumentan** respecto a las Misiones. Los bloqueos son siempre opcionales.
 
 ## Tipos de bloqueo
+
+![Configuración de bloqueos y mapa en retos](/img/img-135.png)
+
 
 - **Código Alfanumérico o QR**: como en las Misiones.
 - **Distancia a punto geográfico**: usando el GPS de los dispositivos móviles.

@@ -2,10 +2,12 @@
 sidebar_position: 6
 title: Idiomas y Traducciones
 ---
-
 # Idiomas y Traducciones
 
 ## Contenido multiidioma
+
+![Sección de idiomas y traducciones en el editor de aventura](/img/img-061.png)
+
 
 Los iconos de idiomas identifican los contenidos mostrados en la Web App. El jugador puede seleccionar el idioma con el que quiere jugar desde el menú **"Perfil"**, siempre que la Aventura tenga el contenido traducido.
 

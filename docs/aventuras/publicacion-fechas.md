@@ -2,10 +2,12 @@
 sidebar_position: 2
 title: Publicación y Fechas
 ---
-
 # Publicación y Fechas
 
 ## Estado de la Aventura
+
+![Configuración de fechas y publicación en el Gamifier](/img/img-060.png)
+
 
 Una Aventura puede estar en dos estados:
 
@@ -17,6 +19,9 @@ Una Aventura puede estar en dos estados:
 Se pueden configurar las **fechas de inicio y fin** del juego. Los jugadores solo podrán acceder al juego dentro del intervalo de tiempo configurado.
 
 ## Licencias y Tokens
+
+![Vista de la aventura publicada desde la app del jugador](/img/img-064.png)
+
 
 - En la parte inferior se muestra información sobre la **Licencia de la Aventura** y el número de **Tokens restantes** para todas las Aventuras.
 - Existe un botón para **asignar una licencia** a una Aventura nueva o renovar una licencia caducada.

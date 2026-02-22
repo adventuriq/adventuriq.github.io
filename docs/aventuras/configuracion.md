@@ -4,12 +4,14 @@ title: Configuración General de Aventuras
 description: Cómo configurar una aventura en AdventuriQ - nombre, modalidad de juego, puntuación, equipos, temporización y más.
 keywords: [aventura, configuración, gamificación, crear aventura, adventuriq]
 ---
-
 # Configuración de una Aventura
 
 Al acceder al Gamifier, nos aparece el **listado de nuestras Aventuras**. Desde aquí podemos crear nuevas aventuras o editar las existentes.
 
 ## Panel principal
+
+![Panel de configuración general de una aventura en el Gamifier](/img/img-060.png)
+
 
 La página de configuración de una Aventura incluye los siguientes elementos en la barra superior:
 
@@ -24,7 +26,13 @@ La página de configuración de una Aventura incluye los siguientes elementos en
 
 ## Indicadores de jugadores
 
+![Vista del editor de aventuras en el navegador](/img/img-061.png)
+
+
 En la parte inferior del panel se muestran diferentes contadores:
+
+![Vista de la aventura desde la app del jugador - tablet](/img/img-067.png)
+
 
 - **Añadidos**: Usuarios que han añadido la Aventura con el Game Pin.
 - **Accedidos**: Usuarios que han accedido a la Aventura haciendo clic en "Adelante".

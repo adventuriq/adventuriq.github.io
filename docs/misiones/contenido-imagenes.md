@@ -2,10 +2,12 @@
 sidebar_position: 3
 title: Contenido e Imágenes
 ---
-
 # Contenido e Imágenes de Misiones
 
 ## Imágenes
+
+![Imagen de cabecera de misión](/img/img-085.png)
+
 
 | Imagen | Tamaño recomendado | Ubicación |
 |---|---|---|
@@ -13,6 +15,9 @@ title: Contenido e Imágenes
 | **Cabecera de la Misión** | 1200x640 pixels | Visible en la cabecera de la Misión |
 
 ## Audio
+
+![Ejemplo de imagen de misión](/img/img-088.png)
+
 
 Se puede añadir un **audio en formato MP3** reproducible a nivel Misión.
 

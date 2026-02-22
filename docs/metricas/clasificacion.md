@@ -2,10 +2,12 @@
 sidebar_position: 1
 title: Clasificación
 ---
-
 # Métricas - Vista Clasificación
 
 ## Acceso
+
+![Clasificación y ranking - concepto de juego competitivo](/img/img-231.png)
+
 
 Desde la Configuración de una Aventura, se puede acceder a las **dos vistas** sobre las Métricas del juego: Clasificación y Game Board.
 

@@ -2,10 +2,12 @@
 sidebar_position: 2
 title: Game Board
 ---
-
 # Métricas - Vista Game Board
 
 ## Descripción
+
+![Game Board - tablero de seguimiento del juego](/img/img-231.png)
+
 
 El **Game Board** ofrece una vista basada en los **Retos** que componen la Aventura. Permite un acceso rápido a cada Reto y ver cómo se comportan los jugadores hasta ese momento.
 

@@ -2,10 +2,12 @@
 sidebar_position: 11
 title: Retos de la Aventura
 ---
-
 # Retos de la Aventura
 
 ## Listado de Retos
+
+![Listado de retos en la configuración de la aventura](/img/img-060.png)
+
 
 El listado muestra todos los **Retos creados para esta Aventura**. Para que un Reto sea jugable, debe **enlazarse dentro de una Misión**.
 
@@ -15,10 +17,16 @@ Aunque un Reto esté enlazado a más de una Misión, **solo se ejecutará una ve
 
 ## Crear y editar Retos
 
+![Ejemplo de escenario de reto - cueva encantada](/img/img-103.png)
+
+
 - Usa el botón **"Crear nuevo Reto"** para añadir retos a la Aventura.
 - Haz clic sobre el **nombre del Reto** para editarlo.
 
 ## Retos sin Misión
+
+![Ejemplo de ilustración para reto - portal de aventura](/img/img-104.png)
+
 
 Un Reto sin Misión Asociada mostrará un icono de advertencia. Esto significa que el Reto **no será jugable**, ya que no se podrá tener acceso a él.
 

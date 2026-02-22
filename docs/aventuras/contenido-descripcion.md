@@ -2,10 +2,12 @@
 sidebar_position: 7
 title: Contenido y Descripción
 ---
-
 # Contenido y Descripción
 
 ## Campos principales
+
+![Contenido y descripción de la aventura vista por el jugador](/img/img-064.png)
+
 
 | Campo | Descripción |
 |---|---|
@@ -17,6 +19,9 @@ title: Contenido y Descripción
 | **Fechas/Horas Inicio/Fin** | Programación automática de la Aventura |
 
 ## Editor de contenido
+
+![Vista móvil del contenido de la aventura](/img/img-070.png)
+
 
 - El contenido HTML enriquecido permite opciones de configuración tipo **Negritas, Subrayado, Colores, iFrames**, etc.
 - Se pueden incorporar hasta **10 idiomas diferentes**.

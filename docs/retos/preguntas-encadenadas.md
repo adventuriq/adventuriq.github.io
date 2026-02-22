@@ -2,10 +2,12 @@
 sidebar_position: 10
 title: Preguntas Encadenadas
 ---
-
 # Reto tipo Preguntas Encadenadas
 
 ## Descripción
+
+![Reto tipo Preguntas Encadenadas](/img/img-103.png)
+
 
 Los Retos Preguntas Encadenadas son los únicos que pueden otorgar **puntos extra por rapidez** al responder.
 
@@ -26,6 +28,9 @@ Los Retos Preguntas Encadenadas **solo pueden encadenar Retos de tipo Pregunta /
 | **Orden** | Se pueden ordenar las preguntas dentro del reto |
 
 ## Gestión de Preguntas
+
+![Mecánica de preguntas encadenadas](/img/img-017.png)
+
 
 - Se pueden incluir **tantos Retos Pregunta/Respuesta como se quiera**.
 - Solo se usará la **Mecánica del Reto Pregunta/Respuesta** (la información de la cabecera no se usará).

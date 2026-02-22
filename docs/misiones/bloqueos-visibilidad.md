@@ -2,10 +2,12 @@
 sidebar_position: 2
 title: Bloqueos y Visibilidad
 ---
-
 # Bloqueos y Visibilidad de Misiones
 
 ## Página de configuración
+
+![Misión con configuración de bloqueos](/img/img-085.png)
+
 
 Las Misiones, como las Aventuras, tienen una **página única** donde se configura su comportamiento y contenidos. Difieren de la Aventura en que se puede programar su visibilidad y se pueden otorgar Objetos al finalizar la Misión.
 

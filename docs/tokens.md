@@ -4,16 +4,21 @@ title: 🪙 Tokens y Licencias
 description: Cómo funcionan los tokens y licencias en AdventuriQ. Sistema de tokens nominales de un solo uso para monetizar aventuras gamificadas.
 keywords: [tokens, licencias, precios, monetización, adventuriq]
 ---
-
 # Tokens y Licencias
 
 ## Tokens
+
+![AdventuriQ - sistema de tokens y licencias](/img/img-000.png)
+
 
 - Los **Tokens no se gastan** si se juega con usuarios que tengan rol de **Game Master** o sea el **Game Designer** de esa Aventura.
 - Un jugador gasta **un Token por cada partida** que hace a una Aventura.
 - Si un jugador repite una Aventura (después de un Raze de sus estados), consume otro Token.
 
 ## Licencias
+
+![Panel de administración - configuración de aventura](/img/img-061.png)
+
 
 - Cada Aventura necesita una **licencia activa** para ser jugable.
 - Se puede asignar una licencia a una Aventura nueva o renovar una licencia caducada.

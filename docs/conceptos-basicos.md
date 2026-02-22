@@ -4,10 +4,12 @@ title: 📚 Conceptos Básicos
 description: Conceptos básicos de AdventuriQ - Aventuras, Misiones, Retos, Tokens, Game Pin, Clanes, POI y más. Todo lo que necesitas saber para empezar.
 keywords: [aventura, misión, reto, token, game pin, gamificación, conceptos]
 ---
-
 # Conceptos Básicos
 
 ## Aventuras, Misiones y Retos
+
+![Gamificación - aventuras interactivas con misiones y retos](/img/img-017.png)
+
 
 Las **Aventuras** se organizan en **Misiones** que contienen **Retos** a superar.
 
@@ -29,6 +31,9 @@ AVENTURA → MISIÓN 1 → RETO 1
 
 ## Sobre las Misiones
 
+![Ejemplo de cabecera de Misión 1](/img/img-085.png)
+
+
 - Las Misiones se pueden **activar/desactivar automáticamente** en una ventana temporal (Fecha/Hora) concreta.
 - Se pueden **bloquear** con códigos QR y códigos alfanuméricos.
 - Las podemos usar como **Capítulos, Etapas, Temporadas, Fases, Niveles**, etc.
@@ -40,6 +45,9 @@ AVENTURA → MISIÓN 1 → RETO 1
 - No existe un límite de retos ni dentro de una Aventura, ni dentro de una Misión.
 
 ### Los 5 tipos de Retos disponibles
+
+![Ejemplo de cabecera de Misión 2](/img/img-088.png)
+
 
 | Tipo | Descripción |
 |---|---|
@@ -57,6 +65,9 @@ AVENTURA → MISIÓN 1 → RETO 1
 - A nivel de Misión, una recompensa se puede asociar a una **simulación de llamada telefónica**.
 
 ## Configuración de una Aventura
+
+![Vista de una aventura desde la perspectiva del jugador](/img/img-064.png)
+
 
 Según el diseño de la experiencia, puedes configurar diferentes dinámicas:
 

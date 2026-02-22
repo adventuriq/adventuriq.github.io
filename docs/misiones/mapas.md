@@ -2,12 +2,14 @@
 sidebar_position: 5
 title: Mapas
 ---
-
 # Mapas de una Misión
 
 El componente Mapa de una Misión funciona igual que a nivel Aventura.
 
 ## Tipos de mapa
+
+![Configuración de mapa a nivel de misión](/img/img-135.png)
+
 
 - **Recurso Gráfico**: imagen que puede servir como pista, enigma, etc.
 - **Mapa Google Maps**: con geoposición Lat/Long.

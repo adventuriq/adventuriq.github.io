@@ -2,10 +2,12 @@
 sidebar_position: 6
 title: Pregunta / Respuesta
 ---
-
 # Reto tipo Pregunta / Respuesta(s)
 
 ## Puntuación
+
+![Reto tipo Pregunta/Respuesta - escenario de ejemplo](/img/img-103.png)
+
 
 - **Puntos si se acierta**: los puntos otorgados pueden ser negativos.
 - **Puntos si se falla**: también pueden ser negativos.
@@ -25,6 +27,9 @@ title: Pregunta / Respuesta
 | **Multirespuesta** | El jugador debe seleccionar todas las respuestas correctas |
 
 ## Imagen de la mecánica
+
+![Vista del jugador respondiendo un reto](/img/img-064.png)
+
 
 - Se puede asignar una imagen de **1200x640 pixels** visible en la mecánica del Reto.
 - Puede ser **diferente** a la imagen de la cabecera del Reto.

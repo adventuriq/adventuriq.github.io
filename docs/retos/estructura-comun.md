@@ -2,12 +2,14 @@
 sidebar_position: 2
 title: Estructura Común
 ---
-
 # Estructura Común de los Retos
 
 Los Retos tienen unas estructuras muy definidas, con secciones comunes a todos los tipos.
 
 ## Apartados de un Reto
+
+![Estructura común de configuración de retos](/img/img-060.png)
+
 
 | Apartado | Descripción |
 |---|---|

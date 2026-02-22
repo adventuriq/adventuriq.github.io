@@ -2,10 +2,12 @@
 sidebar_position: 8
 title: Respuesta Libre
 ---
-
 # Reto tipo Respuesta Libre
 
 ## Descripción
+
+![Reto tipo Respuesta Libre - escenario de ejemplo](/img/img-103.png)
+
 
 El Reto Respuesta Libre permite llamar a la **creatividad escrita** del jugador. Se formula un texto (opcionalmente en forma de pregunta) y el jugador puede escribir su respuesta libremente.
 

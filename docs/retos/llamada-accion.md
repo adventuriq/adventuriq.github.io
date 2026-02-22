@@ -2,10 +2,12 @@
 sidebar_position: 7
 title: Llamada a la Acción
 ---
-
 # Reto tipo Llamada a la Acción
 
 ## Descripción
+
+![Reto tipo Llamada a la Acción](/img/img-104.png)
+
 
 El Reto Llamada a la Acción es muy fácil de configurar, pero muy **poderoso en su cometido**. Permite dar instrucciones al jugador para que haga algo **fuera de AdventuriQ**, llevando la Aventura al mundo analógico.
 

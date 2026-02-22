@@ -2,10 +2,12 @@
 sidebar_position: 8
 title: Enlazar Retos
 ---
-
 # Enlazar Retos a una Misión
 
 ## Gestión de Retos
+
+![Enlazar retos a misiones desde el panel de administración](/img/img-060.png)
+
 
 Normalmente los Retos se crean a **Nivel Aventura** y se enlazan a **Nivel Misión**.
 

@@ -2,12 +2,14 @@
 sidebar_position: 10
 title: Equipos (Clanes)
 ---
-
 # Equipos (Clanes)
 
 Las Aventuras pueden ser jugadas de dos maneras: **Individual** o **Por Equipos**.
 
 ## Juego por Equipos
+
+![Concepto de equipos - juego de mesa colaborativo](/img/img-231.png)
+
 
 En el juego Por Equipos:
 
@@ -17,6 +19,9 @@ En el juego Por Equipos:
   - **Clasificación Global por Equipos**
 
 ## Configuración de un Equipo (Clan)
+
+![Configuración de equipos en el panel de administración](/img/img-060.png)
+
 
 | Campo | Descripción |
 |---|---|

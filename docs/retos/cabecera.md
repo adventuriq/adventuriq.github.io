@@ -2,12 +2,14 @@
 sidebar_position: 3
 title: Cabecera del Reto
 ---
-
 # Cabecera del Reto
 
 La cabecera es **común a todos los Retos**, excepto para la Mecánica de Pregunta/Respuesta que permite crear un Límite de Tiempo.
 
 ## Campos de la cabecera
+
+![Cabecera de un reto - ilustración de ejemplo](/img/img-104.png)
+
 
 | Campo | Descripción |
 |---|---|

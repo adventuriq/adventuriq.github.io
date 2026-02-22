@@ -2,7 +2,6 @@
 sidebar_position: 2
 title: ⚠️ Advertencias Importantes
 ---
-
 # Advertencias Importantes
 
 :::danger Importante
@@ -10,6 +9,9 @@ Lee estas advertencias antes de comenzar a crear tus Aventuras.
 :::
 
 ## Contenidos y archivos
+
+![AdventuriQ - plataforma de gamificación](/img/img-003.png)
+
 
 - Siempre hay que **"guardar"** las modificaciones.
 - Todas las imágenes tienen que tener **nombres de archivo diferentes**.
@@ -19,6 +21,9 @@ Lee estas advertencias antes de comenzar a crear tus Aventuras.
 - Las coordenadas **LAT/LONG** se recomienda copiar y pegar desde Google Maps.
 
 ## Navegación y orden
+
+![Icono de la app AdventuriQ](/img/img-051.png)
+
 
 - En el Gamifier (Gestor de contenidos), el orden de los retos dentro de una Misión responde a si están resueltos o no (igual que en la Web App).
 - Es de vital importancia dar los permisos a los navegadores sobre el acceso a la **Cámara, GPS**, etc.

@@ -2,10 +2,12 @@
 sidebar_position: 9
 title: Mapas
 ---
-
 # Mapas de la Aventura
 
 ## Tipos de mapa
+
+![Configuración del mapa en la aventura](/img/img-060.png)
+
 
 Un Mapa puede ser:
 
@@ -22,6 +24,9 @@ A nivel Aventura, Misión y Reto, se tiene que **crear el Recurso Mapa**, aunque
 - Los recursos gráficos en la zona del componente Mapa pueden ser elementos del juego, como **Pistas, Enigmas**, etc.
 
 ## Mapa geoposicionado
+
+![Icono de mapa - punto de interés](/img/img-135.png)
+
 
 - Los Mapas Geoposicionados requieren de una **Latitud** y una **Longitud**.
 - Las posiciones Latitud/Longitud de los Retos se muestran sobre un **Mapa Google Maps** en forma de lágrima invertida.

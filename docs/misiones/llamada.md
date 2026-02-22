@@ -2,12 +2,14 @@
 sidebar_position: 7
 title: Componente Llamada
 ---
-
 # Componente "Llamada"
 
 La **"Llamada"** es un componente opcional en un Objeto a Nivel Misión. **No existe** este componente en los Objetos a Nivel de Reto.
 
 ## Funcionamiento
+
+![Componente llamada asociado a una misión](/img/img-085.png)
+
 
 - Se entrega **después del Objeto** asociado a la "Llamada".
 - Simula una **llamada telefónica** usando el audio subido.

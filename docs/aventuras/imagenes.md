@@ -2,10 +2,12 @@
 sidebar_position: 5
 title: Imágenes
 ---
-
 # Imágenes de la Aventura
 
 ## Imágenes del listado
+
+![Imágenes de la aventura renderizadas en la app del jugador - tablet](/img/img-067.png)
+
 
 Las imágenes que se muestran en el **listado de Aventuras** son la lista visual de Aventuras que un jugador tiene cargadas en su perfil de usuario.
 
@@ -18,6 +20,9 @@ Dependiendo del dispositivo donde se juegue, las imágenes pueden aparecer corta
 :::
 
 ## Dónde aparecen las imágenes
+
+![Vista móvil de la aventura con imágenes](/img/img-070.png)
+
 
 - En el **listado de Aventuras** del jugador.
 - En la **cabecera de la Aventura**, junto con las fechas de inicio y final automáticos.
