@@ -21,15 +21,12 @@ jobs:
 
       - name: Deploy via VPS
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KEY_B64: ${{ secrets.SSH_KEY_B64 }}
           VPS_HOST: ${{ secrets.VPS_HOST }}
           DINA_PASS: ${{ secrets.DINA_PASSWORD }}
         run: |
           mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_deploy
+          echo "$SSH_KEY_B64" | base64 -d > ~/.ssh/id_deploy
           chmod 600 ~/.ssh/id_deploy
-          # Debug key format
-          head -1 ~/.ssh/id_deploy
-          wc -l ~/.ssh/id_deploy
-          ssh-keygen -y -f ~/.ssh/id_deploy > /dev/null 2>&1 && echo "Key OK" || echo "Key INVALID"
-          ssh -v -o StrictHostKeyChecking=no -p 2222 -i ~/.ssh/id_deploy root@$VPS_HOST "echo connected" 2>&1 | tail -20
+          ssh -o StrictHostKeyChecking=no -p 2222 -i ~/.ssh/id_deploy root@$VPS_HOST \
+            "cd /root/adventuriq-docs && git pull origin main && npm run build && sshpass -p '$DINA_PASS' rsync -rlgoDz --delete build/ adventuriq@hl1446.dinaserver.com:/home/adventuriq/www/docs/"
