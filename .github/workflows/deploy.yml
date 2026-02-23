@@ -3,9 +3,10 @@ name: Build & Deploy Docs
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,16 +19,14 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Deploy via VPS bridge
-        uses: easingthemes/ssh-deploy@v4
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.VPS_HOST }}
-          REMOTE_USER: root
-          REMOTE_PORT: 22
-          SOURCE: build/
-          TARGET: /tmp/docs-build/
-          ARGS: "-rlgoDz --delete"
-          SCRIPT_AFTER: |
-            sshpass -p '${{ secrets.DINA_PASSWORD }}' rsync -rlgoDz --delete /tmp/docs-build/ adventuriq@hl1446.dinaserver.com:/home/adventuriq/www/docs/
-            rm -rf /tmp/docs-build/
+      - name: Deploy via VPS
+        env:
+          DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          DINA_PASS: ${{ secrets.DINA_PASSWORD }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_KEY" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          ssh -o StrictHostKeyChecking=no -p 2222 -i ~/.ssh/id_deploy root@$VPS_HOST \
+            "cd /root/adventuriq-docs && git pull origin main && npm run build && sshpass -p '$DINA_PASS' rsync -rlgoDz --delete build/ adventuriq@hl1446.dinaserver.com:/home/adventuriq/www/docs/"
