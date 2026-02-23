@@ -10,7 +10,7 @@ Lee estas advertencias antes de comenzar a crear tus Aventuras.
 
 ## Contenidos y archivos
 
-![AdventuriQ - plataforma de gamificación](/img/img-003.png)
+![AdventuriQ - plataforma de gamificación](/img/img-002.png)
 
 
 - Siempre hay que **"guardar"** las modificaciones.
