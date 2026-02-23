@@ -18,12 +18,16 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Deploy to Dinahosting
+      - name: Deploy via VPS bridge
         uses: easingthemes/ssh-deploy@v4
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: hl1446.dinaserver.com
-          REMOTE_USER: adventuriq
+          REMOTE_HOST: ${{ secrets.VPS_HOST }}
+          REMOTE_USER: root
+          REMOTE_PORT: 22
           SOURCE: build/
-          TARGET: /home/adventuriq/www/docs/
+          TARGET: /tmp/docs-build/
           ARGS: "-rlgoDz --delete"
+          SCRIPT_AFTER: |
+            sshpass -p '${{ secrets.DINA_PASSWORD }}' rsync -rlgoDz --delete /tmp/docs-build/ adventuriq@hl1446.dinaserver.com:/home/adventuriq/www/docs/
+            rm -rf /tmp/docs-build/
