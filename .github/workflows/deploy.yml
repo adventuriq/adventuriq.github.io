@@ -1,0 +1,29 @@
+name: Build & Deploy Docs
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Deploy to Dinahosting
+        uses: easingthemes/ssh-deploy@v5
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: hl1446.dinaserver.com
+          REMOTE_USER: adventuriq
+          SOURCE: build/
+          TARGET: /home/adventuriq/www/docs/
+          ARGS: "-rlgoDz --delete"
