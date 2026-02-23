@@ -19,7 +19,7 @@ jobs:
       - run: npm run build
 
       - name: Deploy to Dinahosting
-        uses: easingthemes/ssh-deploy@v5
+        uses: easingthemes/ssh-deploy@v4
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: hl1446.dinaserver.com
