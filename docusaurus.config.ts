@@ -91,13 +91,24 @@ const config: Config = {
     },
   ],
   themeConfig: {
+    // Imagen por defecto para compartir en redes
+    image: 'img/social-card.png',
+
     navbar: {
       title: 'AdventuriQ Docs',
       logo: {
         alt: 'AdventuriQ Logo',
         src: 'img/logo.svg',
+        width: 140,
+        height: 32,
       },
       items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',  // Verifica que coincida con el ID real de tu sidebar
+          position: 'left',
+          label: 'Manual',
+        },
         {
           href: 'https://gamifier.adventuriq.com',
           label: 'Gamifier',
@@ -108,30 +119,46 @@ const config: Config = {
           label: 'Web App',
           position: 'right',
         },
+        {
+          href: 'https://www.adventuriq.com',
+          label: 'Web',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/adventuriq/adventuriq.github.io',
+          label: 'GitHub',
+          position: 'right',
+        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Documentación',
+          title: 'Producto',
           items: [
-            { label: 'Introducción', to: '/' },
-            { label: 'Aventuras', to: '/aventuras/configuracion' },
-            { label: 'Misiones', to: '/misiones/configuracion' },
-            { label: 'Retos', to: '/retos/tipos-de-reto' },
+            { label: 'Web oficial', href: 'https://www.adventuriq.com' },
+            { label: 'Webapp', href: 'https://webapp.adventuriq.com' },
+            { label: 'Precios', href: 'https://www.adventuriq.com/precios' },
           ],
         },
         {
-          title: 'AdventuriQ',
+          title: 'Manual',
           items: [
-            { label: 'Gamifier', href: 'https://gamifier.adventuriq.com' },
-            { label: 'Web App', href: 'https://webapp.adventuriq.com' },
-            { label: 'Website', href: 'https://www.adventuriq.com' },
+            { label: 'Primeros pasos', to: '/' },
+            { label: 'Gamifier', to: '/' },
+            { label: 'Webapp', to: '/' },
+          ],
+        },
+        {
+          title: 'Contacto',
+          items: [
+            { label: 'LinkedIn', href: 'https://www.linkedin.com/company/adventuriq' },
+            { label: 'Contacto', href: 'https://www.adventuriq.com/contacta' },
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} AdventuriQ. Todos los derechos reservados.`,
+      copyright: `Copyright © ${new Date().getFullYear()} AdventuriQ. Todos los derechos reservados.`,
     },
     colorMode: {
       defaultMode: 'light',

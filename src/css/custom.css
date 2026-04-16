@@ -1,63 +1,82 @@
+/* ============================================
+   AdventuriQ Docs — Custom Branding
+   ============================================ */
+
+/* Modo claro (por defecto) */
 :root {
-  --ifm-color-primary: #FF6B35;
-  --ifm-color-primary-dark: #e55a24;
-  --ifm-color-primary-darker: #d9521c;
-  --ifm-color-primary-darkest: #b34317;
-  --ifm-color-primary-light: #ff7d4f;
-  --ifm-color-primary-lighter: #ff8a60;
-  --ifm-color-primary-lightest: #ffab8a;
+  /* Naranja AdventuriQ como color primario */
+  --ifm-color-primary: #fc4a27;
+  --ifm-color-primary-dark: #f53609;
+  --ifm-color-primary-darker: #e83208;
+  --ifm-color-primary-darkest: #bf2907;
+  --ifm-color-primary-light: #fc5e40;
+  --ifm-color-primary-lighter: #fc6a4e;
+  --ifm-color-primary-lightest: #fd8871;
+
+  /* Navbar en azul oscuro corporativo */
+  --ifm-navbar-background-color: #2d324f;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: #fc4a27;
+
+  /* Footer con el mismo azul corporativo */
+  --ifm-footer-background-color: #2d324f;
+  --ifm-footer-color: #ffffff;
+  --ifm-footer-link-color: #ffffff;
+  --ifm-footer-link-hover-color: #fc4a27;
+  --ifm-footer-title-color: #fc4a27;
+
+  /* Tipografía y código */
   --ifm-code-font-size: 95%;
-  --ifm-heading-color: #4A5859;
+  --docusaurus-highlighted-code-line-bg: rgba(252, 74, 39, 0.1);
 }
 
+/* Modo oscuro */
 [data-theme='dark'] {
-  --ifm-color-primary: #FF6B35;
-  --ifm-color-primary-dark: #e55a24;
-  --ifm-color-primary-darker: #d9521c;
-  --ifm-color-primary-darkest: #b34317;
-  --ifm-color-primary-light: #ff7d4f;
-  --ifm-color-primary-lighter: #ff8a60;
-  --ifm-color-primary-lightest: #ffab8a;
+  --ifm-color-primary: #fc6a4e;
+  --ifm-color-primary-dark: #fc4a27;
+  --ifm-color-primary-darker: #f53609;
+  --ifm-color-primary-darkest: #bf2907;
+  --ifm-color-primary-light: #fc8571;
+  --ifm-color-primary-lighter: #fd9a89;
+  --ifm-color-primary-lightest: #fdbeb2;
+
+  --ifm-background-color: #1a1d30;
+  --ifm-navbar-background-color: #2d324f;
+
+  --docusaurus-highlighted-code-line-bg: rgba(252, 74, 39, 0.2);
 }
 
-.navbar {
-  background-color: #4A5859;
-}
-
+/* Navbar: aseguramos contraste del logo y título en blanco */
 .navbar__title {
-  color: #fff;
+  color: #ffffff;
+  font-weight: 700;
 }
 
+.navbar__brand:hover .navbar__title {
+  color: #fc4a27;
+}
+
+/* Los iconos del switch de modo y otros elementos del navbar en blanco */
 .navbar__link {
-  color: #fff !important;
+  color: #ffffff;
 }
 
-.footer--dark {
-  background-color: #4A5859;
+.navbar__link:hover {
+  color: #fc4a27;
 }
 
-/* Admonitions styling */
-.admonition {
-  border-left-color: #FF6B35;
+/* Admonitions con toque naranja para "tips" */
+.theme-admonition-tip {
+  border-left-color: #fc4a27;
 }
 
-/* Hero section on landing */
-.hero-adventuriq {
-  background: linear-gradient(135deg, #FF6B35 0%, #4A5859 100%);
-  color: white;
-  padding: 4rem 2rem;
-  text-align: center;
-  border-radius: 8px;
-  margin-bottom: 2rem;
+/* Botones primarios en naranja sólido */
+.button--primary {
+  background-color: #fc4a27;
+  border-color: #fc4a27;
 }
 
-.hero-adventuriq h1 {
-  color: white;
-  font-size: 2.5rem;
-}
-
-img {
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  max-width: 100%;
+.button--primary:hover {
+  background-color: #e83208;
+  border-color: #e83208;
 }
