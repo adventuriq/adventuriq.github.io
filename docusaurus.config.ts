@@ -105,7 +105,7 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',  // Verifica que coincida con el ID real de tu sidebar
+          sidebarId: 'docs',  // Verifica que coincida con el ID real de tu sidebar
           position: 'left',
           label: 'Manual',
         },
