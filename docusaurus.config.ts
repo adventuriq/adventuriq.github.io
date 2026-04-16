@@ -4,12 +4,12 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'AdventuriQ Docs',
-  tagline: 'Manual de Usuario del Gamifier',
+  tagline: 'Todo lo que necesitas para crear y jugar Aventuras',
   favicon: 'img/favicon.ico',
-  url: 'https://www.adventuriq.com',
-  baseUrl: '/docs/',
+  url: 'https://docs.adventuriq.com',
+  baseUrl: '/',
   organizationName: 'adventuriq',
-  projectName: 'adventuriq-docs',
+  projectName: 'adventuriq.github.io',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
