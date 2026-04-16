@@ -1,32 +1,40 @@
-name: Build & Deploy Docs
+name: Deploy Docusaurus to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [source]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
           cache: npm
-
       - run: npm ci
       - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
 
-      - name: Deploy via VPS
-        env:
-          SSH_KEY_B64: ${{ secrets.SSH_KEY_B64 }}
-          VPS_HOST: ${{ secrets.VPS_HOST }}
-          DINA_PASS: ${{ secrets.DINA_PASSWORD }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_KEY_B64" | base64 -d > ~/.ssh/id_deploy
-          chmod 600 ~/.ssh/id_deploy
-          ssh -o StrictHostKeyChecking=no -p 2222 -i ~/.ssh/id_deploy root@$VPS_HOST \
-            "cd /root/adventuriq-docs && git pull origin main && npm run build && sshpass -p '$DINA_PASS' rsync -rlgoDz --delete build/ adventuriq@hl1446.dinaserver.com:/home/adventuriq/www/docs/"
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
