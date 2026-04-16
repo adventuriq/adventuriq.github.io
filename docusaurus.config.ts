@@ -11,7 +11,11 @@ const config: Config = {
   organizationName: 'adventuriq',
   projectName: 'adventuriq.github.io',
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   i18n: {
     defaultLocale: 'es',
     locales: ['es'],
