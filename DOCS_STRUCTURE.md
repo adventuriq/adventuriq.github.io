@@ -1,144 +1,122 @@
 # DOCS_STRUCTURE.md — Biblia de Documentación AdventuriQ
 
-> Este archivo es la fuente de verdad sobre cómo se organiza y escribe la documentación de AdventuriQ. Cualquier agente (humano o IA) que vaya a generar contenido para este manual DEBE leer este archivo primero.
+> Este archivo es la fuente de verdad sobre cómo se organiza y escribe
+> la documentación de AdventuriQ. Cualquier agente (humano o IA) que
+> vaya a generar contenido para este manual DEBE leer este archivo primero.
 
 ---
 
 ## 1. Qué es AdventuriQ (resumen funcional)
 
-AdventuriQ es una plataforma SaaS de gamificación de propósito general que permite a personas no técnicas crear experiencias gamificadas llamadas **Aventuras**. Se usa en contextos de team building, turismo, eventos, cumpleaños, micro-aprendizaje corporativo y educación.
+AdventuriQ es una plataforma SaaS de gamificación de propósito general
+que permite a personas no técnicas crear experiencias gamificadas
+llamadas **Aventuras**. Se usa en contextos de team building, turismo,
+eventos, cumpleaños, micro-aprendizaje corporativo y educación.
 
-**Dos roles fundamentales:**
+**Cuatro roles fundamentales:**
 
-- **Game Master**: persona que crea y configura las Aventuras. Usa el **Gamifier**.
-- **Player**: persona que juega las Aventuras creadas. Usa la **Webapp**.
+| Rol (ID) | Qué hace | Accede a |
+|---|---|---|
+| **Admin** (1) | Gestión técnica del sistema (Anthropic / equipo interno) | Todo |
+| **Game Master** (2) | Compra licencias/tokens, crea Aventuras, gestiona Game Designers | Gamifier |
+| **Game Designer** (3) | Mantiene y amplía Aventuras bajo supervisión de un GM | Gamifier |
+| **Player** (4) | Juega Aventuras | Webapp |
 
-**Tres componentes técnicos** (no se documentan al usuario final, pero condicionan la estructura):
+**Cuatro componentes técnicos:**
 
 - **API**: cerebro del sistema (invisible para usuarios finales).
-- **Gamifier**: aplicación web para Game Masters.
-- **Webapp**: Progressive Web App (Flutter) para Players, jugable desde móvil, tablet u ordenador.
+- **Gamifier**: aplicación web para Game Masters y Game Designers.
+- **Webapp**: Progressive Web App (Flutter) para Players.
+- **adventuriq-docs**: este repo, manual de usuario.
 
 ---
 
 ## 2. Taxonomía oficial de AdventuriQ
 
-Estos son los términos canónicos. **Nunca inventar sinónimos** ni traducirlos. Siempre en español, siempre con mayúscula inicial cuando se refiere al concepto AdventuriQ.
+Estos son los términos canónicos. **Nunca inventar sinónimos**.
 
 ### Entidades principales
 
 | Término | Qué es |
 |---|---|
-| **Aventura** | La experiencia gamificada completa. Unidad comercial (se compra licencia). |
+| **Aventura** | Experiencia gamificada completa. Unidad comercial. |
 | **Misión** | Agrupación temática de Retos dentro de una Aventura. |
 | **Reto** | Prueba individual que el Player supera. |
-| **Objeto Digital** | Recompensa virtual que se entrega al superar un Reto (pistas, códigos, badges, recompensas, reconocimientos...). |
+| **Objeto Digital** | Recompensa virtual: pistas, códigos, badges, etc. |
 | **Puntos** | Sistema de puntuación numérica. |
-| **Premios** | Recompensas físicas o digitales (ej. cupones) según dinámica. |
-| **Badges** | Medallas de reconocimiento (tipo de Objeto Digital). |
-| **Token** | Unidad de acceso del Player a una Aventura (1€/token en pay-per-use). |
-| **Licencia** | Autorización de uso de una Aventura por parte del Game Master (18€ en pay-per-use). |
-| **Plan Luna** | Plan anual de tarifa plana, 1 Aventura, tokens ilimitados. |
-| **Plan Mundo** | Plan anual de tarifa plana, múltiples Aventuras. |
+| **Premios** | Recompensas físicas/digitales. |
+| **Badges** | Medallas de reconocimiento. |
+| **Token** | Unidad de acceso del Player (1€/token). |
+| **Licencia** | Autorización de uso de una Aventura (18€). |
+| **Plan Luna** | Anual, 1 Aventura, tokens ilimitados. |
+| **Plan Mundo** | Anual, múltiples Aventuras. |
+| **Clan/Equipo** | Grupo de Players compitiendo juntos. |
+| **GamePIN** | Código numérico para unirse a una Aventura. |
+| **POI** | Punto de Interés en el mapa. |
 
-### Jerarquía estructural
+### Tipos de Retos (Mecánicas) — 10 vigentes
 
-```
-Aventura
- └── Misiones (1..N)
-      └── Retos (1..N)
-           └── Objetos Digitales (0..N, condicionales)
-                Puntos
-                Recompensas
-```
+| ID | Nombre oficial (manual) | Nombre técnico (BD) | Descripción |
+|---|---|---|---|
+| 1 | **Pregunta / Respuesta** | PreguntaRespuesta | Opciones de respuesta múltiple. |
+| 2 | **Preguntas Encadenadas** | Trivial | Lista de PR con factor tiempo. |
+| 4 | **Compartir Foto** | Compartir | Foto/vídeo que va a la Galería. |
+| 8 | **Respuesta Libre** | RespuestaLibre | Texto libre, se envía por mail. |
+| 9 | **Llamada a la Acción** | Checkin | Acción (puede requerir QR). |
+| 10 | **Respuesta Exacta** | RespuestaExacta | Respuesta textual que debe coincidir. |
+| 11 | **Pregunta / Respuesta con Audio** | PreguntaRespuesta con Audio | PR con pista de audio. |
+| 12 | **Pregunta / Respuesta con Vídeo** | PreguntaRespuesta con Video | PR con pista de vídeo. |
+| 13 | **Ruleta de la Fortuna** | Ruleta de la Fortuna | Mecánica de ruleta. |
+| 14 | **Nube de Palabras** | Nube de Palabras | Agregación visual de respuestas. |
 
-### Tipos de Retos (Mecánicas)
-
-| Mecánica | Qué hace el Player |
-|---|---|
-| **Pregunta / Respuesta** | Selecciona una o varias respuestas posibles. Opcional: contador tiempo. |
-| **Preguntas Encadenadas** | Lista de "n" retos tipo Pregunta/Respuesta con factor tiempo. |
-| **Subir Foto / Vídeo** | Toma foto/vídeo (selfie, prueba física...). Se comparte en la Galería. |
-| **Respuesta Libre** | Redacta libremente la respuesta. Se envía por mail al Player. |
-| **Llamada a la Acción** | Realiza una acción (puede requerir estar presente en un punto vía QR). |
+:::warning Tipos deprecados — NO documentar
+Los siguientes IDs están deprecados y **no se deben documentar**, aunque
+aparezcan en el código o en la BD: 3 (Enigma), 5 (Encuentra),
+6 (Interactiva), 7 (EncuentraConTiempo).
+:::
 
 ### Secciones de la Webapp (Bitácora)
 
-La **Bitácora** es el menú de navegación del Player dentro de una Aventura. Da acceso a:
-
-- **Baúl**: Objetos Digitales obtenidos (Reconocimientos, Recompensas...)
+- **Baúl**: Objetos Digitales obtenidos
 - **Galería**: imágenes compartidas durante la Aventura
 - **Clasificación**: ranking individual y/o por equipos
 - **Muro**: feed de respuestas libres y actividad pública
-- **Equipo**: selección o cambio de Equipo
+- **Clan/Equipo**: selección o cambio de equipo
 - **Final de la Aventura**: cierre
 - **Volver a jugar**: reinicio
 
-### Vistas del Gamifier (Game Master)
+### Vistas del Gamifier
 
 - **Dashboard / Listado de Aventuras**
-- **Editor de Aventura**: contenido, configuración, idiomas, mapas, equipos, visibilidad, fechas, Game PIN, bloqueos.
-- **Editor de Misiones**: contenido, imágenes, bloqueos, enlazado con Retos, recompensas.
-- **Editor de Retos**: cabecera, mecánica, estructura común, bloqueos, recompensas.
-- **Editor de Objetos Digitales**: configuración, condiciones de obtención, etiquetas (#tags).
-- **Game Board**: analítica post-juego, exportable a Excel.
-- **Clasificaciones**: tabla en tiempo real.
+- **Editor de Aventura**
+- **Editor de Misiones**
+- **Editor de Retos** (uno por cada tipo de los 10 vigentes)
+- **Editor de Objetos Digitales**
+- **Game Board**: analítica post-juego, exportable a Excel
+- **Clasificaciones**: ranking en tiempo real
 
 ---
 
 ## 3. Estructura de carpetas (docs/)
 
-La estructura actual del manual es (ver `docs/` y `sidebars.ts` para la verdad canónica):
+Ver `sidebars.ts` para la verdad canónica. Estructura actual resumida:
 
 ```
 docs/
-├── intro.md                              # ¿Qué es AdventuriQ? (home del manual)
-├── warnings.md                           # Advertencias Importantes
-├── conceptos-basicos.md                  # Conceptos fundamentales
-├── aventuras/                            # Todo lo relativo al objeto Aventura en el Gamifier
-│   ├── configuracion.md
-│   ├── contenido-descripcion.md
-│   ├── condiciones-finalizacion.md
-│   ├── equipos.md
-│   ├── game-pin-bloqueos.md
-│   ├── idiomas-traducciones.md
-│   ├── imagenes.md
-│   ├── mapas.md
-│   ├── poi.md                            # Points Of Interest
-│   ├── publicacion-fechas.md
-│   ├── retos-aventura.md
-│   └── visibilidad-controles.md
-├── misiones/
-│   ├── configuracion.md
-│   ├── descripcion.md
-│   ├── contenido-imagenes.md
-│   ├── bloqueos-visibilidad.md
-│   ├── mapas.md
-│   ├── enlazar-retos.md
-│   ├── llamada.md
-│   └── recompensas.md
-├── retos/
-│   ├── tipos-de-reto.md                  # Overview de las 5 mecánicas
-│   ├── estructura-comun.md               # Campos comunes a todos los Retos
-│   ├── cabecera.md
-│   ├── pregunta-respuesta.md             # Mecánica 1
-│   ├── preguntas-encadenadas.md          # Mecánica 2
-│   ├── compartir-foto.md                 # Mecánica 3 (Subir Foto/Vídeo)
-│   ├── respuesta-libre.md                # Mecánica 4
-│   ├── llamada-accion.md                 # Mecánica 5
-│   ├── bloqueos-mapa.md
-│   └── recompensas.md
-├── recompensas/                          # Objetos Digitales y sus niveles
-│   ├── configuracion-contenido.md
-│   ├── nivel-mision.md
-│   └── nivel-reto.md
-├── metricas/
-│   ├── clasificacion.md
-│   └── game-board.md
-└── tokens.md                             # Tokens y Licencias
+├── intro.md
+├── warnings.md
+├── conceptos-basicos.md
+├── aventuras/         # 12 páginas
+├── misiones/          # 8 páginas
+├── retos/             # 10 páginas actuales + 5 pendientes
+├── recompensas/       # 3 páginas
+├── metricas/          # 2 páginas
+└── tokens.md
 ```
 
-**Regla de oro**: si una feature afecta a una sección que ya existe, el contenido va dentro de la carpeta existente. No crear carpetas nuevas sin avisar.
+**Regla de oro**: si una feature afecta a una sección que ya existe,
+el contenido va dentro de la carpeta existente. No crear carpetas
+nuevas sin avisar.
 
 ---
 
@@ -147,117 +125,151 @@ docs/
 ### Tono
 
 - **Tuteo** (tú, tu, contigo). Cercano pero profesional.
-- **Dirigido al Game Master** en la mayoría de secciones (salvo `/webapp/` que es para Player).
-- **No técnico**: evitar API, endpoint, backend, JSON, payload, etc.
-- **Directo y accionable**: "Haz clic en...", "Escribe...", "Selecciona...", "Verás que...".
+- **Dirigido a Game Master y/o Game Designer** en secciones del Gamifier.
+- **Dirigido al Player** en secciones de la Webapp.
+- **No técnico**: evitar API, endpoint, backend, JSON, deploy.
+- **Directo y accionable**: 'Haz clic en...', 'Escribe...'.
 
-### Estructura mínima de cada página
+### Indicador de rol al principio de cada página
+
+Cada página empieza con un admonition `:::info` que indica quién puede
+hacer esto. Usa esta convención de iconos:
+
+| Icono | Significado |
+|---|---|
+| 👑 | Solo **Game Master** |
+| 🛠️ | **Game Master** y **Game Designer** |
+| 🎮 | **Player** (páginas de Webapp) |
+| 🌐 | Todos los roles |
+
+Ejemplo:
 
 ```markdown
 ---
-sidebar_position: 3
-title: 'Configurar una Aventura'
-description: 'Ajustes generales de tu Aventura'
-tags: [gamifier, aventuras]
-last_updated: 2026-04-15
+title: Configuración de Aventura
 ---
 
-# Título principal (coincide con title del frontmatter)
+# Configuración de Aventura
 
-Una o dos frases explicando qué es esto y para qué sirve.
-
-## Cómo se hace paso a paso
-
-1. Paso concreto con verbo accionable.
-
-![Descripción alt de la captura](/img/gamifier/aventuras/nombre-descriptivo.png)
-
-2. Siguiente paso...
-
-:::tip Consejo útil
-Texto del tip.
+:::info 🛠️ Quién puede hacer esto
+**Game Master** y **Game Designer** (bajo supervisión del GM).
 :::
 
-:::caution Atención
-Texto de la advertencia.
-:::
+[contenido...]
 ```
 
-### Admonitions de Docusaurus
-
-Usar estas cuatro:
-
-- `:::tip` — consejos útiles que no son obligatorios
-- `:::note` — información complementaria
-- `:::caution` — advertencias que el usuario debe tener en cuenta
-- `:::danger` — avisos críticos (p.ej. "no se puede deshacer")
-
-### Imágenes
-
-- Formato: PNG preferente, JPG solo para fotos.
-- Ubicación: `static/img/{gamifier|webapp}/{seccion}/{nombre-descriptivo}.png`
-- Referencia en Markdown: `![Descripción alt](/img/gamifier/aventuras/crear-formulario.png)`
-- Nombres: en minúsculas, guiones (no subrayados), descriptivos.
-- Las imágenes del Gamifier: capturas de navegador de escritorio.
-- Las imágenes de la Webapp: capturas formato móvil (mejor preview porque así se usa mayoritariamente).
-
-### Frontmatter obligatorio
+### Frontmatter mínimo
 
 ```yaml
 ---
 sidebar_position: [número]
 title: '[Título de la página]'
-description: '[Descripción corta, 1 frase]'
-tags: [gamifier|webapp, sección, nivel]     # Ejemplo: [gamifier, aventuras, básico]
-last_updated: YYYY-MM-DD
+description: '[Una frase descriptiva]'
+keywords: [lista, de, palabras, clave]
 ---
 ```
 
-Tags orientativos:
-- Audiencia: `gamifier`, `webapp`, `game-master`, `player`
-- Nivel: `básico`, `intermedio`, `avanzado`
-- Sección: `aventuras`, `misiones`, `retos`, `recompensas`, `métricas`, `tokens`
+### Admonitions de Docusaurus
+
+- `:::info` — información contextual (incluido el rol)
+- `:::tip` — consejos útiles no obligatorios
+- `:::note` — información complementaria
+- `:::warning` — advertencias importantes
+- `:::danger` — avisos críticos (irreversible, no se puede deshacer)
+
+### Imágenes
+
+- Formato: PNG preferente.
+- Ubicación: `static/img/{gamifier|webapp}/{seccion}/{nombre}.png`
+- Nombres semánticos en minúsculas con guiones.
+- Capturas del Gamifier: navegador de escritorio.
+- Capturas de la Webapp: formato móvil preferente (viewport ~400px).
+
+### Estilo a imitar del manual existente
+
+- Tablas Markdown para configuraciones y opciones.
+- Emojis en títulos de sección (🎮, ⚔️, 📜, 🎁, 📊).
+- Párrafos cortos.
+- Uso moderado de admonitions.
 
 ---
 
-## 5. Branding y elementos visuales
+## 5. Regla de no-destrucción
 
-- **Nombre oficial**: AdventuriQ (mayúscula A, Q final mayúscula).
-- **No usar**: adventuriq, AdventurIQ, Adventuri Q, ADVENTURIQ.
-- **Colores corporativos** (para diagramas o capturas con anotaciones):
-  - Azul oscuro: `#2d324f`
-  - Naranja acción: `#fc4a27`
+**IMPORTANTE**: El manual YA tiene contenido real en todas sus 39 páginas.
+Cualquier agente (Cowork, Claude Code, humano) que edite una página
+existente debe seguir estas reglas:
 
----
-
-## 6. Qué NO documentar en este manual
-
-- Información técnica sobre la API (eso va a documentación de desarrolladores aparte si aplica).
-- Precios detallados — están en la web corporativa y cambian. Solo referenciar "licencia", "tokens", "Plan Luna", "Plan Mundo" a alto nivel.
-- Procesos comerciales (contratación, facturación) — no son parte del manual operativo.
-- Información sensible de clientes reales en capturas.
+1. **NUNCA reescribas una página completa** sin confirmación explícita.
+2. Si la página está incompleta, **SOLO AÑADE** contenido nuevo.
+3. Si detectas desactualización, **MARCA** con
+   `<!-- REVISAR: contenido posiblemente obsoleto -->` pero no sobrescribas.
+4. Las imágenes actuales (img-NNN.png) SÍ se pueden reemplazar por capturas
+   nuevas con nombres semánticos (son genéricas y están mal asignadas).
+5. **Imita el estilo existente**. No impongas un estilo nuevo.
 
 ---
 
-## 7. Flujo de trabajo para añadir una nueva página
+## 6. Glosario código vs dominio
 
-1. Claude Code genera un **Feature Spec Document (FSD)** al terminar una feature.
-2. Cowork lee el FSD, este `DOCS_STRUCTURE.md`, y explora `docs/` y `sidebars.ts`.
-3. Cowork toma capturas navegando el Gamifier (y/o Webapp con navegador completo si Flutter).
-4. Cowork genera el `.md` final respetando todas las convenciones anteriores.
-5. Revisión humana antes de commit.
-6. Push a rama `source` → GitHub Actions compila y despliega a `docs.adventuriq.com`.
+Cuando Cowork o Claude Code miren el código, verán términos técnicos
+distintos a los del manual. Traducción oficial:
+
+| En código / BD | En el manual |
+|---|---|
+| `evento` | Aventura |
+| `itinerario` | Misión |
+| `prueba` | Reto |
+| `equipo` / `clan` | Clan / Equipo |
+| `estado_juego` | Game State (no usar en manual) |
+| `recompensa` | Recompensa |
+| `gamepin` | GamePIN |
+| `propietario` | Organización |
+| `localizacion` | Localización |
+| `poi` | Punto de Interés (POI) |
+| `distintivo` | Badge / Insignia |
+| `Event Designer` | Game Designer |
 
 ---
 
-## 8. Contacto y mantenimiento
+## 7. Regla del entorno de test
 
-- **Propietario del manual**: Mike (owner de AdventuriQ)
-- **Repositorio**: `github.com/adventuriq/adventuriq.github.io`
-- **URL pública**: `https://docs.adventuriq.com`
-- **Rama de trabajo**: `source`
-- **Rama de publicación**: `main` (automática, no editar manualmente)
+**Cowork SIEMPRE trabaja sobre el entorno de test, NUNCA sobre producción.**
+
+- API test: `api-test.adventuriq.com`
+- Gamifier test: (consultar a Mike la URL específica)
+- Webapp test: (consultar a Mike la URL específica)
+
+Razón: las capturas se transmiten a la nube de Anthropic. Usar producción
+podría exponer datos reales de clientes, crear datos de prueba en producción,
+o alterar métricas reales.
+
+Mantener una **Aventura demo** exclusiva en el entorno de test, diseñada
+para cubrir todas las mecánicas y escenarios documentables.
 
 ---
 
-*Última actualización: 2026-04-16 — Versión 1.0*
+## 8. Qué NO documentar
+
+- Información técnica de la API (endpoints, schemas, JSON).
+- Precios detallados (están en la web corp y cambian).
+- Procesos comerciales (facturación, contratación).
+- Datos sensibles de clientes reales en capturas.
+- Funcionalidades de los 4 tipos de Reto deprecados.
+
+---
+
+## 9. Branding
+
+- **Nombre oficial**: AdventuriQ.
+- **Colores**: azul `#2d324f`, naranja `#fc4a27`.
+
+---
+
+## 10. Contacto
+
+- **Propietario**: Mike (owner)
+- **Repo**: github.com/adventuriq/adventuriq.github.io
+- **URL pública**: https://docs.adventuriq.com
+
+*Versión 2.0 — Abril 2026*

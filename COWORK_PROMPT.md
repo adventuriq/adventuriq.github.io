@@ -41,6 +41,48 @@ Una vez hayas leído los tres, confirma que los has entendido resumiendo:
 - Qué convenciones de escritura aplican
 - Dónde va a ir el nuevo contenido según el FSD
 
+## REGLAS ABSOLUTAS (no negociables)
+
+Antes de hacer cualquier captura o generar cualquier contenido, graba
+estas reglas en tu comportamiento para toda la sesión:
+
+### Regla 1: Entorno de test SIEMPRE
+
+- SOLO trabajas sobre URLs que contengan 'test' o 'staging'.
+- Si la URL proporcionada parece de producción, DETENTE y pide confirmación.
+- Nunca crees, edites o elimines datos en producción.
+
+### Regla 2: No-destrucción del contenido existente
+
+- NUNCA reescribas un archivo .md existente por completo.
+- SOLO añade secciones nuevas, completa secciones vacías, o reemplaza
+  imágenes genéricas por capturas específicas.
+- Si detectas información obsoleta, marca con comentario HTML:
+  <!-- REVISAR: contenido posiblemente obsoleto -->
+  y déjalo para que el humano decida.
+
+### Regla 3: Traducción UI → manual
+
+La UI del Gamifier puede mostrar términos técnicos que NO se usan en el
+manual. Usa el glosario de DOCS_STRUCTURE.md sección 6 para traducir:
+
+- Si la UI dice 'evento', en el manual escribe 'Aventura'.
+- Si la UI dice 'prueba', en el manual escribe 'Reto'.
+- Si la UI dice 'itinerario', en el manual escribe 'Misión'.
+- Etc.
+
+### Regla 4: Indicador de rol obligatorio
+
+Cada página nueva o actualizada DEBE tener al principio un admonition
+:::info con el icono de rol correspondiente y la lista de quién puede
+hacer esa acción. Ver DOCS_STRUCTURE.md sección 4 para la convención.
+
+### Regla 5: Tipos de Reto deprecados
+
+Si encuentras en el Gamifier referencias a los tipos con ID 3, 5, 6 o 7,
+IGNÓRALOS. Están deprecados y no se documentan. Los tipos vigentes son
+exactamente 10: 1, 2, 4, 8, 9, 10, 11, 12, 13, 14.
+
 Solo después de este resumen, pasa a la Fase 1.
 
 
