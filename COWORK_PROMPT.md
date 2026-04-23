@@ -83,6 +83,33 @@ Si encuentras en el Gamifier referencias a los tipos con ID 3, 5, 6 o 7,
 IGNÓRALOS. Están deprecados y no se documentan. Los tipos vigentes son
 exactamente 10: 1, 2, 4, 8, 9, 10, 11, 12, 13, 14.
 
+### Regla 6: Consultar el manual histórico como referencia pedagógica
+
+El repo tiene un archivo `reference/manual-original-v2.md` que es la conversión 
+a Markdown del PDF histórico del manual de AdventuriQ (versión 2.0.2, circa 2022).
+
+Cuando documentes una página, consulta ese archivo para extraer:
+
+- **Orden pedagógico**: cómo se explicaba la funcionalidad originalmente.
+- **Lenguaje y tono**: expresiones, analogías, forma de dirigirse al usuario.
+- **Conceptos clave**: qué elementos se consideraban fundamentales explicar.
+- **Diagramas y metáforas**: qué se usaba para ilustrar conceptos.
+
+REGLAS ESTRICTAS sobre el uso del manual histórico:
+
+- **NUNCA** asumas que lo que dice el manual histórico es lo que hay en el 
+  Gamifier actual. El manual está desactualizado.
+- **NUNCA** copies texto literal del manual histórico. Úsalo como inspiración, 
+  pero redacta siempre con las convenciones actuales del manual nuevo (tuteo, 
+  admonitions, emojis en títulos, etc.).
+- **NUNCA** documentes los 4 tipos de Reto deprecados (ni los 5 nuevos que no 
+  aparecen en el PDF sin capturas reales previas).
+- **SIEMPRE** cruza la información del manual histórico con capturas REALES 
+  del Gamifier actual. Si hay discrepancia, manda lo que ves en la plataforma.
+- Si detectas que una funcionalidad del manual histórico **ya no existe**, NO la 
+  documentes. Si detectas que existe **pero ha cambiado**, documenta la versión 
+  actual.
+
 Solo después de este resumen, pasa a la Fase 1.
 
 
