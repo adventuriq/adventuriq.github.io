@@ -322,6 +322,21 @@ Continúa con Fase 2, 3, 4 y 5 normalmente.
 
 ---
 
+### Sobre navegación en la Webapp (Flutter)
+
+La Webapp es una PWA basada en Flutter que renderiza sobre canvas. 
+Esto tiene implicaciones:
+
+- Algunos elementos UI son "overlays" que bloquean clicks debajo.
+- Ejemplo: el menú lateral izquierdo. Cuando está abierto, los clicks 
+  en el resto de la pantalla no pasan.
+- Antes de declarar "no puedo hacer X" en la Webapp, asegúrate de 
+  tener la pantalla "limpia" (menús cerrados, sin overlays activos).
+- Haz una captura preliminar del estado DOM para diagnosticar antes 
+  de concluir que algo es imposible.
+
+---
+
 ## Notas para Mike
 
 ### Primera vez: supervisar a Cowork

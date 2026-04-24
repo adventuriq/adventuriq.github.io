@@ -1,94 +1,151 @@
 ---
 sidebar_position: 3
 title: 📚 Conceptos Básicos
-description: Conceptos básicos de AdventuriQ - Aventuras, Misiones, Retos, Tokens, Game Pin, Clanes, POI y más. Todo lo que necesitas saber para empezar.
-keywords: [aventura, misión, reto, token, game pin, gamificación, conceptos]
+description: Conceptos básicos de AdventuriQ — Aventuras, Misiones, Retos, Objetos Digitales, GamePIN, Tokens, Licencias, Clanes y Dinámicas de juego. Todo lo que necesitas saber para crear y jugar.
+keywords: [aventura, misión, reto, token, game pin, licencia, clanes, equipos, objetos digitales, dinámicas, gamificación, conceptos, adventuriq]
 ---
+
 # Conceptos Básicos
 
-## Aventuras, Misiones y Retos
+:::info 🌐 Quién debe leer esto
+**Todos los roles**: Game Master, Game Designer y Player.
+:::
 
-![Gamificación - aventuras interactivas con misiones y retos](/img/img-017.png)
+Antes de crear o jugar tu primera Aventura, conviene dominar los conceptos que vertebran AdventuriQ. Esta página es tu referencia rápida: cuando encuentres un término desconocido en el manual, vuelve aquí.
 
+## 🏗️ La jerarquía: Aventura → Misión → Reto
 
-Las **Aventuras** se organizan en **Misiones** que contienen **Retos** a superar.
+Toda experiencia en AdventuriQ sigue una estructura de tres niveles:
 
 ```
-AVENTURA → LISTADO DE MISIONES → LISTADO DE RETOS → PUNTOS + OBJETOS CONDICIONALES
+AVENTURA → LISTADO DE MISIONES → LISTADO DE RETOS → PUNTOS + OBJETOS DIGITALES
 ```
 
-- Un Reto puede otorgar **Puntos** y entregar (de manera condicional) **Objetos**.
-
-## Contenido mínimo de una Aventura
+- **Aventura**: la experiencia gamificada completa. Es lo que el Player ve y juega.
+- **Misión**: una agrupación temática de Retos dentro de la Aventura.
+- **Reto**: la prueba individual que el Player debe superar.
+- Al completar Retos, el Player puede obtener **Puntos** y **Objetos Digitales** (pistas, badges, códigos…).
 
 :::info Contenido mínimo
-La unidad mínima de elementos que hay que crear en AdventuriQ es: **Una Aventura** que contiene **una Misión** que contiene al menos **un Reto** de cualquier tipo.
+La unidad mínima que hay que crear en AdventuriQ es: **una Aventura** que contiene **una Misión** que contiene al menos **un Reto** de cualquier tipo.
 :::
 
 ```
 AVENTURA → MISIÓN 1 → RETO 1
 ```
 
-## Sobre las Misiones
+:::tip Diagrama visual
+Puedes ver la jerarquía representada gráficamente en el [diagrama de la página principal](/).
+:::
 
-![Ejemplo de cabecera de Misión 1](/img/img-085.png)
+## 📋 Misiones
 
+Las Misiones agrupan los Retos de una Aventura en bloques temáticos. Piensa en ellas como **capítulos, etapas, temporadas, fases o niveles** según el diseño de tu experiencia.
 
-- Las Misiones se pueden **activar/desactivar automáticamente** en una ventana temporal (Fecha/Hora) concreta.
-- Se pueden **bloquear** con códigos QR y códigos alfanuméricos.
-- Las podemos usar como **Capítulos, Etapas, Temporadas, Fases, Niveles**, etc.
-- Permiten la **entrega de Objetos** cuando se finalizan.
+![Listado de Misiones en el Gamifier — cada Misión muestra su imagen, orden, número de Retos y estado](/img/gamifier/conceptos/gamifier-listado-misiones.png)
 
-## Sobre los Retos
+Características principales:
 
-- Se pueden bloquear con **códigos QR**, **códigos alfanuméricos** y **geoposicionar** en Google Maps, donde bloquearlos por distancia mínima a su posición (Latitud / Longitud).
-- No existe un límite de retos ni dentro de una Aventura, ni dentro de una Misión.
+- Se pueden **activar y desactivar automáticamente** en una ventana temporal (fecha y hora concreta).
+- Se pueden **bloquear** con códigos QR o códigos alfanuméricos.
+- Permiten la **entrega de Objetos Digitales** cuando el Player las finaliza.
+- Comparten una posición en el **mapa** y una **tabla de clasificación**.
 
-### Los 5 tipos de Retos disponibles
+## ⚔️ Retos
 
-![Ejemplo de cabecera de Misión 2](/img/img-088.png)
+El Reto es la prueba que el Player debe superar. AdventuriQ ofrece **10 tipos de Reto** para diseñar experiencias variadas:
 
+![Pantalla de selección de tipo de Reto en el Gamifier](/img/gamifier/conceptos/gamifier-tipos-reto.png)
 
 | Tipo | Descripción |
 |---|---|
-| **Pregunta/Respuestas** | Preguntas con opciones de respuesta múltiple |
-| **Preguntas Encadenadas** | Saco de preguntas entregadas de manera continua |
-| **Respuesta Libre** | El jugador escribe libremente su respuesta |
-| **Llamada a la Acción** | Instrucciones para hacer algo fuera de AdventuriQ |
-| **Compartir Foto** | Tomar o cargar una foto y compartirla en la galería |
+| **Pregunta / Respuesta** | Preguntas con opciones de respuesta múltiple |
+| **Preguntas Encadenadas** | Lista de preguntas entregadas de forma continua, con factor tiempo |
+| **Compartir Foto** | El Player toma o carga una foto que se comparte en la Galería |
+| **Respuesta Libre** | El Player escribe libremente su respuesta en un campo de texto |
+| **Llamada a la Acción** | Instrucciones para realizar una acción (puede requerir escaneo de QR) |
+| **Respuesta Exacta** | El Player debe escribir una respuesta textual que coincida exactamente |
+| **Pregunta / Respuesta con Audio** | Variante de Pregunta/Respuesta con una pista de audio integrada |
+| **Pregunta / Respuesta con Vídeo** | Variante de Pregunta/Respuesta con una pista de vídeo integrada |
+| **Ruleta de la Fortuna** | El Player gira una ruleta y obtiene puntos u objetos según la posición |
+| **Nube de Palabras** | Agregación visual de las respuestas de todos los Players |
 
-## Sobre los Objetos
+:::tip
+Cada tipo de Reto se explica en detalle en su página dedicada dentro de la sección [Retos](/category/retos).
+:::
 
-- Los Objetos son elementos que adquieren significado según el diseño de una Aventura.
-- Pueden representar una **Recompensa, una Pista, una Felicitación, un Código de desbloqueo** de una Misión u otro Reto, etc.
-- Su consecución se puede configurar a **nivel de Misión** (entrega directa al terminar) y a **nivel de Reto** (entrega condicional).
-- A nivel de Misión, una recompensa se puede asociar a una **simulación de llamada telefónica**.
+Además, todos los Retos comparten estas capacidades comunes:
 
-## Configuración de una Aventura
+- Se pueden bloquear con **códigos QR**, **códigos alfanuméricos** o **geoposición** (latitud/longitud en Google Maps, con distancia mínima configurable).
+- No existe un límite de Retos ni dentro de una Aventura, ni dentro de una Misión.
+- Cada Reto puede otorgar **Puntos** y entregar **Objetos Digitales** de forma condicional.
 
-![Vista de una aventura desde la perspectiva del jugador](/img/img-064.png)
+## 🎁 Objetos Digitales
 
+Los Objetos Digitales son elementos que el Player recibe al completar Retos o Misiones. Su significado depende del diseño de la Aventura: pueden representar una **recompensa, una pista, una felicitación, un código de desbloqueo** de otra Misión u otro Reto, un enlace externo, y más.
 
-Según el diseño de la experiencia, puedes configurar diferentes dinámicas:
+![Vista del Baúl en la Webapp — donde el Player consulta los Objetos Digitales que ha conseguido](/img/webapp/conceptos/webapp-baul.png)
+
+Configuración:
+
+- A **nivel de Reto**: entrega condicional (solo si el Player cumple ciertos criterios).
+- A **nivel de Misión**: entrega directa al finalizar la Misión, con opción de asociarla a una **simulación de llamada telefónica**.
+
+El Player consulta todos sus Objetos en el **Baúl**, accesible desde la Bitácora de la Webapp.
+
+## 🔑 GamePIN — acceso a las Aventuras
+
+Cada Aventura tiene un **GamePIN**: un código numérico único que el Player introduce en la Webapp para unirse a la Aventura. Es como la "llave de entrada" al juego.
+
+El Game Master encuentra el GamePIN en la configuración de la Aventura dentro del Gamifier, junto con un **enlace directo** y un **código QR** que pueden compartirse con los Players.
+
+## 🎟️ Tokens y Licencias
+
+AdventuriQ utiliza dos elementos para gestionar el acceso a la plataforma:
+
+- **Licencia**: permite al Game Master **crear Aventuras**. Sin licencia activa, no se pueden crear nuevas Aventuras.
+- **Token**: permite al Player **jugar una Aventura**. Cada Player consume **un Token por cada partida** que inicia (incluido repetir una Aventura tras un Raze).
+
+:::info Tokens y roles de prueba
+Los Tokens **no se gastan** si juegas con un usuario que tenga rol de **Game Master** o que sea el **Game Designer** asignado a esa Aventura. Aprovecha esto para probar tus Aventuras antes de publicarlas.
+:::
+
+## 👥 Clanes (opcional)
+
+Si una Aventura está configurada en modo **"Por Equipos"**, los Players se agrupan en **Clanes** (también llamados Equipos). Los Clanes tienen su propia puntuación conjunta y aparecen en el **Ranking global** de la Aventura.
+
+En modo **Individual**, los Clanes no aplican. Esta es una funcionalidad opcional que depende del diseño del juego.
+
+## 🏆 Dinámicas de juego
+
+Según el diseño de la experiencia, puedes configurar diferentes dinámicas combinando la visibilidad de Puntos, Ranking y Objetos:
 
 - **Aventura Competitiva**: con Puntos y Ranking visibles, feedback de obtención de Puntos.
-- **Aventura Auto Competitiva**: con Puntos pero sin Ranking visible.
-- **Aventura sin puntos visibles**: con entrega de Objetos y Baúl visible.
-- **Aventuras mixtas**: diferentes combinaciones de mecánicas de juego.
+- **Aventura Auto-competitiva**: con Puntos pero sin Ranking visible.
+- **Aventura sin puntos visibles**: con entrega de Objetos Digitales y Baúl visible.
+- **Aventuras mixtas**: diferentes combinaciones de las mecánicas anteriores.
 
-## Componentes de una Aventura
+## 🖥️ Componentes y zonas de contenido
 
-| Componente | Descripción |
+AdventuriQ se compone de dos aplicaciones: el **Gamifier** (donde se crean las Aventuras) y la **Webapp** (donde se juegan). Para más detalles, consulta [¿Qué es AdventuriQ?](/).
+
+Desde la perspectiva del Player, la Webapp se organiza en estas zonas principales:
+
+![Bitácora del Player en la Webapp — panel central con Retos completados, Puntos y accesos a Baúl, Galería y Clasificación](/img/webapp/conceptos/webapp-bitacora.png)
+
+- **Misiones y Retos**: donde el Player avanza resolviendo las pruebas de cada Misión.
+- **Bitácora**: el panel personal del Player con su progreso (Retos realizados, Puntos), acceso al Baúl, Galería de fotos, Clasificación, Muro y Nube de Palabras.
+- **Mapa**: visualización geográfica de los Retos geoposicionados.
+
+Desde la perspectiva del Game Master, el contenido se introduce en cuatro zonas del Gamifier:
+
+| Zona | Qué se configura |
 |---|---|
-| **Misiones** | Organizan los Retos. Comparten posiciones en el mapa y tabla de clasificación. |
-| **Retos** | Mecánicas de juego con descripción, ubicación y mecánica concreta. |
-| **Objetos** | Elementos entregables: recompensas, premios, pistas, códigos de descuento, etc. |
+| **Configurador de Aventura** | Tipo de juego, visibilidad, GamePIN, idioma, mapa, dinámicas |
+| **Misiones** | Agrupación de Retos, temporización, bloqueos |
+| **Retos** | Mecánicas de juego, puntos, geoposición |
+| **Objetos Digitales** | Recompensas vinculadas a Misiones o Retos |
 
-## ¿Cómo introducir contenidos?
+---
 
-Existen cuatro zonas donde introducir los contenidos:
-
-1. **Configurador de Aventura**: organización del tipo de juego y visibilidad.
-2. **Misiones**: organización de los Retos y visibilidad.
-3. **Retos**: mecánicas de juego.
-4. **Objetos**: vinculados a una Misión o a un Reto.
+¿Todo claro? Continúa con la sección del [Gamifier](/category/gamifier) para aprender a crear tu primera Aventura.
