@@ -12,6 +12,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'aventuras/crear-aventura',
         'aventuras/configuracion',
+        'aventuras/publicar-aventura',
         'aventuras/publicacion-fechas',
         'aventuras/game-pin-bloqueos',
         'aventuras/visibilidad-controles',
