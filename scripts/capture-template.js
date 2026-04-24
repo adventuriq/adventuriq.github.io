@@ -36,7 +36,9 @@
  *
  *   GENERAL:
  *   - Usar --no-sandbox --disable-setuid-sandbox siempre
- *   - Usar --use-gl=swiftshader para renderizar canvas de Flutter
+ *   - NO usar --use-gl=swiftshader — bloquea la renderización de imágenes
+ *     remotas (avatares, logos, imágenes de objetos) en Flutter.
+ *     Dejar sin flag GL o usar --use-gl=angle --use-angle=swiftshader-webgl.
  *   - Usar --lang=es-ES como argumento de launch para el navegador
  *   - Esperas: 5s tras navegación, 8-10s tras login, 3-5s tras clicks
  *   - Las imágenes se guardan directamente en static/img/ del repo
@@ -76,7 +78,7 @@ async function launchBrowser() {
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
-      '--use-gl=swiftshader',
+      // NO usar --use-gl=swiftshader: bloquea imágenes remotas en Flutter
       '--lang=es-ES'
     ]
   });
