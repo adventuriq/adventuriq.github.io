@@ -20,7 +20,7 @@ El modelo económico de AdventuriQ se resume en dos pasos: el Game Master adquie
 ```mermaid
 flowchart LR
     GM["👑 Game Master"]
-    LIC["📄 Licencia<br/>18 € / mes<br/>o 200 € / año"]
+    LIC["📄 Licencia<br/>Individual o Equipo<br/>Mensual o Anual"]
     TOK["🎟️ Tokens<br/>1 € / Player"]
     AVE["🎮 Aventura<br/>activa"]
     PL["👤 Player<br/>juega"]
@@ -37,12 +37,16 @@ flowchart LR
 
 Una **Licencia** es lo que activa tu Aventura en la plataforma. Sin ella, la Aventura permanece en estado Draft y no es accesible para los Players.
 
-AdventuriQ ofrece dos tipos de Licencia por Aventura, pensadas para casos de uso diferentes:
+AdventuriQ ofrece cuatro tipos de Licencia por Aventura, según el **modo de juego** (individual o equipo) y la **duración** (mensual o anual):
 
-| Tipo | Precio | Duración | Ideal para |
-|---|---|---|---|
-| **Licencia Mensual** | 18 € / mes | 1 mes desde la publicación de la Aventura | Eventos puntuales, campañas cortas, pruebas del producto |
-| **Licencia Anual** | 200 € / año | 12 meses desde la publicación de la Aventura | Aventuras activas todo el año: rutas turísticas permanentes, onboarding continuo, experiencias estables |
+| Tipo | Precio | Duración | Modo de juego | Rankings disponibles |
+|---|---|---|---|---|
+| **Licencia Mensual (individual)** | 18 € / mes | 30 días desde la publicación | Individual | Ranking de jugadores |
+| **Licencia Mensual (equipo)** | 36 € / mes | 30 días desde la publicación | Equipo | Ranking de jugadores + ranking por equipos |
+| **Licencia Anual (individual)** | 200 € / año | 12 meses desde la publicación | Individual | Ranking de jugadores |
+| **Licencia Anual (equipo)** | 400 € / año | 12 meses desde la publicación | Equipo | Ranking de jugadores + ranking por equipos |
+
+La elección entre **Individual y Equipo** se hace en el momento de [crear la Aventura](aventuras/crear-aventura) y determina si los Players compiten solo a nivel individual o también agrupados en equipos (clanes). Con una Licencia de Equipo, además del ranking individual, se generan rankings por equipo y del jugador dentro de su equipo.
 
 :::tip 🕐 La caducidad empieza cuando publicas, no cuando compras
 Puedes comprar tu Licencia hoy y tomarte los días o semanas que necesites para construir tu Aventura. El contador solo empieza a correr en el momento en que **publicas la Aventura** y los Players pueden empezar a jugarla. Sin prisas, sin presión temporal durante la creación.
@@ -58,7 +62,8 @@ El sistema notifica al Game Master con antelación antes de la caducidad, para q
 
 La Licencia se gestiona desde la [configuración de la Aventura](aventuras/configuracion) en el Gamifier.
 
-:::tip ¿Mensual o Anual?
+:::tip ¿Cómo elegir tu Licencia?
+- **Individual** si cada Player compite por separado. **Equipo** si quieres que los Players jueguen agrupados en equipos (clanes) con ranking por equipo.
 - **Mensual** si tu Aventura dura 1-3 meses: máxima flexibilidad, pagas solo por lo que usas.
 - **Anual** si tu Aventura va a estar activa 4 meses o más: te ahorras la gestión de renovaciones y optimizas coste.
 - **[Planes Luna o Mundo](#-alternativa-planes-anuales)** si necesitas Players ilimitados, varias Aventuras o quieres branderizar la experiencia con tu identidad visual.
@@ -76,13 +81,13 @@ Un **Token** es el ticket de entrada de cada Player a una Aventura. Cada vez que
 
 ### Ejemplo concreto
 
-Imagina que quieres lanzar una Aventura de team building para 30 personas. Según la duración y el uso, estas son las tres configuraciones típicas:
+Imagina que quieres lanzar una Aventura de team building para 30 personas **en modo individual**. Según la duración y el uso, estas son las tres configuraciones típicas:
 
 **Escenario A — Evento puntual (1 mes):**
 
 | Concepto | Unidades | Coste |
 |---|---|---|
-| Licencia Mensual | 1 | 18 € |
+| Licencia Mensual (individual) | 1 | 18 € |
 | Tokens para Players | 30 | 30 € |
 | **Total** | | **48 €** |
 
@@ -90,7 +95,7 @@ Imagina que quieres lanzar una Aventura de team building para 30 personas. Segú
 
 | Concepto | Unidades | Coste |
 |---|---|---|
-| Licencia Mensual × 3 | 3 | 54 € |
+| Licencia Mensual (individual) × 3 | 3 | 54 € |
 | Tokens para Players | 30 | 30 € |
 | **Total** | | **84 €** |
 
@@ -98,11 +103,15 @@ Imagina que quieres lanzar una Aventura de team building para 30 personas. Segú
 
 | Concepto | Unidades | Coste |
 |---|---|---|
-| Licencia Anual | 1 | 200 € |
+| Licencia Anual (individual) | 1 | 200 € |
 | Tokens para Players | 30 | 30 € |
 | **Total** | | **230 €** |
 
 *Precios sin impuestos. Los impuestos aplicables se calculan durante el proceso de compra según la legislación vigente y el país de facturación.*
+
+:::note ¿Y si necesitas modo Equipo?
+Sustituye la Licencia Individual por la de Equipo: 36 € / mes o 400 € / año. El coste de Tokens se mantiene igual.
+:::
 
 :::tip Tres ventajas de los Tokens
 - **No caducan**: los Tokens que compres hoy siguen válidos dentro de un año, dos o los que necesites.
@@ -191,8 +200,9 @@ Cada organización es diferente. [Contáctanos](mailto:start@adventuriq.com) y t
 
 | Escenario | Mejor opción |
 |---|---|
-| Evento puntual, 1-3 meses, Players controlados | **Licencia Mensual** + Tokens |
-| Aventura activa todo el año, Players conocidos | **Licencia Anual** + Tokens |
+| Evento puntual, 1-3 meses, Players compiten individualmente | **Licencia Mensual (individual)** + Tokens |
+| Evento puntual, 1-3 meses, Players compiten por equipos | **Licencia Mensual (equipo)** + Tokens |
+| Aventura activa todo el año, Players conocidos | **Licencia Anual (individual o equipo)** + Tokens |
 | Aventura estable con muchos Players anuales y quieres tu marca en el juego | **Plan Luna** (incluye branderización) |
 | Múltiples Aventuras en un catálogo profesional y quieres tu marca en el juego | **Plan Mundo** (incluye branderización) |
 
@@ -212,6 +222,9 @@ No — el precio es plano: 1 € por Token independientemente de la cantidad. Si
 
 **¿Licencia Mensual o Licencia Anual — cuál me conviene?**
 Si tu Aventura va a estar activa 1-3 meses, la Licencia Mensual te da máxima flexibilidad. A partir del cuarto mes, la Licencia Anual empieza a ser más rentable y te ahorra la gestión de renovaciones. Si vas a tener muchos Players o quieres branderizar la Webapp, considera los [planes anuales](#-alternativa-planes-anuales).
+
+**¿Cuál es la diferencia entre Licencia Individual y de Equipo?**
+La Licencia Individual genera solo un ranking de jugadores. La Licencia de Equipo añade rankings por equipo y del jugador dentro de su equipo, e incluye la gestión de equipos (clanes) desde el Gamifier. La elección se hace al [crear la Aventura](aventuras/crear-aventura) y determina el modo de juego.
 
 **¿Qué pasa si mi Licencia caduca?**
 La Aventura deja de ser accesible para los Players hasta que se active una nueva Licencia. La configuración y el contenido se mantienen intactos — solo tienes que activar una Licencia nueva para que vuelva a ser jugable. El sistema te avisa con antelación antes de que esto ocurra.
