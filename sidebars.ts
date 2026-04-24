@@ -5,6 +5,7 @@ const sidebars: SidebarsConfig = {
     'intro',
     'warnings',
     'conceptos-basicos',
+    'tokens',
     {
       type: 'category',
       label: '🎮 Aventuras',
@@ -70,7 +71,6 @@ const sidebars: SidebarsConfig = {
         'metricas/game-board',
       ],
     },
-    'tokens',
   ],
 };
 
