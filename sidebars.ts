@@ -10,6 +10,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '🎮 Aventuras',
       items: [
+        'aventuras/crear-aventura',
         'aventuras/configuracion',
         'aventuras/publicacion-fechas',
         'aventuras/game-pin-bloqueos',
