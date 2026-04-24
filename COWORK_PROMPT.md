@@ -110,6 +110,26 @@ REGLAS ESTRICTAS sobre el uso del manual histórico:
   documentes. Si detectas que existe **pero ha cambiado**, documenta la versión 
   actual.
 
+### Regla 7: Archivos de configuración críticos
+
+Los siguientes archivos NO deben ser modificados por Cowork salvo 
+autorización EXPLÍCITA en cada caso:
+
+- docusaurus.config.ts
+- sidebars.ts  
+- package.json
+- tsconfig.json
+- .github/workflows/*.yml
+
+Si detectas que alguno parece "roto" o "truncado":
+1. NO intentes repararlo.
+2. Pausa y pregúntale al humano.
+3. Muéstrale exactamente qué viste y qué te hace pensar que está 
+   roto.
+
+Los falsos positivos son frecuentes y las consecuencias de 
+"reparar" mal estos archivos son graves.
+
 Solo después de este resumen, pasa a la Fase 1.
 
 
