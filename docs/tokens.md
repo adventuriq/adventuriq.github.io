@@ -41,8 +41,12 @@ AdventuriQ ofrece dos tipos de Licencia por Aventura, pensadas para casos de uso
 
 | Tipo | Precio | Duración | Ideal para |
 |---|---|---|---|
-| **Licencia Mensual** | 18 € / mes | 1 mes desde la activación | Eventos puntuales, campañas cortas, pruebas del producto |
-| **Licencia Anual** | 200 € / año | 12 meses desde la activación | Aventuras activas todo el año: rutas turísticas permanentes, onboarding continuo, experiencias estables |
+| **Licencia Mensual** | 18 € / mes | 1 mes desde la publicación de la Aventura | Eventos puntuales, campañas cortas, pruebas del producto |
+| **Licencia Anual** | 200 € / año | 12 meses desde la publicación de la Aventura | Aventuras activas todo el año: rutas turísticas permanentes, onboarding continuo, experiencias estables |
+
+:::tip 🕐 La caducidad empieza cuando publicas, no cuando compras
+Puedes comprar tu Licencia hoy y tomarte los días o semanas que necesites para construir tu Aventura. El contador solo empieza a correr en el momento en que **publicas la Aventura** y los Players pueden empezar a jugarla. Sin prisas, sin presión temporal durante la creación.
+:::
 
 ### ¿Qué pasa cuando caduca una Licencia?
 
@@ -211,6 +215,9 @@ Si tu Aventura va a estar activa 1-3 meses, la Licencia Mensual te da máxima fl
 
 **¿Qué pasa si mi Licencia caduca?**
 La Aventura deja de ser accesible para los Players hasta que se active una nueva Licencia. La configuración y el contenido se mantienen intactos — solo tienes que activar una Licencia nueva para que vuelva a ser jugable. El sistema te avisa con antelación antes de que esto ocurra.
+
+**¿Cuándo empieza a contar la caducidad de la Licencia?**
+La caducidad se activa cuando **publicas tu Aventura** (el momento en el que los Players pueden empezar a jugarla), no cuando compras la Licencia ni mientras la estás construyendo. Esto significa que puedes adquirir la Licencia con antelación y trabajar en tu Aventura a tu ritmo — el contador solo arranca al publicar.
 
 **¿Qué es la Branderización del Webapp?**
 Es una personalización de la Webapp que ven los Players: colores corporativos y logo de tu organización. Refuerza tu marca en cada partida y es una característica **exclusiva** de los Planes Luna y Mundo. No está disponible con Licencias Mensuales ni Anuales.
