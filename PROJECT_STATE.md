@@ -2,7 +2,7 @@
 
 > **Propósito**: Documento de estado persistente del proyecto de documentación automatizada. Vive en el repo `adventuriq-docs` y se actualiza al final de cada sesión de trabajo significativa. Sirve como "briefing" para recuperar contexto en nuevas conversaciones con Claude (web, Desktop o Code) cuando la conversación anterior se ha vuelto demasiado larga.
 >
-> **Última actualización**: 24 de abril de 2026 (tras fix quirúrgico de tokens.md sobre caducidad al publicar)
+> **Última actualización**: 24 de abril de 2026 (deploy de crear-aventura.md + publicar-aventura.md + fix quirúrgico #2 en tokens.md)
 > **Mantenedor**: Mike (con asistencia de Claude)
 
 ---
@@ -57,9 +57,10 @@ Sistema de documentación automatizada para AdventuriQ (SaaS de gamificación). 
 | `sidebars.ts` | Navegación (exporta con id `docs`, no `tutorialSidebar`) |
 | `docusaurus.config.ts` | Configuración Docusaurus |
 
-### Fuente de verdad histórica
+### Fuentes de verdad
 
-- **`AdventuriQv7_CAS.pdf`** (en proyecto Claude) — manual histórico de 39 páginas. **Usar como detector de inconsistencias** antes de publicar páginas con información operativa (ver aprendizaje #14).
+- **`manual-original-v2.md`** (en proyecto Claude) — manual histórico de 39 páginas transcrito. **Fuente principal de contraste** antes de publicar páginas con información operativa (ver aprendizaje #14). Algunos flujos del manual han quedado obsoletos (ver aprendizaje #16).
+- **`AdventuriQv7_CAS.pdf`** (en proyecto Claude) — presentación comercial. Contiene precios actualizados y modelo económico. **No es manual de uso.**
 
 ---
 
@@ -72,7 +73,9 @@ Sistema de documentación automatizada para AdventuriQ (SaaS de gamificación). 
 | 3 | `warnings.md` | ✅ Deployed | 2 secciones; 6 admonitions moderadas; sin capturas |
 | 4 | `conceptos-basicos.md` | ✅ Deployed | Tercera página de fundamentos; mínima supervisión (2 DETENTE) |
 | 5 | `aventuras/configuracion.md` | ✅ Deployed | Primera página funcional real; referencia visual consolidada del Gamifier |
-| 6 | `tokens.md` | ✅ Deployed | **Landing comercial del modelo económico completo**. sidebar_position 4. Incluye fix post-deploy: caducidad de Licencia empieza al **publicar**, no al comprar |
+| 6 | `tokens.md` | ✅ Deployed | **Landing comercial del modelo económico completo**. sidebar_position 4. Fix #1: caducidad al publicar. Fix #2: 4 variantes de Licencia (Individual/Equipo × Mensual/Anual) con precios diferenciados |
+| 7 | `aventuras/crear-aventura.md` | ✅ Deployed | Asistente de 3 pasos (Licencia → Fechas/Idioma → Título → Estructura). Flujo completamente renovado respecto al manual histórico. Descubrió las 4 variantes de Licencia. sidebar_position 0 |
+| 8 | `aventuras/publicar-aventura.md` | ✅ Deployed | Ciclo Draft → Published. Caducidad irreversible (no se pausa al despublicar). Tabla cruzada Estado × Fechas. Sin validación automática al publicar. Mensajes Player: "Próximamente" / "Finalizada". sidebar_position 3 |
 
 ### Métrica observable: supervisión decreciente
 
@@ -81,6 +84,7 @@ Sistema de documentación automatizada para AdventuriQ (SaaS de gamificación). 
 - Página 4: 2 DETENTE
 - Página 5: flujo fluido desde el primer intento
 - Página 6: fluidez técnica, pero requirió **alta supervisión editorial** por información de producto nueva aflorando durante redacción
+- Páginas 7-8: pipeline técnicamente fluido. Supervisión concentrada en **descubrimiento de producto** (4 variantes de Licencia) y resolución de zonas grises operativas (caducidad no se pausa, sin validación al publicar, mensajes "Próximamente"/"Finalizada"). Fix quirúrgico #2 en `tokens.md` cerrado en la misma sesión sin reabrir otros frentes.
 
 **Lectura**: el pipeline es técnicamente maduro. La supervisión se desplaza de "verificar que Cowork entiende el pipeline" a "verificar que tenemos toda la info de producto bien consolidada antes de publicar".
 
@@ -104,9 +108,9 @@ Sistema de documentación automatizada para AdventuriQ (SaaS de gamificación). 
 Completar la ruta de Aventuras antes de saltar a otras secciones. Estado:
 
 - ✅ `aventuras/configuracion.md` (deployed)
-- 📌 `aventuras/crear-aventura.md` — **siguiente a atacar**
-- 📌 `aventuras/publicar-aventura.md` — momento clave donde se activa la Licencia
-- 📌 `aventuras/bitacora.md` — interfaz Player (Flutter, requiere JS)
+- ✅ `aventuras/crear-aventura.md` (deployed)
+- ✅ `aventuras/publicar-aventura.md` (deployed)
+- 📌 `aventuras/bitacora.md` — **siguiente a atacar** (interfaz Player, Flutter, requiere JS)
 - 📌 `aventuras/tipos-de-aventura.md` — Escape Room, Street Escape, formación...
 - 📌 `aventuras/gamepin.md` — cómo los Players se unen
 
@@ -126,13 +130,13 @@ Completar la ruta de Aventuras antes de saltar a otras secciones. Estado:
 
 ### Términos oficiales del manual
 
-Aventura, Misión, Reto, Objeto Digital, Bitácora, Muro, Galería, Baúl, Clasificación, GamePIN, POI, Plan Luna, Plan Mundo, Token, Licencia (Mensual/Anual), Branderización, Raze, FSD.
+Aventura, Misión, Reto, Objeto Digital, Bitácora, Muro, Galería, Baúl, Clasificación, GamePIN, POI, Plan Luna, Plan Mundo, Token, Licencia (Individual/Equipo, Mensual/Anual), Branderización, Raze, FSD.
 
 ### Roles de usuario (4)
 
 1. **Admin** (AdventuriQ)
 2. **Game Master** — compra licencias, crea Aventuras, gestiona equipo
-3. **Game Designer** — asistente bajo supervisión del GM
+3. **Game Designer** — asistente bajo supervisión del GM (no puede crear Aventuras)
 4. **Player**
 
 ### Tipos de Reto en la BD
@@ -142,13 +146,33 @@ Aventura, Misión, Reto, Objeto Digital, Bitácora, Muro, Galería, Baúl, Clasi
 
 ### Modelo económico (consolidado en tokens.md)
 
-- **Licencia Mensual**: 18 € / mes por Aventura. **La caducidad empieza al publicar la Aventura, no al comprar la Licencia.**
-- **Licencia Anual**: 200 € / año por Aventura. Misma regla de caducidad (al publicar).
+**4 variantes de Licencia de Aventura** (elección al crear la Aventura):
+
+| Tipo | Precio | Duración |
+|---|---|---|
+| Licencia Mensual (individual) | 18 € / mes | 30 días desde publicación |
+| Licencia Mensual (equipo) | 36 € / mes | 30 días desde publicación |
+| Licencia Anual (individual) | 200 € / año | 12 meses desde publicación |
+| Licencia Anual (equipo) | 400 € / año | 12 meses desde publicación |
+
+- **Patrón de precios**: Equipo = 2× Individual en ambas periodicidades.
+- **Modo Individual**: solo ranking de jugadores.
+- **Modo Equipo**: ranking de jugadores + ranking por equipos + ranking del jugador en su equipo. Incluye gestión de equipos (clanes).
+- **La elección Individual/Equipo se hace al crear la Aventura** y determina el modo de juego.
+- **La caducidad empieza al publicar la Aventura**, no al comprar la Licencia. Es irreversible: no se pausa al despublicar.
 - **Token**: 1 € por Player por partida (fungibles, no caducan).
 - **Plan Luna**: desde 750 € / año — 1 Aventura, Players ilimitados, Branderización incluida.
 - **Plan Mundo**: desde 3.600 € / año — Aventuras ilimitadas, Players ilimitados, Branderización incluida.
 - Precios publicados **sin impuestos** (cálculo en checkout).
 - Email comercial para consultas: `start@adventuriq.com`.
+
+**Productos adicionales en la tienda** (detectados pero no documentados aún en el manual):
+
+- Parking Aventura Mensual: 6 € / mes
+- Parking Aventura Anual: 70 € / año
+- Ampliación espacio (+100 MB): 4 € / mes
+- Game Designer Anual: 50 € / año
+- Game Designer Mensual: precio pendiente de confirmar
 
 ---
 
@@ -164,9 +188,9 @@ Aventura, Misión, Reto, Objeto Digital, Bitácora, Muro, Galería, Baúl, Clasi
 - **Flutter Webapp**: requiere navegador completo con JavaScript habilitado para capturas. No negociable.
 - **Contraseñas**: nunca aparecen en las capturas ni en el texto.
 - **SEO en frontmatter**: `title`, `description`, `sidebar_position`, `tags`.
-- **Enlaces internos**: siempre relativos entre páginas del manual.
+- **Enlaces internos**: siempre relativos entre páginas del manual. No enlazar a páginas que no existen aún — dejar texto plano y enlazar cuando se creen.
 - **Impuestos**: en páginas con precios, notas genéricas ("según legislación vigente y país de facturación"). Nunca detalles fiscales específicos.
-- **Contraste con manual histórico**: antes de publicar una página con información operativa, buscar los términos clave en `AdventuriQv7_CAS.pdf` para detectar matices olvidados.
+- **Contraste con manual histórico**: antes de publicar una página con información operativa, buscar los términos clave en `manual-original-v2.md` para detectar matices olvidados. El contraste es selectivo: usar lo que aplica, descartar flujos obsoletos (ver aprendizaje #16).
 
 ### Convenciones técnicas de Docusaurus 3.10
 
@@ -180,8 +204,8 @@ Aventura, Misión, Reto, Objeto Digital, Bitácora, Muro, Galería, Baúl, Clasi
 1. Cowork genera el `.md` final.
 2. Mike lo pega en el chat con Claude (web).
 3. Claude revisa (inconsistencias, mejoras, SEO, coherencia terminológica).
-4. **Contraste con `AdventuriQv7_CAS.pdf`** si la página toca información operativa.
-5. `npm run build` local para verificar.
+4. **Contraste con `manual-original-v2.md`** si la página toca información operativa.
+5. `npm run build` local para verificar (o commit directo si Cowork ya confirmó build limpio y los cambios de revisión son solo de contenido textual).
 6. `git add` / `commit` / `push` origin `source`.
 7. Verificación en producción en `docs.adventuriq.com`.
 8. Actualizar este `PROJECT_STATE.md`.
@@ -205,6 +229,8 @@ Aventura, Misión, Reto, Objeto Digital, Bitácora, Muro, Galería, Baúl, Clasi
 
 - [ ] Warnings preexistentes en `conceptos-basicos.md` sobre categorías que aún no existen (`/category/retos`, `/category/gamifier`). Resolver cuando se creen esas páginas.
 - [ ] **Branderización del Webapp** no tiene página propia — solo se menciona en `tokens.md`. Candidata a `branding.md` o `planes/branderizacion.md`.
+- [ ] **`publicacion-fechas.md`** (contenido antiguo del PDF) probablemente absorbida por `publicar-aventura.md`. Candidata a eliminar o redirigir.
+- [ ] **Productos adicionales de la tienda** (Parking Aventura, Ampliación espacio, Game Designer) no documentados en el manual. Evaluar si necesitan página propia o mención en `tokens.md`.
 
 ### Oportunidad comercial identificada
 
@@ -212,15 +238,9 @@ Aventura, Misión, Reto, Objeto Digital, Bitácora, Muro, Galería, Baúl, Clasi
 
 ### Próxima página a atacar
 
-**`aventuras/crear-aventura.md`** — flujo de creación de una Aventura desde cero.
+**`aventuras/bitacora.md`** — interfaz del Player en la Webapp (Flutter).
 
-Justificación: cierra la lógica narrativa de la sección Aventuras (crear → configurar → publicar). `configuracion.md` ya está deployed y previsiblemente tiene referencias implícitas a "cuando creas tu Aventura..." que necesitan destino.
-
-Tras esa, las siguientes en cola de la ruta Aventuras:
-- `aventuras/publicar-aventura.md`
-- `aventuras/bitacora.md`
-- `aventuras/tipos-de-aventura.md`
-- `aventuras/gamepin.md`
+Justificación: continúa la ruta de Aventuras. Primer contacto del pipeline con Flutter/Webapp — requiere navegador con JS habilitado para capturas (aprendizaje #3). Tras esa, quedan `tipos-de-aventura.md` y `gamepin.md` para cerrar la sección Aventuras.
 
 ---
 
@@ -239,8 +259,11 @@ Tras esa, las siguientes en cola de la ruta Aventuras:
 11. **Principio editorial de impuestos.** En manual, notas genéricas; detalles fiscales en checkout/T&C. Protege ante cambios normativos.
 12. **Página de manual ≠ documentación técnica cuando hablamos de dinero.** `tokens.md` es efectivamente una **landing de pricing**: escalera de productos visible, diferenciadores destacados, CTAs claros, auto-segmentación por perfil. Futuras páginas con precios siguen este patrón.
 13. **Cuando aparece información nueva durante redacción, parar y preguntar.** Publicar información incompleta o imprecisa es peor que reabrir decisiones.
-14. **El PDF del manual histórico es un detector de inconsistencias.** Contiene detalles operativos del producto que el equipo puede haber olvidado documentar internamente. Antes de publicar información operativa (pricing, flujos, permisos, límites), buscar los términos clave en `AdventuriQv7_CAS.pdf`. Toma 2 minutos y evita deploys con información incompleta. Ejemplo concreto: la caducidad de Licencias al publicar (no al comprar) se descubrió así y requirió fix post-deploy en tokens.md.
+14. **El manual histórico es un detector de inconsistencias.** Contiene detalles operativos del producto que el equipo puede haber olvidado documentar internamente. Antes de publicar información operativa (pricing, flujos, permisos, límites), buscar los términos clave en `manual-original-v2.md`. Toma 2 minutos y evita deploys con información incompleta. Ejemplo concreto: la caducidad de Licencias al publicar (no al comprar) se descubrió así y requirió fix post-deploy en tokens.md.
 15. **Fix quirúrgico > reescritura completa.** Cuando se detecta una mejora puntual en página ya deployed, el patrón es: cambios mínimos y localizados, diff claro pedido a Cowork, build local, commit con mensaje descriptivo. En 15 minutos se cierra el bucle sin abrir otros frentes.
+16. **El manual histórico puede quedar obsoleto en flujos concretos.** El flujo de creación de Aventura cambió completamente (de modal simple a asistente guiado de 3 pasos con selección de Licencia). El manual histórico sigue valiendo como referencia de *qué contiene* una Aventura, pero no del *procedimiento* de creación. Contraste selectivo: usar lo que aplica, descartar lo que no.
+17. **Documentar sigue destapando producto (iteración 2).** La dimensión Individual/Equipo de las Licencias (4 variantes, no 2) no estaba consolidada en la documentación. El pipeline la descubrió al documentar `crear-aventura.md` y requirió fix quirúrgico inmediato en `tokens.md`. El aprendizaje #10 sigue plenamente vigente.
+18. **Publicar es un punto de no retorno para la caducidad.** La caducidad de la Licencia no se pausa al despublicar (volver a Draft). Documentar este detalle evita que un GM pierda días de licencia sin saberlo. El pipeline protege al usuario final al hacer explícitos los comportamientos irreversibles.
 
 ---
 
@@ -255,7 +278,7 @@ Pega el contenido de este archivo al inicio del chat con este mensaje:
 
 **Opción B — Con objetivo concreto**
 
-> "Retomamos el pipeline de documentación de AdventuriQ. Estado adjunto. Objetivo de hoy: documentar `aventuras/crear-aventura.md`. Antes de empezar, confírmame en 3-4 puntos qué entendiste del estado actual para validar que estamos alineados."
+> "Retomamos el pipeline de documentación de AdventuriQ. Estado adjunto. Objetivo de hoy: documentar `aventuras/bitacora.md`. Antes de empezar, confírmame en 3-4 puntos qué entendiste del estado actual para validar que estamos alineados."
 
 **Opción C — Ante dudas**
 Usa los hashtags del glosario (Aventura, Misión, Reto, Game Master, FSD, Gamifier, Webapp) y términos clave (pipeline, Cowork, Docusaurus) para que Claude recupere contexto de chats anteriores vía su sistema de memoria.
@@ -268,6 +291,7 @@ Usa los hashtags del glosario (Aventura, Misión, Reto, Game Master, FSD, Gamifi
 |---|---|
 | 2026-04-24 | Creación inicial del documento. Consolida el estado tras 5 páginas en producción y la sesión de recuperación de contexto. |
 | 2026-04-24 | Deploy de `tokens.md` (página #6). Documentada como landing comercial del modelo económico. Añadidas 2 convenciones técnicas de Docusaurus. Identificada Branderización del Webapp como feature sin página propia. Actualizado glosario con modelo económico completo y email comercial `start@adventuriq.com`. 6 nuevos aprendizajes (8-13). |
-| 2026-04-24 | Fix quirúrgico en `tokens.md`: caducidad de Licencia empieza al publicar la Aventura, no al comprar la Licencia. 3 cambios puntuales (tabla Licencias, :::tip nuevo, FAQ nueva). Descubrimiento procedente de contraste con `AdventuriQv7_CAS.pdf`. Añadidos aprendizajes 14 y 15. Convención nueva: contrastar con PDF histórico antes de publicar páginas con información operativa. Próxima página confirmada: `aventuras/crear-aventura.md` (ruta de Aventuras). |
+| 2026-04-24 | Fix quirúrgico #1 en `tokens.md`: caducidad de Licencia empieza al publicar la Aventura, no al comprar la Licencia. 3 cambios puntuales (tabla Licencias, :::tip nuevo, FAQ nueva). Descubrimiento procedente de contraste con `manual-original-v2.md`. Añadidos aprendizajes 14 y 15. Convención nueva: contrastar con manual histórico antes de publicar páginas con información operativa. |
+| 2026-04-24 | Deploy de `crear-aventura.md` (página #7) + `publicar-aventura.md` (página #8). Fix quirúrgico #2 en `tokens.md`: 4 variantes de Licencia (Individual/Equipo × Mensual/Anual) con precios 18€/36€/200€/400€. Modelo económico actualizado. Fuentes de verdad clarificadas (manual-original-v2.md vs AdventuriQv7_CAS.pdf). Ruta de Aventuras al 50%. Deuda nueva: `publicacion-fechas.md` candidata a eliminar, productos adicionales de tienda no documentados. Añadidos aprendizajes 16, 17 y 18. Próxima página: `aventuras/bitacora.md`. |
 
 <!-- Añade aquí cada actualización significativa al cierre de una sesión -->
