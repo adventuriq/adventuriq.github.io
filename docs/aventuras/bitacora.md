@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 title: 🎮 Bitácora del Player
 description: La Bitácora es el centro de control del Player dentro de una Aventura — progreso, Baúl, Galería, Clasificación, Muro y mecánicas sociales.
 keywords: [player, webapp, bitacora, aventura, baul, galeria, clasificacion, muro, votar, equipo, nube-palabras, adventuriq]
