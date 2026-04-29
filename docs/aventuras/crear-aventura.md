@@ -29,13 +29,13 @@ Desde el listado de Aventuras puedes ver cuántas licencias tienes disponibles e
 1. En el menú lateral del Gamifier, entra en **Aventuras**.
 2. En el panel **Resumen de tu cuenta**, haz clic en el botón **+ Nueva Aventura**.
 
-![Listado de Aventuras con el panel de resumen mostrando Mis Aventuras, Saldo de Tokens, Licencias Disponibles y Game Designers, junto al botón + Nueva Aventura](/img/gamifier/aventuras/gamifier-listado-aventuras.png)
+![Listado de Aventuras con el panel de resumen mostrando Mis Aventuras, Saldo de Tokens, Licencias Disponibles y Game Designers, junto al botón + Nueva Aventura](/img/gamifier-listado-aventuras.png)
 
 ### Seleccionar una Licencia
 
 Al hacer clic en **+ Nueva Aventura** se abre un modal con el listado de tus licencias disponibles. Selecciona la licencia que quieras asignar a tu nueva Aventura y haz clic en **Crear Aventura**.
 
-![Modal de selección de licencia mostrando las licencias disponibles con columnas de ID, Tipo, Temporalidad y fecha de compra](/img/gamifier/aventuras/gamifier-crear-seleccionar-licencia.png)
+![Modal de selección de licencia mostrando las licencias disponibles con columnas de ID, Tipo, Temporalidad y fecha de compra](/img/gamifier-crear-seleccionar-licencia.png)
 
 Cada licencia muestra su tipo y temporalidad. Existen cuatro variantes según el modo de juego y la duración:
 
@@ -58,7 +58,7 @@ La licencia queda vinculada a la Aventura en el momento de crearla. Puedes ver q
 
 El primer paso del asistente te pide configurar cuándo estará disponible tu Aventura y en qué idioma se mostrará por defecto.
 
-![Paso 1 del asistente: Fechas e idioma de la Aventura con campos de fecha de inicio, fin, idioma por defecto y zona horaria](/img/gamifier/aventuras/gamifier-wizard-paso1-fechas.png)
+![Paso 1 del asistente: Fechas e idioma de la Aventura con campos de fecha de inicio, fin, idioma por defecto y zona horaria](/img/gamifier-wizard-paso1-fechas.png)
 
 | Campo | Obligatorio | Descripción |
 |---|---|---|
@@ -77,7 +77,7 @@ Cuando hayas completado los campos, haz clic en **Siguiente →**.
 
 En este paso defines cómo se llamará tu Aventura y, opcionalmente, una breve descripción.
 
-![Paso 2 del asistente: Título y descripción, con indicador de idioma por defecto, campo de título y área de descripción](/img/gamifier/aventuras/gamifier-wizard-paso2-titulo.png)
+![Paso 2 del asistente: Título y descripción, con indicador de idioma por defecto, campo de título y área de descripción](/img/gamifier-wizard-paso2-titulo.png)
 
 | Campo | Obligatorio | Descripción |
 |---|---|---|
@@ -96,7 +96,7 @@ Haz clic en **Siguiente →** para continuar.
 
 El último paso te permite elegir cómo empezar a diseñar tu Aventura. Tienes dos opciones:
 
-![Paso 3 del asistente: Estructura de la Aventura con dos opciones — Aventura en blanco y Generar estructura](/img/gamifier/aventuras/gamifier-wizard-paso3-estructura.png)
+![Paso 3 del asistente: Estructura de la Aventura con dos opciones — Aventura en blanco y Generar estructura](/img/gamifier-wizard-paso3-estructura.png)
 
 ### Aventura en blanco
 
@@ -125,7 +125,7 @@ Una vez elegida la opción, haz clic en **Crear Aventura** para finalizar.
 
 Tras hacer clic en **Crear Aventura**, el sistema muestra un mensaje de confirmación: **¡Aventura creada!** A continuación, se abre el editor de la Aventura con toda la configuración lista para que empieces a diseñar.
 
-![Editor de la Aventura recién creada mostrando el estado Draft, fechas, idioma, zona horaria y la licencia asignada](/img/gamifier/aventuras/gamifier-aventura-creada-draft.png)
+![Editor de la Aventura recién creada mostrando el estado Draft, fechas, idioma, zona horaria y la licencia asignada](/img/gamifier-aventura-creada-draft.png)
 
 Tu nueva Aventura se crea con estas características:
 

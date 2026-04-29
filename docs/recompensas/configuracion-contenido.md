@@ -22,7 +22,7 @@ Desde el Gamifier, sigue esta ruta de navegación:
 2. Haz scroll hacia abajo en la página de la Aventura hasta encontrar la sección **"Objetos Digitales de la Aventura"**.
 3. Desde ahí puedes crear un nuevo Objeto Digital con el botón **+ Nuevo objeto**, o hacer clic sobre uno existente para editarlo.
 
-![Sección de Objetos Digitales dentro de la vista de una Aventura, mostrando el listado con un Objeto Digital creado y el botón para añadir uno nuevo](/img/recompensas/listado-objetos-digitales.png)
+![Sección de Objetos Digitales dentro de la vista de una Aventura, mostrando el listado con un Objeto Digital creado y el botón para añadir uno nuevo](/img/gamifier-listado-objetos-digitales.png)
 
 ## 🎁 Editor del Objeto Digital
 
@@ -30,7 +30,7 @@ Al hacer clic sobre un Objeto Digital del listado, se abre su editor. Este edito
 
 ### Campos generales
 
-![Editor de Objeto Digital mostrando los campos de configuración: Aventura asociada, código único, tipo de objeto y traducciones](/img/recompensas/editor-objeto-digital-parte-superior.png)
+![Editor de Objeto Digital mostrando los campos de configuración: Aventura asociada, código único, tipo de objeto y traducciones](/img/gamifier-editor-objeto-digital-parte-superior.png)
 
 En la parte superior del editor encontrarás los campos principales:
 
@@ -52,7 +52,7 @@ Un Objeto Digital se puede configurar con uno de estos tipos de contenido multim
 
 La imagen se muestra como miniatura de **300×300** píxeles en el editor. Para gestionarla puedes usar los botones **Nueva imagen** (subir desde tu equipo), **Media Library** (seleccionar desde la biblioteca de medios de la Aventura) o **Eliminar imagen**.
 
-![Parte inferior del editor mostrando la previsualización de la imagen, los botones de gestión multimedia, y los botones Guardar y Eliminar](/img/recompensas/editor-objeto-digital-parte-inferior.png)
+![Parte inferior del editor mostrando la previsualización de la imagen, los botones de gestión multimedia, y los botones Guardar y Eliminar](/img/gamifier-editor-objeto-digital-parte-inferior.png)
 
 ### 🔑 Código Único
 
@@ -83,7 +83,7 @@ Al eliminar un Objeto Digital, se borra de forma permanente junto con todas sus 
 
 ## 🎯 Condiciones de Obtención
 
-![Sección de Condiciones de Obtención mostrando la configuración de grupos con lógica AND/OR](/img/recompensas/condiciones-obtencion.png)
+![Sección de Condiciones de Obtención mostrando la configuración de grupos con lógica AND/OR](/img/gamifier-condiciones-obtencion.png)
 
 Debajo del editor del Objeto Digital se encuentra la sección **"Condiciones de Obtención a Nivel de Aventura"**. Esta sección permite controlar **cuándo** se entrega el Objeto Digital al Player, más allá de simplemente completar la Aventura.
 

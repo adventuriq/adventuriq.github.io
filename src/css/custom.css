@@ -82,7 +82,7 @@
 }
 
 /* Capturas verticales de la Webapp (Flutter) — formato móvil */
-img[src*="/webapp/"] {
+img[src*="/webapp-"] {
   max-width: 360px;
   display: block;
   margin: 1.5rem auto;

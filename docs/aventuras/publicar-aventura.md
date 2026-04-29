@@ -49,11 +49,11 @@ El estado de la Aventura se controla desde el campo **Estado** en la sección de
 3. Haz clic en el desplegable. Verás dos opciones: **draft** y **published**.
 4. Selecciona **published**.
 
-![Editor de la Aventura con el campo Estado en "draft" — la Aventura aún no es visible para los Players](/img/gamifier/aventuras/gamifier-estado-draft.png)
+![Editor de la Aventura con el campo Estado en "draft" — la Aventura aún no es visible para los Players](/img/gamifier-estado-draft.png)
 
 Al seleccionar **published**, el estado se actualiza en el formulario pero **aún no se ha guardado**. Para que el cambio sea efectivo, haz clic en el botón **Guardar aventura**.
 
-![Editor de la Aventura con el campo Estado en "published" — la Aventura ya es accesible para los Players](/img/gamifier/aventuras/gamifier-estado-published.png)
+![Editor de la Aventura con el campo Estado en "published" — la Aventura ya es accesible para los Players](/img/gamifier-estado-published.png)
 
 :::warning Recuerda guardar
 No hay un diálogo de confirmación al publicar. Una vez que seleccionas **published** y pulsas **Guardar aventura**, la Aventura queda visible para los Players de inmediato (si las fechas lo permiten). Asegúrate de haber completado el checklist de arriba antes de guardar.

@@ -35,7 +35,7 @@ Cuando el Player pulsa el enlace (o escanea el QR):
 2. La vinculación ocurre automáticamente en segundo plano — el Player no tiene que hacer nada más.
 3. La Aventura queda añadida a su listado para futuras visitas.
 
-![Pantalla de la Aventura tras pulsar un deep link — la vinculación ha ocurrido automáticamente y el Player ya ve la información de la Aventura](/img/webapp/acceder/acceder-deeplink-aterrizaje.png)
+![Pantalla de la Aventura tras pulsar un deep link — la vinculación ha ocurrido automáticamente y el Player ya ve la información de la Aventura](/img/webapp-acceder-deeplink-aterrizaje.png)
 
 :::tip 👑 Para el Game Master
 El deep link es la opción más cómoda tanto para ti como para tus Players. Comparte la URL por email, WhatsApp, intranet o cualquier canal digital. Si preparas una experiencia presencial (evento, gymkana, escape room), usa el **código QR** impreso en un cartel o folleto — funciona igual que el enlace.
@@ -51,13 +51,13 @@ El Player tiene **dos caminos** para abrir el diálogo de vinculación:
 
 **Desde el menú lateral** (recomendado): pulsar el icono de menú (☰) y seleccionar **+ Añadir Aventura**.
 
-![Menú lateral de la Webapp con la opción "+ Añadir Aventura" visible entre "Aventuras" e "Instalar la App"](/img/webapp/acceder/acceder-menu-anadir-aventura.png)
+![Menú lateral de la Webapp con la opción "+ Añadir Aventura" visible entre "Aventuras" e "Instalar la App"](/img/webapp-acceder-menu-anadir-aventura.png)
 
 **Desde la barra de búsqueda**: en el listado de Aventuras, pulsar el botón **+** a la izquierda de la barra de búsqueda.
 
 En ambos casos se abre el mismo diálogo:
 
-![Diálogo "Añadir Aventura" con el campo vacío mostrando el placeholder "GamePIN..." y el contador 0/9](/img/webapp/acceder/acceder-gamepin-dialog.png)
+![Diálogo "Añadir Aventura" con el campo vacío mostrando el placeholder "GamePIN..." y el contador 0/9](/img/webapp-acceder-gamepin-dialog.png)
 
 ### Paso a paso
 
@@ -65,17 +65,17 @@ En ambos casos se abre el mismo diálogo:
 2. Escribe los **9 dígitos** del GamePIN. El campo solo acepta números y el contador indica cuántos dígitos llevas (por ejemplo, 9/9 cuando está completo).
 3. Pulsa **AÑADIR**.
 
-![Diálogo con el GamePIN válido introducido — el contador muestra 9/9 y el botón AÑADIR está listo para confirmar](/img/webapp/acceder/acceder-gamepin-input.png)
+![Diálogo con el GamePIN válido introducido — el contador muestra 9/9 y el botón AÑADIR está listo para confirmar](/img/webapp-acceder-gamepin-input.png)
 
 Si el GamePIN es correcto, la Aventura se añade al listado y la Webapp navega automáticamente a la sección Aventuras para que veas la nueva entrada.
 
-![Listado de Aventuras actualizado tras la vinculación — la nueva Aventura aparece junto con las que ya tenías](/img/webapp/acceder/acceder-gamepin-confirmacion.png)
+![Listado de Aventuras actualizado tras la vinculación — la nueva Aventura aparece junto con las que ya tenías](/img/webapp-acceder-gamepin-confirmacion.png)
 
 ### Si el GamePIN no es válido
 
 Cuando el código introducido no corresponde a ninguna Aventura (por error tipográfico, porque la Aventura fue despublicada o por cualquier otro motivo), la Webapp muestra un aviso en rojo en la parte inferior de la pantalla. El mensaje es genérico para simplificar: la Webapp no distingue entre un PIN que no existe y uno que apunta a una Aventura no disponible.
 
-![Aviso en rojo "Aventura inexistente o incorrecta" tras introducir un GamePIN no válido](/img/webapp/acceder/acceder-gamepin-error.png)
+![Aviso en rojo "Aventura inexistente o incorrecta" tras introducir un GamePIN no válido](/img/webapp-acceder-gamepin-error.png)
 
 Si ves este error, verifica que has escrito los 9 dígitos correctamente y, si persiste, contacta con tu Game Master para confirmar el código.
 
@@ -83,7 +83,7 @@ Si ves este error, verifica que has escrito los 9 dígitos correctamente y, si p
 
 Una vez que una Aventura está vinculada a tu cuenta (ya sea por deep link o por GamePIN), aparece en tu **listado de Aventuras**. Este listado es la pantalla principal de la Webapp tras iniciar sesión.
 
-![Listado de Aventuras del Player con varias Aventuras vinculadas — cada tarjeta muestra el nombre, la imagen de portada, el idioma y el estado de juego](/img/webapp/acceder/acceder-listado-aventuras.png)
+![Listado de Aventuras del Player con varias Aventuras vinculadas — cada tarjeta muestra el nombre, la imagen de portada, el idioma y el estado de juego](/img/webapp-acceder-listado-aventuras.png)
 
 Para jugar, simplemente pulsa la tarjeta de la Aventura que quieras abrir. Si la Aventura está dentro de sus fechas de juego y tienes Tokens disponibles, entrarás directamente a la experiencia.
 

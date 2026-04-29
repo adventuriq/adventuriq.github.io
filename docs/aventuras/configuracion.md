@@ -23,7 +23,7 @@ El editor de Aventura es el centro de control donde el Game Master y el Game Des
 
 Desde el Gamifier, accede al **listado de Aventuras** y haz clic en la Aventura que quieras configurar. Se abrirá el editor con la cabecera, los indicadores de jugadores y todas las secciones de configuración en una página con scroll vertical.
 
-![Cabecera del editor de Aventura en el Gamifier — imagen de la Aventura, nombre, botones de acción rápida e indicadores de jugadores](/img/gamifier/aventuras/gamifier-editor-cabecera.png)
+![Cabecera del editor de Aventura en el Gamifier — imagen de la Aventura, nombre, botones de acción rápida e indicadores de jugadores](/img/gamifier-editor-cabecera.png)
 
 ## 🔧 Panel principal y acciones rápidas
 
@@ -63,7 +63,7 @@ Justo debajo de la cabecera, cinco indicadores muestran el estado de participaci
 
 Directamente debajo de los indicadores encontrarás los campos de configuración básica de la Aventura:
 
-![Campos de configuración general — fechas, estado, idioma, zona horaria y licencia](/img/gamifier/aventuras/gamifier-config-general.png)
+![Campos de configuración general — fechas, estado, idioma, zona horaria y licencia](/img/gamifier-config-general.png)
 
 | Campo | Descripción |
 |---|---|
@@ -85,7 +85,7 @@ Configura las fechas **Empieza / Acaba** antes de publicar. Si no defines fechas
 
 Cada Aventura tiene un **GamePIN** único de 9 dígitos que se genera automáticamente al crearla. Es el código que los Players introducen en la Webapp para unirse a tu Aventura.
 
-![Sección Acceso a la Aventura — Game PIN, enlace directo, código QR y bloqueo por código alfanumérico](/img/gamifier/aventuras/gamifier-gamepin.png)
+![Sección Acceso a la Aventura — Game PIN, enlace directo, código QR y bloqueo por código alfanumérico](/img/gamifier-gamepin.png)
 
 Desde esta sección puedes:
 
@@ -122,7 +122,7 @@ Los campos traducibles incluyen: Título, Resumen, Descripción visible, Descrip
 
 Esta sección contiene los toggles que controlan qué ve el Player en su experiencia. Son interruptores que activas o desactivas según el diseño de tu Aventura:
 
-![Toggles de opciones — visibilidad de Puntos, Ranking, Baúl, Galería, Muro y más](/img/gamifier/aventuras/gamifier-toggles-visibilidad.png)
+![Toggles de opciones — visibilidad de Puntos, Ranking, Baúl, Galería, Muro y más](/img/gamifier-toggles-visibilidad.png)
 
 | Toggle | Efecto si se desactiva |
 |---|---|
@@ -179,7 +179,7 @@ Las Aventuras pueden jugarse en dos modos:
 | **Individual** | Cada Player compite por su cuenta. Solo existe clasificación individual. |
 | **Por Equipos** | La puntuación individual se suma a la del Equipo (Clan). Aparecen clasificaciones adicionales: dentro del Equipo y por Equipos (Ranking global). |
 
-![Sección Modo de Juego configurada "En equipo" con 5 Clanes — la captura muestra una Aventura en modo Por Equipos con Clanes configurados; si tu Aventura está en modo Individual, no verás los Clanes](/img/gamifier/aventuras/gamifier-modo-juego.png)
+![Sección Modo de Juego configurada "En equipo" con 5 Clanes — la captura muestra una Aventura en modo Por Equipos con Clanes configurados; si tu Aventura está en modo Individual, no verás los Clanes](/img/gamifier-modo-juego.png)
 
 :::info Clanes opcionales
 El modo Por Equipos y los Clanes son completamente opcionales. Solo aplican si el diseño de tu Aventura lo requiere. Consulta la [sección de Clanes en Conceptos Básicos](/conceptos-basicos#-clanes-opcional) para más contexto.
@@ -191,7 +191,7 @@ El modo Por Equipos y los Clanes son completamente opcionales. Solo aplican si e
 
 Una vez publicada, el Player accede a la Aventura desde la Webapp introduciendo el GamePIN o escaneando el código QR. Verá la lista de Misiones con su imagen, nombre, número de Retos y puntos acumulados:
 
-![Vista del Player en la Webapp — listado de Misiones de la Aventura en formato móvil](/img/webapp/aventuras/webapp-aventura-player.png)
+![Vista del Player en la Webapp — listado de Misiones de la Aventura en formato móvil](/img/webapp-aventura-player.png)
 
 Todo lo que configuras en el Gamifier tiene impacto directo en esta experiencia: las fechas determinan cuándo puede jugar, los toggles de visibilidad controlan qué secciones aparecen en su Bitácora, y las imágenes definen la identidad visual de la Aventura.
 

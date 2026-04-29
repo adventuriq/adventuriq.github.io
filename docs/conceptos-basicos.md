@@ -42,7 +42,7 @@ Puedes ver la jerarquía representada gráficamente en el [diagrama de la págin
 
 Las Misiones agrupan los Retos de una Aventura en bloques temáticos. Piensa en ellas como **capítulos, etapas, temporadas, fases o niveles** según el diseño de tu experiencia.
 
-![Listado de Misiones en el Gamifier — cada Misión muestra su imagen, orden, número de Retos y estado](/img/gamifier/conceptos/gamifier-listado-misiones.png)
+![Listado de Misiones en el Gamifier — cada Misión muestra su imagen, orden, número de Retos y estado](/img/gamifier-listado-misiones.png)
 
 Características principales:
 
@@ -55,7 +55,7 @@ Características principales:
 
 El Reto es la prueba que el Player debe superar. AdventuriQ ofrece **10 tipos de Reto** para diseñar experiencias variadas:
 
-![Pantalla de selección de tipo de Reto en el Gamifier](/img/gamifier/conceptos/gamifier-tipos-reto.png)
+![Pantalla de selección de tipo de Reto en el Gamifier](/img/gamifier-tipos-reto.png)
 
 | Tipo | Descripción |
 |---|---|
@@ -84,7 +84,7 @@ Además, todos los Retos comparten estas capacidades comunes:
 
 Los Objetos Digitales son elementos que el Player recibe al completar Retos o Misiones. Su significado depende del diseño de la Aventura: pueden representar una **recompensa, una pista, una felicitación, un código de desbloqueo** de otra Misión u otro Reto, un enlace externo, y más.
 
-![Vista del Baúl en la Webapp — donde el Player consulta los Objetos Digitales que ha conseguido](/img/webapp/conceptos/webapp-baul.png)
+![Vista del Baúl en la Webapp — donde el Player consulta los Objetos Digitales que ha conseguido](/img/webapp-baul.png)
 
 Configuración:
 
@@ -131,7 +131,7 @@ AdventuriQ se compone de dos aplicaciones: el **Gamifier** (donde se crean las A
 
 Desde la perspectiva del Player, la Webapp se organiza en estas zonas principales:
 
-![Bitácora del Player en la Webapp — panel central con Retos completados, Puntos y accesos a Baúl, Galería y Clasificación](/img/webapp/conceptos/webapp-bitacora.png)
+![Bitácora del Player en la Webapp — panel central con Retos completados, Puntos y accesos a Baúl, Galería y Clasificación](/img/webapp-bitacora.png)
 
 - **Misiones y Retos**: donde el Player avanza resolviendo las pruebas de cada Misión.
 - **Bitácora**: el panel personal del Player con su progreso (Retos realizados, Puntos), acceso al Baúl, Galería de fotos, Clasificación, Muro y Nube de Palabras.

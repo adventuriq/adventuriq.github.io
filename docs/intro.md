@@ -43,13 +43,13 @@ AdventuriQ se compone de dos aplicaciones web:
 
 Desde el Gamifier, el Game Master y el Game Designer diseñan toda la experiencia: crean Aventuras, organizan Misiones, configuran Retos y asignan recompensas. Se puede usar desde escritorio, tablet o móvil.
 
-![Vista general del Gamifier — listado de Aventuras](/img/gamifier/intro/gamifier-vista-general.png)
+![Vista general del Gamifier — listado de Aventuras](/img/gamifier-vista-general.png)
 
 ### Webapp — donde se juegan las Aventuras
 
 La Webapp es la aplicación que usan los Players. Desde ahí acceden a las Aventuras, completan Retos, acumulan puntos y consultan su progreso en la Bitácora.
 
-![Vista de la Webapp — Bitácora del Player en formato móvil](/img/webapp/intro/webapp-vista-player.png)
+![Vista de la Webapp — Bitácora del Player en formato móvil](/img/webapp-vista-player.png)
 
 ## La jerarquía: Aventura → Misión → Reto
 
