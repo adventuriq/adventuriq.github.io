@@ -80,3 +80,12 @@
   background-color: #e83208;
   border-color: #e83208;
 }
+
+/* Capturas verticales de la Webapp (Flutter) — formato móvil */
+img[src*="/webapp/"] {
+  max-width: 360px;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
