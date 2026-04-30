@@ -22,6 +22,7 @@ const sidebars: SidebarsConfig = {
       label: '⚔️ Retos',
       items: [
         'retos/index',
+        'retos/respuesta-exacta',
         'retos/nube-de-palabras',
       ],
     },
