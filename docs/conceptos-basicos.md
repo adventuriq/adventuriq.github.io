@@ -71,7 +71,7 @@ El Reto es la prueba que el Player debe superar. AdventuriQ ofrece **10 tipos de
 | **Nube de Palabras** | Agregación visual de las respuestas de todos los Players |
 
 :::tip
-Cada tipo de Reto se explica en detalle en su página dedicada dentro de la sección [Retos](/category/retos).
+Cada tipo de Reto se explica en detalle en su página dedicada dentro de la sección [Retos](/retos).
 :::
 
 Además, todos los Retos comparten estas capacidades comunes:
@@ -148,4 +148,4 @@ Desde la perspectiva del Game Master, el contenido se introduce en cuatro zonas 
 
 ---
 
-¿Todo claro? Continúa con la sección del [Gamifier](/category/gamifier) para aprender a crear tu primera Aventura.
+¿Todo claro? Continúa con [Crear una Aventura](/aventuras/crear-aventura) para aprender a crear tu primera Aventura.
