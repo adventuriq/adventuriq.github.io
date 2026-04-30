@@ -34,7 +34,7 @@ Además de las zonas fijas, pueden aparecer hasta cinco zonas adicionales organi
 | **Modo de juego** | Botón "+ Unirse a un Equipo" | La Aventura está en modo Equipo |
 | **Feature del GM** | Bloque de estrellas (votos recibidos) | El GM activa el sistema de Votaciones |
 | **Feature del GM** | Cuadrante "Votar" | El GM activa el sistema de Votaciones |
-| **Feature del GM** | Cuadrante "Nube de Palabras" | La Aventura tiene al menos un Reto de tipo Nube de Palabras |
+| **Feature del GM** | Cuadrante "Nube de Palabras" | El GM activa el toggle "Activar Nube de Palabras en la bitácora" **y** la Aventura tiene al menos un Reto de tipo Nube de Palabras |
 | **Estado de Aventura** | Cuadrante "Final de Aventura" | Se cumplen las condiciones de finalización configuradas por el GM |
 | **Estado de Aventura** | Cuadrante "Volver a Jugar" | Se cumplen las condiciones de finalización **y** el GM ha activado "El Player puede volver a jugar" |
 
@@ -116,11 +116,11 @@ El detalle del sistema de Votaciones se documentará en una página dedicada.
 
 ### Nube de Palabras
 
-Cuando la Aventura incluye al menos un Reto de tipo **Nube de Palabras**, aparece el cuadrante correspondiente en la cuadrícula. Al pulsarlo, el Player accede a la vista agregada de palabras aportadas por todos los participantes. Si la Aventura tiene varios Retos de este tipo, se muestra un selector para elegir cuál consultar.
+Cuando el Game Master activa el toggle **"Activar Nube de Palabras en la bitácora"** en las Opciones de la Aventura y la Aventura incluye al menos un Reto de tipo **Nube de Palabras**, aparece el cuadrante correspondiente en la cuadrícula. Al pulsarlo, el Player accede a la vista agregada de palabras aportadas por todos los participantes. Si la Aventura tiene varios Retos de este tipo, se muestra un listado para elegir cuál consultar.
 
 ![Pantalla de Nube de Palabras — vista inicial pidiendo seleccionar un Reto para ver la nube generada](/img/webapp-bitacora-nube-palabras.png)
 
-El tipo de Reto Nube de Palabras se documentará en su propia página dentro de la sección de Retos.
+El tipo de Reto Nube de Palabras está documentado en detalle en [☁️ Nube de Palabras](../retos/nube-de-palabras.md).
 
 ## Cuadrantes por estado de Aventura
 

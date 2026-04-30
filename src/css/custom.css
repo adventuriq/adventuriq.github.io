@@ -81,6 +81,15 @@
   border-color: #e83208;
 }
 
+/* Iconos identificativos de tipo de Reto */
+.reto-icon {
+  float: right;
+  width: 120px;
+  height: auto;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 12px;
+}
+
 /* Capturas verticales de la Webapp (Flutter) — formato móvil */
 img[src*="/webapp-"] {
   max-width: 550px;

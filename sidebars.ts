@@ -46,6 +46,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '⚔️ Retos',
       items: [
+        'retos/index',
         'retos/tipos-de-reto',
         'retos/estructura-comun',
         'retos/cabecera',
@@ -56,6 +57,7 @@ const sidebars: SidebarsConfig = {
         'retos/respuesta-libre',
         'retos/compartir-foto',
         'retos/preguntas-encadenadas',
+        'retos/nube-de-palabras',
       ],
     },
     {
