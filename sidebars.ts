@@ -23,6 +23,9 @@ const sidebars: SidebarsConfig = {
       items: [
         'retos/index',
         'retos/respuesta-exacta',
+        'retos/pregunta-respuesta-audio',
+        'retos/pregunta-respuesta-video',
+        'retos/ruleta-de-la-fortuna',
         'retos/nube-de-palabras',
       ],
     },
