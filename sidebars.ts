@@ -16,6 +16,11 @@ const sidebars: SidebarsConfig = {
         'aventuras/acceder-a-una-aventura',
         'aventuras/bitacora',
         'aventuras/objetos-digitales',
+        'aventuras/condiciones-finalizacion',
+        'aventuras/votaciones',
+        'aventuras/equipos-clanes',
+        'aventuras/mapas-poi',
+        'aventuras/idiomas-traducciones',
       ],
     },
     {

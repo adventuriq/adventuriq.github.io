@@ -153,7 +153,7 @@ Tu Aventura puede tener un Mapa que se muestra en la Webapp. Existen dos tipos:
 
 Los Retos geoposicionados de las Misiones pueden heredar sus coordenadas y pintarse como marcadores en el Mapa de la Aventura.
 
-> Ver detalle en [Mapas de la Aventura](mapas).
+> Ver detalle en [Mapas y Puntos de Interés](mapas-poi).
 
 ## 🏁 Condiciones de finalización
 
@@ -185,7 +185,7 @@ Las Aventuras pueden jugarse en dos modos:
 El modo Por Equipos y los Clanes son completamente opcionales. Solo aplican si el diseño de tu Aventura lo requiere. Consulta la [sección de Clanes en Conceptos Básicos](/conceptos-basicos#-clanes-opcional) para más contexto.
 :::
 
-> Ver detalle en [Equipos (Clanes)](equipos).
+> Ver detalle en [Equipos (Clanes)](equipos-clanes).
 
 ## 🎮 Así lo verá el Player
 
@@ -212,7 +212,8 @@ Cada aspecto de la configuración tiene su página dedicada con explicación det
 | [Idiomas y traducciones](idiomas-traducciones) | Contenido multiidioma y campos traducibles |
 | [Contenido y descripción](contenido-descripcion) | Textos enriquecidos de la Aventura |
 | [Condiciones de finalización](condiciones-finalizacion) | Las 6 condiciones de fin de Aventura |
-| [Mapas](mapas) | Geolocalización y mapas imagen |
-| [Equipos (Clanes)](equipos) | Modo Individual vs Por Equipos |
+| [Mapas y POI](mapas-poi) | Geolocalización, mapas imagen y Puntos de Interés |
+| [Equipos (Clanes)](equipos-clanes) | Modo Individual vs Por Equipos |
 | [Retos de la Aventura](retos-aventura) | Listado y gestión de Retos |
-| [Puntos de Interés (POI)](poi) | Marcadores en el mapa |
+| [Objetos Digitales](objetos-digitales) | Recompensas al completar la Aventura |
+| [Votaciones](votaciones) | Sistema de votaciones entre Players |

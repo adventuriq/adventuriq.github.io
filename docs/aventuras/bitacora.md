@@ -112,7 +112,7 @@ Cuando el GM activa el **sistema de Votaciones**, aparece el cuadrante "Votar" e
 
 ![Pantalla de votación — lista alfabética de Players con campo de búsqueda y valoraciones recibidas](/img/webapp-bitacora-votar.png)
 
-El detalle del sistema de Votaciones se documentará en una página dedicada.
+El detalle completo del sistema de Votaciones está en [Votaciones entre Players](./votaciones.md).
 
 ### Nube de Palabras
 
