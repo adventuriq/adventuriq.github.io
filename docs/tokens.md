@@ -248,5 +248,5 @@ Sí, en cualquier momento. [Contacta con nosotros](mailto:start@adventuriq.com?s
 
 | Siguiente paso | Qué encontrarás |
 |---|---|
-| [Configuración de una Aventura](aventuras/configuracion) | Cómo configurar tu primera Aventura paso a paso — incluyendo la asignación de Licencia |
+| [Crear una Aventura](aventuras/crear-aventura) | Cómo crear tu primera Aventura paso a paso |
 | [¿Qué es AdventuriQ?](/) | Volver a la portada del manual |

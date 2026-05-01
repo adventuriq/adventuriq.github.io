@@ -15,6 +15,7 @@ const sidebars: SidebarsConfig = {
         'aventuras/publicar-aventura',
         'aventuras/acceder-a-una-aventura',
         'aventuras/bitacora',
+        'aventuras/objetos-digitales',
       ],
     },
     {
@@ -47,13 +48,7 @@ const sidebars: SidebarsConfig = {
         'retos/pregunta-respuesta-video',
         'retos/ruleta-de-la-fortuna',
         'retos/nube-de-palabras',
-      ],
-    },
-    {
-      type: 'category',
-      label: '🎁 Recompensas',
-      items: [
-        'recompensas/configuracion-contenido',
+        'retos/objetos-digitales',
       ],
     },
   ],
