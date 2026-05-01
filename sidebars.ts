@@ -22,6 +22,11 @@ const sidebars: SidebarsConfig = {
       label: '⚔️ Retos',
       items: [
         'retos/index',
+        'retos/pregunta-respuesta',
+        'retos/preguntas-encadenadas',
+        'retos/respuesta-libre',
+        'retos/subir-foto',
+        'retos/llamada-a-la-accion',
         'retos/respuesta-exacta',
         'retos/pregunta-respuesta-audio',
         'retos/pregunta-respuesta-video',
