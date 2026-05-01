@@ -19,6 +19,21 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: '📋 Misiones',
+      items: [
+        'misiones/index',
+        'misiones/configuracion-general',
+        'misiones/bloqueos-visibilidad',
+        'misiones/contenido-imagenes',
+        'misiones/descripcion',
+        'misiones/mapas',
+        'misiones/objetos-digitales',
+        'misiones/notificaciones',
+        'misiones/condiciones-finalizacion',
+      ],
+    },
+    {
+      type: 'category',
       label: '⚔️ Retos',
       items: [
         'retos/index',

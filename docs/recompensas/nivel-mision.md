@@ -8,7 +8,7 @@ A nivel Misión, una Recompensa **se entrega siempre** que se termine la Misión
 
 ## Componente Llamada
 
-En las Recompensas a Nivel Misión existe el componente **"Llamada"**, que simula una llamada telefónica. Ver [Componente Llamada](/misiones/llamada) para más detalles.
+En las Recompensas a Nivel Misión existe el componente **"Notificaciones"** (antes llamado "Llamada"), que simula una llamada telefónica. Ver [Notificaciones](/misiones/notificaciones) para más detalles.
 
 ## Contenido
 
