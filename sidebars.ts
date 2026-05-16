@@ -5,7 +5,9 @@ const sidebars: SidebarsConfig = {
     'intro',
     'warnings',
     'conceptos-basicos',
+    'instalar-la-app',
     'tokens',
+    'tokens-acceso-unico',
     {
       type: 'category',
       label: '🎮 Aventuras',
@@ -63,6 +65,20 @@ const sidebars: SidebarsConfig = {
         'metricas/index',
         'metricas/clasificacion',
         'metricas/game-board',
+      ],
+    },
+    {
+      type: 'category',
+      label: '🖥️ Gamifier',
+      items: [
+        'gamifier/biblioteca-de-medios',
+      ],
+    },
+    {
+      type: 'category',
+      label: '📱 Webapp',
+      items: [
+        'webapp/perfil',
       ],
     },
     'game-designer',
