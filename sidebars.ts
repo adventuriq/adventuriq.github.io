@@ -56,6 +56,16 @@ const sidebars: SidebarsConfig = {
         'retos/objetos-digitales',
       ],
     },
+    {
+      type: 'category',
+      label: '📊 Métricas',
+      items: [
+        'metricas/index',
+        'metricas/clasificacion',
+        'metricas/game-board',
+      ],
+    },
+    'game-designer',
   ],
 };
 
