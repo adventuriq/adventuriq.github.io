@@ -244,9 +244,23 @@ Consumirá un Token nuevo al iniciar la nueva partida. Cada partida es un ticket
 **¿Puedo pasar de pay-per-use a plan anual después?**
 Sí, en cualquier momento. [Contacta con nosotros](mailto:start@adventuriq.com?subject=Cambio%20a%20plan%20anual) y te ayudamos a migrar al plan que mejor se adapte a tu caso.
 
+## 🔑 Token de acceso único
+
+Si quieres monetizar tu Aventura vendiendo acceso individual a tus Players, consulta [Token de acceso único](./tokens-acceso-unico.md) — un mecanismo que te permite generar códigos de un solo uso (limitados por tu saldo de Tokens) y venderlos al precio que decidas.
+
+## 💾 Almacenamiento por Aventura
+
+Cada Licencia de Aventura incluye un **límite de almacenamiento** para archivos multimedia (imágenes, vídeos y audios). El espacio se consume al subir archivos desde cualquier formulario del Gamifier: Aventura, Misión, Reto, Objeto Digital, POI, Clan o la [Biblioteca de Medios](gamifier/biblioteca-de-medios.md).
+
+Si una Aventura alcanza su límite, la plataforma bloquea nuevas subidas y muestra el aviso "Límite de almacenamiento alcanzado". Para liberar espacio, elimina archivos antiguos desde la Biblioteca de Medios o amplía tu Licencia.
+
+El espacio ocupado se puede consultar en la cabecera de la Biblioteca de Medios y en el listado de Aventuras, donde se muestra el indicador de consumo (ej. "127 MB / 1.46 GB").
+
 ## 📚 Continúa aprendiendo
 
 | Siguiente paso | Qué encontrarás |
 |---|---|
 | [Crear una Aventura](aventuras/crear-aventura) | Cómo crear tu primera Aventura paso a paso |
+| [Token de acceso único](tokens-acceso-unico.md) | Monetiza tus Aventuras con códigos de acceso individual |
+| [Biblioteca de Medios](gamifier/biblioteca-de-medios.md) | Gestor de archivos multimedia y control de espacio |
 | [¿Qué es AdventuriQ?](/) | Volver a la portada del manual |

@@ -104,8 +104,8 @@ const config: Config = {
       title: 'AdventuriQ Docs',
       logo: {
         alt: 'AdventuriQ Logo',
-        src: 'img/logo.svg',
-        width: 140,
+        src: 'img/logo.png',
+        width: 32,
         height: 32,
       },
       items: [

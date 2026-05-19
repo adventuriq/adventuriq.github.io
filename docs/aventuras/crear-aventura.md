@@ -138,6 +138,45 @@ Tu nueva Aventura se crea con estas características:
 El GamePIN se asigna en el momento de la creación y no se puede cambiar después. Compártelo con tus Players solo cuando estés listo para que empiecen a jugar.
 :::
 
+## Clonar una Aventura existente
+
+Además del asistente de creación, el Game Master puede **duplicar** una Aventura existente para crear una copia completa sin empezar de cero. Esto es útil para reutilizar la estructura de una Aventura anterior con un grupo nuevo de Players, o para crear variantes temáticas de una misma experiencia.
+
+### Cómo clonar
+
+1. En el listado de Aventuras, localizar la Aventura que se quiere duplicar.
+2. Pulsar el botón **"Duplicar"** (icono de copia) en la columna de acciones de esa fila.
+3. Se abre el modal **"Duplicar Aventura"** que muestra las Licencias disponibles en la cuenta como tarjetas visuales (con icono según tipo: Básica, Básica Equipo, Anual, etc.).
+4. Seleccionar la Licencia a la que asignar la copia y pulsar **"Continuar"**.
+5. Aparece un popup de espera mientras el sistema copia todos los contenidos.
+6. Al terminar, la nueva Aventura aparece en el listado con el título original seguido del sufijo **"(Copia)"**.
+
+![Modal de Duplicar Aventura — selección de Licencia destino con tarjetas por tipo](/img/gamifier-aventura-clonar-modal.png)
+
+### Qué se clona
+
+La copia incluye **todo** el contenido de diseño de la Aventura original: Misiones, Retos (con su configuración y mecánica), Objetos Digitales, Puntos de Interés, Clanes, archivos multimedia (carpeta `user_images/`), traducciones y configuración.
+
+### Qué NO se clona
+
+| Elemento | Motivo |
+|---|---|
+| **Players inscritos** | La copia empieza limpia, sin participantes. |
+| **Estados de juego** | No se transfieren puntos, progreso ni resultados. |
+| **Fotos de Players** (`player_images/`) | Contenido generado por participantes de la Aventura original. |
+| **Tokens de acceso** | Se deben generar nuevos si la Aventura los utiliza. |
+
+### Notas importantes
+
+- Clonar **consume una Licencia** de la cuenta (la que se selecciona en el modal). Si no hay Licencias libres, no se puede clonar.
+- La Aventura clonada nace con un **nuevo GamePIN** generado automáticamente.
+- Tras clonar, se recomienda **revisar la configuración** de la copia: renombrar el título, ajustar fechas de vigencia y verificar cualquier dato sensible.
+- El proceso puede tardar algunos segundos dependiendo del volumen de Misiones, Retos y archivos multimedia.
+
+:::tip 👑 Para el Game Master
+Si impartes la misma formación a varios grupos, clona la Aventura tras diseñarla. Cada grupo tendrá su propia copia con GamePIN distinto, ranking independiente y sin interferencias entre grupos.
+:::
+
 ## 🔜 Siguientes pasos
 
 Con la Aventura creada, ya puedes empezar a diseñar su contenido:

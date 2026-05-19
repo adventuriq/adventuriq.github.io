@@ -145,3 +145,11 @@ En ambos casos, el consumo del Token ocurre en el mismo momento: cuando el Playe
 
 - **Los Tokens no caducan.** Una vez generados, los códigos son válidos indefinidamente hasta que alguien los canjee o el GM los elimine.
 - **Formato del código:** 9 caracteres alfanuméricos en mayúsculas, sin espacios ni caracteres especiales. Únicos por Aventura.
+- **Email opcional pero recomendable.** Si asignas un email a un Token, te aseguras de que solo esa persona pueda usarlo. Si no, el primero que lo teclee se lo queda.
+- **Aventuras existentes no se ven afectadas.** Activar Tokens en una Aventura que ya tiene Players no bloquea a los Players que ya están jugando — solo afecta a nuevos accesos.
+
+## Continúa aprendiendo
+
+- Modelo económico general: [Tokens y Licencias](./tokens.md).
+- Cómo vincula el Player una Aventura (llave 1): [Acceder a una Aventura](./aventuras/acceder-a-una-aventura.md).
+- Configuración general de la Aventura: [Configuración](./aventuras/configuracion.md).

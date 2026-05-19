@@ -65,6 +65,22 @@
   color: #fc4a27;
 }
 
+/* Toggle de tema claro/oscuro: forzar icono en blanco
+   (la navbar tiene fondo azul corporativo también en modo claro,
+   y el icono negro por defecto apenas se ve).
+   Cubrimos tanto el botón clean-btn como el SVG dentro. */
+.navbar [class*="colorModeToggle"] svg,
+.navbar [class*="toggleButton"] svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+.navbar [class*="colorModeToggle"]:hover svg,
+.navbar [class*="toggleButton"]:hover svg {
+  color: #fc4a27 !important;
+  fill: #fc4a27 !important;
+}
+
 /* Admonitions con toque naranja para "tips" */
 .theme-admonition-tip {
   border-left-color: #fc4a27;

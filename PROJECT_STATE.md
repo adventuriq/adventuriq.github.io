@@ -1,38 +1,40 @@
 # PROJECT_STATE.md — Pipeline de Documentación AdventuriQ
 
-> **Propósito**: Documento de estado persistente del proyecto de documentación automatizada. Vive en el repo `adventuriq-docs` y se actualiza al final de cada sesión de trabajo significativa. Sirve como "briefing" para recuperar contexto en nuevas conversaciones con Claude (web, Desktop o Code) cuando la conversación anterior se ha vuelto demasiado larga.
+> **Propósito**: Documento de estado persistente del proyecto de documentación automatizada. Vive en el repo `adventuriq-docs` y se actualiza al final de cada sesión de trabajo significativa.
 >
-> **Última actualización**: 30 de abril de 2026 (deploy de retos/respuesta-exacta.md + limpieza de 21 páginas antiguas)
+> **Última actualización**: 30 de abril de 2026 — **MANUAL COMPLETO** 🎯
 > **Mantenedor**: Mike (con asistencia de Claude)
 
 ---
 
 ## 1. Visión general del proyecto
 
-Sistema de documentación automatizada para AdventuriQ (SaaS de gamificación). El objetivo es que cada funcionalidad nueva genere su página de manual con capturas reales sin intervención manual, y migrar el manual histórico (39 páginas PDF) a Docusaurus con calidad editorial homogénea.
+Sistema de documentación automatizada para AdventuriQ (SaaS de gamificación). El objetivo era migrar el manual histórico (39 páginas PDF) a Docusaurus con calidad editorial homogénea y documentar todas las features del producto.
+
+**Estado: ✅ MANUAL COMPLETO.**
 
 **Publicado en**: `https://docs.adventuriq.com`
 
 ### Pipeline de 5 fases
 
-1. **DESARROLLO** — Claude Code implementa la feature y genera un FSD técnico (Feature Spec Document) en `fsd/`.
-2. **DESPLIEGUE** — Claude Code hace deploy a producción y verifica que funciona.
-3. **CAPTURAS** — Cowork (Claude Desktop) lee el FSD, navega el Gamifier/Webapp reales y captura pantallas.
+1. **DESARROLLO** — Claude Code implementa la feature y genera un FSD técnico en `fsd/`.
+2. **DESPLIEGUE** — Claude Code hace deploy a producción y verifica.
+3. **CAPTURAS** — Cowork (Claude Desktop) lee el FSD, navega el Gamifier/Webapp y captura pantallas.
 4. **REDACCIÓN** — Cowork combina FSD + capturas en `.md` orientado a Game Masters.
 5. **INTEGRACIÓN** — El `.md` se coloca en Docusaurus, se actualiza sidebar, build y deploy.
 
 ### Pipeline FSD-style para sesiones documentales (introducido en página #9)
 
-A partir de `bitacora.md`, las sesiones documentales más complejas se preparan con un **FSD documental** previo, redactado por Mike + Claude antes de mandar nada a Cowork. Este FSD documental se diferencia del FSD técnico:
-
-- **FSD técnico** (`fsd/FSD-YYYY-MM-DD-*.md`): especificación de comportamiento de la feature. Escrito al implementar. Autoridad sobre qué hace el sistema.
-- **FSD documental** (`fsd/FSD-{nombre-pagina}.md`): estructura editorial de la página del manual. Escrito antes de la sesión. Autoridad sobre cómo se redacta y se organiza.
-
-Cuando ambos existen para la misma página, Cowork lee primero el FSD documental (estructura) y después el FSD técnico (comportamiento).
+- **FSD técnico** (`fsd/FSD-YYYY-MM-DD-*.md`): autoridad sobre comportamiento.
+- **FSD documental** (`fsd/FSD-{nombre-pagina}.md`): autoridad sobre estructura editorial.
 
 ### Plantillas editoriales para mini-tandas (introducido en página #11-12)
 
-Cuando una sesión inaugura una serie de páginas con estructura común (mini-tanda), se crea una **plantilla editorial** previa que define la estructura replicable. La plantilla se valida estrenándola en la primera página y se actualiza conforme se aplica en las siguientes. Caso vivo: `PLANTILLA-tipos-de-reto-v2.md` aplicable a 9 páginas de tipos de Reto.
+Plantilla replicable para series de páginas con estructura común. Caso aplicado: `PLANTILLA-tipos-de-reto-v2.md` usada en las 10 páginas de tipos de Reto.
+
+### Briefings únicos para series de páginas (introducido en las últimas sesiones)
+
+Cuando Cowork ya domina el pipeline y la plantilla, un solo briefing cubre múltiples páginas sin DETENTE intermedios. Aplicado con éxito en: 5 Retos originales, 8 Misiones, 5 Aventuras pendientes, y las 3 últimas páginas.
 
 ---
 
@@ -54,138 +56,153 @@ Cuando una sesión inaugura una serie de páginas con estructura común (mini-ta
 - **Dominio**: `docs.adventuriq.com` con CNAME en `static/CNAME` + HTTPS forzado
 - **Branding**: azul corporativo `#2d324f`, naranja acción `#fc4a27`
 - **Mermaid habilitado**: `@docusaurus/theme-mermaid@3.10`
-- **`onBrokenLinks`**: actualmente `'warn'`. Pendiente endurecer a `'throw'` (ver §7).
-- **Convención de imágenes**: capturas en `static/img/` (raíz) con prefijo de superficie `webapp-*` o `gamifier-*`. Iconos identificativos en `static/img/retos-iconos/`. Detalle en §6.
-
-### Archivos clave del repo de docs
-
-| Archivo | Rol |
-|---|---|
-| `CLAUDE.md` | Instrucciones para Claude Code (bloque "workspace") |
-| `DOCS_STRUCTURE.md` (v2) | Biblia de convenciones para Cowork |
-| `COWORK_PROMPT.md` | Prompt maestro de 5 fases con 3 variantes de escenario |
-| `ARCHITECTURE.md` | Vista general de los 4 repos |
-| `PROJECT_STATE.md` | Este archivo — estado persistente del proyecto |
-| `docs/` | Contenido del manual |
-| `fsd/` | Feature Spec Documents (técnicos + documentales) y plantillas editoriales |
-| `sidebars.ts` | Navegación (exporta con id `docs`, no `tutorialSidebar`) |
-| `docusaurus.config.ts` | Configuración Docusaurus |
+- **`onBrokenLinks`**: actualmente `'warn'`. Recomendado endurecer a `'throw'` ahora que el manual está completo (ver §7).
+- **Convención de imágenes**: `static/img/` raíz con prefijos `webapp-*` / `gamifier-*`. Iconos en `static/img/retos-iconos/`.
 
 ### Fuentes de verdad
 
-- **`manual-original-v2.md`** (en proyecto Claude) — manual histórico de 39 páginas transcrito. **Fuente principal de contraste** antes de publicar páginas con información operativa (ver aprendizaje #14). Algunos flujos del manual han quedado obsoletos (ver aprendizaje #16).
-- **`AdventuriQv7_CAS.pdf`** (en proyecto Claude) — presentación comercial. Contiene precios actualizados y modelo económico. **No es manual de uso.**
-- **FSD técnicos en `fsd/`** — autoridad sobre comportamiento de features implementadas recientemente. Ejemplos: `FSD-2026-03-20-direct-access-to-adventure.md` (deeplink), `FSD-2026-04-15-nube-de-palabras.md`, `FSD-2026-04-14-respuesta-exacta.md`. Disponibles para los 6 tipos nuevos: Respuesta Exacta, Nube de Palabras, PR Audio, PR Vídeo, Ruleta de la Fortuna, Sistema de Votaciones.
+- **`manual-original-v2.md`** — manual histórico. Ya no es fuente principal (el manual nuevo lo ha reemplazado completamente). Se conserva como referencia histórica.
+- **`AdventuriQv7_CAS.pdf`** — presentación comercial. Contiene precios.
+- **FSD técnicos en `fsd/`** — autoridad sobre comportamiento de features recientes.
 
 ---
 
-## 3. Páginas publicadas en producción
+## 3. Manual completo — todas las páginas publicadas
 
-| # | Página | Estado | Notas clave |
+### Sidebar final
+
+```
+📖 Introducción
+⚠️ Precauciones
+🧩 Conceptos Básicos
+🪙 Tokens y Licencias
+🎮 Aventuras/
+│   ├── 🚀 Crear una Aventura
+│   ├── ⚙️ Configuración de una Aventura
+│   ├── 🏷️ Publicar una Aventura
+│   ├── 🔗 Acceder a una Aventura
+│   ├── 🎮 Bitácora del Player
+│   ├── 🏁 Condiciones de Finalización
+│   ├── ⭐ Votaciones entre Players
+│   ├── 👥 Equipos (Clanes)
+│   ├── 🗺️ Mapas y POI
+│   ├── 🌍 Idiomas y Traducciones
+│   └── 🎁 Objetos Digitales de Aventura
+📋 Misiones/
+│   ├── 📋 Misiones (índice)
+│   ├── ⚙️ Configuración General
+│   ├── 🔒 Bloqueos y Visibilidad
+│   ├── 🖼️ Contenido e Imágenes
+│   ├── 📝 Descripción
+│   ├── 🗺️ Mapas
+│   ├── 🎁 Objetos Digitales de Misión
+│   ├── 📞 Notificaciones
+│   └── 🏁 Condiciones de Finalización
+⚔️ Retos/
+│   ├── 🎯 Los 10 tipos disponibles (índice)
+│   ├── ❓ Pregunta / Respuesta
+│   ├── 🔗 Preguntas Encadenadas
+│   ├── 📝 Respuesta Libre
+│   ├── 📸 Subir Foto
+│   ├── 📣 Llamada a la Acción
+│   ├── ✏️ Respuesta Exacta
+│   ├── 🎤 PR con Audio
+│   ├── 🎬 PR con Vídeo
+│   ├── 🎰 Ruleta de la Fortuna
+│   ├── ☁️ Nube de Palabras
+│   └── 🎁 Objetos Digitales de Reto
+🎁 Recompensas/
+│   └── 🎁 Configuración de Objetos Digitales
+📊 Métricas/
+│   ├── 📊 Métricas (índice)
+│   ├── 🏆 Clasificación
+│   └── 📋 Game Board
+🎨 Game Designer
+```
+
+### Inventario completo
+
+| # | Página | Categoría | Estado |
 |---|---|---|---|
-| 1 | `recompensas/configuracion-contenido.md` | ✅ Deployed | Primera sesión; normalización "Recompensa" → "Objeto Digital" como excepción a no-destrucción |
-| 2 | `intro.md` | ✅ Deployed | Portada; diagrama Mermaid + 4 capturas; servida en `/` (no `/intro`) |
-| 3 | `warnings.md` | ✅ Deployed | 2 secciones; 6 admonitions moderadas; sin capturas |
-| 4 | `conceptos-basicos.md` | ✅ Deployed | Tercera página de fundamentos. **Fix post-incidente (28-abr-2026)**: enlaces rotos reemplazados por texto plano |
-| 5 | `aventuras/configuracion.md` | ✅ Deployed | Primera página funcional real; referencia visual consolidada del Gamifier |
-| 6 | `tokens.md` | ✅ Deployed | **Landing comercial del modelo económico completo**. Fix #1: caducidad al publicar. Fix #2: 4 variantes de Licencia |
-| 7 | `aventuras/crear-aventura.md` | ✅ Deployed | Asistente de 3 pasos. Flujo renovado respecto al manual histórico |
-| 8 | `aventuras/publicar-aventura.md` | ✅ Deployed | Ciclo Draft → Published. Caducidad irreversible. Tabla cruzada Estado × Fechas |
-| 9 | `aventuras/bitacora.md` | ✅ Deployed | **Primera página en superficie Webapp (Flutter)**. 3 categorías editoriales, 8 cuadrantes. Fix quirúrgico en sesión #11-12: toggle NdP + enlace. `sidebar_position: 5` |
-| 10 | `aventuras/acceder-a-una-aventura.md` | ✅ Deployed | 3 rutas de vinculación. Concepto clave: vinculación ≠ jugabilidad ≠ Token. `sidebar_position: 4` |
-| 11 | `retos/index.md` | ✅ Deployed | **Página índice de categoría "Retos"**. 10 tipos vigentes con iconos, descripciones y guía de decisión. `sidebar_position: 0` |
-| 12 | `retos/nube-de-palabras.md` | ✅ Deployed | **Mini-tanda 1/5**. Estrena plantilla v2. Toggle "Activar Nube de Palabras en la bitácora" + doble condición. `sidebar_position: 10` |
-| 13 | `retos/respuesta-exacta.md` | ✅ Deployed | **Mini-tanda 2/5**. Mecánica de reintentos + tramos de bonus decrecientes. Validación exacta (case-insensitive, acentos sí importan). Caso especial: tramo único 0% oculta tramos al Player. `sidebar_position: 6` |
+| 1 | `recompensas/configuracion-contenido.md` | Recompensas | ✅ |
+| 2 | `intro.md` | Raíz | ✅ |
+| 3 | `warnings.md` | Raíz | ✅ |
+| 4 | `conceptos-basicos.md` | Raíz | ✅ |
+| 5 | `aventuras/configuracion.md` | Aventuras | ✅ |
+| 6 | `tokens.md` | Raíz | ✅ |
+| 7 | `aventuras/crear-aventura.md` | Aventuras | ✅ |
+| 8 | `aventuras/publicar-aventura.md` | Aventuras | ✅ |
+| 9 | `aventuras/bitacora.md` | Aventuras | ✅ |
+| 10 | `aventuras/acceder-a-una-aventura.md` | Aventuras | ✅ |
+| 11 | `retos/index.md` | Retos | ✅ |
+| 12 | `retos/nube-de-palabras.md` | Retos | ✅ |
+| 13 | `retos/respuesta-exacta.md` | Retos | ✅ |
+| 14 | `retos/pregunta-respuesta-audio.md` | Retos | ✅ |
+| 15 | `retos/pregunta-respuesta-video.md` | Retos | ✅ |
+| 16 | `retos/ruleta-de-la-fortuna.md` | Retos | ✅ |
+| 17 | `retos/pregunta-respuesta.md` | Retos | ✅ |
+| 18 | `retos/preguntas-encadenadas.md` | Retos | ✅ |
+| 19 | `retos/respuesta-libre.md` | Retos | ✅ |
+| 20 | `retos/subir-foto.md` | Retos | ✅ |
+| 21 | `retos/llamada-a-la-accion.md` | Retos | ✅ |
+| 22 | `retos/objetos-digitales.md` | Retos | ✅ |
+| 23 | `misiones/index.md` | Misiones | ✅ |
+| 24 | `misiones/configuracion-general.md` | Misiones | ✅ |
+| 25 | `misiones/bloqueos-visibilidad.md` | Misiones | ✅ |
+| 26 | `misiones/contenido-imagenes.md` | Misiones | ✅ |
+| 27 | `misiones/descripcion.md` | Misiones | ✅ |
+| 28 | `misiones/mapas.md` | Misiones | ✅ |
+| 29 | `misiones/objetos-digitales.md` | Misiones | ✅ |
+| 30 | `misiones/notificaciones.md` | Misiones | ✅ |
+| 31 | `misiones/condiciones-finalizacion.md` | Misiones | ✅ |
+| 32 | `aventuras/condiciones-finalizacion.md` | Aventuras | ✅ |
+| 33 | `aventuras/votaciones.md` | Aventuras | ✅ |
+| 34 | `aventuras/equipos-clanes.md` | Aventuras | ✅ |
+| 35 | `aventuras/mapas-poi.md` | Aventuras | ✅ |
+| 36 | `aventuras/idiomas-traducciones.md` | Aventuras | ✅ |
+| 37 | `aventuras/objetos-digitales.md` | Aventuras | ✅ |
+| 38 | `metricas/index.md` | Métricas | ✅ |
+| 39 | `metricas/clasificacion.md` | Métricas | ✅ |
+| 40 | `metricas/game-board.md` | Métricas | ✅ |
+| 41 | `game-designer.md` | Raíz | ✅ |
 
-### Métrica observable: supervisión decreciente y descubrimiento aumentado
+**Total: 41 páginas publicadas. 0 pendientes de features core.**
 
-- Páginas 1-2: 3 puntos de control "DETENTE" + incidentes
-- Página 3: 3 DETENTE ligeros, sin incidentes
-- Página 4: 2 DETENTE
-- Página 5: flujo fluido desde el primer intento
-- Página 6: alta supervisión editorial por información de producto nueva aflorando
-- Páginas 7-8: pipeline técnicamente fluido. Supervisión concentrada en descubrimiento de producto
-- **Página 9**: cambio de superficie técnica (Gamifier → Webapp/Flutter). Destape masivo de producto no documentado. Introducción del FSD documental
-- **Página 10**: pipeline FSD-style consolidado. Cowork ejerce criterio editorial autónomo
-- **Páginas 11-12**: sesión doble. Estreno de categoría + plantilla v2 + fix quirúrgico inter-páginas. Pipeline confirma madurez para producción en serie
-- **Página 13**: segunda aplicación de plantilla v2. Sesión interrumpida por error de API de imagen en Cowork — resuelta abriendo nueva conversación. Plantilla v2 se confirma estable y replicable. Tiempo de sesión inferior a la primera aplicación (como se predijo)
+### Evolución del pipeline
 
-**Lectura**: el pipeline es técnicamente maduro. Las plantillas editoriales aceleran cada sesión ~30%. El principal riesgo operativo actual no es el contenido sino la **estabilidad de las herramientas** (error de imagen de la API de Cowork — aprendizaje #33).
+| Hito | Páginas | Método | Velocidad |
+|---|---|---|---|
+| Páginas 1-8 | Individual | FSD documental por página, DETENTE entre fases | ~2-3h/página |
+| Páginas 9-10 | Individual | FSD documental + FSD técnico, menos DETENTE | ~1.5-2h/página |
+| Páginas 11-13 | Mini-tanda | Plantilla v2 + FSD documental + FSD técnico | ~1h/página |
+| Páginas 14-16 | Serie producción | Plantilla v2 + FSD técnico, Cowork autónomo | ~45min/página |
+| Páginas 17-21 | Briefing único 5 pág | Plantilla v2, sin FSD, manual histórico como ref | ~30min/página |
+| Páginas 22-31 | Briefing único 8+1 pág | Sin plantilla rígida, manual histórico + UI | ~30min/página |
+| Páginas 32-37 | Briefing único 5+3 pág | Mix: features nuevas + antiguas, AND/OR | ~35min/página |
+| Páginas 38-41 | Briefing único 3+1 pág | Últimas, exploración de UI | ~35min/página |
+
+**Lectura final**: el pipeline pasó de ~2-3h/página (supervisión alta, página a página) a ~30-35min/página (briefings en bloque, Cowork autónomo). **Aceleración de ~5x** a lo largo del proyecto, manteniendo calidad uniforme.
 
 ---
 
-## 4. Auditoría del manual histórico y estado del sidebar
+## 4. Estado del sidebar y auditoría
 
-### Limpieza de páginas antiguas (decisión del 28-abr-2026, ejecutada 30-abr-2026)
+### Manual histórico vs manual nuevo
 
-Se eliminaron del repo y del sidebar **21 páginas heredadas del manual antiguo** que no pasaron por el pipeline FSD-style. El manual queda temporalmente más corto (13 páginas) pero uniformemente bueno. El contenido antiguo está preservado en el historial de Git para consulta durante la sesión de arquitectura de la Fase 2.
+| Métrica | Manual antiguo (PDF) | Manual nuevo (Docusaurus) |
+|---|---|---|
+| Páginas | 39 (baja calidad, inconsistentes) | 41 (calidad uniforme, pipeline FSD-style) |
+| Capturas | Genéricas (`img-000.png` a `img-238.png`) | Semánticas con prefijo de superficie |
+| Estructura | Por campo del formulario | Por tarea del GM + experiencia del Player |
+| Features documentadas | Solo las de 2024 | Todas las de producción al 30-abr-2026, incluyendo AND/OR, Votaciones, Notificaciones renovadas, 5 nuevos tipos de Reto |
+| Multiidioma | Mencionado pero no documentado | Página dedicada |
+| Objetos Digitales | Como "Recompensas" genérico | 3 páginas dedicadas (Aventura, Misión, Reto) con condiciones AND/OR |
+| Métricas | Básico | Clasificación completa + Game Board con 3 bloques |
+| Game Designer | No documentado | Página dedicada con permisos y limitaciones |
 
-**Páginas eliminadas:**
+### Limpieza ejecutada
 
-- **Aventuras** (11): Publicación y Fechas, Game Pin y Bloqueos, Visibilidad y Controles, Imágenes, Idiomas y Traducciones, Contenido y Descripción, Condiciones de Finalización, Mapas, Equipos (Clanes), Retos de la Aventura, Puntos de Interés (POI).
-- **Misiones** (8, sección completa eliminada): Configuración General, Bloqueos y Visibilidad, Contenido e Imágenes, Descripción, Mapas, Recompensas, Componente Llamada, Enlazar Retos.
-- **Recompensas** (2): Recompensas de Misión, Recompensas de Reto.
-- **Métricas** (2, sección completa eliminada): Clasificación, Game Board.
-
-### Estado actual del sidebar
-
-```
-Manual AdventuriQ/
-├── intro.md                                    ✅
-├── warnings.md                                 ✅
-├── conceptos-basicos.md                        ✅
-├── tokens.md                                   ✅
-├── Aventuras/
-│   ├── crear-aventura.md                       ✅
-│   ├── configuracion.md                        ✅
-│   ├── publicar-aventura.md                    ✅
-│   ├── acceder-a-una-aventura.md               ✅
-│   └── bitacora.md                             ✅
-├── Retos/
-│   ├── index.md                                ✅
-│   ├── nube-de-palabras.md                     ✅
-│   └── respuesta-exacta.md                     ✅
-└── Recompensas/
-    └── configuracion-contenido.md              ✅
-```
-
-**13 páginas, 0 páginas antiguas, calidad uniforme.**
-
-### Rutas de documentación pendientes
-
-#### Sección "Retos" — mini-tanda en curso (3 de 5 completadas)
-
-- ✅ `retos/nube-de-palabras.md` (mini-tanda 1/5)
-- ✅ `retos/respuesta-exacta.md` (mini-tanda 2/5)
-- 📌 `retos/pregunta-respuesta-audio.md` (mini-tanda 3/5) ← **SIGUIENTE**
-- 📌 `retos/pregunta-respuesta-video.md` (mini-tanda 4/5)
-- 📌 `retos/ruleta-de-la-fortuna.md` (mini-tanda 5/5)
-- 📌 `aventuras/votaciones.md` (tras mini-tanda, no es tipo de Reto)
-- 📌 5 tipos vigentes existentes (fase posterior a la mini-tanda)
-
-#### Sección "Aventuras" — pendiente de reestructuración
-
-- 📌 11 sub-páginas eliminadas pendientes de rehacer (Fase 2)
-- 📌 `aventuras/tipos-de-aventura.md`
-
-#### Secciones eliminadas pendientes de rehacer (Fase 2)
-
-- 📌 **Misiones** — 8 páginas (sección completa por crear)
-- 📌 **Recompensas** — 2 páginas + objetos a nivel Aventura
-- 📌 **Métricas** — 2 páginas (sección completa por crear)
-
-### Plan de Fase 2 — Sesión de arquitectura + reescritura (tras mini-tanda)
-
-**Decisión registrada**: Camino B (reestructurar primero, rehacer después).
-
-1. **Sesión de arquitectura de información** (Mike + Claude, sin Cowork): replantear la estructura del manual. Objetivo: reorganizar las 21 páginas eliminadas en ~12-15 páginas mejor estructuradas, organizadas por **tarea del GM** en lugar de por **campo del formulario del Gamifier**. Posibles consolidaciones:
-   - "Imágenes" + "Contenido y Descripción" + "Idiomas y Traducciones" → "Contenido multilingüe de la Aventura".
-   - Varias sub-páginas de Aventuras → absorción en `aventuras/configuracion.md` ampliada.
-   - Estructura de Misiones replanteada siguiendo el mismo patrón que Aventuras.
-
-2. **Crear plantillas editoriales** por sección (mismo patrón que `PLANTILLA-tipos-de-reto-v2.md`).
-
-3. **Reescribir en serie** con Cowork usando las plantillas.
+Se eliminaron **21 páginas antiguas** del manual histórico que fueron reemplazadas por páginas nuevas de calidad superior. Todo el contenido antiguo está preservado en el historial de Git.
 
 ---
 
@@ -203,36 +220,31 @@ Manual AdventuriQ/
 
 ### Términos oficiales del manual
 
-Aventura, Misión, Reto, Objeto Digital, Bitácora, Muro, Galería, Baúl, Clasificación, GamePIN, deep link, POI, Plan Luna, Plan Mundo, Token, Licencia (Individual/Equipo, Mensual/Anual), Branderización, Raze, FSD (técnico/documental), Votaciones, Nube de Palabras, Respuesta Exacta, Final de Aventura, Volver a Jugar, Tramos de Bonus.
+Aventura, Misión, Reto, Objeto Digital, Bitácora, Muro, Galería, Baúl, Clasificación, Game Board, GamePIN, deep link, POI, Plan Luna, Plan Mundo, Token, Licencia (Individual/Equipo, Mensual/Anual), Branderización, Raze, FSD (técnico/documental), Votaciones, Nube de Palabras, Respuesta Exacta, Subir Foto, Ruleta de la Fortuna, Preguntas Encadenadas, Llamada a la Acción, Respuesta Libre, Notificaciones, Condiciones de Finalización, Tramos de Bonus, Game Designer, Equipos (Clanes).
 
 ### Roles de usuario (4)
 
 1. **Admin** (AdventuriQ)
-2. **Game Master** — compra licencias, crea Aventuras, gestiona equipo
-3. **Game Designer** — asistente bajo supervisión del GM (no puede crear Aventuras)
-4. **Player**
+2. **Game Master** — compra licencias, crea Aventuras, gestiona equipo. ✅ Documentado en todo el manual
+3. **Game Designer** — asistente bajo supervisión del GM. ✅ Documentado en `game-designer.md`
+4. **Player**. ✅ Experiencia documentada en bitácora, acceder-a-una-aventura, y en §4 de cada tipo de Reto
 
-### Tipos de Reto en la BD
+### Tipos de Reto — los 10 vigentes ✅ todos documentados
 
-- **14 totales** → 10 vigentes + 4 deprecados (IDs 3, 5, 6, 7).
-- En el manual solo se documentan los 10 vigentes.
-
-**Lista de los 10 tipos vigentes** (con orden definitivo en página índice):
-
-1. Pregunta / Respuesta
-2. Preguntas Encadenadas
-3. Respuesta Libre
-4. Compartir Foto
-5. Llamada a la Acción
-6. Respuesta Exacta (nuevo) ✅ documentado
-7. Pregunta/Respuesta con Audio (nuevo)
-8. Pregunta/Respuesta con Vídeo (nuevo)
-9. Ruleta de la Fortuna (nuevo)
-10. Nube de Palabras (nuevo) ✅ documentado
+1. Pregunta / Respuesta ✅
+2. Preguntas Encadenadas ✅
+3. Respuesta Libre ✅
+4. Subir Foto ✅
+5. Llamada a la Acción ✅
+6. Respuesta Exacta ✅
+7. Pregunta/Respuesta con Audio ✅
+8. Pregunta/Respuesta con Vídeo ✅
+9. Ruleta de la Fortuna ✅
+10. Nube de Palabras ✅
 
 ### Modelo económico (consolidado en tokens.md)
 
-**4 variantes de Licencia de Aventura** (elección al crear la Aventura):
+**4 variantes de Licencia de Aventura**:
 
 | Tipo | Precio | Duración |
 |---|---|---|
@@ -241,211 +253,133 @@ Aventura, Misión, Reto, Objeto Digital, Bitácora, Muro, Galería, Baúl, Clasi
 | Licencia Anual (individual) | 200 € / año | 12 meses desde publicación |
 | Licencia Anual (equipo) | 400 € / año | 12 meses desde publicación |
 
-- **Patrón de precios**: Equipo = 2× Individual en ambas periodicidades.
-- **Modo Individual**: solo ranking de jugadores.
-- **Modo Equipo**: ranking de jugadores + ranking por equipos + ranking del jugador en su equipo. Incluye gestión de equipos (clanes).
-- **La elección Individual/Equipo se hace al crear la Aventura** y determina el modo de juego.
-- **La caducidad empieza al publicar la Aventura**, no al comprar la Licencia. Es irreversible.
-- **Token**: 1 € por Player por partida (fungibles, no caducan).
-- **Vinculación de Aventura ≠ consumo de Token** (página #10): el Token se consume al iniciar la primera partida, no al vincular.
-- **Plan Luna**: desde 750 € / año — 1 Aventura, Players ilimitados, Branderización incluida.
-- **Plan Mundo**: desde 3.600 € / año — Aventuras ilimitadas, Players ilimitados, Branderización incluida.
-- Precios publicados **sin impuestos** (cálculo en checkout).
-- Email comercial: `start@adventuriq.com`.
-
-**Productos adicionales en la tienda** (detectados pero no documentados):
-
-- Parking Aventura Mensual: 6 € / mes
-- Parking Aventura Anual: 70 € / año
-- Ampliación espacio (+100 MB): 4 € / mes
-- Game Designer Anual: 50 € / año
-- Game Designer Mensual: precio pendiente de confirmar
+- Equipo = 2× Individual. Caducidad empieza al publicar (irreversible).
+- Token: 1 € por Player por partida (fungibles, no caducan).
+- Plan Luna: desde 750 €/año. Plan Mundo: desde 3.600 €/año.
+- Precios sin impuestos. Email: `start@adventuriq.com`.
 
 ---
 
 ## 6. Reglas y convenciones del pipeline
 
-### Reglas absolutas (COWORK_PROMPT.md)
+### Reglas absolutas
 
-- **No-destrucción**: nunca borrar contenido existente salvo autorización explícita del dueño.
-- **Excepciones autorizadas**: conflictos terminológicos (p. ej., "Recompensa" → "Objeto Digital").
-- **Supervisión por fases**: Cowork se detiene tras cada fase y espera validación humana. Las pausas marcadas con DETENTE son obligatorias.
-- **Admonitions con criterio editorial moderado**: máximo 4-5 por página.
-- **Capturas**: nombres semánticos con prefijo de superficie. Detalle abajo.
-- **Flutter Webapp**: requiere navegador completo con JavaScript habilitado. No negociable.
-- **Contraseñas**: nunca aparecen en capturas ni texto.
-- **SEO en frontmatter**: `title`, `description`, `sidebar_position`, `tags`, `keywords`.
-- **Enlaces internos**: siempre relativos. No enlazar a páginas que no existen aún — dejar texto plano (regla endurecida tras incidente de `conceptos-basicos.md`).
-- **Impuestos**: en páginas con precios, notas genéricas. Nunca detalles fiscales específicos.
-- **Contraste con manual histórico**: selectivo. Usar lo que aplica, descartar flujos obsoletos.
-- **Contraste con FSD técnico**: es autoridad sobre comportamiento. La UI verificada empíricamente es autoridad sobre terminología (aprendizaje #28).
-
-### Naming de capturas con prefijo de superficie
-
-Todas las capturas llevan prefijo `webapp-` (Flutter móvil) o `gamifier-` (AngularJS desktop). Docusaurus colapsa todas las imágenes en `/assets/images/` con hashes — el prefijo en el nombre permite aplicar CSS diferenciado. Ejemplos: `webapp-bitacora-votar.png`, `gamifier-reto-respuesta-exacta-tramos.png`.
-
-### Iconos identificativos de tipo de Reto
-
-- **Almacenamiento**: `static/img/retos-iconos/reto-icon-{slug}.png`.
-- **No llevan prefijos** `webapp-` ni `gamifier-` (son assets de identidad visual, no capturas).
-- **Tamaño en página individual**: 120px, flotando a la derecha.
-- **Tamaño en tabla del índice**: 48px.
-- **Regla CSS**: `.reto-icon` en `src/css/custom.css`.
+- **No-destrucción** salvo autorización explícita.
+- **Admonitions**: máximo 4-5 por página.
+- **Capturas**: prefijo `webapp-*` / `gamifier-*`, sin subcarpetas.
+- **Iconos de Reto**: `static/img/retos-iconos/reto-icon-{slug}.png`, CSS `.reto-icon`.
+- **Flutter Webapp**: navegador completo con JS.
+- **SEO frontmatter**: title, description, sidebar_position, keywords.
+- **Enlaces internos**: relativos. Texto plano sin link para páginas inexistentes.
+- **Impuestos**: notas genéricas, nunca detalles fiscales.
+- **FSD técnico**: autoridad sobre comportamiento. UI: autoridad sobre terminología.
 
 ### Convenciones técnicas de Docusaurus 3.10
 
-- **Anchors con emoji**: llevan guión inicial. `## 📦 X` genera `#-x`.
-- **Portada**: `intro.md` se sirve en `/` (no en `/intro`).
-- **Mermaid**: usar `<br/>` para saltos de línea en nodos.
-- **sidebars.ts explícito**: el orden en `sidebars.ts` manda; `sidebar_position` del frontmatter debe ser coherente.
-- **`onBrokenLinks: 'warn'`**: pendiente endurecer a `'throw'` (ver §7).
+- Anchors con emoji llevan guión inicial.
+- `intro.md` se sirve en `/`.
+- Mermaid: `<br/>` para saltos de línea.
+- `sidebars.ts` explícito manda sobre `sidebar_position`.
+- `onBrokenLinks: 'warn'` — pendiente endurecer a `'throw'`.
 
-### Plantillas editoriales para mini-tandas
+### Plantillas editoriales
 
-La plantilla se valida estrenándola en la primera página. Las siguientes heredan la estructura y solo exponen diferencias.
-
-**Caso de aplicación**: `PLANTILLA-tipos-de-reto-v2.md` validada en `nube-de-palabras.md`, confirmada estable en `respuesta-exacta.md`. Aplicable a 7 páginas más de tipos de Reto.
-
-### Patrón de revisión consolidado
-
-1. Cowork genera el `.md` final.
-2. Mike lo pega en el chat con Claude (web).
-3. Claude revisa (inconsistencias, SEO, coherencia terminológica, enlaces a páginas inexistentes).
-4. Contraste con `manual-original-v2.md` y/o FSD técnico si aplica.
-5. `npm run build` local.
-6. `git add` / `commit` / `push` origin `source`.
-7. Verificación en producción.
-8. Actualizar este `PROJECT_STATE.md`.
-9. Pasar a la siguiente página.
+- `PLANTILLA-tipos-de-reto-v2.md` — usada en las 10 páginas de tipos de Reto + 2 páginas de Objetos Digitales de Reto.
 
 ---
 
-## 7. Pendientes inmediatos
+## 7. Pendientes menores (no bloquean el manual)
 
 ### Branding visual
 
-- [ ] Logo `adventuriq.svg` o PNG transparente → `static/img/logo.svg`
+- [ ] Logo `adventuriq.svg` → `static/img/logo.svg`
 - [ ] Favicon → `static/img/favicon.ico`
 - [ ] Social card 1200×630 → `static/img/social-card.png`
 
 ### Configuración Docusaurus
 
-- [ ] **Endurecer `onBrokenLinks: 'throw'`**. Aplicación recomendada tras cubrir páginas con enlaces "preventivos".
-- [ ] Migrar `onBrokenMarkdownLinks` al nuevo formato `markdown.hooks` (no urgente).
+- [ ] **Endurecer `onBrokenLinks: 'throw'`** — ahora que el manual está completo, es el momento ideal.
+- [ ] Migrar `onBrokenMarkdownLinks` al nuevo formato (Docusaurus v4).
 
-### Deuda documental activa
+### Deuda visual menor
 
-#### D-03 · Sub-sesión de capturas de estado finalizado de `bitacora.md`
+- [ ] **D-03**: Sub-sesión de capturas de estado finalizado de `bitacora.md` — pastillas "Final de Aventura" y "Volver a Jugar" solo descritas con texto, sin captura.
+- [ ] **Ranking HTML**: hallazgo en Clasificación (URL pública con Top 10). No documentado por decisión editorial — evaluar en el futuro.
+- [ ] Captura de variante con subdominio branderizado del deep link.
 
-- **Prioridad**: media. Información textual ya publicada; la deuda es solo visual.
+### Documentación futura (no core)
 
-#### D-05 · Ampliaciones de `aventuras/configuracion.md`
-
-- Activador del sistema de Votaciones (5 niveles e iconos).
-- Sección "Final de Aventura" (Mensaje Final + Volver a Jugar).
-- Sección "Acceso a la Aventura" (GamePIN, deep link, QR).
-
-#### D-06 · `aventuras/listado-aventuras-player.md` (candidata, no confirmada)
-
-#### D-07 · Otros pendientes documentales
-
-- Branderización del Webapp (candidata a `branding.md`).
-- Productos adicionales de la tienda.
-- Captura de variante con subdominio branderizado del deep link.
-
-#### D-09 · `retos/pregunta-respuesta-audio.md` (mini-tanda 3/5) ← SIGUIENTE
-
-- **FSD técnico disponible**: sí.
-- **Plantilla**: `PLANTILLA-tipos-de-reto-v2.md`.
-- **Prioridad**: alta.
-
-#### D-10 · `retos/pregunta-respuesta-video.md` (mini-tanda 4/5)
-
-- **FSD técnico disponible**: sí.
-
-#### D-11 · `retos/ruleta-de-la-fortuna.md` (mini-tanda 5/5)
-
-- **FSD técnico disponible**: sí.
-
-#### D-12 · `aventuras/votaciones.md`
-
-- **FSD técnico disponible**: sí.
-- **Prioridad**: alta — la deuda visible más vieja de bitácora.
-
-#### D-13 · 5 tipos de Reto vigentes ya existentes (fase posterior)
-
-#### D-14 · Reescritura de las 21 páginas eliminadas (Fase 2)
-
-- **Decisión**: Camino B (sesión de arquitectura primero, reescritura después).
-- **Alcance**: 11 de Aventuras + 8 de Misiones + 2 de Recompensas + 2 de Métricas.
-- **Pre-requisito**: sesión de arquitectura de información (Mike + Claude) para reorganizar en ~12-15 páginas.
-- **Estimación**: tras la sesión de arquitectura, ~10-12 sesiones de Cowork.
+- [ ] **Branderización del Webapp** — cuando sea prioritario para clientes Luna/Mundo.
+- [ ] **Productos adicionales de la tienda** (Parking Aventura, Ampliación espacio, etc.).
 
 ### Oportunidad comercial
 
 - [ ] Enlazar `docs.adventuriq.com/tokens` desde landing comercial.
 
-### Próxima página a atacar
-
-**`retos/pregunta-respuesta-audio.md`** (D-09) — mini-tanda 3/5. Misma plantilla v2, con FSD técnico disponible. Estimación: ~50-60 min (sesión predecible).
-
-Para arrancar mañana, Mike pasa el FSD técnico de PR Audio al chat y Claude genera FSD documental + prompt de 5 fases.
-
 ---
 
 ## 8. Aprendizajes acumulados del pipeline
 
-1. **Cowork aprende con iteración** — la curva de supervisión baja visiblemente desde la página 3.
-2. **Sin capturas = sesión rápida** (warnings.md tardó ~1/3 que recompensas).
-3. **Flutter requiere navegador real** — confirmado en producción, no hay atajos.
-4. **AngularJS 1.5 tiene rarezas** — tooltips y menús abiertos contaminan capturas; conviene "reset visual" antes de capturar.
-5. **Normalización terminológica** — cuando dos términos nombran lo mismo, el dueño del manual autoriza consolidación caso a caso.
-6. **El manual histórico tiene contenido real** (no son placeholders), pero vale como referencia, no como fuente literal.
-7. **`npm run build` local** antes de pushear ahorra viajes a GitHub Actions.
-8. **Docusaurus 3.10 — slugs con emoji llevan guión inicial.** Verificar en HTML compilado.
-9. **La portada del manual se enlaza como `/`, no como `intro`.**
-10. **Documentar obliga a clarificar el producto.** El pipeline documenta y audita a la vez.
-11. **Principio editorial de impuestos.** Notas genéricas; detalles fiscales en checkout/T&C.
-12. **Página de manual ≠ documentación técnica cuando hablamos de dinero.** `tokens.md` es landing de pricing.
-13. **Cuando aparece información nueva durante redacción, parar y preguntar.**
-14. **El manual histórico es un detector de inconsistencias.** Contraste selectivo antes de publicar.
+1. **Cowork aprende con iteración** — supervisión baja visiblemente desde la página 3.
+2. **Sin capturas = sesión rápida.**
+3. **Flutter requiere navegador real.**
+4. **AngularJS 1.5 tiene rarezas** — "reset visual" antes de capturar.
+5. **Normalización terminológica** caso a caso con autorización del dueño.
+6. **El manual histórico es referencia, no fuente literal.**
+7. **`npm run build` local** antes de pushear.
+8. **Slugs con emoji llevan guión inicial.**
+9. **La portada se enlaza como `/`.**
+10. **Documentar obliga a clarificar el producto.**
+11. **Principio editorial de impuestos**: notas genéricas.
+12. **`tokens.md` es landing de pricing**, no solo documentación.
+13. **Info nueva durante redacción → parar y preguntar.**
+14. **El manual histórico detecta inconsistencias.**
 15. **Fix quirúrgico > reescritura completa.**
-16. **El manual histórico puede quedar obsoleto en flujos concretos.** Contraste selectivo.
-17. **Documentar sigue destapando producto (iteración 2).**
-18. **Publicar es un punto de no retorno para la caducidad.**
-19. **Las features condicionales necesitan categorías editoriales explícitas.**
-20. **El estado finalizado merece una mini-sesión propia.**
-21. **La normalización terminológica puede no ser necesaria.** Verificar empíricamente la UI actual.
-22. **Documentar destapa producto no documentado en otras páginas.** Mantener §7 actualizado.
-23. **La auditoría retroactiva no siempre toca aplicarla.**
-24. **`onBrokenLinks: 'throw'` es la red de seguridad técnica del aprendizaje #16.**
-25. **Cuando existe FSD técnico previo, leerlo antes de redactar.** FSD técnico = comportamiento, FSD documental = estructura editorial.
-26. **Cowork puede ejercer buen criterio editorial autónomo cuando tiene contexto suficiente.**
-27. **La convención de carpetas `static/img/` no sobrevive al build de Docusaurus.** Apoyarse en naming del archivo, no en estructura de carpetas.
-28. **El FSD técnico es autoridad sobre comportamiento, pero la UI manda sobre terminología.** Jerarquía: comportamiento ← FSD técnico, terminología ← UI verificada empíricamente.
-29. **Las plantillas editoriales se validan estrenándolas, no diseñándolas en abstracto.** Son "vivas".
-30. **Una sesión puede cerrar varios hitos simultáneos cuando hay preparación previa fuerte.**
-31. **Los fixes quirúrgicos inter-páginas son la consecuencia natural del aprendizaje #22.**
-32. **Un manual corto y uniformemente bueno supera a uno largo e inconsistente.** Decisión aplicada con 21 páginas eliminadas. El lector no distingue "esto se hizo primero" — solo ve inconsistencia o consistencia.
-33. **Cuando Cowork se queda en bucle por error de API, abrir nueva conversación.** El error `Could not process image` corrompe el contexto de la conversación y no se puede recuperar reintentando. La solución es cerrar, abrir nueva conversación, y retomar desde el punto donde se quedó con instrucciones explícitas de **no analizar imágenes inline** — solo guardar archivos. El contenido del FSD técnico tiene toda la información necesaria para redactar incluso sin esa captura concreta.
+16. **El manual histórico puede quedar obsoleto.**
+17. **Documentar destapa producto** (iteración continua).
+18. **Publicar es punto de no retorno para caducidad.**
+19. **Features condicionales necesitan categorías editoriales.**
+20. **El estado finalizado merece mini-sesión propia.**
+21. **Verificar UI antes de normalizar terminología.**
+22. **Documentar destapa deuda en otras páginas.** Mantener §7 actualizado.
+23. **Auditoría retroactiva: fix quirúrgico del caso concreto basta.**
+24. **`onBrokenLinks: 'throw'` es red de seguridad técnica.**
+25. **FSD técnico = comportamiento, FSD documental = estructura.**
+26. **Cowork ejerce buen criterio editorial autónomo.**
+27. **Carpetas `static/img/` no sobreviven al build.** Naming > carpetas.
+28. **FSD técnico → comportamiento, UI → terminología.**
+29. **Plantillas se validan estrenándolas.** Son "vivas".
+30. **Preparación previa fuerte → sesiones multi-hito.**
+31. **Fixes inter-páginas son consecuencia natural del #22.**
+32. **Manual corto y bueno > largo e inconsistente.**
+33. **Error API de Cowork → cerrar conversación y abrir nueva.**
+34. **Briefings únicos para series de páginas aceleran el pipeline ~5x** sin sacrificar calidad. Funciona cuando: (a) Cowork ya domina la plantilla, (b) las páginas comparten estructura o contexto, (c) hay referencia de estilo de páginas anteriores. Pasar de DETENTE-por-fase a DETENTE-al-final-de-la-serie fue la decisión de productividad más impactante del proyecto.
+35. **El manual histórico ya no es fuente principal — el manual nuevo lo reemplaza.** Cuando las 41 páginas nuevas cubren todas las features del producto con calidad superior, el manual antiguo pasa de "fuente de contraste" a "referencia histórica". El ciclo de migración se ha completado.
 
 ---
 
-## 9. Cómo usar este documento en una nueva sesión
+## 9. Cómo usar este documento en el futuro
 
-Cuando abras un nuevo chat con Claude y necesites retomar este proyecto:
+El manual está completo. Este documento ahora sirve para:
 
-**Opción A — Mínima**
+**A — Documentar features nuevas**
 
-> "Retomamos el pipeline de documentación de AdventuriQ. Este es el estado actual del proyecto, léelo antes de responder."
+Cuando se desarrolle una feature nueva en AdventuriQ:
+1. Claude Code genera el FSD técnico en `fsd/`.
+2. Mike abre chat con Claude Web, adjunta este `PROJECT_STATE.md`.
+3. Claude genera briefing para Cowork basado en la plantilla correspondiente.
+4. Cowork ejecuta, Mike valida, deploy.
 
-**Opción B — Con objetivo concreto** (recomendada)
+**B — Mantener el manual actualizado**
 
-> "Retomamos el pipeline de documentación de AdventuriQ. Estado adjunto. Objetivo de hoy: `retos/pregunta-respuesta-audio.md` (D-09), mini-tanda 3/5, aplicando la plantilla v2. Pásame el FSD técnico de PR Audio cuando te lo pida."
+Si la UI cambia (nombres de campos, nuevas opciones, toggles renombrados):
+1. Identificar qué páginas del manual se ven afectadas.
+2. Fix quirúrgico con Cowork (aprendizaje #15).
+3. Actualizar este `PROJECT_STATE.md` si el cambio afecta al glosario o a las convenciones.
 
-**Opción C — Ante dudas**
+**C — Recordar cómo funciona el pipeline**
 
-Usa los términos clave (pipeline, Cowork, Docusaurus, FSD-style, mini-tanda, plantilla v2, Aventura, Misión, Reto, Game Master) para que Claude recupere contexto de chats anteriores vía su sistema de memoria.
+Los 35 aprendizajes de §8 son la guía operativa. Los más importantes para el día a día: #28 (UI manda sobre terminología), #34 (briefings únicos para series), #15 (fix quirúrgico > reescritura).
 
 ---
 
@@ -453,16 +387,24 @@ Usa los términos clave (pipeline, Cowork, Docusaurus, FSD-style, mini-tanda, pl
 
 | Fecha | Cambio |
 |---|---|
-| 2026-04-24 | Creación inicial del documento. Consolida el estado tras 5 páginas en producción. |
-| 2026-04-24 | Deploy de `tokens.md` (página #6). Documentada como landing comercial. Aprendizajes 8-13. |
-| 2026-04-24 | Fix quirúrgico #1 en `tokens.md`: caducidad de Licencia empieza al publicar. Aprendizajes 14-15. |
-| 2026-04-24 | Deploy de `crear-aventura.md` (#7) + `publicar-aventura.md` (#8). Fix #2 en `tokens.md`: 4 variantes de Licencia. Aprendizajes 16-18. |
-| 2026-04-28 | **Deploy de `bitacora.md` (#9)**. Primera página Webapp. Detectó Votaciones, NdP, "Volver a Jugar". Introducción del FSD documental. Aprendizajes 19-22. |
-| 2026-04-28 | **Deploy de `acceder-a-una-aventura.md` (#10)**. 3 rutas de vinculación. Aprendizajes 25-26. |
-| 2026-04-28 | **Fix de enlaces rotos en `conceptos-basicos.md`**. Aprendizajes 23-24. |
-| 2026-04-28 | **Refactor de naming de capturas** (50 imágenes, 8 archivos .md). Aprendizaje 27. |
-| 2026-04-28 | **Sesión doble: `retos/index.md` (#11) + `nube-de-palabras.md` (#12)**. Estreno categoría Retos + plantilla v2 + fix inter-páginas en bitácora. Aprendizajes 28-31. |
-| 2026-04-30 | **Deploy de `respuesta-exacta.md` (#13)**. Mini-tanda 2/5. Mecánica de reintentos + tramos de bonus. Sesión interrumpida por error API de imagen en Cowork — resuelta con nueva conversación. |
-| 2026-04-30 | **Limpieza de 21 páginas antiguas** del repo y sidebar. Manual queda en 13 páginas uniformes. Plan de Fase 2 (Camino B: sesión de arquitectura + reescritura) registrado. Aprendizajes 32-33. |
+| 2026-04-24 | Creación inicial. 5 páginas en producción. |
+| 2026-04-24 | Deploy de `tokens.md` (#6). Aprendizajes 8-13. |
+| 2026-04-24 | Fix #1 en `tokens.md`: caducidad. Aprendizajes 14-15. |
+| 2026-04-24 | Deploy de `crear-aventura.md` (#7) + `publicar-aventura.md` (#8). Aprendizajes 16-18. |
+| 2026-04-28 | Deploy de `bitacora.md` (#9). Primera página Webapp. Aprendizajes 19-22. |
+| 2026-04-28 | Deploy de `acceder-a-una-aventura.md` (#10). Aprendizajes 25-26. |
+| 2026-04-28 | Fix enlaces rotos en `conceptos-basicos.md`. Aprendizajes 23-24. |
+| 2026-04-28 | Refactor de naming de capturas (50 imágenes). Aprendizaje 27. |
+| 2026-04-28 | Deploy de `retos/index.md` (#11) + `nube-de-palabras.md` (#12). Plantilla v2. Aprendizajes 28-31. |
+| 2026-04-30 | Deploy de `respuesta-exacta.md` (#13). Error API Cowork resuelto. Aprendizaje 33. |
+| 2026-04-30 | Limpieza de 21 páginas antiguas. Aprendizaje 32. |
+| 2026-04-30 | Deploy de PR Audio (#14), PR Vídeo (#15), Ruleta (#16). Mini-tanda 3-5/5 completada. |
+| 2026-04-30 | Deploy de 5 Retos originales (#17-21). Briefing único para serie. |
+| 2026-04-30 | Deploy de 9 páginas Misiones (#22-31, incluye index + 8 páginas + fix Objetos Digitales). Sección completa. |
+| 2026-04-30 | Deploy de 3 páginas Objetos Digitales (Aventura, Misión corregida, Reto). Editor AND/OR documentado. |
+| 2026-04-30 | Deploy de 5 páginas Aventuras pendientes (#32-36): Condiciones de Finalización, Votaciones, Equipos, Mapas/POI, Idiomas. |
+| 2026-04-30 | Deploy de Objetos Digitales de Aventura (#37). |
+| 2026-04-30 | **Deploy de las 3 últimas páginas (#38-41): Clasificación, Game Board, Game Designer.** Hallazgos: Ranking HTML (no documentado por decisión), Game Board con 3 bloques (estadísticas por Misión no documentadas en manual antiguo), Game Designer con permisos/limitaciones detallados. |
+| 2026-04-30 | **🎯 MANUAL COMPLETO.** 41 páginas publicadas, 0 pendientes de features core. Aprendizajes 34-35. Pipeline acelerado de ~2-3h/página a ~30min/página (5x) a lo largo del proyecto. |
 
-<!-- Añade aquí cada actualización significativa al cierre de una sesión -->
+<!-- El manual está completo. Futuras actualizaciones serán para features nuevas o mantenimiento. -->

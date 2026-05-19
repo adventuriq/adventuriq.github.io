@@ -25,7 +25,7 @@ La sección de visibilidad se encuentra en el formulario de edición de la Misi�
 | **La Misión es jugable** | Toggle | Controla si el Player puede interactuar con la Misión. Si se desactiva, la Misión aparece en el listado pero está bloqueada — el Player la ve pero no puede entrar. |
 | **La Misión será jugable a partir de** | Fecha + hora | Fecha de inicio de la ventana de jugabilidad. |
 | **La Misión será jugable hasta** | Fecha + hora | Fecha de fin de la ventana de jugabilidad. Pasada esta fecha, la Misión se bloquea automáticamente. |
-| **Mostrar el detalle de los Retos** | Toggle | Controla si el Player puede ver el listado de Retos dentro de la Misión antes de jugarla. Si se desactiva, el Player entra directamente al primer Reto sin ver el listado previo. |
+| **Mostrar el detalle de los Retos** | Toggle | Controla si el Player ve la pantalla intermedia de detalle de cada Reto (imagen, descripción y botón "Empezar") antes de acceder a la mecánica. Si se desactiva, al pulsar un Reto desde el listado el Player entra directamente a la mecánica (pregunta, ruleta, etc.) sin pantalla intermedia. Activado por defecto. |
 
 ![Controles de visibilidad y jugabilidad — toggles de visible, jugable, detalle de retos, imágenes de listado y cabecera](/img/gamifier-mision-visibilidad-jugabilidad.png)
 
@@ -72,7 +72,11 @@ Usa **no visible** cuando la Misión aún no existe para el Player — por ejemp
 
 Usa **ventanas temporales** cuando el evento tiene un horario definido y quieres que las Misiones se activen y desactiven automáticamente.
 
-Usa **Mostrar el detalle de los Retos = No** cuando quieras que el Player entre directamente al primer Reto sin ver el listado completo — útil para mantener la sorpresa sobre qué viene a continuación.
+Usa **Mostrar el detalle de los Retos = No** cuando quieras que el Player entre directamente a la mecánica del Reto al pulsarlo, sin pasar por la pantalla intermedia de detalle (imagen + descripción + botón "Empezar"). Ideal para Aventuras rápidas tipo trivial donde la pantalla intermedia añade fricción sin aportar valor.
+
+:::note Excepción: Retos con geolocalización
+Los Retos con localización tipo GPS o GPS+QR **siempre** muestran la pantalla de detalle, independientemente de este toggle. La razón es que la pantalla de detalle es donde se muestra el mapa con el Punto de Interés al que el Player debe acudir. Este comportamiento es automático y no requiere configuración adicional.
+:::
 
 ## Continúa aprendiendo
 
