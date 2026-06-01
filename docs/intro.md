@@ -64,6 +64,8 @@ flowchart TD
     M2 --> R3["⚔️ Retos..."]:::reto
     R1 --> P["🏆 Puntos"]:::objeto
     R1 --> O["🎁 Objeto Digital"]:::objeto
+    M1 -.-> O
+    A -.-> O
 
     classDef aventura fill:#2d324f,stroke:#2d324f,color:#fff
     classDef mision fill:#4a5078,stroke:#2d324f,color:#fff
@@ -74,7 +76,7 @@ flowchart TD
 - **Aventura**: la experiencia gamificada completa. Es lo que el Player ve y juega.
 - **Misión**: una agrupación temática de Retos dentro de la Aventura. Permite organizar el contenido por fases o temas.
 - **Reto**: la prueba individual que el Player debe superar. Puede ser una pregunta, una foto, un QR, una respuesta libre y más.
-- Al completar Retos, el Player obtiene **Puntos**, **Objetos Digitales** (pistas, badges, códigos…) y otras recompensas.
+- Al completar Retos, el Player obtiene **Puntos** y **Objetos Digitales** (pistas, badges, códigos…). Los Objetos Digitales también se pueden otorgar a nivel de Misión o de Aventura (flechas discontinuas en el diagrama).
 
 ## Casos de uso
 
