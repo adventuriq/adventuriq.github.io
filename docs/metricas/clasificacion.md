@@ -37,6 +37,7 @@ La tabla muestra todos los Players que han interactuado con la Aventura, ordenad
 | **Equipo** | Nombre del Clan al que pertenece. |
 | **Fecha Ult. Jugada** | Fecha y hora de la última interacción del Player con la Aventura. |
 | **Pruebas Realizadas** | Número de Retos completados. |
+| **Objetos** | Número de Objetos Digitales obtenidos por el Player. Haz clic en el número para abrir el [Detalle del Player](./detalle-del-player.md) directamente en la pestaña Objetos. |
 | **Puntos Prueba** | Puntos obtenidos por resolver Retos. |
 | **Puntos Tiempo** | Puntos de bonificación por velocidad de resolución. |
 | **Total Puntos** | Suma total de puntos (Prueba + Tiempo + Votaciones). |
@@ -63,11 +64,13 @@ El botón **"Sincronizar Clasificación"** recalcula las posiciones y puntuacion
 
 El botón **"Exportar a Excel"** descarga un archivo con todos los datos de la tabla, respetando los filtros activos en ese momento. Permite al GM trabajar con los datos fuera de la plataforma para análisis avanzado, informes de participación o entregables a clientes.
 
-## Recorrido del Player 👑
+## Detalle del Player 👑
 
-Desde la columna **Acciones** de la tabla, el icono de recorrido permite acceder al detalle completo de la actividad de un Player concreto: qué Retos ha realizado, en qué orden, cuánto tiempo ha tardado en cada uno y qué puntuación ha obtenido.
+Desde la columna **Acciones** de la tabla, el icono de recorrido permite acceder al [Detalle del Player](./detalle-del-player.md): una ficha completa con el recorrido por los Retos (orden cronológico, tiempo, puntuación) y todos los Objetos Digitales que ha conseguido.
 
-Esta vista es especialmente útil para identificar patrones de comportamiento, detectar posibles problemas con Retos específicos o verificar la actividad de un participante concreto.
+También puedes acceder al Detalle haciendo clic en el **número de Objetos** de cualquier Player — se abrirá directamente en la pestaña Objetos.
+
+Esta vista es especialmente útil para identificar patrones de comportamiento, detectar posibles problemas con Retos específicos, verificar la actividad de un participante concreto o comprobar que ha recibido los Objetos Digitales esperados.
 
 ### Raze individual
 
@@ -111,6 +114,7 @@ Usa el filtro "No han jugado aún" para detectar participantes que se registraro
 
 ## Continúa aprendiendo
 
+- Ficha completa de un participante: [Detalle del Player](./detalle-del-player.md).
 - Vista del Player en la Bitácora: [Bitácora del Player](../aventuras/bitacora.md#clasificación).
 - Panel de monitorización por Retos: [Game Board](./game-board.md).
 - Configuración de visibilidad: [Configuración de una Aventura](../aventuras/configuracion.md).

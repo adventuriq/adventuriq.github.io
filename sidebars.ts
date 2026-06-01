@@ -65,6 +65,7 @@ const sidebars: SidebarsConfig = {
         'metricas/index',
         'metricas/clasificacion',
         'metricas/game-board',
+        'metricas/detalle-del-player',
       ],
     },
     {
