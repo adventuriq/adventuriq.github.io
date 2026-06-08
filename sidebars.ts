@@ -23,6 +23,7 @@ const sidebars: SidebarsConfig = {
         'aventuras/equipos-clanes',
         'aventuras/mapas-poi',
         'aventuras/idiomas-traducciones',
+        'aventuras/todos-los-objetos',
       ],
     },
     {

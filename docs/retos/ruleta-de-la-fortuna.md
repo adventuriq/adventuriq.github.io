@@ -84,7 +84,7 @@ La **condición de obtención** de un Objeto digital dentro del propio reto "Rul
 
 ### Pantalla del Reto
 
-Cuando el Player abre el Reto desde la Misión, ve la ruleta dibujada dinámicamente con las porciones configuradas por el Game Master: cada una muestra su icono, color y texto. En **móvil**, la ruleta ocupa la parte superior y el panel de información aparece debajo. En **escritorio**, la ruleta queda a la izquierda y el panel a la derecha.
+Cuando el Player abre el Reto desde la Misión, ve la ruleta dibujada dinámicamente con las porciones configuradas por el Game Master. Cada porción muestra de un vistazo lo que hay en juego: su **icono** y, debajo, los **puntos** que otorga (con signo: `+50`, `−20`) o un **icono de regalo** cuando esa porción entrega un Objeto Digital en lugar de puntos. Esta información es legible tanto en móvil como en escritorio. En **móvil**, la ruleta ocupa la parte superior y el panel de información aparece debajo. En **escritorio**, la ruleta queda a la izquierda y el panel a la derecha.
 
 ![Vista móvil del Reto Ruleta de la Fortuna — ruleta con porciones de colores, iconos y botón de girar](/img/webapp-reto-ruleta-mobile.png)
 
@@ -94,7 +94,7 @@ Debajo de la ruleta (o junto a ella en escritorio) aparece el botón **"Girar"**
 
 El Player pulsa **Girar** y la ruleta arranca con velocidad alta que va decreciendo con una curva de desaceleración natural. Mientras gira, se reproduce un **sonido de tick** cada vez que se cruza el borde de una porción, sincronizado con la velocidad real de la ruleta. La posición de la ruleta se conserva entre giros — no se reinicia al punto de partida.
 
-Al detenerse, la cabecera muestra el feedback del resultado y se dispara una **mini-animación tipo "loot-box"**: un icono misterioso tiembla con intensidad creciente, hace un flash y revela el premio obtenido.
+Al detenerse, la cabecera muestra en grande el **texto descriptivo** de la porción ganadora y el premio obtenido, y se dispara una **mini-animación tipo "loot-box"**: un icono misterioso tiembla con intensidad creciente, hace un flash y revela el premio.
 
 **Si el premio es un Objeto Digital**, se lanza la animación de revelación estándar de Premios seguida del carrusel del objeto obtenido, igual que cuando se entrega un Objeto Digital en cualquier otro contexto de AdventuriQ.
 
@@ -113,11 +113,4 @@ La Ruleta de la Fortuna brilla en estos escenarios: dinámicas de grupo donde el
 Cuándo **no** es la mejor elección: si necesitas evaluar conocimiento, usa **Pregunta/Respuesta** o **[Respuesta Exacta](./respuesta-exacta.md)**; si necesitas que el Player aporte contenido creativo, usa **Respuesta Libre** o **Subir Foto**; si quieres recoger ideas del grupo de forma visual, usa **[Nube de Palabras](./nube-de-palabras.md)**.
 
 :::tip 💡 Consejo de diseño
-Mezcla porciones de puntos positivos con alguna de puntos negativos o con un Objeto Digital raro para crear tensión y emoción en cada giro. Una ruleta donde todo es premio pierde la gracia — el riesgo de "perder" hace que ganar sea más satisfactorio.
-:::
-
-## Continúa aprendiendo
-
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
-- Mecánica con evaluación de conocimiento: [Respuesta Exacta](./respuesta-exacta.md).
-- Reto colaborativo visual: [Nube de Palabras](./nube-de-palabras.md).
+Mezcla porciones de puntos positivos con alguna de puntos negativos o con un Objeto Digital raro para crear tensión y emoción en cada giro. Una ruleta donde todo es premio pierde la gracia — el riesgo de "perder" hace que ganar se

@@ -65,6 +65,13 @@ Si configuras un único tramo con valor **0 %**, la sección de tramos se oculta
 
 La comparación de la respuesta es **exacta con tolerancia mínima**: se ignoran mayúsculas/minúsculas y espacios al inicio y al final, pero **no se ignoran acentos ni errores ortográficos**. Es importante que el Game Master elija respuestas cortas y unívocas — una palabra o frase muy concreta — para evitar frustraciones innecesarias.
 
+### Opciones de feedback
+
+El Reto de Respuesta Exacta comparte dos opciones de feedback con los Retos de Pregunta / Respuesta:
+
+- **Mostrar si es correcto / incorrecto**: controla si el aviso a pantalla completa indica al Player si ha acertado o fallado.
+- **Mostrar la respuesta correcta si se falla**: si está activada, cuando el Player agota sus intentos sin acertar, la respuesta correcta se muestra tanto en el aviso de fallo como en la pantalla de puntos y progreso posterior.
+
 :::warning Acentos y ortografía
 Si la respuesta correcta es *"café"*, el Player que escriba *"cafe"* **no acertará**. Planifica respuestas que no dependan de caracteres especiales o avisa en el enunciado del formato esperado.
 :::
@@ -85,30 +92,21 @@ El campo de texto tiene **autoenfoque**: al abrir el Reto, el teclado aparece au
 
 ### Flujo de respuesta
 
-El Player escribe su respuesta y pulsa **Enviar**.
+El Player escribe su respuesta y pulsa **Enviar**. Al hacerlo, aparece un **aviso a pantalla completa**, grande y muy visible, que permanece en pantalla hasta que el Player decide continuar:
 
-**Si acierta**: la pantalla muestra feedback verde permanente con la puntuación obtenida (recompensa × porcentaje del tramo actual). Tras un momento, avanza automáticamente al siguiente Reto.
+**Si acierta**: el aviso muestra un mensaje de correcto en verde con la puntuación obtenida (recompensa × porcentaje del tramo actual) y un botón **"Continuar"** que lleva a la pantalla de puntos y progreso.
 
-![Feedback de acierto — mensaje verde con la puntuación obtenida según el tramo de bonus alcanzado](/img/webapp-reto-respuesta-exacta-acierto.png)
+![Feedback de acierto — mensaje verde a pantalla completa con la puntuación obtenida según el tramo de bonus alcanzado](/img/webapp-reto-respuesta-exacta-acierto.png)
 
-**Si falla**: el campo de texto tiembla (efecto shake), aparece un mensaje de error temporal y a los pocos segundos el foco vuelve automáticamente al campo para que el Player vuelva a intentarlo. El tramo de bonus avanza al siguiente, reduciendo la puntuación disponible.
+**Si falla y le quedan intentos**: el aviso muestra un mensaje de incorrecto en rojo, indica cuántos intentos le quedan y ofrece un botón **"Reintentar"** que devuelve al campo de texto para volver a intentarlo. El tramo de bonus avanza al siguiente, reduciendo la puntuación disponible.
 
-![Estado de fallo — mensaje de error temporal y tramo siguiente resaltado](/img/webapp-reto-respuesta-exacta-fallo.png)
+![Estado de fallo con reintentos — mensaje rojo a pantalla completa con botón Reintentar y tramo siguiente resaltado](/img/webapp-reto-respuesta-exacta-fallo.png)
 
-Si el Player agota todos los reintentos sin acertar, se registra fallo definitivo y continúa al siguiente Reto sin obtener puntos.
+**Si falla y agota todos los intentos**: el aviso muestra un mensaje de fallo definitivo. Si el Game Master activó la opción **"Mostrar la respuesta correcta si se falla"**, el Player ve cuál era la respuesta correcta tanto en este aviso como en la pantalla de puntos y progreso posterior. El botón **"Continuar"** avanza al siguiente Reto.
+
+:::note Aviso persistente
+El aviso de acierto o fallo **no desaparece automáticamente** — el Player debe pulsar el botón para avanzar. Esto garantiza que tenga tiempo de leer el resultado sin presión.
 
 ## Cuándo usar este Reto 💡
 
-La Respuesta Exacta brilla en estos escenarios: códigos secretos o contraseñas que el Player descubre en el entorno físico (un cartel, un QR, una pista escondida), validación de conocimiento específico donde solo hay una respuesta posible (una fecha, un nombre propio, un término técnico) y acertijos o enigmas cuya solución es una palabra concreta.
-
-Cuándo **no** es la mejor elección: si la respuesta admite variaciones o sinónimos, usa **Respuesta Libre** (se revisa manualmente); si quieres ofrecer opciones entre las que elegir, usa **Pregunta/Respuesta**; si necesitas una secuencia de preguntas con bonificación por rapidez, usa **Preguntas Encadenadas**.
-
-:::tip 💡 Consejo de diseño
-Elige respuestas cortas, sin acentos problemáticos ni ambigüedad. *"Roma"* funciona mejor que *"la ciudad de Roma"*. Si la respuesta tiene caracteres especiales, inclúyelos como pista en el enunciado: *"Escribe el nombre de la ciudad (una sola palabra, sin artículos)"*.
-:::
-
-## Continúa aprendiendo
-
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
-- Mecánica similar sin validación automática: [Respuesta Libre](./respuesta-libre.md).
-- Validación con opciones predefinidas: [Pregunta / Respuesta](./pregunta-respuesta.md).
+La Respuesta Exacta brilla en estos escenarios: códigos secretos o contraseñas que el Player descubre en el entorno físico (un cart

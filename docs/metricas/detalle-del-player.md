@@ -64,6 +64,27 @@ La pestaña **Recorrido** muestra la lista cronológica de todos los Retos que e
 
 ![Pestaña Recorrido del Detalle del Player mostrando la lista de Retos con fechas, tiempo y puntuación](/img/gamifier/metricas/detalle-player-recorrido.png)
 
+### Detalle de lo que hizo el Player en cada Reto
+
+Debajo de cada Reto del recorrido se muestra un **bloque de detalle** siempre visible, adaptado al tipo de Reto, que permite al Game Master saber exactamente qué hizo el Player:
+
+| Tipo de Reto | Qué muestra el detalle |
+|---|---|
+| **Pregunta / Respuesta** (y variantes Audio, Vídeo, Trivial) | Todas las opciones de la pregunta, cuál(es) eligió el Player y si acertó o falló (marcas verde/rojo cuando el Reto muestra la corrección). |
+| **Compartir Foto / Vídeo** | Vista previa de la foto o el vídeo que subió el Player, junto con sus hashtags y redes. |
+| **Respuesta Libre** | El texto completo que escribió el Player. |
+| **Nube de Palabras** | La palabra que aportó el Player. |
+| **Respuesta Exacta** | Lista de intentos del Player (el texto de cada intento y si acertó), más la respuesta correcta configurada por el GM. |
+| **Ruleta de la Fortuna** | Historial de cada giro (puntos ganados o perdidos y objeto conseguido en cada uno) y total de puntos acumulados. |
+
+:::note Aventuras multi-idioma
+El detalle se muestra automáticamente en el **idioma en que jugó el Player**, sin mezclar idiomas. En Retos donde el Player no eligió ninguna opción, se usa el idioma por defecto de la Aventura.
+:::
+
+:::info Disponibilidad del detalle
+El detalle de **Respuesta Exacta** (texto de los intentos) y **Ruleta de la Fortuna** (historial de giros) solo está disponible para partidas jugadas a partir de la versión de junio 2026. En partidas anteriores se muestra la información disponible y, en Respuesta Exacta, un aviso de que el texto de los intentos no se registró.
+:::
+
 ### Acciones sobre un Reto
 
 Cada Reto del recorrido tiene dos botones de acción:
@@ -95,39 +116,4 @@ En la esquina superior derecha puedes cambiar el criterio de agrupación:
 | **Etiqueta** | Agrupa por las etiquetas (tags) asignadas a los Objetos Digitales. |
 | **Aventura** | Muestra todos los objetos juntos, incluyendo los otorgados a nivel de Aventura (no asociados a una Misión concreta). |
 
-Al elegir una agrupación aparecen **sub-pestañas**: una pestaña **"Todas"** (con el total) y una pestaña por cada Misión, Etiqueta o grupo. Haz clic en cualquier sub-pestaña para ver solo los objetos de ese grupo.
-
-### Tarjeta de un objeto
-
-Cada Objeto Digital se muestra como una tarjeta con:
-
-- **Imagen** de previsualización (o icono si es audio/vídeo).
-- **Nombre** del objeto.
-- **Bandera del idioma** en que el Player lo obtuvo.
-- **Fecha y hora** de obtención.
-- **Reto de origen**: el Reto que otorgó este objeto.
-- **Etiquetas** asociadas al objeto.
-
-### Vista previa
-
-Haz clic en cualquier tarjeta para abrir la **vista previa ampliada**:
-
-- **Imágenes**: se muestran a tamaño completo con la descripción del objeto.
-- **Vídeos**: se abren con un reproductor integrado.
-- **Audios**: se abren con un reproductor de audio.
-
-La vista previa también muestra el idioma de obtención, la fecha, el Reto de origen y las etiquetas.
-
-![Vista previa ampliada de un Objeto Digital mostrando la imagen, descripción, idioma, fecha y Reto de origen](/img/gamifier/metricas/detalle-player-objeto-preview.png)
-
-:::tip
-Usa la pestaña Objetos para verificar que un Player recibió correctamente los Objetos Digitales configurados en tus Retos. Es especialmente útil si un participante reporta que le falta algún objeto.
-:::
-
-## 📚 Continúa aprendiendo
-
-- Ranking y tabla de Players: [Clasificación](./clasificacion.md).
-- Monitorización por Retos y Misiones: [Game Board](./game-board.md).
-- Configurar Objetos Digitales en una Aventura: [Objetos Digitales de la Aventura](../aventuras/objetos-digitales.md).
-- Configurar Objetos Digitales por Misión: [Objetos Digitales de Misión](../misiones/objetos-digitales.md).
-- Configurar Objetos Digitales por Reto: [Objetos Digitales de Reto](../retos/objetos-digitales.md).
+Al elegir una agrupación aparecen **sub-pestañas**: una pestaña **"Todas"** (con el total) y una pestaña por cada Misión, Etiqueta o grupo. Haz clic en cualquier sub-pestaña para ve
