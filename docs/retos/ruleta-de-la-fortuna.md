@@ -86,7 +86,7 @@ La **condición de obtención** de un Objeto digital dentro del propio reto "Rul
 
 Cuando el Player abre el Reto desde la Misión, ve la ruleta dibujada dinámicamente con las porciones configuradas por el Game Master. Cada porción muestra de un vistazo lo que hay en juego: su **icono** y, debajo, los **puntos** que otorga (con signo: `+50`, `−20`) o un **icono de regalo** cuando esa porción entrega un Objeto Digital en lugar de puntos. Esta información es legible tanto en móvil como en escritorio. En **móvil**, la ruleta ocupa la parte superior y el panel de información aparece debajo. En **escritorio**, la ruleta queda a la izquierda y el panel a la derecha.
 
-![Vista móvil del Reto Ruleta de la Fortuna — ruleta con porciones de colores, iconos y botón de girar](/img/webapp-reto-ruleta-mobile.png)
+![Vista móvil del Reto Ruleta de la Fortuna — cada porción muestra su icono y puntos (+100, 0★) o icono de regalo, con el botón Girar debajo](/img/webapp-reto-ruleta-porciones.png)
 
 Debajo de la ruleta (o junto a ella en escritorio) aparece el botón **"Girar"** que activa la animación.
 
@@ -113,4 +113,11 @@ La Ruleta de la Fortuna brilla en estos escenarios: dinámicas de grupo donde el
 Cuándo **no** es la mejor elección: si necesitas evaluar conocimiento, usa **Pregunta/Respuesta** o **[Respuesta Exacta](./respuesta-exacta.md)**; si necesitas que el Player aporte contenido creativo, usa **Respuesta Libre** o **Subir Foto**; si quieres recoger ideas del grupo de forma visual, usa **[Nube de Palabras](./nube-de-palabras.md)**.
 
 :::tip 💡 Consejo de diseño
-Mezcla porciones de puntos positivos con alguna de puntos negativos o con un Objeto Digital raro para crear tensión y emoción en cada giro. Una ruleta donde todo es premio pierde la gracia — el riesgo de "perder" hace que ganar se
+Mezcla porciones de puntos positivos con alguna de puntos negativos o con un Objeto Digital raro para crear tensión y emoción en cada giro. Una ruleta donde todo es premio pierde la gracia — el riesgo de "perder" hace que ganar sea más satisfactorio.
+:::
+
+## Continúa aprendiendo
+
+- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Mecánica con evaluación de conocimiento: [Respuesta Exacta](./respuesta-exacta.md).
+- Reto colaborativo visual: [Nube de Palabras](./nube-de-palabras.md).

@@ -116,4 +116,54 @@ En la esquina superior derecha puedes cambiar el criterio de agrupación:
 | **Etiqueta** | Agrupa por las etiquetas (tags) asignadas a los Objetos Digitales. |
 | **Aventura** | Muestra todos los objetos juntos, incluyendo los otorgados a nivel de Aventura (no asociados a una Misión concreta). |
 
-Al elegir una agrupación aparecen **sub-pestañas**: una pestaña **"Todas"** (con el total) y una pestaña por cada Misión, Etiqueta o grupo. Haz clic en cualquier sub-pestaña para ve
+Al elegir una agrupación aparecen **sub-pestañas**: una pestaña **"Todas"** (con el total) y una pestaña por cada Misión, Etiqueta o grupo. Haz clic en cualquier sub-pestaña para ver solo los objetos de ese grupo.
+
+### Tarjeta de un objeto
+
+Cada Objeto Digital se muestra como una tarjeta con:
+
+- **Imagen** de previsualización (o icono si es audio/vídeo).
+- **Nombre** del objeto.
+- **Bandera del idioma** en que el Player lo obtuvo.
+- **Fecha y hora** de obtención.
+- **Reto de origen**: el Reto que otorgó este objeto.
+- **Etiquetas** asociadas al objeto.
+
+### Vista previa
+
+Haz clic en cualquier tarjeta para abrir la **vista previa ampliada**:
+
+- **Imágenes**: se muestran a tamaño completo con la descripción del objeto.
+- **Vídeos**: se abren con un reproductor integrado.
+- **Audios**: se abren con un reproductor de audio.
+
+La vista previa también muestra el idioma de obtención, la fecha, el Reto de origen y las etiquetas.
+
+![Vista previa ampliada de un Objeto Digital mostrando la imagen, descripción, idioma, fecha y Reto de origen](/img/gamifier/metricas/detalle-player-objeto-preview.png)
+
+### Eliminar un Objeto del Player
+
+El Game Master puede retirar manualmente un Objeto Digital del inventario de un Player:
+
+1. En la pestaña **Objetos**, pasa el ratón por encima de la tarjeta del objeto que quieres eliminar.
+2. Aparece un **botón de papelera** en la esquina superior derecha de la tarjeta.
+3. Al pulsarlo, se muestra una **ventana de confirmación** con el nombre del objeto.
+4. Confirma la eliminación. La tarjeta desaparece y el contador de Objetos se actualiza al instante.
+
+La eliminación borra únicamente **esa unidad concreta** del Objeto: si el Player había conseguido el mismo Objeto varias veces (por ejemplo en Retos distintos), solo se elimina la tarjeta sobre la que has actuado, no las demás. Cada eliminación queda **registrada en la auditoría** del sistema (quién la realizó y cuándo).
+
+:::warning
+Eliminar un Objeto es **irreversible** desde la interfaz (no hay "deshacer"). La eliminación **no modifica la puntuación** del Player ni el ranking — solo retira el Objeto de su inventario.
+:::
+
+:::tip
+Usa la pestaña Objetos para verificar que un Player recibió correctamente los Objetos Digitales configurados en tus Retos. Es especialmente útil si un participante reporta que le falta algún objeto.
+:::
+
+## 📚 Continúa aprendiendo
+
+- Ranking y tabla de Players: [Clasificación](./clasificacion.md).
+- Monitorización por Retos y Misiones: [Game Board](./game-board.md).
+- Configurar Objetos Digitales en una Aventura: [Objetos Digitales de la Aventura](../aventuras/objetos-digitales.md).
+- Configurar Objetos Digitales por Misión: [Objetos Digitales de Misión](../misiones/objetos-digitales.md).
+- Configurar Objetos Digitales por Reto: [Objetos Digitales de Reto](../retos/objetos-digitales.md).

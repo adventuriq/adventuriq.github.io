@@ -82,7 +82,7 @@ Si la respuesta correcta es *"café"*, el Player que escriba *"cafe"* **no acert
 
 Cuando el Player abre el Reto desde la Misión, ve un diseño adaptable a su dispositivo: en **móvil**, la imagen de cabecera aparece arriba y el panel oscuro con la pregunta debajo; en **escritorio**, la imagen queda a la izquierda y el panel a la derecha. El panel usa un degradado dinámico basado en los colores de marca de la Aventura.
 
-![Vista móvil del Reto Respuesta Exacta — imagen de cabecera, pregunta, campo de texto con el teclado abierto y tramos de bonus visibles debajo](/img/webapp-reto-respuesta-exacta-mobile.png)
+![Vista móvil del Reto Respuesta Exacta — imagen de cabecera, pregunta, campo de texto, botón Comprobar y tramos de bonus (100%, 80%, 50%)](/img/webapp-reto-respuesta-exacta-pantalla.png)
 
 ![Vista escritorio del Reto Respuesta Exacta — imagen a la izquierda y panel oscuro con pregunta y campo de texto a la derecha](/img/webapp-reto-respuesta-exacta-desktop.png)
 
@@ -106,7 +106,20 @@ El Player escribe su respuesta y pulsa **Enviar**. Al hacerlo, aparece un **avis
 
 :::note Aviso persistente
 El aviso de acierto o fallo **no desaparece automáticamente** — el Player debe pulsar el botón para avanzar. Esto garantiza que tenga tiempo de leer el resultado sin presión.
+:::
 
 ## Cuándo usar este Reto 💡
 
-La Respuesta Exacta brilla en estos escenarios: códigos secretos o contraseñas que el Player descubre en el entorno físico (un cart
+La Respuesta Exacta brilla en estos escenarios: códigos secretos o contraseñas que el Player descubre en el entorno físico (un cartel, un QR, una pista escondida), validación de conocimiento específico donde solo hay una respuesta posible (una fecha, un nombre propio, un término técnico) y acertijos o enigmas cuya solución es una palabra concreta.
+
+Cuándo **no** es la mejor elección: si la respuesta admite variaciones o sinónimos, usa **Respuesta Libre** (se revisa manualmente); si quieres ofrecer opciones entre las que elegir, usa **Pregunta/Respuesta**; si necesitas una secuencia de preguntas con bonificación por rapidez, usa **Preguntas Encadenadas**.
+
+:::tip 💡 Consejo de diseño
+Elige respuestas cortas, sin acentos problemáticos ni ambigüedad. *"Roma"* funciona mejor que *"la ciudad de Roma"*. Si la respuesta tiene caracteres especiales, inclúyelos como pista en el enunciado: *"Escribe el nombre de la ciudad (una sola palabra, sin artículos)"*.
+:::
+
+## Continúa aprendiendo
+
+- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Mecánica similar sin validación automática: [Respuesta Libre](./respuesta-libre.md).
+- Validación con opciones predefinidas: [Pregunta / Respuesta](./pregunta-respuesta.md).
