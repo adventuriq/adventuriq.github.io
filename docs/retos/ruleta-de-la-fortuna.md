@@ -64,6 +64,22 @@ Cada porción define un resultado posible de la ruleta. El Game Master tiene tre
 El **peso** de cada porción define su probabilidad relativa, no un porcentaje absoluto. Si tienes tres porciones con pesos 1, 1 y 2, la tercera saldrá aproximadamente el 50 % de las veces. El resultado lo calcula el servidor — no se puede manipular desde el dispositivo del Player.
 :::
 
+### Objetos digitales a entregar
+
+El **Objeto digital** a entregar en una porción, **se tiene que crear en el propio reto** (Ruleta de la Fortuna) que se está diseñando y, lógicamente, tiene que existir previamente a la asignación de entrega del objeto por una porción de la ruleta.
+
+Aún así, el buscador de Objetos digitales de la porción busca TODOS los objetos creados en la Aventura y también los puede entregar, independientemente de sus condiciones de obtención.
+
+:::warning Condiciones de obtención
+La **condición de obtención** de un Objeto digital dentro del propio reto "Ruleta de la Fortuna" y **asignado a una porción**, tiene que ser necesariamente **"Nunca"** (no entregar nunca) para que lo entregue la "suerte" de la propia ruleta y no las condiciones de finalización del propio reto.
+:::
+
+![Vista Gamifier Objeto digital del Reto Ruleta de la Fortuna — condiciones de entrega](/img/gamifier-reto-ruleta-condiciones-entrega-objeto.png)
+
+**Resumen**: una porción que entregue un Objeto, puede entregar un Objeto propio o cualquiera que ya exista en la Aventura.
+
+
+
 ## Experiencia del Player 🎮
 
 ### Pantalla del Reto
