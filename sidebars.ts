@@ -81,6 +81,7 @@ const sidebars: SidebarsConfig = {
       label: '📱 Webapp',
       items: [
         'webapp/perfil',
+        'webapp/recuperacion-permisos-gps-camara',
       ],
     },
     'game-designer',
