@@ -41,6 +41,11 @@ docusaurus_path: docs/aventuras/modo-arena-live.md
   siguiente, mostrar la clasificación y el podio, y finalizar.
 - **Elegir el idioma** de la partida (entre los idiomas traducidos de la
   Aventura) antes de empezar.
+- **Música de fondo automática**: si la Aventura (y/o la Misión) tiene audio de
+  descripción, el visor lo reproduce en bucle como música de fondo. En la barra
+  superior (junto al idioma) hay un control para **mutear** y **subir/bajar el
+  volumen** (30% por defecto). Además suena un **gong** al empezar los Retos de una
+  Misión y un efecto de **"pompa"** cuando se une cada participante.
 
 ### Desde el punto de vista del Player (Webapp)
 
@@ -115,6 +120,8 @@ docusaurus_path: docs/aventuras/modo-arena-live.md
   publicada) → Nombre: `aventuras/modo-arena-lanzar.png`
 - [ARENA] Pantalla de **sala/lobby** con Game PIN + QR → Nombre:
   `aventuras/arena-lobby-gamepin.png`
+- [ARENA] **Barra superior** con el control de audio (icono de altavoz + volumen)
+  junto al selector de idioma → Nombre: `aventuras/arena-control-audio.png`
 - [ARENA] Pantalla de **Reto en directo** (pregunta + cuenta atrás + contador de
   respuestas) → Nombre: `aventuras/arena-reto-directo.png`
 - [ARENA] Pantalla de **respuesta correcta / clasificación parcial** → Nombre:
@@ -163,5 +170,12 @@ docusaurus_path: docs/aventuras/modo-arena-live.md
   directo.
 - **Idioma de la partida:** lo elige el moderador antes de empezar, entre los
   idiomas traducidos de la Aventura; afecta al contenido que se ve en el visor.
+- **Audio del visor:** la música de fondo es el **audio de descripción** de la
+  Aventura y, cuando hay una Misión activa, el de esa Misión (si la Misión no tiene
+  audio, sigue el de la Aventura). La música se **pausa automáticamente** durante
+  los Retos de **Audio/Vídeo** para no pisar su sonido, y **reanuda** al salir. El
+  **mute** silencia toda la música (y los efectos) hasta que se desmutea a mano.
+  Todo el audio suena en el **visor del moderador**, no en los móviles de los
+  Players. (El audio se sube en los editores de Aventura y de Misión del Gamifier.)
 - Direcciones: el visor del moderador está en `live.adventuriq.com`; los Players
   juegan desde la Webapp habitual.
