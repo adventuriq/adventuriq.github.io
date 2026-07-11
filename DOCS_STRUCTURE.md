@@ -265,8 +265,9 @@ distintos a los del manual. Traducción oficial:
 **Cowork SIEMPRE trabaja sobre el entorno de test, NUNCA sobre producción.**
 
 - API test: `api-test.adventuriq.com`
-- Gamifier test: (consultar a Mike la URL específica)
-- Webapp test: (consultar a Mike la URL específica)
+- Gamifier test (crear/configurar Aventuras): `gamifier-test.adventuriq.com`
+- Webapp test / Player (jugar): `play-test.adventuriq.com`
+- AdventuriQ Arena test (visor del moderador, Modo Arena en directo): `live-test.adventuriq.com`
 
 Razón: las capturas se transmiten a la nube de Anthropic. Usar producción
 podría exponer datos reales de clientes, crear datos de prueba en producción,

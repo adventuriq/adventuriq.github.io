@@ -71,6 +71,17 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: '🏟️ Modo Arena',
+      items: [
+        'modo-arena/index',
+        'modo-arena/configuracion',
+        'modo-arena/moderar-en-directo',
+        'modo-arena/partida-por-misiones',
+        'modo-arena/jugar-como-player',
+      ],
+    },
+    {
+      type: 'category',
       label: '🖥️ Gamifier',
       items: [
         'gamifier/biblioteca-de-medios',
