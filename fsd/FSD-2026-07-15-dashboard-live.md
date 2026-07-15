@@ -19,9 +19,10 @@ docusaurus_path: docs/modo-arena/dashboard-live.md
 
 > **Nota para Cowork/humano:** aunque el Dashboard Live vive en el visor
 > AdventuriQ Arena (mismo dominio `live.adventuriq.com`), **NO requiere el
-> Modo Live (Arena)**: funciona con **cualquier Aventura publicada**, se
-> juegue de forma normal desde la Webapp. Conviene dejar esto muy claro en
-> el manual para no confundirlo con las partidas en directo del Modo Arena.
+> Modo Live (Arena)**: funciona con **cualquier Aventura** (también en
+> Borrador — el panel lo indica con una etiqueta "BORRADOR"), se juegue de
+> forma normal desde la Webapp. Conviene dejar esto muy claro en el manual
+> para no confundirlo con las partidas en directo del Modo Arena.
 > Este panel **sustituye al antiguo botón "Ranking HTML"** del Gamifier.
 
 ---
@@ -30,9 +31,12 @@ docusaurus_path: docs/modo-arena/dashboard-live.md
 
 ### Desde el punto de vista del Game Master / Game Designer (Gamifier)
 
-- **Abrir el Dashboard Live de cualquier Aventura publicada** con el nuevo
-  botón **"Dashboard Live"** de la ficha de la Aventura (sustituye al antiguo
-  "Ranking HTML"). Se abre en una pestaña nueva, listo para proyectar.
+- **Abrir el Dashboard Live de cualquier Aventura** (publicada o en Borrador)
+  con el nuevo botón **"Dashboard Live"** de la ficha de la Aventura
+  (sustituye al antiguo "Ranking HTML"). Se abre en una pestaña nueva, listo
+  para proyectar. Si la Aventura está en Borrador, la cabecera del panel
+  muestra la etiqueta **"BORRADOR"** en lugar de "EN DIRECTO" — útil para
+  preparar la proyección antes de publicar.
 - **Ver en tiempo real** (se actualiza solo, cada 30 segundos por defecto):
   - **Ranking de la Aventura**: top de jugadores con avatar, nombre, Retos
     realizados y puntos. El número 1 se celebra con confeti cuando cambia.
@@ -60,6 +64,14 @@ docusaurus_path: docs/modo-arena/dashboard-live.md
     minutos y segundos. Al guardar aparece en grande bajo la cabecera; el
     último minuto se pone en rojo y al llegar a cero suena un **repique de
     gong** y queda parpadeando en 00:00:00.
+- **Controlar la cuenta atrás durante el evento**: al pasar el ratón por el
+  contador aparecen tres botones (invisibles para el público en reposo):
+  - **Pausar / Reanudar**: congela el tiempo restante (el marcador queda
+    atenuado con un símbolo de pausa) y lo reanuda donde estaba.
+  - **Reiniciar**: vuelve a empezar desde la duración configurada — ideal
+    para dinámicas por rondas.
+  - **Poner a cero**: corta el tiempo al momento, con el repique de gong y
+    el 00:00:00 en rojo (como si el tiempo hubiera expirado).
 - **Cambiar el idioma** del panel (ES/EN/CA/FR) con el selector de la esquina.
 - El fondo del panel es la **imagen de cabecera de la Aventura** y el título
   se muestra en grande, centrado.
@@ -72,8 +84,8 @@ docusaurus_path: docs/modo-arena/dashboard-live.md
 
 ## 3. PREREQUISITOS DEL USUARIO
 
-- Tener una **Aventura publicada** (el botón no aparece en Borrador y el
-  panel no carga Aventuras sin publicar).
+- Tener una **Aventura** creada (publicada o en Borrador; en Borrador el
+  panel indica el estado con la etiqueta "BORRADOR").
 - Iniciar sesión en el visor con una cuenta de **Game Master o Game
   Designer** (mismo login que AdventuriQ Arena; una vez por dispositivo).
 - NO hace falta activar el Modo Live (Arena) ni crear ninguna sesión.
@@ -82,9 +94,9 @@ docusaurus_path: docs/modo-arena/dashboard-live.md
 
 ### Flujo Gamifier
 
-1. Ir al **listado de Aventuras** y entrar en la Aventura (publicada).
+1. Ir al **listado de Aventuras** y entrar en la Aventura.
 2. Pulsar el botón **"Dashboard Live"** (icono de panel, junto a Clasificación
-   y Gameboard).
+   y Gameboard; disponible en todas las Aventuras).
 3. Se abre `live.adventuriq.com/dashboard/{PIN}` en una pestaña nueva. Si es
    la primera vez en ese dispositivo, iniciar sesión con la cuenta de GM/GD.
 4. Proyectar la pestaña en la pantalla grande. El panel se refresca solo.
@@ -97,7 +109,9 @@ docusaurus_path: docs/modo-arena/dashboard-live.md
 3. Para la cuenta atrás: marcar **Visible**, poner días/horas/min/seg y
    pulsar **Guardar**. El contador aparece bajo la cabecera y empieza a
    descontar. Al llegar a cero: gong + parpadeo en rojo.
-4. En el panel de **Objetos digitales**: alternar «Solo entregados / Todos»
+4. Durante el evento, pasar el ratón por el contador para **pausar/reanudar**,
+   **reiniciar** al tiempo configurado o **ponerlo a cero** (gong incluido).
+5. En el panel de **Objetos digitales**: alternar «Solo entregados / Todos»
    y la vista lista/cuadrícula con los controles de su esquina.
 
 ## 5. PANTALLAS PARA CAPTURAR
@@ -112,6 +126,10 @@ docusaurus_path: docs/modo-arena/dashboard-live.md
   atrás) → Nombre: modo-arena/dashboard-live-ajustes.png
 - [ARENA] Cuenta atrás visible en grande bajo la cabecera →
   Nombre: modo-arena/dashboard-live-cuenta-atras.png
+- [ARENA] Cuenta atrás con el ratón encima mostrando los botones
+  pausar/reiniciar/a-cero → Nombre: modo-arena/dashboard-live-cuenta-atras-controles.png
+- [ARENA] Cabecera de una Aventura en Borrador con la etiqueta "BORRADOR" →
+  Nombre: modo-arena/dashboard-live-borrador.png
 - [ARENA] Sección de Rankings por Misión + Objetos digitales (cuadrícula) →
   Nombre: modo-arena/dashboard-live-misiones-objetos.png
 
@@ -138,7 +156,8 @@ docusaurus_path: docs/modo-arena/dashboard-live.md
   vista de Objetos) se guardan **en el navegador de ese dispositivo**, no en
   la Aventura: cada pantalla/equipo puede tener su propia configuración.
 - La cuenta atrás es **informativa** (no cierra la Aventura ni bloquea nada
-  al llegar a cero).
+  al llegar a cero). La pausa y el reinicio solo afectan al contador de esa
+  pantalla; la pausa sobrevive a una recarga de la página.
 - El gong final requiere que el navegador permita audio; al pulsar "Guardar"
   ya queda habilitado. Si la pestaña está silenciada por el navegador, no
   sonará.
