@@ -36,7 +36,7 @@ La cabecera del editor ofrece acceso directo a las herramientas de gestión de l
 | **Eliminar mis objetos** | Borrado de los Objetos Digitales obtenidos por el Game Designer actual |
 | **Clasificación** | Acceso a las métricas de la Aventura (listado de Players) |
 | **Game Board** | Acceso a las métricas basadas en los Retos |
-| **Ranking HTML** | Mejores 10 Players en formato HTML publicable |
+| **Dashboard Live** | Panel en tiempo real para proyectar en pantalla grande: ranking, actividad en directo, Equipos y Objetos Digitales entregados (sustituye al antiguo "Ranking HTML") — ver [Dashboard Live](dashboard-live.md) |
 | **Descargar Galería** | Descarga en ZIP todas las imágenes que los Players han subido mediante Retos de tipo "Compartir Foto" |
 | **Tags** | Etiquetado de Objetos Digitales. Cada Tag se muestra como una pestaña en el Baúl del Player, facilitando organizar los Objetos por tipo (Medallas, Pistas, Recompensas, etc.) |
 | **Biblioteca de Medios** | Gestor unificado de archivos multimedia (imágenes, vídeos, audios) de la Aventura con arrastrar-soltar, vistas en cuadrícula o lista, y control de espacio ocupado |

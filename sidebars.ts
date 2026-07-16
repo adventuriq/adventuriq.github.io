@@ -16,6 +16,7 @@ const sidebars: SidebarsConfig = {
         'aventuras/configuracion',
         'aventuras/publicar-aventura',
         'aventuras/acceder-a-una-aventura',
+        'aventuras/dashboard-live',
         'aventuras/bitacora',
         'aventuras/objetos-digitales',
         'aventuras/condiciones-finalizacion',
