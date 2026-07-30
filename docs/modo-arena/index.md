@@ -55,6 +55,10 @@ Para lanzar una Aventura en Modo Arena tienes que cumplir estos requisitos:
 - Al menos **un Reto compatible** en las Misiones activas de la Aventura (ver más abajo).
 - Una **pantalla grande o proyector** para el visor y **un móvil por Player**.
 
+:::tip Entrada sin registro para los Players
+Activa **[Jugar sin registro (nickname)](../aventuras/jugar-sin-registro.md)** en las Opciones de la Aventura y tus Players entrarán a la sala de espera escaneando el QR y tecleando solo un nickname, sin crear cuenta. Es la forma más rápida de arrancar una partida con un grupo numeroso.
+:::
+
 ## 🎲 Retos compatibles con el Modo Arena
 
 No todos los tipos de Reto se pueden jugar en directo. En una partida de Arena se juegan únicamente estos:

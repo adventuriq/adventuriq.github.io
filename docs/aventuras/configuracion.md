@@ -135,6 +135,7 @@ Esta sección contiene los toggles que controlan qué ve el Player en su experie
 | **Volver a jugar** | El Player no podrá reiniciar la Aventura |
 | **Activar envío de emails** | Controla las notificaciones por correo |
 | **Activar Nube de Palabras en la bitácora** | Muestra u oculta la Nube de Palabras en la Bitácora |
+| **Jugar sin registro (nickname)** | Si se activa, los Players que lleguen por el enlace directo entran solo con un nickname, sin crear cuenta — ver [Jugar sin registro (nickname)](jugar-sin-registro.md) |
 
 :::tip
 Combina estos toggles para crear diferentes [dinámicas de juego](/conceptos-basicos#-dinámicas-de-juego): competitiva (todo visible), auto-competitiva (Puntos sí, Ranking no), o exploratoria (sin puntos, solo Objetos Digitales).
@@ -207,6 +208,7 @@ Cada aspecto de la configuración tiene su página dedicada con explicación det
 |---|---|
 | [Publicación y fechas](publicacion-fechas) | Estado Draft/Published, automatización temporal |
 | [Acceso a la Aventura](game-pin-bloqueos) | GamePIN, enlace directo, QR, bloqueos por código |
+| [Jugar sin registro (nickname)](jugar-sin-registro) | Acceso por nickname, sin crear cuenta |
 | [Opciones de la Aventura](visibilidad-controles) | Toggles de visibilidad para la Bitácora del Player |
 | [Imágenes](imagenes) | Imagen de listado, cabecera y logo del patrocinador |
 | [Idiomas y traducciones](idiomas-traducciones) | Contenido multiidioma y campos traducibles |

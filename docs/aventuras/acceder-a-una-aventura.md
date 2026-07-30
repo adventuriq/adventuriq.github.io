@@ -41,6 +41,10 @@ Cuando el Player pulsa el enlace (o escanea el QR):
 El deep link es la opción más cómoda tanto para ti como para tus Players. Comparte la URL por email, WhatsApp, intranet o cualquier canal digital. Si preparas una experiencia presencial (evento, gymkana, escape room), usa el **código QR** impreso en un cartel o folleto — funciona igual que el enlace.
 :::
 
+:::note Sin cuenta: entrar solo con un nickname
+Si activas la opción **Jugar sin registro (nickname)** en las Opciones de la Aventura, el Player que llegue por este enlace no necesita cuenta: teclea un nickname y entra a jugar. Ver [Jugar sin registro (nickname)](jugar-sin-registro.md).
+:::
+
 ## 🔢 Vincular con GamePIN
 
 El **GamePIN** es un código numérico de **9 dígitos** que la plataforma asigna automáticamente a cada Aventura cuando se crea. Es útil cuando compartir un enlace no resulta práctico — por ejemplo, si el Game Master dicta el código en voz alta durante una presentación.
