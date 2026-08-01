@@ -2,7 +2,7 @@
 sidebar_position: 2
 title: "\U0001F3AF Game Board"
 description: Game Board de AdventuriQ — panel de monitorización del Game Master con métricas en tiempo real por Reto y por Misión, estadísticas de participación y respuestas de Players.
-keywords: [game-board, metricas, monitorización, retos, misiones, participacion, estadisticas, gamifier, adventuriq]
+keywords: [game-board, metricas, monitorización, retos, misiones, participacion, estadisticas, redes sociales, enlaces, verificacion, gamifier, adventuriq]
 ---
 
 # 🎯 Game Board
@@ -68,6 +68,26 @@ El bloque de **Actividad Registrada** es el más extenso del Game Board. Muestra
 #### Galería de Fotos y Vídeos
 
 En Retos que admiten subida de contenido multimedia (Compartir Foto, Pregunta-Respuesta con Vídeo/Audio), el Game Board muestra una **Galería de Fotos y Videos** integrada. Si aún no se han compartido archivos, muestra el mensaje "Aún no se han compartido fotos ni videos en este reto".
+
+#### Enlaces publicados en RRSS
+
+Si el Reto **Subir Foto** tiene activado el paso [Compartir en Redes Sociales](../retos/subir-foto.md#compartir-en-redes-sociales), justo debajo de la galería aparece la tabla **"Enlaces publicados en RRSS"** con una fila por Player:
+
+| Columna | Descripción |
+|---|---|
+| **Jugador** | Nickname del Player que ha enviado el enlace. |
+| **Enlace** | Enlace clicable a la publicación. Se abre en una pestaña nueva. |
+| **Estado** | Verificado, Pendiente de revisión o Rechazado. |
+
+A la derecha de cada fila tienes los botones **✓** (verificar) y **✗** (rechazar) para resolver el enlace con un clic. Una vez verificado, el ✓ desaparece y solo queda el ✗ por si más tarde quieres descartarlo. El contador junto al título te dice cuántos enlaces se han recibido.
+
+Los enlaces de **X/Twitter se verifican automáticamente** (AdventuriQ comprueba que el post existe). Los de **Instagram y Facebook** quedan en *Pendiente de revisión* hasta que alguien los abre y los resuelve a mano — es una limitación de esas plataformas, no de AdventuriQ.
+
+![Tabla de enlaces publicados en RRSS dentro del Game Board — enlace de un Player ya marcado como Verificado](/img/gamifier-metricas-gameboard-enlaces-rrss.png)
+
+:::tip 👑 Para el Game Master
+Si estás usando la publicación en redes como requisito de un sorteo, revisa los enlaces **antes** de cerrar la Aventura. Una cuenta privada te mostrará una pantalla de login al abrir el enlace: decide de antemano si eso lo das por válido y dilo en el enunciado del Reto.
+:::
 
 #### Estadísticas de Preguntas Encadenadas
 
