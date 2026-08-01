@@ -2,7 +2,7 @@
 feature_name: Compartir en Redes Sociales (reto Compartir Foto)
 date: 2026-07-19
 components: [API] [GAMIFIER] [WEBAPP]
-docusaurus_path: docs/tipos-de-reto/compartir-foto.md
+docusaurus_path: docs/retos/subir-foto.md
 ---
 
 ## 1. RESUMEN DE LA FEATURE
@@ -50,18 +50,18 @@ docusaurus_path: docs/tipos-de-reto/compartir-foto.md
 6. Pulsar **"4. Continuar"** para cerrar el reto y recibir los puntos.
 
 ## 5. PANTALLAS PARA CAPTURAR
-- [GAMIFIER] Editor del reto Compartir Foto con el bloque "Compartir en Redes Sociales" (toggles + texto del post por idioma) → Nombre: `tipos-de-reto/compartir-foto-rrss-editor.png`
-- [GAMIFIER] Gameboard: tabla "Enlaces publicados en RRSS" con estados y botones verificar/rechazar → Nombre: `tipos-de-reto/compartir-foto-rrss-gameboard.png`
-- [WEBAPP] Pantalla "¡Publica tu foto en tus redes!" con checklist, cuadro del texto y botones → Nombre: `tipos-de-reto/compartir-foto-rrss-webapp-publicar.png`
-- [WEBAPP] Cuadro del texto en estado "copiado" (verde) → Nombre: `tipos-de-reto/compartir-foto-rrss-webapp-copiado.png`
-- [WEBAPP] Pantalla "Valida tu publicación pegando el enlace aquí" → Nombre: `tipos-de-reto/compartir-foto-rrss-webapp-validar.png`
+- [GAMIFIER] Editor del reto Subir Foto con el bloque "Compartir en Redes Sociales" (toggles + texto del post por idioma) → Nombre: `retos/subir-foto-rrss-editor.png`
+- [GAMIFIER] Gameboard: tabla "Enlaces publicados en RRSS" con estados y botones verificar/rechazar → Nombre: `retos/subir-foto-rrss-gameboard.png`
+- [WEBAPP] Pantalla "¡Publica tu foto en tus redes!" con checklist, cuadro del texto y botones → Nombre: `retos/subir-foto-rrss-webapp-publicar.png`
+- [WEBAPP] Cuadro del texto en estado "copiado" (verde) → Nombre: `retos/subir-foto-rrss-webapp-copiado.png`
+- [WEBAPP] Pantalla "Valida tu publicación pegando el enlace aquí" → Nombre: `retos/subir-foto-rrss-webapp-validar.png`
 
 ## 6. UBICACIÓN EN DOCUSAURUS
-- **Carpeta destino:** `docs/tipos-de-reto/`
-- **Nombre del archivo:** `compartir-foto.md`
-- **sidebar_position sugerido:** (el actual de Compartir Foto)
-- **Tags sugeridos:** tipos de reto, compartir foto, redes sociales, Instagram, sorteo, hashtags
-- **¿Es página nueva o actualización?** Actualización (nueva sección "Compartir en Redes Sociales" dentro de la página del reto Compartir Foto)
+- **Carpeta destino:** `docs/retos/`
+- **Nombre del archivo:** `subir-foto.md` (página existente del reto "Subir Foto" — término oficial del manual; el tipo 4 se llama "Compartir Foto" solo internamente en el código)
+- **sidebar_position sugerido:** (el actual de Subir Foto: 4)
+- **Tags sugeridos:** reto, subir foto, redes sociales, Instagram, sorteo, hashtags, galería
+- **¿Es página nueva o actualización?** Actualización (nueva sección "Compartir en Redes Sociales" dentro de la página del reto Subir Foto)
 
 ## 7. NOTAS TÉCNICAS (solo si relevante para el manual)
 - **Instagram y Facebook no aceptan texto pre-rellenado** al compartir: por eso la webapp copia el texto al portapapeles y el jugador debe pegarlo en su publicación. X/Twitter y WhatsApp sí lo aceptan directamente.

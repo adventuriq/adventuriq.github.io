@@ -42,6 +42,24 @@ Guarda el archivo en: `fsd/FSD-{YYYY-MM-DD}-{nombre-feature}.md`
 
 (Desde la raíz de este repo de documentación)
 
+### REGLA CRÍTICA: verificar `docusaurus_path` contra el árbol REAL
+
+Antes de escribir el frontmatter del FSD, comprueba qué carpetas y páginas
+EXISTEN de verdad bajo `docs/` (`ls docs/` y `ls docs/<carpeta>/`) y contrasta
+con la taxonomía de DOCS_STRUCTURE.md. **No inventes rutas ni las copies de un
+FSD anterior** (varios FSDs antiguos apuntaban a `docs/tipos-de-reto/`, una
+carpeta que NO existe — la real es `docs/retos/`).
+
+- Los tipos de reto se documentan en **`docs/retos/`**.
+- Ojo con los nombres internos del código vs. los del manual: el reto tipo 4
+  se llama "Compartir Foto" en el código, pero en el manual es **"Subir Foto"**
+  → `docs/retos/subir-foto.md` (la página `docs/retos/compartir-foto.md` es
+  legacy; no usarla como destino).
+- Si la página destino ya existe → el FSD es "Actualización" con esa ruta
+  exacta. Si es nueva → elegir una carpeta que EXISTA según DOCS_STRUCTURE.md.
+- Los nombres sugeridos de capturas llevan la carpeta real como prefijo
+  (p. ej. `retos/subir-foto-rrss-editor.png`).
+
 ### Estructura obligatoria del FSD
 
 ```markdown
