@@ -29,6 +29,12 @@ La sección **"Objetos Digitales de la Aventura"** se encuentra en la parte infe
 
 Cada Objeto Digital se configura con imagen (JPG, PNG, GIF), vídeo (MP4), audio (MP3), traducciones multiidioma (título, descripción con HTML enriquecido) y opcionalmente un **Código Único** para control de unidades entregadas a nivel analógico. El editor del Objeto es idéntico en los tres niveles — para una descripción completa de todos los campos, consulta [Editor del Objeto Digital](../misiones/objetos-digitales.md#editor-del-objeto-digital).
 
+### El tipo Llave
+
+El campo **Tipo de Objeto** admite el valor **Llave**. Una Llave se comporta como cualquier otro Objeto Digital —mismas condiciones de obtención, misma entrega— pero además sirve para **bloquear Misiones y Retos**: solo el Player que la consiga podrá abrirlos. Las Llaves no se guardan en el Baúl del Player, sino en el **Llavero**.
+
+Todo el detalle está en [🔑 Llaves Digitales](./llaves-digitales.md).
+
 ## Cuándo se entregan los Objetos
 
 La entrega de un Objeto Digital a nivel de Aventura depende de **dos factores independientes**:

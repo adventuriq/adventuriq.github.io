@@ -64,6 +64,14 @@ Cuando una Misión está **visible pero no jugable** (bloqueada), el Player la v
 
 Cuando una Misión está **oculta** (no visible o en borrador), el Player no la ve en absoluto — el listado de Misiones solo muestra las Misiones visibles.
 
+## Bloqueo por Llave digital
+
+Además de los controles de esta página, una Misión puede bloquearse con una **Llave digital**: un Objeto Digital que el Player consigue jugando y que le da acceso. Se configura en el bloque **🔑 Acceso por Llave digital** del editor de la Misión, justo debajo de "Acceso por Código".
+
+La diferencia con los controles de arriba es de naturaleza: la visibilidad y las ventanas temporales dependen del **reloj** o de una decisión del GM, mientras que la Llave depende de **lo que el Player haya conseguido dentro del juego**.
+
+Admite dos modos: la Misión se ve con un candado, o permanece **oculta** hasta que el Player consigue la llave. Lo tienes explicado en [🔑 Llaves Digitales](../aventuras/llaves-digitales.md).
+
 ## Cuándo usar cada combinación 💡
 
 Usa **visible + no jugable** cuando quieras que los Players sepan que hay una Misión esperándoles pero que aún no pueden jugar — genera expectación y anticipación.
@@ -83,3 +91,4 @@ Los Retos con localización tipo GPS o GPS+QR **siempre** muestran la pantalla d
 - Configuración básica de la Misión: [Configuración General](./configuracion-general.md).
 - Assets visuales: [Contenido e Imágenes](./contenido-imagenes.md).
 - Bloqueos por código de acceso: ver sección "Códigos de acceso y QR" en [Configuración General](./configuracion-general.md).
+- Bloqueo por Objeto Digital que el Player debe conseguir: [🔑 Llaves Digitales](../aventuras/llaves-digitales.md).

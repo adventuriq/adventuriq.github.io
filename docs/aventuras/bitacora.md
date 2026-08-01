@@ -35,6 +35,7 @@ Además de las zonas fijas, pueden aparecer hasta cinco zonas adicionales organi
 | **Feature del GM** | Bloque de estrellas (votos recibidos) | El GM activa el sistema de Votaciones |
 | **Feature del GM** | Cuadrante "Votar" | El GM activa el sistema de Votaciones |
 | **Feature del GM** | Cuadrante "Nube de Palabras" | El GM activa el toggle "Activar Nube de Palabras en la bitácora" **y** la Aventura tiene al menos un Reto de tipo Nube de Palabras |
+| **Feature del GM** | Cuadrante "Llavero" | La Aventura usa [Llaves Digitales](./llaves-digitales.md) para bloquear alguna Misión o Reto |
 | **Estado de Aventura** | Cuadrante "Final de Aventura" | Se cumplen las condiciones de finalización configuradas por el GM |
 | **Estado de Aventura** | Cuadrante "Volver a Jugar" | Se cumplen las condiciones de finalización **y** el GM ha activado "El Player puede volver a jugar" |
 
@@ -75,6 +76,10 @@ La cuadrícula de la Bitácora muestra siempre cuatro cuadrantes fijos organizad
 El Baúl muestra los **Objetos Digitales** que el Player ha obtenido como recompensa al completar Retos y Misiones. La pantalla tiene pestañas para filtrar por categoría (en este ejemplo, "Todos" y "Teletransport"). Cada objeto aparece con su icono y nombre.
 
 ![Pantalla del Baúl — lista de Objetos Digitales obtenidos como recompensa, con pestañas de filtro por categoría](/img/webapp-bitacora-baul.png)
+
+:::note El Baúl no guarda las Llaves
+Los Objetos Digitales de tipo **Llave** no van al Baúl: tienen su propio espacio, el **Llavero**. Ver más abajo.
+:::
 
 ### Galería
 
@@ -121,6 +126,14 @@ Cuando el Game Master activa el toggle **"Activar Nube de Palabras en la bitáco
 ![Pantalla de Nube de Palabras — vista inicial pidiendo seleccionar un Reto para ver la nube generada](/img/webapp-bitacora-nube-palabras.png)
 
 El tipo de Reto Nube de Palabras está documentado en detalle en [☁️ Nube de Palabras](../retos/nube-de-palabras.md).
+
+### Llavero
+
+Cuando la Aventura usa [Llaves Digitales](./llaves-digitales.md) para bloquear alguna Misión o Reto, aparece el cuadrante **Llavero**. Es donde se guardan las llaves que el Player va consiguiendo — no van al Baúl.
+
+Cada llave se muestra con su imagen, la fecha en que la consiguió, un indicador de si comparte acceso con el Clan y la **lista de qué abre**, con el estado de cada puerta (✓ abierta o bloqueada). Al tocar una llave se abre su ficha completa, igual que un Objeto del Baúl.
+
+El Llavero no aparece en Aventuras que no usan llaves.
 
 ## Cuadrantes por estado de Aventura
 

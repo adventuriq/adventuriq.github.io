@@ -38,6 +38,12 @@ Una guía rápida según lo que necesitas:
 - **Elemento de azar o sorpresa**: Ruleta de la Fortuna.
 - **Recoger ideas o sentimientos del grupo de forma visual**: Nube de Palabras.
 
+## Bloquear el acceso a un Reto
+
+Independientemente de su tipo, cualquier Reto puede bloquearse con una **Llave digital**: el Player necesita haber conseguido esa Llave para poder abrirlo. El Reto puede mostrarse con un candado o permanecer oculto en el listado hasta que el Player consiga la llave.
+
+Se configura en el bloque **🔑 Acceso por Llave digital** del editor del Reto. Lo tienes explicado en [🔑 Llaves Digitales](../aventuras/llaves-digitales.md).
+
 ## Estructura común a todos los Retos
 
 Todos los tipos de Reto comparten una estructura base: **cabecera** (título, descripción, imágenes, audio), **mapa** (opcional), **recompensas** (opcional) y la **mecánica específica** propia de cada tipo. La mecánica es lo que diferencia un tipo de otro y se configura en la sección correspondiente del formulario de creación del Reto en el Gamifier.

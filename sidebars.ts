@@ -20,6 +20,7 @@ const sidebars: SidebarsConfig = {
         'aventuras/dashboard-live',
         'aventuras/bitacora',
         'aventuras/objetos-digitales',
+        'aventuras/llaves-digitales',
         'aventuras/condiciones-finalizacion',
         'aventuras/votaciones',
         'aventuras/equipos-clanes',
