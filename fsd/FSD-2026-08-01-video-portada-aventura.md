@@ -29,7 +29,9 @@ Hasta ahora la portada de una Aventura solo podía mostrar un vídeo alojado en 
 
 - Ver el vídeo de portada de la Aventura en su idioma, sin interfaz de YouTube.
 - Con la portada a pantalla completa: ver el vídeo ocupando toda la pantalla, tanto si es vertical como horizontal, con el botón **Adelante** encima para entrar en la Aventura y la flecha de volver siempre accesible.
-- Activar el sonido del vídeo con el botón del altavoz (el vídeo arranca automáticamente y en silencio).
+- El vídeo **intenta arrancar con sonido**; si el navegador lo bloquea arranca en silencio y se activa con el botón del altavoz.
+- Manejar el vídeo con los **controles** de la portada a pantalla completa: repetir, reproducir/pausar, detener e ir al final.
+- Ver el botón **Adelante iluminarse** cuando el vídeo termina, como indicación de que ya puede continuar.
 
 ## 3. PREREQUISITOS DEL USUARIO
 
@@ -53,7 +55,9 @@ Hasta ahora la portada de una Aventura solo podía mostrar un vídeo alojado en 
 
 1. En la misma Aventura, localizar el bloque **Vídeo de portada** que hay junto a las imágenes.
 2. Activar el interruptor **Portada a pantalla completa**.
-   - El interruptor está desactivado mientras no haya ningún vídeo subido en ningún idioma.
+   - Se puede activar aunque todavía no haya ningún vídeo subido: en ese caso aparece un aviso
+     explicando que la opción se guarda pero **no tendrá efecto** hasta subir un vídeo, y queda una
+     advertencia visible bajo el interruptor.
 3. Guardar la Aventura.
 
 ### Flujo Gamifier — quitar el vídeo
@@ -64,9 +68,10 @@ Hasta ahora la portada de una Aventura solo podía mostrar un vídeo alojado en 
 ### Flujo Web App (Player)
 
 1. Abrir la Aventura desde el listado o desde el enlace directo.
-2. Si la portada es a pantalla completa, el vídeo ocupa toda la pantalla y arranca solo, en silencio y en bucle.
-3. Pulsar el icono del **altavoz** (arriba a la derecha) para activar el sonido.
-4. Pulsar **Adelante** para entrar en la Aventura, o la flecha de arriba a la izquierda para volver al listado.
+2. Si la portada es a pantalla completa, el vídeo ocupa toda la pantalla y arranca solo. **Se reproduce una vez, sin repetirse.**
+3. Si ha arrancado en silencio, pulsar el icono del **altavoz** (arriba a la derecha) para activar el sonido.
+4. Con los controles de abajo a la izquierda se puede pausar, volver a verlo, detenerlo o saltar al final.
+5. Al terminar el vídeo, el botón **Adelante** se ilumina. Pulsarlo para entrar en la Aventura, o usar la flecha de arriba a la izquierda para volver al listado.
 
 ## 5. PANTALLAS PARA CAPTURAR
 
@@ -87,7 +92,11 @@ Hasta ahora la portada de una Aventura solo podía mostrar un vídeo alojado en 
 
 ## 7. NOTAS TÉCNICAS (relevantes para el manual)
 
-- **El vídeo arranca siempre sin sonido.** No es una limitación de AdventuriQ: los navegadores solo permiten la reproducción automática si el vídeo está silenciado. El jugador activa el audio con el botón del altavoz. Conviene diseñar el vídeo pensando en que se verá mudo (por ejemplo, con texto o subtítulos incrustados).
+- **Sonido al arrancar: depende del navegador.** El vídeo intenta reproducirse con sonido, pero los navegadores solo lo permiten si el jugador ya ha interactuado con la página:
+  - Llegando desde el listado de Aventuras: **normalmente suena**.
+  - Entrando **por primera vez desde un enlace directo (Game PIN)**: arranca **en silencio**, porque el navegador todavía no ha dado permiso a la web. A partir de la segunda visita ya suele sonar.
+  - En cualquier caso el jugador puede activarlo con el botón del altavoz. Aun así, conviene diseñar el vídeo de forma que se entienda también sin audio (por ejemplo, con texto o subtítulos incrustados).
+- **El vídeo no se repite en bucle.** Se reproduce una vez y se queda en el último fotograma; al terminar, el botón Adelante se ilumina. El jugador puede volver a verlo con el botón de repetir.
 - **En iPhone con el modo de bajo consumo activado** el navegador puede bloquear también la reproducción automática silenciada. En ese caso aparece un botón de play en el centro para que el jugador arranque el vídeo.
 - **Formatos.** Se aceptan MP4, WEBM, MOV y OGG. Se recomienda **MP4 (H.264 + AAC)**: es el que reproducen todos los dispositivos.
 - **Peso del vídeo.** El vídeo se descarga cada vez que un jugador abre la portada. Recomendación: menos de 15 segundos y menos de 10 MB. Un vídeo pesado hace que la portada tarde en cargar con datos móviles y consume cuota de disco de la licencia.
@@ -96,3 +105,11 @@ Hasta ahora la portada de una Aventura solo podía mostrar un vídeo alojado en 
 - **Si activas la pantalla completa pero no hay vídeo** para ningún idioma, la portada se muestra como siempre (imagen o vídeo de YouTube): nunca queda en negro.
 - **Eliminar el vídeo del campo no borra el archivo del servidor**, igual que ocurre con el vídeo de finalización. El archivo sigue ocupando cuota hasta que lo borres desde la Media Library.
 - **Al duplicar una Aventura** se conserva el nombre del vídeo configurado, pero el archivo en sí no se copia a la Aventura nueva: hay que volver a subirlo. Es el mismo comportamiento que ya tenían las imágenes.
+
+---
+
+> **Actualizado el 2026-08-01 (misma fecha, tras las pruebas).** Este FSD se revisó al desplegar la
+> Fase 2 (Misiones y Retos), porque varios ajustes del reproductor afectan **también** a la portada
+> de la Aventura: autoplay con sonido y fallback, fin del bucle, controles del vídeo, botón Adelante
+> iluminado al terminar, y el interruptor de pantalla completa que ya no se bloquea. Ver
+> `FSD-2026-08-01-video-portada-mision-reto.md`.
