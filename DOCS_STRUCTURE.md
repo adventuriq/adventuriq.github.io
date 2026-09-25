@@ -285,6 +285,13 @@ para cubrir todas las mecánicas y escenarios documentables.
 - Procesos comerciales (facturación, contratación).
 - Datos sensibles de clientes reales en capturas.
 - Funcionalidades de los 4 tipos de Reto deprecados.
+- **Las Super Admin Tools** (todo lo que cuelga de `#/admin/super-tools`:
+  Panel de Control, Game Masters, Contratos Luna/Mundo, Licencias Aventura,
+  Mails del Sistema, Auditoria, importacion de Game Designers). Son
+  herramientas internas de un unico usuario, el Super Admin, no
+  funcionalidad de Game Master ni de Player. **No existe ni debe crearse
+  `docs/super-admin/`** (decision de Mike, 2026-09-25). Sus FSDs se siguen
+  escribiendo como especificacion interna, marcados con `publicar: no`.
 
 ---
 

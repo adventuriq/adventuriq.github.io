@@ -42,6 +42,20 @@ Guarda el archivo en: `fsd/FSD-{YYYY-MM-DD}-{nombre-feature}.md`
 
 (Desde la raíz de este repo de documentación)
 
+### REGLA CRÍTICA: las Super Admin Tools NO se documentan
+
+Si la feature vive en `#/admin/super-tools` (Panel de Control, Game Masters,
+Contratos Luna/Mundo, Licencias Aventura, Mails del Sistema, Auditoría,
+importación de Game Designers), **no va al manual público**: es herramienta
+interna del Super Admin, no funcionalidad de Game Master ni de Player
+(decisión de Mike, 2026-09-25).
+
+Escribe igualmente el FSD como especificación interna, pero marcado:
+`publicar: no` en el frontmatter y un aviso "NO PUBLICAR" justo debajo, para
+que Cowork no genere página. **La carpeta `docs/super-admin/` no existe y no
+debe crearse**; varios FSDs anteriores la dan por buena en su
+`docusaurus_path` — están marcados y ese path es historico.
+
 ### REGLA CRÍTICA: verificar `docusaurus_path` contra el árbol REAL
 
 Antes de escribir el frontmatter del FSD, comprueba qué carpetas y páginas

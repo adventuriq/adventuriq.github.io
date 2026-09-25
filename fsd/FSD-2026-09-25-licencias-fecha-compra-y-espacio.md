@@ -2,8 +2,21 @@
 feature_name: Licencias de Aventura — fecha de compra y espacio editable
 date: 2026-09-25
 components: [API] [GAMIFIER]
+publicar: no   # Super Admin Tools = interno, ver aviso bajo el frontmatter
 docusaurus_path: docs/super-admin/super-admin-tools.md
 ---
+
+> ## ⛔ NO PUBLICAR — documentación interna
+>
+> **Decisión de Mike (2026-09-25): las Super Admin Tools NO se documentan en el
+> manual público.** Son herramientas internas de un único usuario (el Super
+> Admin), no funcionalidad de Game Master ni de Player.
+>
+> Este FSD se conserva como especificación interna de la feature. **Cowork no
+> debe generar ninguna página a partir de él**, y la carpeta
+> `docs/super-admin/` no debe crearse. El `docusaurus_path` del frontmatter
+> queda como referencia histórica de dónde se habría ubicado.
+
 
 ## 1. RESUMEN DE LA FEATURE
 
@@ -104,22 +117,15 @@ despublicación por espacio y vuelve a poder publicarse.
 
 ## 6. UBICACIÓN EN DOCUSAURUS
 
-- **Carpeta destino:** `docs/super-admin/`
-- **Nombre del archivo:** `super-admin-tools.md`
-- **sidebar_position sugerido:** el que ya tenga la página; esta feature no crea
-  página nueva.
-- **Tags sugeridos:** super-admin, licencias, espacio, almacenamiento
-- **¿Es página nueva o actualización?** **Actualización** del apartado
-  "Licencias Aventura" de la página de Super Admin Tools.
+**Ninguna: no va al manual.** Ver el aviso del principio.
 
-> **Aviso sobre el árbol real de `docs/`:** a día de hoy la carpeta
-> `docs/super-admin/` **todavía no existe** — la página de
-> `FSD-2026-05-12-super-admin-tools.md` sigue pendiente de generar por Cowork.
-> Si al procesar este FSD la página aún no está, hay que crearla primero a
-> partir de aquel FSD y añadir lo de aquí como parte del apartado "Licencias
-> Aventura". Y sigue abierta la pregunta que dejó aquel FSD: **confirmar con
-> Mike si la sección Super Admin se publica en el manual público o se mantiene
-> como documentación interna.**
+La pregunta que dejó abierta `FSD-2026-05-12-super-admin-tools.md` — si la
+sección Super Admin se publica o se queda interna — **está resuelta
+(2026-09-25): se queda interna.** La carpeta `docs/super-admin/` nunca llegó a
+existir en el árbol y no debe crearse.
+
+El `docusaurus_path` del frontmatter y los nombres de captura de la sección 5
+se conservan solo como referencia histórica.
 
 ## 7. NOTAS TÉCNICAS (solo si relevante para el manual)
 

@@ -2,8 +2,21 @@
 feature_name: Super Admin — Pestaña Game Designers + Importación masiva desde Google Sheets
 date: 2026-05-12
 components: [API] [GAMIFIER]
+publicar: no   # Super Admin Tools = interno, ver aviso bajo el frontmatter
 docusaurus_path: docs/super-admin/import-game-designers-gsheets.md
 ---
+
+> ## ⛔ NO PUBLICAR — documentación interna
+>
+> **Decisión de Mike (2026-09-25): las Super Admin Tools NO se documentan en el
+> manual público.** Son herramientas internas de un único usuario (el Super
+> Admin), no funcionalidad de Game Master ni de Player.
+>
+> Este FSD se conserva como especificación interna de la feature. **Cowork no
+> debe generar ninguna página a partir de él**, y la carpeta
+> `docs/super-admin/` no debe crearse. El `docusaurus_path` del frontmatter
+> queda como referencia histórica de dónde se habría ubicado.
+
 
 ## 1. RESUMEN DE LA FEATURE
 
