@@ -5,6 +5,7 @@ const sidebars: SidebarsConfig = {
     'intro',
     'warnings',
     'conceptos-basicos',
+    'game-designer',
     'instalar-la-app',
     'tokens',
     'tokens-acceso-unico',
@@ -102,7 +103,6 @@ const sidebars: SidebarsConfig = {
         'webapp/recuperacion-permisos-gps-camara',
       ],
     },
-    'game-designer',
   ],
 };
 

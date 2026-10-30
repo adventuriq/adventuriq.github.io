@@ -68,7 +68,7 @@ Directamente debajo de los indicadores encontrarás los campos de configuración
 | Campo | Descripción |
 |---|---|
 | **Empieza / Acaba** | Fechas y horas que delimitan cuándo la Aventura es jugable. Fuera de este intervalo, los Players no pueden acceder. |
-| **Estado** | **Published** (jugable por Players) o **Draft** (solo jugable por Game Masters y Game Designers asignados). |
+| **Estado** | **Published** (jugable por Players) o **Draft** (solo jugable por Game Masters y Game Designers asignados). Al cambiarlo, la Aventura **se guarda sola** (con el resto del formulario) y una ventana confirma el resultado. También se puede cambiar desde el listado de Aventuras. Ver [Publicar una Aventura](publicar-aventura). |
 | **Idioma por defecto** | Idioma principal de la Aventura. Se pueden añadir hasta 9 traducciones adicionales (10 idiomas en total). |
 | **Zona Horaria** | Zona horaria que aplica a las fechas de la Aventura. |
 | **Licencia de Aventura** | Información sobre la Licencia activa, número de Tokens restantes, y accesos a "Asignar licencia" e "Ir a la Tienda". |

@@ -10,6 +10,7 @@ keywords: [aventura, publicar, published, draft, estado, licencia, caducidad, ga
 :::info 👑 Quién puede hacer esto
 Solo el **Game Master** puede cambiar el estado de una Aventura entre Draft y Published.
 :::
+<!-- REVISAR: confirmar si un Game Designer asignado también ve el campo Estado (FSD 2026-10-30 cambiar-estado-aventura-desde-listado) -->
 
 Publicar una Aventura es el paso que la hace accesible a los Players. Hasta ese momento, la Aventura permanece en **Draft** y solo es visible para el Game Master y los Game Designers asignados. El ciclo habitual es:
 
@@ -30,8 +31,8 @@ Antes de cambiar el estado a Published, asegúrate de haber completado estos pun
 | **Tokens suficientes** | Panel de resumen / [Tienda de Tokens](/tokens) | Cada Player consume 1 Token al iniciar la Aventura. Si no hay Tokens, los Players no podrán jugar. |
 | **GamePIN compartido** | Editor de Aventura → Acceso a la Aventura | Los Players necesitan el GamePIN (o el enlace directo / QR) para unirse. |
 
-:::warning No hay validación automática
-La plataforma **no comprueba** si tu Aventura tiene Misiones, Retos o contenido configurado antes de publicarla. Puedes publicar una Aventura vacía sin recibir ningún aviso. Repasa el checklist de arriba antes de cambiar el estado.
+:::warning El contenido no se valida
+Al publicar, la plataforma comprueba la **Licencia**, los **Tokens** y el **espacio** (ver [¿Por qué no se ha podido publicar?](#-por-qué-no-se-ha-podido-publicar)), pero **no comprueba** si tu Aventura tiene Misiones, Retos o contenido. Puedes publicar una Aventura vacía sin recibir ningún aviso. Repasa el checklist de arriba antes de cambiar el estado.
 :::
 
 :::tip Prueba antes de publicar
@@ -40,23 +41,56 @@ Mientras la Aventura está en Draft, puedes jugarla como Game Master o Game Desi
 
 ## 🚀 Cómo publicar una Aventura
 
-El estado de la Aventura se controla desde el campo **Estado** en la sección de configuración general del editor.
+Puedes cambiar el estado de una Aventura desde **dos sitios**: directamente en el **listado de Aventuras** o desde el **editor** de la Aventura. En los dos casos el cambio **se guarda al momento**, sin pulsar «Guardar aventura», y una ventana te confirma el resultado.
 
-### Paso a paso
+### Desde el listado de Aventuras
 
-1. En el menú lateral del Gamifier, entra en **Aventuras** y haz clic en la Aventura que quieras publicar.
-2. En el editor, localiza el campo **Estado** (justo debajo de las fechas).
-3. Haz clic en el desplegable. Verás dos opciones: **draft** y **published**.
-4. Selecciona **published**.
+1. En el menú lateral del Gamifier, entra en **Aventuras**.
+2. Localiza la Aventura. En la columna **Estado** verás un desplegable con el estado actual.
+3. Elige **PUBLISHED**. Mientras se guarda aparece un pequeño indicador de carga junto al desplegable.
+
+![Fila del listado de Aventuras con el desplegable de la columna Estado](/img/gamifier-listado-estado-desplegable.png)
+
+4. Si la Aventura cumple las condiciones, aparece la ventana **«Estado actualizado»**: *La Aventura «[título]» está ahora en estado PUBLISHED.* Pulsa **OK**.
+
+![Ventana Estado actualizado sobre el listado de Aventuras tras publicar una Aventura](/img/gamifier-listado-estado-publicada-ok.png)
+
+Si no las cumple, aparece la ventana **«No se ha podido publicar la Aventura»** con los motivos y el desplegable vuelve a **DRAFT** (ver [¿Por qué no se ha podido publicar?](#-por-qué-no-se-ha-podido-publicar)).
+
+### Desde el editor de la Aventura
+
+1. Entra en **Aventuras** y haz clic en la Aventura para abrir el editor.
+2. Localiza el campo **Estado** (justo debajo de las fechas) y elige **published**.
 
 ![Editor de la Aventura con el campo Estado en "draft" — la Aventura aún no es visible para los Players](/img/gamifier-estado-draft.png)
 
-Al seleccionar **published**, el estado se actualiza en el formulario pero **aún no se ha guardado**. Para que el cambio sea efectivo, haz clic en el botón **Guardar aventura**.
+3. **No hace falta pulsar «Guardar aventura»**: la Aventura se guarda sola en ese momento y aparece la ventana **«Estado actualizado»**: *La Aventura está ahora en estado PUBLISHED. También se han guardado el resto de cambios del formulario.*
 
-![Editor de la Aventura con el campo Estado en "published" — la Aventura ya es accesible para los Players](/img/gamifier-estado-published.png)
+![Ventana Estado actualizado en el editor de la Aventura, indicando que también se han guardado el resto de cambios del formulario](/img/gamifier-editor-estado-autoguardado.png)
 
-:::warning Recuerda guardar
-No hay un diálogo de confirmación al publicar. Una vez que seleccionas **published** y pulsas **Guardar aventura**, la Aventura queda visible para los Players de inmediato (si las fechas lo permiten). Asegúrate de haber completado el checklist de arriba antes de guardar.
+:::warning Al cambiar el estado se guarda todo el formulario
+El guardado automático guarda **la Aventura entera**: si tenías otros cambios a medio hacer en el editor (fechas, textos…), también quedan guardados. Y si la publicación se bloquea, el estado vuelve a **draft**, pero **el resto de cambios sí se han guardado**.
+:::
+
+:::caution No hay confirmación previa
+En cuanto eliges **PUBLISHED** (o **published** en el editor), la Aventura se publica y queda visible para los Players de inmediato (si las fechas lo permiten). Repasa el checklist de arriba antes de cambiar el estado.
+:::
+
+## ❓ ¿Por qué no se ha podido publicar?
+
+Para pasar de **Draft** a **Published**, la Aventura tiene que cumplir estas condiciones. Si falla alguna, la ventana **«No se ha podido publicar la Aventura»** te muestra **todas** las que no se cumplen (no solo la primera) y la Aventura se queda en Draft:
+
+| Condición | Mensaje si no se cumple | Cómo solucionarlo |
+|---|---|---|
+| Tener una Licencia asignada | «No tiene ninguna Licencia asignada.» | Asigna una Licencia en el apartado **Licencia de Aventura** del editor. |
+| Que la Licencia no haya caducado | «Su Licencia ha caducado.» | Asigna una Licencia nueva (ver [Tokens y Licencias](/tokens)). |
+| Que su propietario tenga Tokens disponibles (no aplica con Plan Luna o Plan Mundo) | «Su propietario no tiene Tokens disponibles.» | Compra Tokens en la [Tienda](/tokens). |
+| No ocupar más espacio del que permite su Licencia | «Ocupa más espacio del que permite su Licencia.» | Borra archivos que no uses desde la [Biblioteca de Medios](../gamifier/biblioteca-de-medios.md). |
+
+<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-listado-estado-publicacion-bloqueada.png — Ventana «No se ha podido publicar la Aventura» con la lista de motivos (requiere una Aventura de prueba que no cumpla alguna condición) -->
+
+:::note Licencias recién asignadas
+Una Aventura con una Licencia recién asignada, que todavía no había empezado a contar, a veces no se dejaba publicar como si la Licencia estuviera caducada. Ya está corregido: se publica sin problemas y el periodo de la Licencia empieza a contar en ese momento.
 :::
 
 ## 📌 Qué ocurre al publicar
@@ -88,16 +122,11 @@ Si la fecha actual está dentro del intervalo configurado en **Empieza** y **Aca
 
 ### Se consumen Tokens
 
-Cada Player que pulse **Adelante** en la pantalla de inicio de la Aventura consumirá **1 Token** de tu saldo, también si entra por código de acceso, QR o Token de acceso único. Asegúrate de tener suficientes Tokens antes de compartir el GamePIN. Si tu Aventura está cubierta por un **Plan Luna o Plan Mundo**, no consume Tokens y el aviso «No se puede publicar una Aventura sin Tokens» no te afecta.
+Cada Player que pulse **Adelante** en la pantalla de inicio de la Aventura consumirá **1 Token** de tu saldo, también si entra por código de acceso, QR o Token de acceso único. Asegúrate de tener suficientes Tokens antes de compartir el GamePIN. Si tu Aventura está cubierta por un **Plan Luna o Plan Mundo**, no consume Tokens y el bloqueo por falta de Tokens no te afecta.
 
 ## 🔄 Despublicar una Aventura (volver a Draft)
 
-Puedes devolver una Aventura publicada al estado **Draft** en cualquier momento siguiendo el mismo proceso:
-
-1. Abre el editor de la Aventura.
-2. En el campo **Estado**, selecciona **draft**.
-
-El cambio requiere pulsar **Guardar aventura** para hacerse efectivo. Al volver a Draft:
+Puedes devolver una Aventura publicada al estado **Draft** en cualquier momento, desde el **listado de Aventuras** (columna **Estado** → **DRAFT**) o desde el **editor** (campo **Estado** → **draft**). Volver a Draft no tiene condiciones y, como al publicar, se guarda al momento y aparece la ventana «Estado actualizado». Al volver a Draft:
 
 - Los **Players que ya se unieron** conservan su progreso, pero no podrán continuar jugando hasta que vuelvas a publicar.
 - Los **nuevos Players** no podrán unirse con el GamePIN.

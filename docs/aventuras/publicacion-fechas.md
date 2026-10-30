@@ -13,6 +13,8 @@ Una Aventura puede estar en dos estados:
 - **Published (Publicado)**: Los jugadores pueden jugar, siempre que esté dentro del rango de fechas configurado.
 - **Draft (Borrador)**: Solo jugable por los Administradores.
 
+El estado se cambia desde el listado de Aventuras o desde el editor, y se guarda al momento. Ver [Publicar una Aventura](./publicar-aventura.md).
+
 ## Automatización de fechas
 
 Se pueden configurar las **fechas de inicio y fin** del juego. Los jugadores solo podrán acceder al juego dentro del intervalo de tiempo configurado.
