@@ -90,7 +90,7 @@ Combina preguntas fáciles (para generar confianza) con preguntas difíciles (pa
 
 ## Continúa aprendiendo
 
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Catálogo completo de tipos en [Retos — los 11 tipos disponibles](./index.md).
 - Variante con bonificación por rapidez: [Preguntas Encadenadas](./preguntas-encadenadas.md).
 - Variantes multimedia: [PR con Audio](./pregunta-respuesta-audio.md) · [PR con Vídeo](./pregunta-respuesta-video.md).
 - Validación con texto libre: [Respuesta Exacta](./respuesta-exacta.md).

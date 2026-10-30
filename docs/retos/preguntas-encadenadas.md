@@ -85,6 +85,6 @@ Configura el slider de bonificación al 50 % como punto de partida. Un porcentaj
 
 ## Continúa aprendiendo
 
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Catálogo completo de tipos en [Retos — los 11 tipos disponibles](./index.md).
 - Mecánica base que se encadena: [Pregunta / Respuesta](./pregunta-respuesta.md).
 - Evaluación con texto libre: [Respuesta Exacta](./respuesta-exacta.md).

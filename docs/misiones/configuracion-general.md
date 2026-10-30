@@ -78,4 +78,4 @@ Al final del formulario aparece la sección **Retos**, que muestra los Retos enl
 
 - Siguiente paso: [Bloqueos y Visibilidad](./bloqueos-visibilidad.md).
 - Cómo crear la Aventura padre: [Crear una Aventura](../aventuras/crear-aventura.md).
-- Catálogo de Retos para enlazar: [Retos — los 10 tipos disponibles](../retos/index.md).
+- Catálogo de Retos para enlazar: [Retos — los 11 tipos disponibles](../retos/index.md).

@@ -14,6 +14,8 @@ const sidebars: SidebarsConfig = {
       items: [
         'aventuras/crear-aventura',
         'aventuras/configuracion',
+        'aventuras/video-portada',
+        'aventuras/terminos-y-condiciones',
         'aventuras/publicar-aventura',
         'aventuras/acceder-a-una-aventura',
         'aventuras/jugar-sin-registro',
@@ -59,6 +61,7 @@ const sidebars: SidebarsConfig = {
         'retos/pregunta-respuesta-video',
         'retos/ruleta-de-la-fortuna',
         'retos/nube-de-palabras',
+        'retos/realidad-aumentada',
         'retos/objetos-digitales',
       ],
     },
@@ -95,6 +98,7 @@ const sidebars: SidebarsConfig = {
       label: '📱 Webapp',
       items: [
         'webapp/perfil',
+        'webapp/jugar-sin-conexion',
         'webapp/recuperacion-permisos-gps-camara',
       ],
     },

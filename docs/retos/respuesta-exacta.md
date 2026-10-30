@@ -29,7 +29,7 @@ Cuando el Player abre el Reto, ve la pregunta y un campo de texto con el teclado
 
 ### Acceso al formulario
 
-Para crear un Reto de Respuesta Exacta, el Game Master abre una Aventura, entra en una Misión y pulsa **+ Nuevo Reto**. En el selector de tipos de Reto aparecen los 10 tipos disponibles — seleccionar la tarjeta **Respuesta Exacta**.
+Para crear un Reto de Respuesta Exacta, el Game Master abre una Aventura, entra en una Misión y pulsa **+ Nuevo Reto**. En el selector de tipos de Reto aparecen todos los tipos disponibles — seleccionar la tarjeta **Respuesta Exacta**.
 
 ![Selector de tipos de Reto — la tarjeta "Respuesta Exacta" aparece destacada](/img/gamifier-reto-seleccion-tipo-respuesta-exacta.png)
 
@@ -120,6 +120,6 @@ Elige respuestas cortas, sin acentos problemáticos ni ambigüedad. *"Roma"* fun
 
 ## Continúa aprendiendo
 
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Catálogo completo de tipos en [Retos — los 11 tipos disponibles](./index.md).
 - Mecánica similar sin validación automática: [Respuesta Libre](./respuesta-libre.md).
 - Validación con opciones predefinidas: [Pregunta / Respuesta](./pregunta-respuesta.md).

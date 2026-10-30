@@ -17,11 +17,15 @@ El Game Board es una herramienta exclusiva del Gamifier. El Player no ve esta in
 
 El Game Master accede al Game Board desde el formulario de edición de la Aventura. En la cabecera del formulario, junto al nombre de la Aventura, el botón **"Game Board"** abre el panel de monitorización.
 
+Mientras reúne los datos, el Game Board muestra el aviso **«Cargando los datos de la partida…»** y no enseña ningún panel. Espera a tener **todos** los datos antes de mostrarlos, así que en Aventuras con muchos Players puede tardar unos segundos: es normal. Así evitas ver los contadores a cero y pensar que la Aventura no tiene actividad.
+
+![Game Board durante la carga, con el aviso Cargando los datos de la partida…](/img/gamifier-metricas-gameboard-cargando.png)
+
 ## Estructura del Game Board
 
 El Game Board se organiza en tres bloques principales que se muestran de forma vertical:
 
-![Vista general del Game Board — métricas globales, estadísticas por Misión y actividad registrada por Reto](/img/gamifier-metricas-gameboard-vista-general.png)
+![Métricas de la Aventura en el Game Board — gráficos circulares de Misiones, Retos y Jugadores y botón Exportar a Excel](/img/gamifier-metricas-gameboard-vista-general.png)
 
 ### 1. Métricas de la Aventura
 
@@ -37,7 +41,7 @@ Junto a las métricas globales se encuentra el botón **"Exportar a Excel"** que
 
 ### 2. Estadísticas por Misión
 
-![Estadísticas por Misión — tarjetas con participación, finalización y ratio de Retos completados por cada Misión](/img/gamifier-metricas-gameboard-detalle-misiones.png)
+![Estadísticas por Misión — anillos de participación, finalización y Retos completados, con el tiempo y la puntuación promedio de la Misión](/img/gamifier-metricas-gameboard-estadisticas-mision.png)
 
 El bloque **"Estadísticas por Misión"** muestra una tarjeta por cada Misión de la Aventura con las siguientes métricas:
 

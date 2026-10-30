@@ -39,15 +39,34 @@ El contenido textual se puede configurar con **HTML enriquecido**: negritas, sub
 Las imágenes de listado, cabecera y similares no tienen opciones por idioma. Solo el contenido textual y multimedia dentro de las cajas de traducción admite versiones por idioma.
 :::
 
+### Añadir y eliminar idiomas
+
+Todos los editores con traducciones —Aventura, Misión, todos los tipos de Reto (incluidas las porciones de la Ruleta de la Fortuna y los textos para redes sociales de Subir Foto), Objetos Digitales, Notificaciones, POIs y Tipos de Voto— funcionan igual:
+
+- Al pulsar **+ Nueva Traducción**, el selector **solo ofrece los idiomas que ese elemento todavía no tiene**. Cuando ya los tiene todos, el botón desaparece.
+- Cada elemento tiene **un único texto por idioma**. Si por cualquier vía intentas repetir un idioma, aparece el aviso **«Ese idioma ya existe»** en lugar de crearse una pestaña duplicada.
+- Al **eliminar un idioma** (icono de eliminar de su pestaña y confirmar), la pestaña desaparece solo cuando el borrado se ha guardado de verdad. Si algo falla, verás un error y no se pierde nada; el idioma vuelve a estar disponible en el selector.
+- Editar las traducciones de un elemento **nunca afecta a las de otro**.
+
+![Selector de idioma al pulsar Nueva Traducción en un Reto: solo aparecen los idiomas que el Reto todavía no tiene](/img/gamifier-traducciones-selector-idiomas.png)
+
 ### Hasta 10 idiomas
 
 AdventuriQ soporta hasta **10 idiomas diferentes** por Aventura. Los idiomas disponibles cubren las principales lenguas de uso en entornos formativos y corporativos internacionales.
 
 ## Cómo selecciona el idioma el Player 🎮
 
-El Player selecciona el idioma con el que quiere jugar desde el menú **"Perfil"** de la Webapp. Cuando cambia de idioma, todos los contenidos traducidos de la Aventura se muestran en el idioma elegido.
+El Player selecciona el idioma con el que quiere jugar desde **Perfil → Preferencias → Idioma de las Aventuras** en la Webapp. Cuando cambia de idioma, todos los contenidos traducidos de la Aventura se muestran en el idioma elegido. El idioma se guarda en su cuenta, así que **le acompaña en cualquier dispositivo** en el que inicie sesión.
 
-Si un contenido concreto no tiene traducción en el idioma del Player, se muestra en el **idioma por defecto** de la Aventura (el que se eligió al crearla).
+Si la Aventura no está traducida al idioma del Player, **todo** el contenido (Aventura, Misiones, Retos, incluidos sus títulos y descripciones) se muestra de forma coherente en el **idioma por defecto** de la Aventura (el que se eligió al crearla).
+
+:::caution El idioma se decide por Aventura, no elemento a elemento
+Si la Aventura está traducida a un idioma pero alguna Misión o algún Reto concreto se quedó sin traducir, ese elemento puede aparecer sin texto. Completa las traducciones de todos los elementos antes de publicar o no ofrezcas ese idioma en la Aventura.
+:::
+
+:::note Los premios conservan su idioma
+Los Objetos Digitales del Baúl se siguen mostrando en el idioma en el que se ganaron, aunque el Player cambie después de idioma. Es deliberado: el premio es el recuerdo de cómo se consiguió.
+:::
 
 :::tip 👑 Para el Game Master
 Si tu Aventura va dirigida a una audiencia internacional, configura los idiomas antes de empezar a crear Misiones y Retos. Así podrás ir añadiendo las traducciones a medida que creas el contenido, en lugar de tener que volver atrás para traducir todo al final. Valida siempre en la Webapp cómo quedan los textos en cada idioma, ya que la longitud de los campos varía y según el dispositivo pueden quedar cortados.

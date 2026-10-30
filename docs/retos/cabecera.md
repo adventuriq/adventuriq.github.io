@@ -18,6 +18,11 @@ La cabecera es **común a todos los Retos**, excepto para la Mecánica de Pregun
 | **Imagen listado** | 100x100 pixels, visible en el listado de Retos |
 | **Imagen cabecera** | 1200x640 pixels, visible en la cabecera del Reto |
 | **Audio** | Formato MP3, reproducible a nivel Reto |
+| **Vídeo de portada** | Vídeo propio por idioma (MP4, WEBM, MOV u OGG), con opción de **Portada a pantalla completa**. Tiene prioridad sobre el Id de YouTube. Ver [Vídeo de portada](../aventuras/video-portada.md). |
+
+:::warning El vídeo de portada del Reto depende de la Misión
+Si la Misión tiene desactivado **«Mostrar el detalle de los Retos»**, el Player entra directo a la mecánica y no verá el vídeo de portada del Reto (salvo en Retos geolocalizados).
+:::
 
 ## Título y Descripción
 

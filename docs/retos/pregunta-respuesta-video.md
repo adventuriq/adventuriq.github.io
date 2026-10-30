@@ -29,7 +29,7 @@ Cuando el Player abre el Reto, ve el vídeo integrado en la cabecera con control
 
 ### Acceso al formulario
 
-Para crear un Reto de Pregunta/Respuesta con Vídeo, el Game Master abre una Aventura, entra en una Misión y pulsa **+ Nuevo Reto**. En el selector de tipos de Reto aparecen los 10 tipos disponibles — seleccionar la tarjeta **Pregunta/Respuesta con Vídeo** (icono de cámara de vídeo).
+Para crear un Reto de Pregunta/Respuesta con Vídeo, el Game Master abre una Aventura, entra en una Misión y pulsa **+ Nuevo Reto**. En el selector de tipos de Reto aparecen todos los tipos disponibles — seleccionar la tarjeta **Pregunta/Respuesta con Vídeo** (icono de cámara de vídeo).
 
 ![Selector de tipos de Reto — la tarjeta "Pregunta/Respuesta con Vídeo" aparece destacada con el icono de cámara](/img/gamifier-reto-seleccion-tipo-pr-video.png)
 
@@ -105,6 +105,6 @@ Vídeos cortos (30-90 segundos) mantienen la atención del Player. Si el vídeo 
 
 ## Continúa aprendiendo
 
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Catálogo completo de tipos en [Retos — los 11 tipos disponibles](./index.md).
 - Variante con audio: [Pregunta/Respuesta con Audio](./pregunta-respuesta-audio.md).
 - Mecánica base sin multimedia: Pregunta/Respuesta.

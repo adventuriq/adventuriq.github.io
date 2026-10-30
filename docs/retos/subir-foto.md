@@ -156,7 +156,7 @@ Usa instrucciones muy concretas y divertidas en el enunciado del Reto. "Sube una
 
 ## Continúa aprendiendo
 
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Catálogo completo de tipos en [Retos — los 11 tipos disponibles](./index.md).
 - Acción sin validación automática: [Llamada a la Acción](./llamada-a-la-accion.md).
 - Recoger texto libre del Player: [Respuesta Libre](./respuesta-libre.md).
 - Revisar las fotos y los enlaces publicados: [Game Board](../metricas/game-board.md).

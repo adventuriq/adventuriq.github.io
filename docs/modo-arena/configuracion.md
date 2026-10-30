@@ -27,6 +27,7 @@ Entra en el Gamifier, abre la **Aventura** que quieras y baja por el editor hast
 | **Modo Live (Arena)** | Interruptor principal. Al activarlo, la Aventura se puede lanzar en directo. |
 | **Segundos de cuenta atrás** | Tiempo que tiene el grupo para responder cada Reto. Pon **0** para que no haya cuenta atrás. |
 | **Puntos según rapidez** | Si se activa, cada Reto da más puntos cuanto antes se responda. |
+| **Seleccionar Misiones** | Si se activa, eliges qué Misiones de la Aventura se juegan en directo. Apagado, se juegan todas. |
 
 ### Modo Live (Arena)
 
@@ -52,6 +53,44 @@ El cálculo de los puntos por rapidez lo hace el servidor al registrar cada resp
 
 :::warning Sin cuenta atrás no hay escalado por tiempo
 Si has puesto la cuenta atrás en **0** (sin cuenta atrás), la opción "Puntos según rapidez" no tiene efecto: al no haber tiempo límite, todas las respuestas correctas reciben la **puntuación completa**.
+:::
+
+### Seleccionar Misiones
+
+Por defecto se juegan **todas** las Misiones de la Aventura (el bloque lo indica con el texto «Se jugarán todas las Misiones»). Si solo quieres jugar algunas en directo:
+
+1. Activa el interruptor **Seleccionar Misiones**.
+2. Pulsa **Elegir Misiones**: se abre la lista de Misiones activas de la Aventura.
+3. Marca las que quieras y pulsa **Seleccionar**.
+
+![Diálogo Selecciona Misiones con la lista de Misiones de la Aventura, su imagen, título y estado](/img/gamifier-arena-elegir-misiones-modal.png)
+
+4. Las Misiones elegidas aparecen como **tarjetas** con su imagen y su título bajo el interruptor, para que veas de un vistazo qué se jugará en Arena.
+5. **Guarda la Aventura.**
+
+![Bloque Opciones de la Aventura en modo Arena con Seleccionar Misiones activado y las tarjetas de las tres Misiones elegidas](/img/gamifier-arena-misiones-seleccionadas.png)
+
+:::warning Guarda antes de lanzar
+El botón **Lanzar en Arena** no guarda los cambios del formulario. Guarda la Aventura después de elegir las Misiones; si no, la partida usará la selección anterior.
+:::
+
+- La selección se aplica **al crear la partida**. Si la cambias con una partida ya en marcha, esa partida no se ve afectada: tendrías que finalizarla y lanzar otra.
+- Si la selección deja la partida sin ningún Reto compatible, Arena te avisa al crear la partida de que no hay Retos jugables.
+
+### Juego híbrido: unas Misiones en directo y el resto en modo normal
+
+Con la selección de Misiones puedes montar una experiencia **mixta**: jugar algunas Misiones en directo, con todo el grupo delante de la pantalla, y dejar el resto para que cada Player las juegue a su ritmo.
+
+1. Elige y guarda las Misiones que se jugarán en Arena.
+2. Juega la partida en directo y pulsa **Finalizar** al terminar.
+3. En el Gamifier, **desactiva el Modo Live** de la Aventura y guarda.
+4. Los Players que participaron abren la Aventura en la Webapp: las Misiones jugadas en Arena aparecen **finalizadas**, con sus premios de finalización ya entregados, y el resto se juegan con normalidad.
+
+:::note Cómo se cierran las Misiones jugadas en Arena
+- Una Misión jugada en Arena queda finalizada **aunque tuviera Retos no compatibles** con el directo: esos Retos no se juegan y no habrá que jugarlos después.
+- Los **premios de finalización** de esas Misiones se entregan a cada Player **solo si cumple sus condiciones de entrega** (sin condiciones, se entregan siempre).
+- Las Misiones solo se finalizan con el botón **Finalizar** del moderador. Una partida abandonada, que caduca sola, no finaliza ninguna Misión.
+- La **finalización de la Aventura** (premios de Aventura completa) no se decide en Arena: se evalúa cuando el Player continúa en modo normal.
 :::
 
 ## 🚀 Lanzar la Aventura en Arena

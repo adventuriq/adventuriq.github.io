@@ -74,6 +74,7 @@ Una vez generados, los Tokens aparecen en una tabla con las siguientes columnas:
 | **Nickname** | Nickname del Player que canjeó el Token (vacío si aún no se ha usado). |
 | **Fecha Creación** | Cuándo se generó el Token. |
 | **Fecha Unión** | Cuándo el Player canjeó el Token (vacío si aún no se ha usado). |
+| **Canal** | Por dónde salió el código: `gamifier` si lo enviaste tú con el botón del sobre, o el nombre que envíe tu tienda (`woocommerce`, `atrapalo`…). |
 
 La tabla incluye filtros por columna y paginación. El botón **"Actualizar"** refresca los datos para ver en tiempo real quién acaba de canjear su Token.
 
@@ -88,6 +89,62 @@ Desde la columna de acciones de la tabla, puedes editar un Token individual para
 ### Eliminar Tokens
 
 Puedes eliminar Tokens de dos formas: individualmente con el icono de papelera en cada fila, o en lote seleccionando varias filas con los checkboxes y pulsando **"Eliminar seleccionados"**.
+
+## Entrega automática de códigos 📧
+
+Cuando alguien compra tu Aventura, AdventuriQ puede **enviarle por correo su código y el enlace directo para empezar a jugar**, sin que tengas que buscar un código libre y escribir el correo a mano. Tienes tres formas de hacerlo, de más manual a más automática.
+
+### Enviar un código por correo con un clic
+
+1. En la Aventura, sección **Tokens de acceso por player**, pulsa **Actualizar** para ver la tabla.
+2. En la fila de un código libre, pulsa el botón del **sobre** (Enviar token por email).
+3. Escribe el correo del comprador y pulsa **Enviar**.
+4. Aparece el aviso «Token enviado a…», la columna **E-Mail** se rellena con esa dirección y la columna **Canal** muestra `gamifier`.
+
+<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-tokens-acceso-tabla-envio-email.png — Tabla de Tokens con el botón del sobre y la columna Canal (requiere generar Tokens en la Aventura de prueba) -->
+<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-tokens-acceso-dialogo-enviar-email.png — Diálogo «Enviar token por email» con el campo de correo -->
+
+El código queda **vinculado a ese correo**: solo esa persona podrá canjearlo.
+
+### Exportar los códigos libres a CSV
+
+Si vendes en una plataforma que entrega códigos automáticamente al comprador, pulsa **Exportar CSV (libres)**. Se descarga un archivo con dos columnas, el código y su enlace de juego, listo para subirlo a esa plataforma. Solo se exportan los códigos que siguen libres (sin usar y sin correo asignado) en ese momento.
+
+### Conectar tu tienda online
+
+Tu tienda (WooCommerce, Shopify, Zapier, Make…) puede pedir a AdventuriQ que entregue un código automáticamente **cada vez que se confirma una compra**. Para ello necesita una clave secreta:
+
+1. Abre tu **perfil de usuario** en el Gamifier (menú superior derecho → tu nombre).
+2. Baja hasta la sección **API Key — Venta externa de Tokens**.
+3. Pulsa **Generar API key**. Aparecen la clave y un ejemplo de configuración listo para copiar.
+4. Entrega esa clave a quien mantiene tu tienda para que la configure.
+
+![Sección API Key — Venta externa de Tokens del perfil, con el botón Generar API key](/img/gamifier-perfil-api-key.png)
+
+Si la clave se filtra o quieres cambiarla, pulsa **Regenerar** (crea una nueva e invalida la anterior) o **Revocar** (la desactiva).
+
+:::caution La clave es secreta
+Compártela solo con quien configura tu tienda. No la pegues en correos, documentos compartidos ni capturas de pantalla.
+:::
+
+Si la tienda avisa dos veces de la misma compra (algo habitual en las notificaciones automáticas), AdventuriQ entrega el **mismo código** en lugar de gastar uno nuevo, siempre que la tienda envíe la referencia del pedido.
+
+### Lo que recibe el comprador
+
+- Un correo con la **imagen de cabecera** de la Aventura, su título, el **código bien visible** y el botón **Empezar la Aventura**.
+- El correo va **firmado por el creador de la Aventura** y lleva su dirección: si el comprador responde, te escribe a ti, no a la plataforma.
+- Al pulsar el botón, se registra o inicia sesión **con el correo de la compra**, la Webapp abre la Aventura con el **código ya escrito** y solo tiene que pulsar **Comprobar código**.
+
+<!-- 📸 CAPTURA PENDIENTE: /img/tokens-acceso-correo-entrega.png — Correo que recibe el comprador con la cabecera, el código y el botón Empezar la Aventura -->
+<!-- 📸 CAPTURA PENDIENTE: /img/webapp-token-acceso-prerelleno.png — Pantalla del código de acceso con el Token ya relleno tras abrir el enlace del correo -->
+
+:::warning El comprador tiene que entrar con el mismo correo
+Es una protección antifraude: el código solo se canjea con el correo al que se envió. No sirve jugar como invitado ni con otra cuenta. Si el comprador quiere **regalar** la experiencia, envía el código al correo de quien vaya a jugar.
+:::
+
+:::note Cuándo se cobra el Token
+El saldo se descuenta cuando el comprador **canjea** el código, no al generarlo ni al enviarlo. Los códigos generados y aún sin canjear cuentan como reservados y reducen los que puedes generar.
+:::
 
 ## Qué ve el Player 🎮
 
@@ -146,6 +203,7 @@ En ambos casos, el consumo del Token ocurre en el mismo momento: cuando el Playe
 - **Los Tokens no caducan.** Una vez generados, los códigos son válidos indefinidamente hasta que alguien los canjee o el GM los elimine.
 - **Formato del código:** 9 caracteres alfanuméricos en mayúsculas, sin espacios ni caracteres especiales. Únicos por Aventura.
 - **Email opcional pero recomendable.** Si asignas un email a un Token, te aseguras de que solo esa persona pueda usarlo. Si no, el primero que lo teclee se lo queda.
+- **Usa el enlace del correo.** Si alguien que ya había desbloqueado esa Aventura antes introduce un código a mano (sin usar el enlace del correo), la app le deja entrar sin canjearlo. Con el enlace del correo —el flujo normal de compra— el código siempre se canjea y queda registrado.
 - **Aventuras existentes no se ven afectadas.** Activar Tokens en una Aventura que ya tiene Players no bloquea a los Players que ya están jugando — solo afecta a nuevos accesos.
 
 ## Continúa aprendiendo

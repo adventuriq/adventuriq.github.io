@@ -23,3 +23,7 @@ El código de bloqueo a la Aventura puede ser un **código alfanumérico** (núm
 :::tip Consejo
 Puedes usar códigos QR para controlar el acceso a la Aventura, creando experiencias más inmersivas donde los jugadores deben encontrar físicamente el código para desbloquear el contenido.
 :::
+
+:::info Los bloqueos no evitan el consumo de Tokens
+Un Player que entra por **código de acceso o QR** consume **1 Token** la primera vez que empieza a jugar, igual que cualquier otro Player. Consulta [Tokens y Licencias](/tokens).
+:::

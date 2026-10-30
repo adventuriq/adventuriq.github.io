@@ -65,7 +65,7 @@ Cuando cambias el estado a **published**, se producen varios efectos:
 
 ### La caducidad de la licencia arranca
 
-Al publicar por primera vez, la licencia asignada a la Aventura comienza su periodo de validez. Puedes ver la fecha de caducidad en el apartado **Licencia de Aventura** del editor, donde aparece el campo **Caduca en** con la fecha exacta de expiración.
+Al publicar por primera vez, la licencia asignada a la Aventura comienza su periodo de validez. Lo mismo ocurre si asignas una licencia nueva (por ejemplo, al renovar) a una Aventura que **ya está publicada**: empieza a contar en ese momento. Puedes ver la fecha de caducidad en el apartado **Licencia de Aventura** del editor, donde aparece el campo **Caduca en** con la fecha exacta de expiración.
 
 | Tipo de licencia | Duración desde la publicación |
 |---|---|
@@ -88,7 +88,7 @@ Si la fecha actual está dentro del intervalo configurado en **Empieza** y **Aca
 
 ### Se consumen Tokens
 
-Cada Player que pulse **Adelante** en la pantalla de inicio de la Aventura consumirá **1 Token** de tu saldo. Asegúrate de tener suficientes Tokens antes de compartir el GamePIN.
+Cada Player que pulse **Adelante** en la pantalla de inicio de la Aventura consumirá **1 Token** de tu saldo, también si entra por código de acceso, QR o Token de acceso único. Asegúrate de tener suficientes Tokens antes de compartir el GamePIN. Si tu Aventura está cubierta por un **Plan Luna o Plan Mundo**, no consume Tokens y el aviso «No se puede publicar una Aventura sin Tokens» no te afecta.
 
 ## 🔄 Despublicar una Aventura (volver a Draft)
 

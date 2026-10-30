@@ -65,6 +65,8 @@ El Player juega igual que en cualquier partida de Arena, pero entre Misiones su 
 
 Solo se juegan las **Misiones activas** (no en borrador) que tengan **al menos un Reto compatible** con el Modo Arena. Las Misiones sin Retos compatibles **no aparecen** en la partida.
 
+Si has activado **Seleccionar Misiones**, solo entran las que elegiste. Así puedes plantear un **juego híbrido**: unas Misiones en directo y el resto en modo normal. Lo tienes explicado en [Configurar el Modo Arena](./configuracion.md#seleccionar-misiones).
+
 La portada de cada Misión usa su **imagen de cabecera**; si la Misión no tiene imagen propia, se usa la **imagen de cabecera de la Aventura**.
 
 :::tip Prepara tus portadas

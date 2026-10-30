@@ -29,7 +29,7 @@ Desde el listado de Aventuras puedes ver cuántas licencias tienes disponibles e
 1. En el menú lateral del Gamifier, entra en **Aventuras**.
 2. En el panel **Resumen de tu cuenta**, haz clic en el botón **+ Nueva Aventura**.
 
-![Listado de Aventuras con el panel de resumen mostrando Mis Aventuras, Saldo de Tokens, Licencias Disponibles y Game Designers, junto al botón + Nueva Aventura](/img/gamifier-listado-aventuras.png)
+![Panel Resumen de tu cuenta del listado de Aventuras: Mis Aventuras, Saldo de Tokens, Licencias Disponibles y Game Designers, cada uno con su anillo de color, y el botón + Nueva Aventura](/img/gamifier-listado-resumen-cuenta.png)
 
 ### Seleccionar una Licencia
 
@@ -149,13 +149,22 @@ Además del asistente de creación, el Game Master puede **duplicar** una Aventu
 3. Se abre el modal **"Duplicar Aventura"** que muestra las Licencias disponibles en la cuenta como tarjetas visuales (con icono según tipo: Básica, Básica Equipo, Anual, etc.).
 4. Seleccionar la Licencia a la que asignar la copia y pulsar **"Continuar"**.
 5. Aparece un popup de espera mientras el sistema copia todos los contenidos.
-6. Al terminar, la nueva Aventura aparece en el listado con el título original seguido del sufijo **"(Copia)"**.
+6. Al terminar, la nueva Aventura aparece en el listado con el título original seguido del sufijo **"(Copia)"** y en estado **Borrador**, aunque la original estuviera publicada.
 
 ![Modal de Duplicar Aventura — selección de Licencia destino con tarjetas por tipo](/img/gamifier-aventura-clonar-modal.png)
 
 ### Qué se clona
 
-La copia incluye **todo** el contenido de diseño de la Aventura original: Misiones, Retos (con su configuración y mecánica), Objetos Digitales, Puntos de Interés, Clanes, archivos multimedia (carpeta `user_images/`), traducciones y configuración.
+La copia incluye **todo** el contenido de diseño de la Aventura original:
+
+- **Misiones**, con sus llamadas y notificaciones.
+- **Todos los tipos de Reto con su mecánica completa**: Realidad Aumentada, Ruleta de la Fortuna, Respuesta Exacta, Nube de Palabras, Pregunta/Respuesta con Audio y con Vídeo… incluidos los códigos QR de los Retos y las redes sociales configuradas en Subir Foto.
+- **Objetos Digitales** de Reto, de Misión y **de Aventura**, incluidas las **Llaves digitales**: los bloqueos de la copia apuntan a las Llaves de la copia. Si una porción de la Ruleta entregaba un Objeto, en la copia entrega el Objeto copiado.
+- **Condiciones de finalización** de Aventura y de Misión, y condiciones de entrega de Objetos, **con sus grupos Y/O** tal como estaban.
+- **Tipos de voto** de las Votaciones e interruptores de Votaciones y Nube de Palabras.
+- **Opciones del Modo Arena**: cuenta atrás, puntos por rapidez y selección de Misiones.
+- **Puntos de Interés**, Clanes (sin miembros), Etiquetas, traducciones, Términos y Condiciones, archivos multimedia (carpeta `user_images/`) y configuración.
+- **Mapas y puntos de localización propios de la copia**: puedes mover un punto GPS o retocar un mapa indoor en la copia sin que cambie la Aventura original (ni al revés).
 
 ### Qué NO se clona
 
@@ -164,13 +173,21 @@ La copia incluye **todo** el contenido de diseño de la Aventura original: Misio
 | **Players inscritos** | La copia empieza limpia, sin participantes. |
 | **Estados de juego** | No se transfieren puntos, progreso ni resultados. |
 | **Fotos de Players** (`player_images/`) | Contenido generado por participantes de la Aventura original. |
-| **Tokens de acceso** | Se deben generar nuevos si la Aventura los utiliza. |
+| **Tokens de acceso** | La copia parte de la Licencia nueva que se le asigna; se deben generar nuevos si la Aventura los utiliza. |
+| **Llaves ya abiertas por los Players** | Es progreso de partida: en la copia todas las Llaves están por conseguir. |
+| **Votos emitidos** | Los Tipos de voto sí se copian; los votos de los Players, no. |
+| **Códigos de premio de un solo uso** | Duplicarlos entregaría el mismo código en dos Aventuras. |
+| **Aceptaciones de Términos y Condiciones** | Los Players de la copia tienen que aceptarlos de nuevo. |
+| **Archivos de vídeo de portada** | Se conserva el nombre del vídeo configurado, pero el archivo no se copia: hay que volver a subirlo. |
 
 ### Notas importantes
 
 - Clonar **consume una Licencia** de la cuenta (la que se selecciona en el modal). Si no hay Licencias libres, no se puede clonar.
 - La Aventura clonada nace con un **nuevo GamePIN** generado automáticamente.
-- Tras clonar, se recomienda **revisar la configuración** de la copia: renombrar el título, ajustar fechas de vigencia y verificar cualquier dato sensible.
+- La copia se crea **siempre en Borrador**, para que la revises antes de abrirla a los Players. Cuando esté lista, [publícala](./publicar-aventura.md).
+- Tras clonar, se recomienda **revisar la configuración** de la copia: renombrar el título, ajustar fechas de vigencia y verificar cualquier dato sensible. Abre un Reto de cada tipo y, si usas mapas, comprueba uno.
+- Si la duplicación falla, no queda ninguna Aventura a medias en el listado y la Licencia elegida sigue disponible para volver a intentarlo.
+- Las Aventuras duplicadas **antes del 1 de agosto de 2026** no se corrigen solas: si una copia antigua tiene Retos vacíos, hay que completarla a mano o volver a duplicar.
 - El proceso puede tardar algunos segundos dependiendo del volumen de Misiones, Retos y archivos multimedia.
 
 :::tip 👑 Para el Game Master

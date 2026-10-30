@@ -76,7 +76,7 @@ Formula la pregunta de forma que invite a escribir más de una palabra. En lugar
 
 ## Continúa aprendiendo
 
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Catálogo completo de tipos en [Retos — los 11 tipos disponibles](./index.md).
 - Validación automática de texto: [Respuesta Exacta](./respuesta-exacta.md).
 - Recoger ideas del grupo visualmente: [Nube de Palabras](./nube-de-palabras.md).
 - Evaluación con opciones cerradas: [Pregunta / Respuesta](./pregunta-respuesta.md).

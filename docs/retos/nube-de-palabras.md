@@ -31,7 +31,7 @@ Si el Game Master activó la visualización, el Player puede acceder en cualquie
 
 ### Acceso al formulario
 
-Para crear un Reto de Nube de Palabras, el Game Master abre una Aventura, entra en una Misión y pulsa **+ Nuevo Reto**. En el selector de tipos de Reto aparecen los 10 tipos disponibles — seleccionar la tarjeta **Nube de Palabras** (icono de nube, última posición).
+Para crear un Reto de Nube de Palabras, el Game Master abre una Aventura, entra en una Misión y pulsa **+ Nuevo Reto**. En el selector de tipos de Reto aparecen todos los tipos disponibles — seleccionar la tarjeta **Nube de Palabras** (icono de nube, última posición).
 
 ![Selector de tipos de Reto — la tarjeta "Nube de Palabras" aparece destacada en la esquina inferior derecha](/img/gamifier-reto-seleccion-tipo-nube-palabras.png)
 
@@ -107,5 +107,5 @@ Una pregunta abierta como *"En una palabra, ¿qué te llevas de hoy?"* funciona 
 
 ## Continúa aprendiendo
 
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Catálogo completo de tipos en [Retos — los 11 tipos disponibles](./index.md).
 - Cómo el Player navega la Bitácora y accede a la pestaña de Nube de Palabras en [Bitácora del Player](../aventuras/bitacora.md).

@@ -77,7 +77,7 @@ Combina este Reto con **bloqueo por geolocalización** o **bloqueo por QR** en l
 
 ## Continúa aprendiendo
 
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Catálogo completo de tipos en [Retos — los 11 tipos disponibles](./index.md).
 - Acción con evidencia fotográfica: [Subir Foto](./subir-foto.md).
 - Respuesta abierta del Player: [Respuesta Libre](./respuesta-libre.md).
 - Evaluación con opciones cerradas: [Pregunta / Respuesta](./pregunta-respuesta.md).

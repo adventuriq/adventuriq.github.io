@@ -1,8 +1,8 @@
 ---
 sidebar_position: 3
 title: 🖼️ Contenido e Imágenes
-description: Imágenes de listado y cabecera de una Misión en AdventuriQ — formatos, tamaños recomendados y dónde aparece cada imagen en la Webapp.
-keywords: [misión, imagen, cabecera, listado, thumbnail, fondo, gamifier, webapp, adventuriq]
+description: Imágenes de listado y cabecera y vídeo de portada de una Misión en AdventuriQ — formatos, tamaños recomendados y dónde aparece cada elemento en la Webapp.
+keywords: [misión, imagen, cabecera, listado, thumbnail, fondo, vídeo, portada, pantalla completa, gamifier, webapp, adventuriq]
 ---
 
 # 🖼️ Contenido e Imágenes
@@ -19,6 +19,30 @@ Cada Misión tiene dos imágenes que definen su identidad visual en la Webapp: l
 Formatos permitidos: JPEG, PNG, GIF. Cada imagen se sube mediante el botón **Nueva imagen** o se selecciona desde la **Media Library** (biblioteca de medios de la Aventura). El botón **Eliminar imagen** permite retirar una imagen existente.
 
 ![Imágenes de la Misión — imagen de listado 100×100 e imagen de cabecera 1200×640 con botones de subida y eliminación](/img/gamifier-mision-visibilidad-jugabilidad.png)
+
+## 🎬 Vídeo de portada de la Misión 👑
+
+Además de las imágenes, cada Misión puede tener su propio **vídeo de portada**, uno por idioma, igual que la [portada de la Aventura](../aventuras/video-portada.md).
+
+- **Subir el vídeo**: en el bloque **Traducciones**, pestaña del idioma, campo **Vídeo de portada** → **Nuevo vídeo**, o **Media Library** para reutilizar uno ya subido. Al terminar aparece un reproductor para revisarlo.
+- **El mismo vídeo para todos los idiomas**: botón **Usar el mismo vídeo en todos los idiomas**, junto a los interruptores de la Misión.
+- **Portada a pantalla completa**: activa el interruptor para que la portada de la Misión sea solo el vídeo. Puedes activarlo antes de subir el vídeo; el editor te avisa de que no tendrá efecto hasta que subas uno.
+
+![Interruptores Mostrar el detalle de los Retos y Portada a pantalla completa en el editor de la Misión, con el botón Usar el mismo vídeo en todos los idiomas](/img/gamifier-mision-video-portada-opciones.png)
+
+![Campo Vídeo de portada en la pestaña de idioma de la Misión, con el vídeo subido y su reproductor](/img/gamifier-mision-video-portada-editor.png)
+
+Si hay un vídeo subido para un idioma, tiene **prioridad sobre el Id Video Youtube** de la [Descripción](./descripcion.md). Si falta el vídeo en el idioma del Player, se usa el del idioma por defecto de la Aventura y, si tampoco, el de cualquier otro idioma que lo tenga: un vídeo subido nunca queda invisible.
+
+:::warning «Mostrar el detalle de los Retos» y el vídeo de los Retos
+El interruptor **Mostrar el detalle de los Retos** de la Misión decide si el Player pasa por la portada de cada Reto. Si lo desactivas, el Player entra directo a la mecánica y **no verá el vídeo de portada de los Retos** de esta Misión (salvo los Retos geolocalizados, que siempre pasan por el detalle).
+:::
+
+En la Webapp, con la pantalla completa activada, el vídeo ocupa toda la pantalla y arranca solo, con el botón de entrar encima; al terminar, el botón se ilumina.
+
+![Portada de una Misión a pantalla completa en la Webapp, con el botón de sonido, los controles del vídeo y el botón Adelante](/img/webapp-mision-video-portada-fullscreen.png)
+
+Recomendaciones de formato, sonido y peso del vídeo: [Vídeo de portada](../aventuras/video-portada.md).
 
 ## Tipo de fondo para el listado
 
@@ -38,3 +62,4 @@ Usa imágenes que comuniquen el tema de cada Misión de un vistazo. En una ginca
 
 - Textos descriptivos de la Misión: [Descripción](./descripcion.md).
 - Configuración básica y color: [Configuración General](./configuracion-general.md).
+- Todo sobre el vídeo de portada: [Vídeo de portada](../aventuras/video-portada.md).

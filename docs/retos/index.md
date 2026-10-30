@@ -1,15 +1,15 @@
 ---
 sidebar_position: 0
-title: 🎯 Retos — los 10 tipos disponibles
-description: Catálogo de los 10 tipos de Reto vigentes en AdventuriQ — desde Pregunta/Respuesta hasta Nube de Palabras. Encuentra el tipo adecuado según tu caso de uso.
+title: 🎯 Retos — los 11 tipos disponibles
+description: Catálogo de los 11 tipos de Reto vigentes en AdventuriQ — desde Pregunta/Respuesta hasta Realidad Aumentada. Encuentra el tipo adecuado según tu caso de uso.
 keywords: [retos, mecánicas, tipos, gamifier, webapp, adventuriq]
 ---
 
-# 🎯 Retos — los 10 tipos disponibles
+# 🎯 Retos — los 11 tipos disponibles
 
-Los **Retos** son las mecánicas de juego que AdventuriQ pone a disposición del Game Master para construir la dinámica de cada Aventura. Cada tipo de Reto define un modo de interacción distinto con el Player: responder preguntas, subir fotos, escribir reflexiones, girar una ruleta o aportar palabras a una nube colectiva. El tipo se elige al crear el Reto dentro de una Misión y no se puede cambiar después.
+Los **Retos** son las mecánicas de juego que AdventuriQ pone a disposición del Game Master para construir la dinámica de cada Aventura. Cada tipo de Reto define un modo de interacción distinto con el Player: responder preguntas, subir fotos, escribir reflexiones, girar una ruleta, aportar palabras a una nube colectiva o descubrir un objeto 3D con la cámara. El tipo se elige al crear el Reto dentro de una Misión y no se puede cambiar después.
 
-## Los 10 tipos vigentes
+## Los 11 tipos vigentes
 
 | Icono | Tipo | Descripción | Caso de uso típico | Estado |
 |:---:|---|---|---|:---:|
@@ -23,8 +23,9 @@ Los **Retos** son las mecánicas de juego que AdventuriQ pone a disposición del
 | <img src="/img/retos-iconos/reto-icon-pregunta-respuesta-video.png" width="48" alt="Icono PR con Vídeo" /> | [**Pregunta/Respuesta con Vídeo**](./pregunta-respuesta-video.md) | Variante de Pregunta/Respuesta con vídeo asociado al enunciado. | Análisis de escenas, formación corporativa | ✅ |
 | <img src="/img/retos-iconos/reto-icon-ruleta-de-la-fortuna.png" width="48" alt="Icono Ruleta de la Fortuna" /> | [**Ruleta de la Fortuna**](./ruleta-de-la-fortuna.md) | El Player gira una ruleta configurable y obtiene puntos o un Objeto Digital según la porción donde caiga. | Dinámicas de grupo, recompensas aleatorias | ✅ |
 | <img src="/img/retos-iconos/reto-icon-nube-de-palabras.png" width="48" alt="Icono Nube de Palabras" /> | [**Nube de Palabras**](./nube-de-palabras.md) | Cada Player aporta una palabra; las respuestas se agregan en una nube visual en tiempo real. | Warm-ups, recogida de impresiones grupales | ✅ |
+| <img src="/img/retos-iconos/reto-icon-realidad-aumentada.png" width="48" alt="Icono Realidad Aumentada" /> | [**Realidad Aumentada**](./realidad-aumentada.md) | El Player apunta con la cámara a una imagen del decorado y aparece un objeto 3D con opciones de respuesta; al responder, el objeto se anima. | Museos, rutas turísticas, escape rooms | ✅ |
 
-**Leyenda**: ✅ Documentado. Los 10 tipos están documentados.
+**Leyenda**: ✅ Documentado. Los 11 tipos están documentados.
 
 ## ¿No sabes cuál usar?
 
@@ -37,6 +38,7 @@ Una guía rápida según lo que necesitas:
 - **Mecánica audiovisual en el enunciado**: PR con Audio o PR con Vídeo.
 - **Elemento de azar o sorpresa**: Ruleta de la Fortuna.
 - **Recoger ideas o sentimientos del grupo de forma visual**: Nube de Palabras.
+- **Dar vida a un cartel o un objeto físico con la cámara del móvil**: Realidad Aumentada.
 
 ## Bloquear el acceso a un Reto
 
@@ -47,3 +49,5 @@ Se configura en el bloque **🔑 Acceso por Llave digital** del editor del Reto.
 ## Estructura común a todos los Retos
 
 Todos los tipos de Reto comparten una estructura base: **cabecera** (título, descripción, imágenes, audio), **mapa** (opcional), **recompensas** (opcional) y la **mecánica específica** propia de cada tipo. La mecánica es lo que diferencia un tipo de otro y se configura en la sección correspondiente del formulario de creación del Reto en el Gamifier.
+
+En la cabecera, cualquier Reto puede tener además su propio **vídeo de portada** por idioma, incluso a pantalla completa. Ojo: si la Misión tiene desactivado **«Mostrar el detalle de los Retos»**, el Player entra directo a la mecánica y no verá ese vídeo (salvo en Retos geolocalizados). Todos los detalles en [🎬 Vídeo de portada](../aventuras/video-portada.md).

@@ -53,7 +53,7 @@ Características principales:
 
 ## ⚔️ Retos
 
-El Reto es la prueba que el Player debe superar. AdventuriQ ofrece **10 tipos de Reto** para diseñar experiencias variadas:
+El Reto es la prueba que el Player debe superar. AdventuriQ ofrece **11 tipos de Reto** para diseñar experiencias variadas:
 
 ![Pantalla de selección de tipo de Reto en el Gamifier](/img/gamifier-tipos-reto.png)
 
@@ -61,7 +61,7 @@ El Reto es la prueba que el Player debe superar. AdventuriQ ofrece **10 tipos de
 |---|---|
 | **Pregunta / Respuesta** | Preguntas con opciones de respuesta múltiple |
 | **Preguntas Encadenadas** | Lista de preguntas entregadas de forma continua, con factor tiempo |
-| **Compartir Foto** | El Player toma o carga una foto que se comparte en la Galería |
+| **Subir Foto** | El Player toma o carga una foto que se comparte en la Galería |
 | **Respuesta Libre** | El Player escribe libremente su respuesta en un campo de texto |
 | **Llamada a la Acción** | Instrucciones para realizar una acción (puede requerir escaneo de QR) |
 | **Respuesta Exacta** | El Player debe escribir una respuesta textual que coincida exactamente |
@@ -69,6 +69,7 @@ El Reto es la prueba que el Player debe superar. AdventuriQ ofrece **10 tipos de
 | **Pregunta / Respuesta con Vídeo** | Variante de Pregunta/Respuesta con una pista de vídeo integrada |
 | **Ruleta de la Fortuna** | El Player gira una ruleta y obtiene puntos u objetos según la posición |
 | **Nube de Palabras** | Agregación visual de las respuestas de todos los Players |
+| **Realidad Aumentada** | El Player apunta con la cámara a una imagen y aparece un objeto 3D con opciones de respuesta |
 
 :::tip
 Cada tipo de Reto se explica en detalle en su página dedicada dentro de la sección [Retos](/retos).

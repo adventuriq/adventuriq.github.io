@@ -60,9 +60,20 @@ Además, la tabla admite filtrado por columna usando el **asterisco (*)** como c
 
 El botón **"Sincronizar Clasificación"** recalcula las posiciones y puntuaciones del ranking. Útil si se han realizado cambios en la configuración de puntos de los Retos o si se sospecha una desincronización entre los datos mostrados y el estado real del juego.
 
+### Consentimiento de Términos y Condiciones
+
+Si la Aventura tiene [Términos y Condiciones](../aventuras/terminos-y-condiciones.md), la tabla incluye al final dos columnas más: **Acepta Com. Comerciales** y **Fecha Aceptación T&C**. Desplaza la tabla hacia la derecha para verlas. Se muestran también con los filtros «Han añadido la Aventura» y «No han jugado aún», y se exportan con el resto de datos.
+
+![Columnas Acepta Com. Comerciales y Fecha Aceptación T&C al final de la tabla de la Clasificación](/img/gamifier-metricas-clasificacion-consentimiento.png)
+
+- Pulsa la **casilla** de «Acepta Com. Comerciales» para rectificar el consentimiento de un Player (se guarda al momento; está desactivada si el Player aún no ha aceptado los Términos).
+- Pulsa el **icono de la goma** para restablecer su registro: se le volverán a pedir los Términos la próxima vez que entre.
+
+La fecha de aceptación no se puede editar a mano.
+
 ### Exportar a Excel
 
-El botón **"Exportar a Excel"** descarga un archivo con todos los datos de la tabla, respetando los filtros activos en ese momento. Permite al GM trabajar con los datos fuera de la plataforma para análisis avanzado, informes de participación o entregables a clientes.
+El botón **"Exportar a Excel"** descarga un archivo con todos los datos de la tabla, respetando los filtros activos en ese momento. También puedes exportar a CSV o Excel desde el menú de la tabla (icono de las tres líneas, arriba a la derecha). Permite al GM trabajar con los datos fuera de la plataforma para análisis avanzado, informes de participación o entregables a clientes.
 
 ## Detalle del Player 👑
 

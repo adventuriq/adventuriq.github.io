@@ -56,6 +56,41 @@ Todo se actualiza automáticamente con cada refresco:
 
 ![Rankings por Misión y panel de Objetos Digitales en vista de cuadrícula](/img/modo-arena/dashboard-live-misiones-objetos.png)
 
+## 🖼️ Vistas de contenido: Galería, Muro, Votaciones y Nube de palabras
+
+Bajo la cabecera (y bajo la cuenta atrás, si está visible) aparecen botones para abrir **cuatro vistas de contenido a pantalla completa**, pensadas para proyectar. Cada botón lleva un contador: «📷 Galería · 42», «💬 Muro · 12», «⭐ Votaciones · 9», «☁️ Nube de palabras · 25».
+
+![Cabecera del Dashboard Live con el botón Nube de palabras y su contador bajo el orbe de puntos](/img/modo-arena/dashboard-live-secciones-botones.png)
+
+Los botones **solo aparecen si la Aventura tiene ese contenido**:
+
+| Botón | Aparece si… | Qué muestra |
+|---|---|---|
+| **📷 Galería** | Algún Player ha compartido una foto o un vídeo | Mosaico con las fotos y vídeos de los Retos Subir Foto, los más recientes primero, con el autor y el «hace cuánto». Las nuevas entran con una pequeña animación. |
+| **💬 Muro** | Hay Retos de Respuesta Libre configurados para publicarse en el Muro | Tarjetas con el autor, el Reto al que responden y el texto en grande, legible a distancia. Las más recientes, primero. |
+| **⭐ Votaciones** | La Aventura tiene activadas las [Votaciones entre Players](./votaciones.md) | Dos columnas: el **ranking de valoraciones** (Players ordenados por su media de estrellas, con los votos recibidos) y los **últimos votos** (quién lo recibe, tipo de voto y estrellas). |
+| **☁️ Nube de palabras** | Hay algún Reto de [Nube de Palabras](../retos/nube-de-palabras.md) en una Misión publicada | La nube en grande, con la pregunta del Reto como subtítulo, creciendo en directo. Si hay varias Nubes, aparecen pestañas para cambiar de una a otra. |
+
+Si no hay nada de esto, el Dashboard se ve exactamente igual que antes.
+
+Cada vista ocupa toda la pantalla, mantiene la etiqueta **EN DIRECTO** (o **BORRADOR**), **se actualiza sola cada 10-15 segundos** y tiene un botón **← Volver** (o la tecla Escape) que te devuelve al panel principal tal y como estaba; el panel sigue actualizándose por debajo. El selector de idioma de siempre retraduce al momento los títulos de Retos, tipos de voto y preguntas.
+
+### La Galería: ampliar y modo Presentación
+
+- **Clic en una foto o un vídeo** → se amplía a pantalla completa. Los vídeos se reproducen con sus controles habituales y **con sonido**. Se cierra con la ✕, con Escape o haciendo clic fuera.
+- **▶ Presentación** (en la cabecera de la Galería) → las fotos y vídeos pasan solos a pantalla completa, uno cada ~6 segundos, con el nombre del autor debajo. Ideal para una pausa o la entrega de premios. Las fotos nuevas se van incorporando al pase. Los vídeos se reproducen **en silencio**. Sales con un clic o Escape.
+
+En el mosaico, los vídeos se muestran en pausa con el distintivo ▶.
+
+:::info Las Votaciones se proyectan de forma anónima
+En pantalla grande **nunca se muestra quién emitió cada voto ni el motivo que escribió**. Esa información sigue disponible para ti en el [Game Board](../metricas/game-board.md) del Gamifier.
+:::
+
+<!-- 📸 CAPTURA PENDIENTE: /img/modo-arena/dashboard-live-galeria.png — Galería en mosaico con varias fotos y un vídeo (requiere una Aventura de prueba con fotos compartidas) -->
+<!-- 📸 CAPTURA PENDIENTE: /img/modo-arena/dashboard-live-muro.png — Muro con varias tarjetas de respuestas -->
+<!-- 📸 CAPTURA PENDIENTE: /img/modo-arena/dashboard-live-votaciones.png — Votaciones: ranking de valoraciones y últimos votos -->
+<!-- 📸 CAPTURA PENDIENTE: /img/modo-arena/dashboard-live-nube-palabras.png — Nube de palabras en grande con varias palabras -->
+
 ## ⚙️ Configurar el panel
 
 Pulsa la **rueda dentada** (esquina superior derecha) para ajustar:
@@ -88,7 +123,8 @@ Llegar a cero **no cierra la Aventura ni bloquea nada**: es un elemento de dinam
 
 ## 🧭 Bueno saberlo
 
-- El Dashboard es de **solo lectura**: no permite moderar ni modificar nada de la Aventura.
+- El Dashboard es de **solo lectura**: no permite moderar ni modificar nada de la Aventura. Tampoco se puede borrar ni moderar contenido desde la Galería, el Muro, las Votaciones o la Nube.
+- En la Nube, las palabras se agrupan sin distinguir mayúsculas ni espacios sobrantes («Sol» y « sol » cuentan como la misma palabra).
 - El nivel del orbe (progreso global) es la **media de Retos completados por jugador** sobre los Retos jugables de la Aventura.
 - Puedes abrir el panel directamente con `https://live.adventuriq.com/dashboard/{GamePIN}` (el mismo GamePIN de unión de la Aventura), y admite `?top=15&refresh=20` en la URL para fijar los ajustes al abrir.
 

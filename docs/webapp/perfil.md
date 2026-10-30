@@ -83,7 +83,16 @@ El código QR se genera automáticamente con tu cuenta. Si tu cuenta es anterior
 
 ## Pestaña Preferencias
 
-Permite elegir el **idioma de las Aventuras** entre los disponibles. La selección se guarda en el servidor, así que el idioma que elijas se mantiene aunque cambies de dispositivo.
+Permite elegir el **idioma de las Aventuras** entre los disponibles. La selección se guarda en tu cuenta, así que el idioma que elijas **te acompaña en cualquier dispositivo**: si entras con la misma cuenta desde otro móvil, otro ordenador u otro navegador, las Aventuras aparecen directamente en ese idioma, sin tocar nada.
+
+- Si una Aventura no está traducida al idioma que has elegido, la verás entera en el **idioma por defecto** de esa Aventura. Es el comportamiento correcto, no un error.
+- Los premios del Baúl conservan el idioma en el que los ganaste.
+- Al **cerrar sesión**, el idioma se olvida en ese dispositivo (para que el siguiente Player que use ese navegador no herede el tuyo). Al volver a iniciar sesión, se recupera el de tu cuenta.
+- Si juegas **sin registro**, se usa el idioma con el que entraste.
+
+:::note Idioma de las Aventuras ≠ idioma de la app
+Esta opción cambia el **contenido**: títulos, descripciones, Misiones, Retos y premios. Los textos propios de la app (botones, menús, mensajes) siguen el idioma de tu navegador o dispositivo.
+:::
 
 Los idiomas de la interfaz de la Webapp son: Español, Inglés, Català y Francés. Si el idioma de tu dispositivo no coincide con ninguno de estos, se usa Inglés por defecto.
 

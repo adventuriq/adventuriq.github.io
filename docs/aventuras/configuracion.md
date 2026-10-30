@@ -49,7 +49,7 @@ Además, cada Player que vuelva a iniciar la Aventura tras un Raze consumirá **
 
 ### Indicadores de jugadores
 
-Justo debajo de la cabecera, cinco indicadores muestran el estado de participación en tiempo real:
+Justo debajo de la cabecera, cinco indicadores muestran el estado de participación en tiempo real, cada uno con su número, su porcentaje y un anillo de color proporcional:
 
 | Indicador | Qué mide |
 |---|---|
@@ -108,7 +108,9 @@ Tres imágenes configuran la identidad visual de tu Aventura en la Webapp:
 
 Formatos permitidos: JPEG, PNG, GIF.
 
-> Ver detalle en [Imágenes de la Aventura](imagenes).
+Junto a las imágenes está el bloque del **vídeo de portada**: puedes subir tu propio vídeo por idioma (en lugar de enlazar uno de YouTube) y mostrarlo a pantalla completa.
+
+> Ver detalle en [Imágenes de la Aventura](imagenes) y en [Vídeo de portada](video-portada).
 
 ## 🌍 Idiomas y traducciones
 
@@ -211,6 +213,7 @@ Cada aspecto de la configuración tiene su página dedicada con explicación det
 | [Jugar sin registro (nickname)](jugar-sin-registro) | Acceso por nickname, sin crear cuenta |
 | [Opciones de la Aventura](visibilidad-controles) | Toggles de visibilidad para la Bitácora del Player |
 | [Imágenes](imagenes) | Imagen de listado, cabecera y logo del patrocinador |
+| [Vídeo de portada](video-portada) | Vídeo propio por idioma y portada a pantalla completa |
 | [Idiomas y traducciones](idiomas-traducciones) | Contenido multiidioma y campos traducibles |
 | [Contenido y descripción](contenido-descripcion) | Textos enriquecidos de la Aventura |
 | [Condiciones de finalización](condiciones-finalizacion) | Las 6 condiciones de fin de Aventura |

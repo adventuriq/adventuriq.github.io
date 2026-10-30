@@ -50,11 +50,21 @@ La elección entre **Individual y Equipo** se hace en el momento de [crear la Av
 
 :::tip 🕐 La caducidad empieza cuando publicas, no cuando compras
 Puedes comprar tu Licencia hoy y tomarte los días o semanas que necesites para construir tu Aventura. El contador solo empieza a correr en el momento en que **publicas la Aventura** y los Players pueden empezar a jugarla. Sin prisas, sin presión temporal durante la creación.
+
+Si **renuevas** la Licencia de una Aventura que ya está publicada, la Licencia nueva empieza a contar en el momento en que se la asignas.
 :::
+
+### Estados de una Licencia
+
+| Estado | Qué significa |
+|---|---|
+| **Asignable** | Comprada y todavía sin fecha de caducidad: no está asignada a ninguna Aventura o la Aventura aún no se ha publicado. |
+| **Activa** | Asignada a una Aventura publicada y con fecha de caducidad futura (1 mes o 1 año según el tipo). |
+| **Caducada** | La fecha de caducidad ya ha pasado. |
 
 ### ¿Qué pasa cuando caduca una Licencia?
 
-Cuando una Licencia vence, la Aventura deja de ser accesible para los Players. La **configuración y el contenido se mantienen intactos** — solo tienes que activar una Licencia nueva para que vuelva a ser jugable.
+Cuando una Licencia vence, la Aventura deja de ser accesible para los Players: en la revisión automática de cada noche, la Aventura publicada se **despublica** y recibes un correo con los motivos. La **configuración y el contenido se mantienen intactos** — solo tienes que activar una Licencia nueva para que vuelva a ser jugable.
 
 :::info
 El sistema notifica al Game Master con antelación antes de la caducidad, para que puedas renovar sin interrupciones.
@@ -77,7 +87,7 @@ Un **Token** es el ticket de entrada de cada Player a una Aventura. Cada vez que
 |---|---|
 | **Precio** | 1 € por Token |
 | **Quién lo consume** | El Player, al pulsar "Adelante" para iniciar la Aventura |
-| **Cuándo se consume** | Una vez por partida nueva |
+| **Cuándo se consume** | Una vez por partida nueva: la primera vez que el Player abre la Aventura y carga sus Misiones. Ni al registrarse, ni al añadir la Aventura por GamePIN, ni al desbloquearla con un código |
 
 ### Ejemplo concreto
 
@@ -124,9 +134,14 @@ Sustituye la Licencia Individual por la de Equipo: 36 € / mes o 400 € / año
 | | Situación | ¿Consume Token? |
 |---|---|---|
 | ✅ | Un Player inicia una partida nueva en una Aventura | **Sí** |
+| ✅ | Un Player entra por primera vez en una Aventura protegida con **código de acceso, QR o Token de acceso único** | **Sí** (1 Token, igual que sin bloqueo) |
+| ✅ | Un Player reinicia su partida (si la Aventura permite volver a jugar) y empieza de nuevo | **Sí** |
 | ❌ | Un Player continúa una partida ya empezada | No |
 | ❌ | El Game Master hace un Raze (reset del progreso de los Players) | No |
 | ❌ | El Game Master o Game Designer prueban la Aventura | No |
+| ❌ | Cualquier partida en una Aventura cubierta por un **Plan Luna o Plan Mundo** activo | No (el límite es el espacio contratado) |
+
+Puedes seguir tu saldo y el histórico de consumos en tu perfil del Gamifier, apartado **Histórico Tokens**. En la ficha de una Aventura, un guion (**-**) en el saldo de Tokens significa que tu cuenta todavía no tiene ningún movimiento, no que el saldo sea cero.
 
 :::info Cada partida es un ticket de entrada independiente
 Si un Player quiere repetir una Aventura — por ejemplo, en una segunda edición de una formación, para mejorar su puntuación o simplemente para volver a disfrutarla — consumirá un Token nuevo. Esto garantiza que siempre sabes exactamente cuánto cuesta cada experiencia.
@@ -230,7 +245,7 @@ La Licencia Individual genera solo un ranking de jugadores. La Licencia de Equip
 La Aventura deja de ser accesible para los Players hasta que se active una nueva Licencia. La configuración y el contenido se mantienen intactos — solo tienes que activar una Licencia nueva para que vuelva a ser jugable. El sistema te avisa con antelación antes de que esto ocurra.
 
 **¿Cuándo empieza a contar la caducidad de la Licencia?**
-La caducidad se activa cuando **publicas tu Aventura** (el momento en el que los Players pueden empezar a jugarla), no cuando compras la Licencia ni mientras la estás construyendo. Esto significa que puedes adquirir la Licencia con antelación y trabajar en tu Aventura a tu ritmo — el contador solo arranca al publicar.
+La caducidad se activa cuando **publicas tu Aventura** (el momento en el que los Players pueden empezar a jugarla), no cuando compras la Licencia ni mientras la estás construyendo. Esto significa que puedes adquirir la Licencia con antelación y trabajar en tu Aventura a tu ritmo — el contador solo arranca al publicar. Si asignas una Licencia nueva a una Aventura que **ya está publicada** (por ejemplo, para renovarla), el contador arranca en ese momento; si la Aventura está en borrador, espera a que la publiques.
 
 **¿Qué es la Branderización del Webapp?**
 Es una personalización de la Webapp que ven los Players: colores corporativos y logo de tu organización. Refuerza tu marca en cada partida y es una característica **exclusiva** de los Planes Luna y Mundo. No está disponible con Licencias Mensuales ni Anuales.

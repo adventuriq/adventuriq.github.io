@@ -27,7 +27,11 @@ Las dos primeras rutas son **mecanismos de vinculación**: asocian una Aventura 
 
 El deep link es la ruta más directa. El Game Master comparte con sus Players una URL (o un código QR que contiene esa URL) y el Player solo tiene que hacer clic — la Webapp se encarga de todo automáticamente.
 
-**Formato del enlace**: `https://webapp.adventuriq.com/#/{GamePIN}`
+**Formato del enlace**: `https://play.adventuriq.com/#/{GamePIN}`
+
+:::note Los enlaces antiguos siguen funcionando
+Los enlaces para jugar estrenan la dirección `play.adventuriq.com`, más corta y fácil de dictar. Si tienes carteles, folletos o QR impresos con la dirección anterior (`webapp.adventuriq.com`), **siguen funcionando** igual: las dos direcciones abren la misma Webapp y no hay fecha de retirada de la antigua.
+:::
 
 Cuando el Player pulsa el enlace (o escanea el QR):
 
@@ -35,10 +39,14 @@ Cuando el Player pulsa el enlace (o escanea el QR):
 2. La vinculación ocurre automáticamente en segundo plano — el Player no tiene que hacer nada más.
 3. La Aventura queda añadida a su listado para futuras visitas.
 
+:::info Si la Aventura tiene Términos y Condiciones
+Al pulsar **Adelante**, el Player tiene que aceptar los [Términos y Condiciones](./terminos-y-condiciones.md) de la Aventura antes de entrar. Se piden **antes** que el código de acceso o el Token.
+:::
+
 ![Pantalla de la Aventura tras pulsar un deep link — la vinculación ha ocurrido automáticamente y el Player ya ve la información de la Aventura](/img/webapp-acceder-deeplink-aterrizaje.png)
 
 :::tip 👑 Para el Game Master
-El deep link es la opción más cómoda tanto para ti como para tus Players. Comparte la URL por email, WhatsApp, intranet o cualquier canal digital. Si preparas una experiencia presencial (evento, gymkana, escape room), usa el **código QR** impreso en un cartel o folleto — funciona igual que el enlace.
+El deep link es la opción más cómoda tanto para ti como para tus Players. Lo tienes a mano en dos sitios: en el **listado de Aventuras** del Gamifier, bajo los datos de cada Aventura, con un botón para copiarlo; y en el detalle de la Aventura, sección **Acceso a la Aventura**, donde además está el QR. Comparte la URL por email, WhatsApp, intranet o cualquier canal digital. Si preparas una experiencia presencial (evento, gymkana, escape room), usa el **código QR** impreso en un cartel o folleto — funciona igual que el enlace.
 :::
 
 :::note Sin cuenta: entrar solo con un nickname
@@ -114,6 +122,20 @@ Para más detalles sobre cómo funcionan los Tokens y cómo adquirirlos, consult
 Como Game Master, tú decides qué mecanismo de acceso compartir con tus Players. Los tres están disponibles en la sección **Acceso a la Aventura** del editor del Gamifier:
 
 - **Deep link (URL)**: copia el enlace con el botón "Copiar enlace" y compártelo por el canal que prefieras. Es la opción con menos fricción para el Player.
+
+### Copiar el enlace desde el listado de Aventuras
+
+No hace falta entrar en cada Aventura para conseguir su enlace. En el **listado de Aventuras** (la pantalla de inicio del Gamifier), bajo los datos de cada Aventura, aparece su enlace para jugar con el icono de eslabón:
+
+![Fila del listado de Aventuras del Gamifier con el enlace para jugar y el botón de copiar](/img/gamifier-listado-enlace-jugar.png)
+
+1. Localiza la Aventura (puedes usar el buscador de la parte superior).
+2. Pulsa el botón de copiar que hay a la derecha del enlace.
+3. Aparece **«¡Enlace copiado!»** durante unos segundos: ya puedes pegarlo en un email, un WhatsApp o donde quieras.
+
+![Mensaje ¡Enlace copiado! junto al enlace para jugar en el listado de Aventuras](/img/gamifier-listado-enlace-copiado.png)
+
+Si pulsas sobre el propio enlace, se abre en una pestaña nueva para que compruebes cómo lo verá el Player. Recuerda que la Aventura tiene que estar **publicada** para que el Player pueda jugar.
 - **Código QR**: haz clic en el QR para descargarlo como imagen. Úsalo en cartelería, pantallas o materiales impresos para experiencias presenciales.
 - **GamePIN**: un código numérico de 9 dígitos asignado automáticamente. Útil para dictar en voz alta cuando no puedes compartir un enlace.
 

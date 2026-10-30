@@ -24,6 +24,7 @@ title: Contenido y Descripción
 - El contenido HTML enriquecido permite opciones de configuración tipo **Negritas, Subrayado, Colores, iFrames**, etc.
 - Se pueden incorporar hasta **10 idiomas diferentes**.
 - Todas las cajas de Descripción permiten su configuración en **HTML** y la incrustación de **iFrames** (como YouTube).
+- Para la portada ya no necesitas YouTube: puedes **subir tu propio vídeo** por idioma, que tiene prioridad sobre el Id de YouTube. Ver [Vídeo de portada](./video-portada.md).
 
 ## Acciones
 

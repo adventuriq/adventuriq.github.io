@@ -125,7 +125,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://webapp.adventuriq.com',
+          href: 'https://play.adventuriq.com',
           label: 'Web App',
           position: 'right',
         },
@@ -148,7 +148,7 @@ const config: Config = {
           title: 'Producto',
           items: [
             { label: 'Web oficial', href: 'https://www.adventuriq.com' },
-            { label: 'Webapp', href: 'https://webapp.adventuriq.com' },
+            { label: 'Webapp', href: 'https://play.adventuriq.com' },
             { label: 'Precios', href: 'https://www.adventuriq.com/precios' },
           ],
         },

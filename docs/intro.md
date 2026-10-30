@@ -37,7 +37,7 @@ AdventuriQ se compone de dos aplicaciones web:
 | Componente | URL | Para quién | Descripción |
 |---|---|---|---|
 | **Gamifier** | [gamifier.adventuriq.com](https://gamifier.adventuriq.com) | Game Master / Game Designer | Administrador de contenidos donde se crean y configuran las Aventuras |
-| **Webapp** | [webapp.adventuriq.com](https://webapp.adventuriq.com) | Player | Progressive Web App donde los jugadores participan en las Aventuras |
+| **Webapp** | [play.adventuriq.com](https://play.adventuriq.com) | Player | Progressive Web App donde los jugadores participan en las Aventuras |
 
 ### Gamifier — donde se crean las Aventuras
 

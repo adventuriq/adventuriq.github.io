@@ -75,7 +75,7 @@ Si necesitas saber quién es cada participante (formaciones internas, onboarding
 El Player abre el enlace directo de la Aventura o escanea su QR:
 
 ```
-https://webapp.adventuriq.com/#/{GamePIN}
+https://play.adventuriq.com/#/{GamePIN}
 ```
 
 En lugar de la pantalla de acceso habitual, ve el nombre de la Aventura y un único campo: **Nickname**. Esta pantalla es deliberadamente mínima: la imagen de la Aventura y el resto de su identidad visual aparecen en cuanto entra.

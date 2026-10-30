@@ -29,7 +29,7 @@ Cuando el Player abre el Reto, ve la ruleta dibujada con las porciones configura
 
 ### Acceso al formulario
 
-Para crear un Reto de Ruleta de la Fortuna, el Game Master abre una Aventura, entra en una Misión y pulsa **+ Nuevo Reto**. En el selector de tipos de Reto aparecen los 10 tipos disponibles — seleccionar la tarjeta **Ruleta de la Fortuna** (icono de ruleta). El Reto se crea automáticamente con **4 porciones de ejemplo** con iconos y colores aleatorios, listas para personalizar.
+Para crear un Reto de Ruleta de la Fortuna, el Game Master abre una Aventura, entra en una Misión y pulsa **+ Nuevo Reto**. En el selector de tipos de Reto aparecen todos los tipos disponibles — seleccionar la tarjeta **Ruleta de la Fortuna** (icono de ruleta). El Reto se crea automáticamente con **4 porciones de ejemplo** con iconos y colores aleatorios, listas para personalizar.
 
 ![Selector de tipos de Reto — la tarjeta "Ruleta de la Fortuna" aparece destacada con el icono de ruleta](/img/gamifier-reto-seleccion-tipo-ruleta.png)
 
@@ -43,7 +43,7 @@ Como cualquier Reto, la Ruleta de la Fortuna comparte los campos comunes (cabece
 | **Icono** | Icono visual de la porción, seleccionable desde un popup flotante con iconos predefinidos. |
 | **Color** | Color de la porción en la ruleta, elegido con un selector de color. |
 | **Peso** | Número que define la probabilidad relativa de que esa porción salga. Cuanto mayor es el peso respecto al total, más probable es que la ruleta se detenga ahí. |
-| **Texto** | Texto descriptivo de la porción, traducible a cada idioma de la Aventura. |
+| **Texto** | Texto descriptivo de la porción, traducible a cada idioma de la Aventura. Cada porción tiene **un único texto por idioma**: al pulsar **Nueva traducción** en una porción, el selector solo ofrece los idiomas que esa porción todavía no tiene, y si intentas repetir uno aparece el aviso «Ese idioma ya existe en esta porción». Ver [Idiomas y Traducciones](../aventuras/idiomas-traducciones.md). |
 | **Recompensa** | Lo que recibe el Player si cae en esa porción: puntos positivos, puntos negativos o un Objeto Digital. |
 | **Número de giros** | Cuántas veces puede girar el Player en este Reto. |
 | **Entrega única de objetos** | Toggle que impide que un mismo Objeto Digital se entregue dos veces al mismo Player, incluso si vuelve a caer en esa porción. |
@@ -118,6 +118,6 @@ Mezcla porciones de puntos positivos con alguna de puntos negativos o con un Obj
 
 ## Continúa aprendiendo
 
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Catálogo completo de tipos en [Retos — los 11 tipos disponibles](./index.md).
 - Mecánica con evaluación de conocimiento: [Respuesta Exacta](./respuesta-exacta.md).
 - Reto colaborativo visual: [Nube de Palabras](./nube-de-palabras.md).

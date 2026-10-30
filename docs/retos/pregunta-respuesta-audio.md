@@ -29,7 +29,7 @@ Cuando el Player abre el Reto, ve un reproductor grande en la cabecera con esté
 
 ### Acceso al formulario
 
-Para crear un Reto de Pregunta/Respuesta con Audio, el Game Master abre una Aventura, entra en una Misión y pulsa **+ Nuevo Reto**. En el selector de tipos de Reto aparecen los 10 tipos disponibles — seleccionar la tarjeta **Pregunta/Respuesta con Audio** (icono de auriculares).
+Para crear un Reto de Pregunta/Respuesta con Audio, el Game Master abre una Aventura, entra en una Misión y pulsa **+ Nuevo Reto**. En el selector de tipos de Reto aparecen todos los tipos disponibles — seleccionar la tarjeta **Pregunta/Respuesta con Audio** (icono de auriculares).
 
 ![Selector de tipos de Reto — la tarjeta "Pregunta/Respuesta con Audio" aparece destacada con el icono de auriculares](/img/gamifier-reto-seleccion-tipo-pr-audio.png)
 
@@ -101,6 +101,6 @@ Elige fragmentos de audio cortos y reconocibles. Un intro de 10 segundos de una 
 
 ## Continúa aprendiendo
 
-- Catálogo completo de tipos en [Retos — los 10 tipos disponibles](./index.md).
+- Catálogo completo de tipos en [Retos — los 11 tipos disponibles](./index.md).
 - Variante con vídeo: [Pregunta/Respuesta con Vídeo](./pregunta-respuesta-video.md).
 - Mecánica base sin audio ni vídeo: Pregunta/Respuesta.
