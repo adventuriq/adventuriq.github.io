@@ -50,7 +50,7 @@ Cada Player gasta **un Token por cada partida** que inicia en una Aventura. Esto
 Los Tokens **no se gastan** si juegas con un usuario que tenga rol de **Game Master** o que sea el **Game Designer** asignado a esa Aventura. Aprovecha esto para probar tus Aventuras antes de publicarlas.
 :::
 
-- La Webapp necesita una **conexión a Internet con suficiente calidad** para funcionar correctamente, tanto en red móvil como en WiFi.
+- La Webapp necesita una **conexión a Internet con suficiente calidad** la primera vez que entras en una Aventura (para descargarla) y para todo lo que es en directo: Modo Arena, votaciones, Galería y Muro. Una vez descargada, **la Aventura se puede jugar sin conexión** y tus jugadas se envían solas cuando vuelve Internet. Consulta [Jugar sin conexión](webapp/jugar-sin-conexion).
 - Si el sistema muestra algún error de conectividad, prueba a moverte unos metros y haz un **reload** de la página. Normalmente se resuelve así.
 
 ---

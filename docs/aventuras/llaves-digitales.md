@@ -152,9 +152,10 @@ Cada llave muestra su imagen, cuándo la consiguió, si comparte acceso con el C
 - **Las llaves no funcionan en Modo Arena.** En sesiones Live se ignoran; no combines ambas cosas.
 - **Cuidado con las cadenas imposibles.** Las condiciones de finalización del tipo "superar todos los Retos" cuentan también los Retos ocultos. Asegúrate de que toda llave es alcanzable — el error clásico es esconder una llave dentro de la propia Misión que abre.
 - **Si borras una Llave**, las Misiones y Retos que bloqueaba quedan automáticamente desbloqueados. Nunca se queda una puerta cerrada sin llave existente.
-- **Al clonar una Aventura** los bloqueos se clonan apuntando a las llaves clonadas. Excepción: si la llave era un Objeto Digital a nivel de Aventura, el bloqueo desaparece en el clon.
+- **Al duplicar una Aventura** los bloqueos se copian apuntando a las Llaves de la copia, también cuando la Llave es un Objeto Digital a nivel de Aventura.
 - **El bloqueo se valida en el servidor**: el Player no puede saltárselo manipulando la aplicación.
 - Los invitados de [Jugar sin registro](./jugar-sin-registro.md) funcionan igual que los Players registrados.
+- **Las Llaves también funcionan sin conexión.** Un Player que juega una Aventura descargada consigue la Llave, ve aparecer lo que estaba oculto y lo abre sin cobertura; la apertura se envía al sincronizar. Más en [Jugar sin conexión](../webapp/jugar-sin-conexion.md).
 :::
 
 :::tip 🛠️ Cómo probarlo sin crear una cuenta de Player

@@ -19,7 +19,7 @@ Al entrar por primera vez en una Aventura, la Webapp muestra automáticamente un
 
 - Icono en la pantalla de inicio de tu dispositivo.
 - Más espacio de juego sin la barra del navegador.
-- Carga más rápida y uso parcial offline.
+- Carga más rápida y, con las Aventuras descargadas, juego sin conexión.
 
 Tienes tres opciones en el diálogo:
 
@@ -79,10 +79,11 @@ Esta entrada del menú solo es visible si la app no está ya instalada en tu dis
 - **No es una app nativa.** Es la misma Webapp de AdventuriQ, pero se comporta como una app desde el punto de vista del usuario: icono propio, pantalla completa y arranque rápido.
 - **Si limpias el historial** del navegador o las cookies, el navegador puede "olvidar" que ya habías descartado el diálogo y mostrarlo de nuevo. La app instalada no se ve afectada.
 - **Si tu navegador no soporta la instalación** (muy poco frecuente en navegadores modernos), simplemente no verás el diálogo ni la entrada del menú. No es un error.
-- **Funcionalidad offline parcial** — una vez instalada, la app puede cargar más rápido y funcionar parcialmente sin conexión, pero necesitas internet para jugar Retos y sincronizar puntos.
+- **Juego sin conexión** — una Aventura descargada se juega entera sin cobertura. Solo necesitas Internet para descargarla la primera vez y para sincronizar después tus jugadas (lo hace sola la app). Instalar la app es especialmente recomendable en iPhone: si no la instalas, Safari puede borrar los datos de una web que no abres en varios días. Todos los detalles en [Jugar sin conexión](./webapp/jugar-sin-conexion.md).
 
 ## Continúa aprendiendo
 
 - Acceder a una Aventura por primera vez: [Acceder a una Aventura](./aventuras/acceder-a-una-aventura.md).
 - Navegar dentro del juego: [Bitácora del Player](./aventuras/bitacora.md).
 - Tu perfil y opciones personales: [Perfil del Player](./webapp/perfil.md).
+- Jugar sin cobertura: [Jugar sin conexión](./webapp/jugar-sin-conexion.md).
