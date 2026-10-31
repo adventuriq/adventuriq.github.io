@@ -290,8 +290,12 @@ para cubrir todas las mecánicas y escenarios documentables.
   Mails del Sistema, Auditoria, importacion de Game Designers). Son
   herramientas internas de un unico usuario, el Super Admin, no
   funcionalidad de Game Master ni de Player. **No existe ni debe crearse
-  `docs/super-admin/`** (decision de Mike, 2026-09-25). Sus FSDs se siguen
-  escribiendo como especificacion interna, marcados con `publicar: no`.
+  `docs/super-admin/`** (decision de Mike, 2026-09-25).
+- **Cualquier otra funcionalidad solo para el Super Admin**, aunque viva
+  fuera de las Super Admin Tools (p. ej. Asignar Propietario en el listado
+  de Aventuras). Lo que es solo del Super Admin **no lleva FSD** (decision
+  de Mike, 2026-10-30); los FSDs antiguos marcados `publicar: no` quedan
+  como historico.
 
 ---
 
