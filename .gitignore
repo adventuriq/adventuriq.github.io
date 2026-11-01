@@ -23,3 +23,12 @@ yarn-error.log*
 
 # Feature Spec Documents: material interno para Cowork, NO se publican (repo publico)
 /fsd/
+
+# Documentos internos del pipeline de documentacion (repo publico): solo en local
+/CLAUDE.md
+/COWORK_PROMPT.md
+/PROJECT_STATE.md
+/DOCS_STRUCTURE.md
+/CAPTURAS-MODO-ARENA.md
+/PLANTILLA-tipos-de-reto.md
+/PLANTILLA-tipos-de-reto-v2.md
