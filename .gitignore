@@ -20,3 +20,6 @@ yarn-debug.log*
 yarn-error.log*
 
 *.tgz
+
+# Feature Spec Documents: material interno para Cowork, NO se publican (repo publico)
+/fsd/
