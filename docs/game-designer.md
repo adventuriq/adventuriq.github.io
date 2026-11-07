@@ -55,10 +55,37 @@ El Gamifier incluye en el menú lateral la sección **"Mis Game Designers (GD)"*
 
 - Ver todos los Game Designers vinculados a su cuenta.
 - Crear un nuevo Game Designer con el botón **"Nuevo Game Designer"**.
+- Abrir la ficha de un Game Designer para editarlo.
 - Sincronizar el listado con el botón **"Sincronizar"**.
 - Filtrar por nombre, email o nickname.
 
 ![Listado de Game Designers en el Gamifier — tabla con los GDs vinculados al Game Master, botón Nuevo y Sincronizar](/img/gamifier-game-designer-listado.png)
+
+### La ficha del Game Designer
+
+Al dar de alta un Game Designer, o al abrir uno existente, se abre su **ficha**, con el mismo diseño que tu [perfil de usuario](./gamifier/perfil-de-usuario.md):
+
+- **Cabecera** con su foto, su rol y su idioma con bandera. Al editar, el botón de la **cámara** sobre la foto permite cambiarla (JPG, PNG o GIF de hasta 8 MB, recortada en cuadrado); la foto se guarda sola al subirla. En el alta, la cabecera indica *Podrás añadir la foto cuando el usuario esté creado*.
+- **Datos de la cuenta**: nickname, nombre, e-mail, contraseña (obligatoria en el alta; al editar, déjala en blanco para mantener la actual), **Rol** (siempre **Game Designer**) e **Idioma**: pulsa **Cambiar** y elige su idioma preferido en la ventana con buscador, o **Sin preferencia**. Es el idioma en que verá los contenidos de las Aventuras al jugar en la Webapp.
+- **Licencia Game Designer**: la Licencia asignada (fecha de compra y caducidad) o *Sin licencia*, con los botones **Seleccionar licencia** e **Ir a la Tienda**.
+
+![Ficha de un Game Designer: cabecera con foto, Datos de la cuenta con el Idioma y tarjeta Licencia Game Designer](/img/gamifier-game-designer-ficha.png)
+
+**Para dar de alta un Game Designer:**
+
+1. Menú **Mis Game Designers** → **Nuevo**.
+2. Rellena nickname, nombre, e-mail y contraseña.
+3. En **Idioma**, pulsa **Cambiar** y elige su idioma (o **Sin preferencia**).
+4. En **Licencia Game Designer**, pulsa **Seleccionar licencia** y elige una libre.
+5. Pulsa **Crear**. Después, desde su ficha, puedes añadir su foto con la cámara.
+
+![Alta de un Game Designer, con el aviso de que la foto se podrá añadir cuando el usuario esté creado](/img/gamifier-game-designer-alta.png)
+
+:::note Solo Game Designers
+Desde esta ficha solo puedes dar de alta usuarios con el rol **Game Designer**, y sin una Licencia de Game Designer no se puede crear: bajo el botón **Crear** aparece *Falta seleccionar una Licencia válida*.
+:::
+
+Para cambiar el idioma de un Game Designer existente, ábrelo, cambia el **Idioma** y pulsa **Guardar cambios**.
 
 ### Licencia de Game Designer
 

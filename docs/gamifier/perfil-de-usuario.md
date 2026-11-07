@@ -48,6 +48,16 @@ No verás las etiquetas **Sin tokens** / **Saldo bajo** ni el aviso de Tokens, y
 
 El **último acceso al Gamifier** cuenta tanto si inicias sesión como si entras con la sesión ya abierta; jugar en la Webapp no lo modifica. Se registra desde el 6 de noviembre de 2026: si no hay ningún acceso registrado verás *sin registros*. En tu propio perfil siempre aparecerá como reciente, porque acabas de entrar.
 
+### Cambiar tu foto
+
+1. En la cabecera, pulsa el botón de la **cámara** que hay sobre tu foto (o tus iniciales).
+2. Elige una imagen de tu ordenador: **JPG, PNG o GIF de 8 MB como máximo**.
+3. La foto se sube al momento y aparece el aviso **«Foto actualizada»**. No hace falta pulsar Guardar cambios.
+
+La imagen se **recorta en cuadrado** (centrada) automáticamente, y la nueva foto aparece también en la barra superior y en el menú lateral. Si el archivo no cumple el formato o el tamaño, verás un aviso.
+
+![Foto de la cabecera del perfil con el botón de la cámara para cambiarla](/img/gamifier-perfil-cambiar-foto.png)
+
 ## 📊 Pestaña Resumen
 
 ### Las cuatro tarjetas
@@ -184,9 +194,9 @@ Ves el mismo perfil, con estas diferencias:
 - En la cabecera aparecen las **Aventuras creadas** en lugar de las activas.
 - Los Tokens y las Licencias son de tu Game Master, así que los bloques de movimientos suelen estar vacíos o mostrar solo tus Licencias de Game Designer.
 - Las etiquetas de Planes no te aplican.
-- Puedes guardar los cambios de tu propia cuenta desde la pestaña **Cuenta**.
+- Puedes guardar los cambios de tu propia cuenta desde la pestaña **Cuenta** y cambiar tu foto con la cámara de la cabecera.
 
-Tu Game Master puede editar tu cuenta, pero no cambiar tu rol. Más información en [Game Designer](../game-designer.md).
+Tu Game Master puede editar tu cuenta y tu foto, pero no cambiar tu rol. Más información en [Game Designer](../game-designer.md).
 
 ## ❓ Para leer bien los números
 

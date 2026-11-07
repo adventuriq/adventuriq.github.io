@@ -51,6 +51,8 @@ La pestaña Cuenta muestra tus datos personales con un campo editable por fila:
 3. Mientras sube, aparece un indicador de progreso.
 4. Al terminar, la nueva imagen se muestra inmediatamente.
 
+La imagen puede ser **JPG, PNG o GIF de hasta 8 MB** y se **recorta en cuadrado** (centrada) automáticamente. Si no puedes cambiar la foto, recarga la Webapp: puede que tengas abierta una versión antigua.
+
 ## Pestaña Mis Aventuras
 
 Muestra todas las Aventuras en las que estás apuntado, en un grid de tarjetas con la imagen de cada Aventura como fondo. Cada tarjeta incluye un badge de estado:
