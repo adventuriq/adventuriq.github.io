@@ -80,11 +80,29 @@ La tabla incluye filtros por columna y paginación. El botón **"Actualizar"** r
 
 ### Editar un Token
 
-Desde la columna de acciones de la tabla, puedes editar un Token individual para:
+Desde la columna de acciones de la tabla, puedes editar un Token individual. Lo que puedes cambiar depende de si ya se ha canjeado.
+
+**Token libre** (todavía no canjeado):
 
 - **Cambiar su valor** — reemplazar el código por otro distinto.
 - **Asignar un email** — vincular el Token a un email concreto. Solo el Player cuyo email coincida podrá canjearlo (la comparación no distingue mayúsculas).
 - **Desactivar el Token** — cambiar su estado a Inactivo sin borrarlo. El Player no podrá usarlo mientras esté inactivo.
+
+**Token canjeado:** queda vinculado al Player que lo canjeó. Al editarlo verás el aviso **«Token ya canjeado por *Player*: solo se puede activar o desactivar»**; los campos **Token** y **E-mail del player** aparecen bloqueados y solo puedes cambiar el **Estado**.
+
+<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-tokens-acceso-editar-canjeado.png — Ventana Editar token de un Token canjeado, con el aviso y los campos Token y E-mail bloqueados -->
+
+Para desactivar un Token canjeado: localiza su fila en la tabla (muestra el Player que lo canjeó), pulsa el icono de **editar**, cambia **Estado** a «Inactivo» y pulsa **Guardar**.
+
+:::warning Desactivar no es liberar
+Desactivar un Token canjeado impide entrar con él, pero **no lo libera**: sigue vinculado al mismo Player y no se puede volver a vender a otra persona.
+:::
+
+:::note Se cobra una sola vez
+Cada Token canjeado te cuesta **1 Token una sola vez**, aunque el Player vuelva a introducir el código. Si dos personas intentan canjear el mismo código a la vez, solo lo consigue la primera.
+:::
+
+Pueden ver y gestionar los Tokens de una Aventura su **propietario**, su **creador** y los **Game Designers** del Game Master o asignados a la Aventura.
 
 ### Eliminar Tokens
 
@@ -114,8 +132,8 @@ Si vendes en una plataforma que entrega códigos automáticamente al comprador, 
 
 Tu tienda (WooCommerce, Shopify, Zapier, Make…) puede pedir a AdventuriQ que entregue un código automáticamente **cada vez que se confirma una compra**. Para ello necesita una clave secreta:
 
-1. Abre tu **perfil de usuario** en el Gamifier (menú superior derecho → tu nombre).
-2. Baja hasta la sección **API Key — Venta externa de Tokens**.
+1. Abre tu [perfil de usuario](./gamifier/perfil-de-usuario.md) en el Gamifier (menú de tu avatar, arriba a la derecha → **Mi perfil**).
+2. Entra en la pestaña **Cuenta**: a la derecha está el bloque **API Key — Venta externa de Tokens**.
 3. Pulsa **Generar API key**. Aparecen la clave y un ejemplo de configuración listo para copiar.
 4. Entrega esa clave a quien mantiene tu tienda para que la configure.
 

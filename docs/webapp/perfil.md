@@ -90,6 +90,10 @@ Permite elegir el **idioma de las Aventuras** entre los disponibles. La selecci�
 - Al **cerrar sesión**, el idioma se olvida en ese dispositivo (para que el siguiente Player que use ese navegador no herede el tuyo). Al volver a iniciar sesión, se recupera el de tu cuenta.
 - Si juegas **sin registro**, se usa el idioma con el que entraste.
 
+:::tip Game Master y Game Designer
+Si tienes cuenta en el Gamifier, esta misma preferencia se elige también desde tu [perfil de usuario del Gamifier](../gamifier/perfil-de-usuario.md#idioma-preferido).
+:::
+
 :::note Idioma de las Aventuras ≠ idioma de la app
 Esta opción cambia el **contenido**: títulos, descripciones, Misiones, Retos y premios. Los textos propios de la app (botones, menús, mensajes) siguen el idioma de tu navegador o dispositivo.
 :::

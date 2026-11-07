@@ -92,6 +92,7 @@ const sidebars: SidebarsConfig = {
       label: '🖥️ Gamifier',
       items: [
         'gamifier/biblioteca-de-medios',
+        'gamifier/perfil-de-usuario',
       ],
     },
     {

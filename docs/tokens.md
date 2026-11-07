@@ -141,7 +141,7 @@ Sustituye la Licencia Individual por la de Equipo: 36 € / mes o 400 € / año
 | ❌ | El Game Master o Game Designer prueban la Aventura | No |
 | ❌ | Cualquier partida en una Aventura cubierta por un **Plan Luna o Plan Mundo** activo | No (el límite es el espacio contratado) |
 
-Puedes seguir tu saldo y el histórico de consumos en tu perfil del Gamifier, apartado **Histórico Tokens**. En la ficha de una Aventura, un guion (**-**) en el saldo de Tokens significa que tu cuenta todavía no tiene ningún movimiento, no que el saldo sea cero.
+Puedes seguir tu saldo y cada suma y resta de Tokens en tu [perfil del Gamifier](./gamifier/perfil-de-usuario.md#movimientos-de-tokens), pestaña **Historial › Movimientos de tokens**. En la ficha de una Aventura, un guion (**-**) en el saldo de Tokens significa que tu cuenta todavía no tiene ningún movimiento, no que el saldo sea cero.
 
 :::info Cada partida es un ticket de entrada independiente
 Si un Player quiere repetir una Aventura — por ejemplo, en una segunda edición de una formación, para mejorar su puntuación o simplemente para volver a disfrutarla — consumirá un Token nuevo. Esto garantiza que siempre sabes exactamente cuánto cuesta cada experiencia.
