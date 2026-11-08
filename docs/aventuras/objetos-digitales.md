@@ -15,7 +15,7 @@ Esta página combina la **vista del Game Master** (configuración en el Gamifier
 
 ## Sección Objetos en la Aventura 👑
 
-La sección **"Objetos Digitales de la Aventura"** se encuentra en la parte inferior del formulario de edición de la Aventura, accesible mediante scroll. Muestra el listado de Objetos Digitales asociados con su imagen, ID y nombre.
+La sección **"Objetos Digitales de la Aventura"** se encuentra en la parte inferior de la ficha de la Aventura; llegas a ella directamente con la entrada **Objetos de la Aventura** del índice lateral. Muestra el listado de Objetos Digitales asociados con su imagen, ID y nombre.
 
 | Acción | Descripción |
 |---|---|
@@ -50,7 +50,7 @@ Son dos sistemas distintos. Las **Condiciones de Finalización** determinan cuá
 
 ## Condiciones de Obtención a Nivel de Aventura 👑
 
-Dentro del formulario de edición de cada Objeto Digital, debajo de los campos de contenido y traducciones, se encuentra la sección **"Condiciones de Obtención a Nivel de Aventura"**. Este editor permite configurar reglas que controlan si el Objeto se entrega al Player al completar la Aventura.
+Dentro de la ficha de cada Objeto Digital, debajo de los datos y las traducciones, se encuentra el apartado **"Condiciones de Obtención a Nivel de Aventura"** (puedes saltar a él desde el índice lateral de la ficha). Este editor permite configurar reglas que controlan si el Objeto se entrega al Player al completar la Aventura.
 
 ![Sección de Condiciones de Obtención a Nivel de Aventura mostrando la configuración de grupos con lógica AND/OR](/img/gamifier-condiciones-obtencion.png)
 

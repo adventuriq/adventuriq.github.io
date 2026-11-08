@@ -27,6 +27,20 @@ Los **Retos** son las mecánicas de juego que AdventuriQ pone a disposición del
 
 **Leyenda**: ✅ Documentado. Los 11 tipos están documentados.
 
+## Elegir el tipo de Reto
+
+Al pulsar **+ Nuevo Reto** se abre el catálogo **Elige el tipo de Reto**: una tarjeta por tipo, con su icono, una breve descripción y el enlace **+ Crear**.
+
+![Catálogo Elige el tipo de Reto con buscador, filtro por familia (Todos, Preguntas, Participación, Experiencias) y una tarjeta por tipo de Reto](/img/gamifier-tipos-reto.png)
+
+1. Escribe en el **buscador** para encontrar un tipo por su nombre o su descripción.
+2. O filtra por **familia**: **Preguntas** (Pregunta / Respuesta y sus variantes con audio y vídeo, Preguntas Encadenadas, Respuesta Exacta y Respuesta Libre), **Participación** (Subir Foto, Llamada a la Acción y Nube de Palabras) o **Experiencias** (Ruleta de la Fortuna y Realidad Aumentada). Cada pastilla indica cuántos tipos contiene.
+3. Pulsa la tarjeta del tipo que quieras para crear el Reto.
+
+:::tip Crea los Retos desde la Misión
+Si pulsas **+ Nuevo Reto** desde el apartado **Retos** de la ficha de la Aventura, el Gamifier te avisa de que ese Reto no quedará enlazado a ninguna Misión (y no será visible hasta que lo enlaces). Para que aparezca directamente en la Aventura, créalo desde la ficha de la Misión.
+:::
+
 ## ¿No sabes cuál usar?
 
 Una guía rápida según lo que necesitas:
@@ -49,5 +63,26 @@ Se configura en el bloque **🔑 Acceso por Llave digital** del editor del Reto.
 ## Estructura común a todos los Retos
 
 Todos los tipos de Reto comparten una estructura base: **cabecera** (título, descripción, imágenes, audio), **mapa** (opcional), **recompensas** (opcional) y la **mecánica específica** propia de cada tipo. La mecánica es lo que diferencia un tipo de otro y se configura en la sección correspondiente del formulario de creación del Reto en el Gamifier.
+
+### La ficha del Reto
+
+La ficha de cualquier Reto tiene la misma organización que la de la Aventura y la Misión: una **cabecera** con la imagen, el nombre, el tipo y las cifras principales (Objetos, Traducciones) con el botón **Ir a la Aventura**, y un **índice lateral** para saltar a cada apartado:
+
+- **Ficha**: Datos del Reto, Acceso por Código, Acceso por Llave digital, Opciones y disponibilidad, Imágenes y Traducciones (título y descripción del Reto).
+- **En juego**: Localización, Objetos, **Configuración del Reto** (puntuación y opciones de la mecánica) y **Textos de la mecánica**.
+
+Los apartados que no aplican no aparecen en el índice: por ejemplo, **Textos de la mecánica** solo aparece en Subir Foto cuando tiene activado compartir en redes sociales, y en Realidad Aumentada solo si el Reto tiene pregunta. La barra con **Guardar** y **Eliminar** queda fija al pie mientras editas.
+
+### Traducciones de la mecánica
+
+Los textos propios de la mecánica (enunciado, respuestas, texto para redes sociales…) tienen su **propia sección**, **Traducciones de la mecánica**, separada de la puntuación y las opciones. Para añadir un idioma a la mecánica:
+
+1. En el índice del Reto, pulsa **Textos de la mecánica**.
+2. En la sección **Traducciones de la mecánica**, pulsa **Nueva traducción** (en la cabecera de la sección).
+3. Elige el idioma en la ventana de idiomas (con buscador y banderas).
+4. Se crea la pestaña del nuevo idioma. En los Retos de Pregunta / Respuesta (también con audio o vídeo), las respuestas se copian del idioma existente para que solo tengas que traducirlas.
+5. Pulsa **Guardar cambios**: es el mismo botón que guarda la mecánica.
+
+![Sección Traducciones de la mecánica de un Reto Pregunta / Respuesta con el botón Nueva traducción, la pestaña del idioma, el enunciado y las respuestas](/img/gamifier-reto-pregunta-respuesta-traducciones-mecanica.png)
 
 En la cabecera, cualquier Reto puede tener además su propio **vídeo de portada** por idioma, incluso a pantalla completa. Ojo: si la Misión tiene desactivado **«Mostrar el detalle de los Retos»**, el Player entra directo a la mecánica y no verá ese vídeo (salvo en Retos geolocalizados). Todos los detalles en [🎬 Vídeo de portada](../aventuras/video-portada.md).

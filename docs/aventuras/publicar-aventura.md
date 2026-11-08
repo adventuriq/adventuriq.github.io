@@ -46,7 +46,7 @@ Puedes cambiar el estado de una Aventura desde **dos sitios**: directamente en e
 ### Desde el listado de Aventuras
 
 1. En el menú lateral del Gamifier, entra en **Aventuras**.
-2. Localiza la Aventura. En la columna **Estado** verás un desplegable con el estado actual.
+2. Localiza la Aventura. A la derecha de su fila, junto al número de Players, verás un desplegable con el estado actual (en verde si está publicada).
 3. Elige **PUBLISHED**. Mientras se guarda aparece un pequeño indicador de carga junto al desplegable.
 
 ![Fila del listado de Aventuras con el desplegable de la columna Estado](/img/gamifier-listado-estado-desplegable.png)
@@ -126,7 +126,7 @@ Cada Player que pulse **Adelante** en la pantalla de inicio de la Aventura consu
 
 ## 🔄 Despublicar una Aventura (volver a Draft)
 
-Puedes devolver una Aventura publicada al estado **Draft** en cualquier momento, desde el **listado de Aventuras** (columna **Estado** → **DRAFT**) o desde el **editor** (campo **Estado** → **draft**). Volver a Draft no tiene condiciones y, como al publicar, se guarda al momento y aparece la ventana «Estado actualizado». Al volver a Draft:
+Puedes devolver una Aventura publicada al estado **Draft** en cualquier momento, desde el **listado de Aventuras** (desplegable de estado de su fila → **DRAFT**) o desde el **editor** (campo **Estado** → **draft**). Volver a Draft no tiene condiciones y, como al publicar, se guarda al momento y aparece la ventana «Estado actualizado». Al volver a Draft:
 
 - Los **Players que ya se unieron** conservan su progreso, pero no podrán continuar jugando hasta que vuelvas a publicar.
 - Los **nuevos Players** no podrán unirse con el GamePIN.

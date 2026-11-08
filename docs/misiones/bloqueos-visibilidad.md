@@ -15,7 +15,7 @@ Esta página combina la **vista del Game Master** (configuración en el Gamifier
 
 ## Controles disponibles en el Gamifier 👑
 
-La sección de visibilidad se encuentra en el formulario de edición de la Misión, justo debajo de los campos de configuración general. Incluye los siguientes controles:
+Los controles de visibilidad están en el apartado **Opciones y disponibilidad** de la ficha de la Misión (puedes saltar a él desde el índice lateral). Todos son interruptores:
 
 | Control | Tipo | Descripción |
 |---|---|---|

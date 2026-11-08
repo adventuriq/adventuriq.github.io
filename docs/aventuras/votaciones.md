@@ -15,7 +15,7 @@ Esta página combina la **vista del Game Master** (configuración en el Gamifier
 
 ## Activar las Votaciones 👑
 
-Las Votaciones se activan desde el formulario de edición de la Aventura con el interruptor **"Activar sistema de votaciones"**. Al activarlo por primera vez, el sistema crea automáticamente **5 Tipos de Voto por defecto** que el Game Master puede personalizar.
+Las Votaciones se activan desde la ficha de la Aventura (entrada **Votaciones entre players** del índice lateral) con el interruptor **"Activar sistema de votaciones"**. Al activarlo por primera vez, el sistema crea automáticamente **5 Tipos de Voto por defecto** que el Game Master puede personalizar.
 
 ![Sección de Votaciones en el Gamifier — toggle de activación y los 5 Tipos de Voto con su icono, nombre, puntos a entregar, estado activo y botón Editar](/img/gamifier-aventura-votaciones-activar.png)
 

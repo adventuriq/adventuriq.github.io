@@ -46,7 +46,7 @@ Al pulsar **Adelante**, el Player tiene que aceptar los [Términos y Condiciones
 ![Pantalla de la Aventura tras pulsar un deep link — la vinculación ha ocurrido automáticamente y el Player ya ve la información de la Aventura](/img/webapp-acceder-deeplink-aterrizaje.png)
 
 :::tip 👑 Para el Game Master
-El deep link es la opción más cómoda tanto para ti como para tus Players. Lo tienes a mano en dos sitios: en el **listado de Aventuras** del Gamifier, bajo los datos de cada Aventura, con un botón para copiarlo; y en el detalle de la Aventura, sección **Acceso a la Aventura**, donde además está el QR. Comparte la URL por email, WhatsApp, intranet o cualquier canal digital. Si preparas una experiencia presencial (evento, gymkana, escape room), usa el **código QR** impreso en un cartel o folleto — funciona igual que el enlace.
+El deep link es la opción más cómoda tanto para ti como para tus Players. Lo tienes a mano en dos sitios: en el **listado de Aventuras** del Gamifier, en la fila de cada Aventura, destacado junto al **GamePIN** y con un botón para copiarlo; y en el detalle de la Aventura, sección **Acceso a la Aventura**, donde además está el QR. Comparte la URL por email, WhatsApp, intranet o cualquier canal digital. Si preparas una experiencia presencial (evento, gymkana, escape room), usa el **código QR** impreso en un cartel o folleto — funciona igual que el enlace.
 :::
 
 :::note Sin cuenta: entrar solo con un nickname

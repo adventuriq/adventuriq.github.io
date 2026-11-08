@@ -17,7 +17,7 @@ Esta página combina la **vista del Game Master** (configuración en el Gamifier
 
 Los idiomas de la Aventura se gestionan desde el formulario de edición de la Aventura en el Gamifier. El idioma seleccionado al [crear la Aventura](./crear-aventura.md) se establece como **idioma por defecto**.
 
-Para añadir idiomas adicionales, el Game Master utiliza el selector de idiomas disponible en el formulario de la Aventura. Los idiomas se identifican con **iconos de bandera** que aparecen en todas las cajas de contenido traducibles.
+Para añadir idiomas adicionales, en el índice lateral de la ficha pulsa **Traducciones** y usa el botón **+ Nueva Traducción** de ese apartado. Los idiomas se identifican con **iconos de bandera** que aparecen en las pestañas de todas las cajas de contenido traducibles.
 
 ![Sección Traducciones en el Gamifier — bandera de idioma, campos Título, Resumen, Información, Descripción y botón + Nueva Traducción](/img/gamifier-aventura-traducciones.png)
 
@@ -39,6 +39,12 @@ El contenido textual se puede configurar con **HTML enriquecido**: negritas, sub
 Las imágenes de listado, cabecera y similares no tienen opciones por idioma. Solo el contenido textual y multimedia dentro de las cajas de traducción admite versiones por idioma.
 :::
 
+### El selector de idioma
+
+Tanto el botón **+ Nueva Traducción** como el botón **Idioma por defecto** (al crear la Aventura) abren la misma ventana **Elige un idioma**, igual que la del Perfil de usuario: cada idioma aparece con su **bandera**, su **nombre** y su **código** (ES, EN, CA…), y arriba tienes un **buscador** para encontrarlo escribiendo.
+
+![Ventana Elige un idioma con buscador y los idiomas disponibles, cada uno con su bandera, nombre y código](/img/gamifier-aventura-selector-idioma.png)
+
 ### Añadir y eliminar idiomas
 
 Todos los editores con traducciones —Aventura, Misión, todos los tipos de Reto (incluidas las porciones de la Ruleta de la Fortuna y los textos para redes sociales de Subir Foto), Objetos Digitales, Notificaciones, POIs y Tipos de Voto— funcionan igual:
@@ -49,6 +55,10 @@ Todos los editores con traducciones —Aventura, Misión, todos los tipos de Ret
 - Editar las traducciones de un elemento **nunca afecta a las de otro**.
 
 ![Selector de idioma al pulsar Nueva Traducción en un Reto: solo aparecen los idiomas que el Reto todavía no tiene](/img/gamifier-traducciones-selector-idiomas.png)
+
+:::note Traducciones de la mecánica de los Retos
+En los Retos, los textos propios de la mecánica (enunciado, respuestas, texto para redes sociales…) tienen su propio apartado, **Traducciones de la mecánica**, separado de las traducciones de la cabecera del Reto. Llegas a él desde la entrada **Textos de la mecánica** del índice lateral y tiene su propio botón **Nueva traducción**. Ver [Estructura común de los Retos](../retos/estructura-comun.md).
+:::
 
 ### Hasta 10 idiomas
 

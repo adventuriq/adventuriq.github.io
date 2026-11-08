@@ -23,14 +23,14 @@ Si dejas el campo vacío, la Aventura funciona **exactamente igual que antes**: 
 
 ## 📍 Dónde se configura
 
-En el editor de la Aventura, bloque **Traducciones**, pestaña de cada idioma. El campo **Términos y Condiciones** está justo debajo de **Mensaje al acabar la Aventura**.
+En la ficha de la Aventura, apartado **Traducciones** (entrada **Traducciones** del índice lateral), pestaña de cada idioma. El campo **Términos y Condiciones** está justo debajo de **Mensaje al acabar la Aventura**.
 
 ![Campo Términos y Condiciones en el bloque Traducciones de la Aventura, con el editor de texto y el aviso de que es opcional](/img/gamifier-terminos-condiciones-editor.png)
 
 ## ⚙️ Escribir los Términos y Condiciones
 
 1. Entra en **Aventuras** y abre la Aventura.
-2. Baja hasta el bloque **Traducciones** y selecciona la pestaña del idioma.
+2. En el índice lateral, pulsa **Traducciones** y selecciona la pestaña del idioma.
 3. En el campo **Términos y Condiciones**, escribe el texto legal. El editor es el habitual: negritas, listas y **enlaces**, por ejemplo a tu propia política de privacidad.
 4. Repite en la pestaña de cada idioma de la Aventura.
 5. Pulsa **Guardar Aventura**. Aparece el aviso «Aventura Actualizada».

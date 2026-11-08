@@ -88,12 +88,12 @@ Entra en la Aventura → Misión → el Reto **Subir Foto** (o crea uno nuevo) y
 | Campo | Descripción |
 |---|---|
 | **Compartir en Redes Sociales** | Activa el paso extra de publicación. Al activarlo se crea automáticamente la traducción del idioma por defecto de la Aventura con un texto de ejemplo editable. |
-| **Texto del post** | El texto (con los hashtags de la dinámica) que el Player copiará y pegará en su publicación. Se define **por idioma**: usa **+ Traducción** para añadir el resto de idiomas si la Aventura es multi-idioma. |
+| **Texto del post** | El texto (con los hashtags de la dinámica) que el Player copiará y pegará en su publicación. Se define **por idioma** en la sección **Texto del post** (entrada **Textos de la mecánica** del índice lateral, que solo aparece con **Compartir en Redes Sociales** activado): usa **+ Traducción** en la cabecera de esa sección para añadir el resto de idiomas si la Aventura es multi-idioma. |
 | **Enlace obligatorio** | Si lo activas, el Player **no puede continuar** hasta enviar el enlace de su publicación. Úsalo cuando la publicación sea condición para participar (sorteos, validación del staff). |
 
 Cuando termines, pulsa **Guardar**.
 
-![Editor del Reto Subir Foto en el Gamifier — bloque Compartir en Redes Sociales con los toggles y el texto del post por idioma](/img/gamifier-reto-subir-foto-rrss-edicion.png)
+![Ficha del Reto Subir Foto en el Gamifier — apartado Configuración del Reto con los interruptores Compartir en Redes Sociales y Enlace obligatorio, y la sección Texto del post con su pestaña de idioma](/img/gamifier-reto-subir-foto-rrss-edicion.png)
 
 :::tip 🛠️ Escribe el texto del post pensando en el Player
 El Player va a pegar ese texto tal cual. Que sea corto, que se entienda fuera del contexto del juego y que lleve los hashtags al final. Si la Aventura es multi-idioma, revisa que los hashtags tengan sentido en cada idioma — muchos funcionan mejor sin traducir.

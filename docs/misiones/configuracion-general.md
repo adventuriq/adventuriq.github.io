@@ -17,9 +17,9 @@ La configuración general de una Misión es el punto de partida del formulario d
 
 Para crear una nueva Misión, abre una Aventura en el Gamifier y localiza el apartado **Misiones** en la página de la Aventura. Pulsa el botón **+ Nueva Misión**. Se creará una Misión vacía con valores por defecto y se abrirá su formulario de edición.
 
-El formulario de una Misión es una **página única con scroll vertical** que contiene todas las secciones de configuración, similar al editor de Aventura. En la cabecera se muestra el nombre de la Misión, la imagen de cabecera y el botón **Ver Aventura** para volver al editor de la Aventura padre.
+La ficha de una Misión tiene el mismo diseño que la de la Aventura. En la **cabecera** se muestran la imagen, el nombre y el estado de la Misión, las cifras de **Retos**, **Objetos** y **Notificaciones** y el botón **Ver Aventura** para volver a la Aventura padre. Debajo, un **índice lateral** te lleva directamente a cada apartado (en el móvil, una barra de pastillas arriba), cada apartado es una tarjeta y la barra con **Guardar cabecera** y **Eliminar Misión** queda fija al pie mientras editas.
 
-![Formulario de edición de una Misión — cabecera con imagen y nombre, campos de configuración general, códigos de acceso con QR](/img/gamifier-mision-configuracion-general.png)
+![Ficha de una Misión — cabecera con imagen, nombre, estado y cifras de Retos, Objetos y Notificaciones, índice lateral y apartados Datos y Acceso por Código](/img/gamifier-mision-configuracion-general.png)
 
 ## Campos de configuración general 👑
 
@@ -61,7 +61,7 @@ Eliminar una Misión **no elimina los Retos** que contiene — solo los desenlaz
 
 ## Estructura del formulario
 
-El formulario completo de una Misión está organizado en las siguientes secciones, cada una documentada en su propia página:
+La ficha de una Misión está organizada en los siguientes apartados, a los que llegas desde el índice lateral (**Ficha de la Misión**: Datos, Acceso por Código, Acceso por Llave digital, Opciones y disponibilidad, Imágenes y Traducciones; **Contenido de juego**: Condiciones de fin, Mapa, Objetos, Notificaciones y Retos). Cada uno está documentado en su propia página:
 
 1. **Configuración general** — campos básicos, códigos de acceso (esta página).
 2. **[Bloqueos y Visibilidad](./bloqueos-visibilidad.md)** — estado borrador, visibilidad, jugabilidad, ventanas temporales.

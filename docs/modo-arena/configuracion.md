@@ -15,7 +15,7 @@ Toda la configuración del Modo Arena vive en el **editor de la Aventura**, en u
 
 ## 📍 Dónde se configura
 
-Entra en el Gamifier, abre la **Aventura** que quieras y baja por el editor hasta el bloque **"Opciones de la Aventura en modo Arena"**.
+Entra en el Gamifier, abre la **Aventura** que quieras y, en el índice lateral de la ficha, pulsa **Arena Live**: la página salta al bloque **"Opciones de la Aventura en modo Arena"**.
 
 <!-- 📸 CAPTURA PENDIENTE: /img/modo-arena/modo-arena-opciones.png — Bloque "Opciones de la Aventura en modo Arena" con el interruptor Modo Live, el campo de segundos y el toggle de puntos por rapidez -->
 ![Bloque "Opciones de la Aventura en modo Arena" con el interruptor de Modo Live, el campo de segundos de cuenta atrás y el toggle de puntos por rapidez](/img/modo-arena/modo-arena-opciones.png)

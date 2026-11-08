@@ -76,7 +76,7 @@ Al dar de alta un Game Designer, o al abrir uno existente, se abre su **ficha**,
 1. Menú **Mis Game Designers** → **Nuevo**.
 2. Rellena nickname, nombre, e-mail y contraseña.
 3. En **Idioma**, pulsa **Cambiar** y elige su idioma (o **Sin preferencia**).
-4. En **Licencia Game Designer**, pulsa **Seleccionar licencia** y elige una libre.
+4. En **Licencia Game Designer**, pulsa **Seleccionar licencia** y elige una libre en el selector de Licencias: cada una aparece con la imagen y el nombre de su tipo y su fecha de compra, y puedes filtrar por tipo, ordenar, buscar o hacer doble clic para elegirla directamente (es el mismo selector que el de [Asignar licencia](aventuras/configuracion#-asignar-una-licencia) en la ficha de la Aventura).
 5. Pulsa **Crear**. Después, desde su ficha, puedes añadir su foto con la cámara.
 
 ![Alta de un Game Designer, con el aviso de que la foto se podrá añadir cuando el usuario esté creado](/img/gamifier-game-designer-alta.png)

@@ -46,11 +46,15 @@ Como cualquier Reto, la Pregunta/Respuesta con Audio comparte los campos comunes
 
 Al crear el Reto, la mecánica nace ya con una **traducción de ejemplo** en el idioma por defecto de la Aventura, lista para personalizar.
 
-![Formulario de edición de un Reto Pregunta/Respuesta con Audio — bloque de subida de audio por idioma, pregunta y opciones de respuesta](/img/gamifier-reto-pr-audio-edicion.png)
+![Ficha de un Reto Pregunta/Respuesta con Audio — apartado Configuración del Reto con la puntuación y las opciones de la mecánica](/img/gamifier-reto-pr-audio-edicion.png)
+
+:::note Dónde se traducen el audio, la pregunta y las respuestas de cada idioma
+En la ficha del Reto, el audio, la pregunta y las respuestas de cada idioma están en la sección **Traducciones de la mecánica** (entrada **Textos de la mecánica** del índice lateral), separada de la puntuación y las opciones. Para añadir un idioma, pulsa **Nueva traducción** en la cabecera de esa sección y guarda con **Guardar cambios**. Ver [La ficha del Reto](./index.md#la-ficha-del-reto).
+:::
 
 ### Audio por idioma
 
-El audio se gestiona dentro de la pestaña de cada idioma de la Aventura, junto con la pregunta y las opciones. El Game Master puede:
+El audio se gestiona dentro de la pestaña de cada idioma de la sección **Traducciones de la mecánica**, junto con la pregunta y las opciones. El Game Master puede:
 
 - **Subir** un archivo de audio arrastrándolo o seleccionándolo desde el explorador.
 - **Previsualizar** la pista directamente en el editor antes de guardar.

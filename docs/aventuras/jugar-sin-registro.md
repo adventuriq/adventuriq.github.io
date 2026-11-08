@@ -31,16 +31,16 @@ Un Player que entra por nickname aparece en el Gameboard, en las Clasificaciones
 
 ## 📍 Dónde se configura
 
-En el Gamifier, abre tu Aventura desde el listado y baja hasta la sección **Opciones de la Aventura**. Ahí encontrarás el interruptor **Jugar sin registro (nickname)**, con el icono de una persona con "+".
+En el Gamifier, abre tu Aventura desde el listado y, en el índice lateral de la ficha, pulsa **Opciones de la Aventura**. Ahí encontrarás el interruptor **Jugar sin registro (nickname)**, con el icono de una persona con "+".
 
 ![Sección Opciones de la Aventura en el Gamifier con el interruptor "Jugar sin registro (nickname)" activado](/img/gamifier/aventuras/gamifier-jugar-sin-registro-switch.png)
 
 ### Activarlo paso a paso
 
 1. Entra en el Gamifier y abre la Aventura (menú **Aventuras** → clic en la Aventura).
-2. Baja hasta **Opciones de la Aventura**.
+2. En el índice lateral, pulsa **Opciones de la Aventura**.
 3. Activa el interruptor **Jugar sin registro (nickname)**.
-4. Pulsa **Guardar Aventura**.
+4. Pulsa **Guardar Aventura** en la barra fija del pie.
 
 A partir de ese momento, cualquiera que abra el enlace directo de la Aventura podrá entrar solo con un nickname.
 

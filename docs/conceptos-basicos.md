@@ -55,7 +55,7 @@ Características principales:
 
 El Reto es la prueba que el Player debe superar. AdventuriQ ofrece **11 tipos de Reto** para diseñar experiencias variadas:
 
-![Pantalla de selección de tipo de Reto en el Gamifier](/img/gamifier-tipos-reto.png)
+![Catálogo Elige el tipo de Reto en el Gamifier, con buscador y filtro por familia](/img/gamifier-tipos-reto.png)
 
 | Tipo | Descripción |
 |---|---|

@@ -35,16 +35,18 @@ Hay dos formas de abrir el Detalle del Player desde la [Clasificación](./clasif
 
 ## Cabecera del Detalle
 
-La cabecera muestra el avatar, nickname, nombre y email del Player, junto con cuatro indicadores de colores:
+La cabecera, con el mismo diseño que el resto de fichas del Gamifier, muestra el avatar, nickname, nombre y email del Player, junto con cuatro cifras:
 
-| Indicador | Color | Qué muestra |
-|---|---|---|
-| **Retos completados** | Azul | Número total de Retos finalizados. |
-| **Puntos totales** | Naranja | Suma de puntos acumulados. |
-| **Objetos** | Verde | Número de Objetos Digitales obtenidos. |
-| **Tiempo de realización** | Rojo | Tiempo total dedicado a la Aventura. |
+| Indicador | Qué muestra |
+|---|---|
+| **Total Retos realizados** | Número total de Retos finalizados. |
+| **Puntos totales** | Suma de puntos acumulados. |
+| **Objetos** | Número de Objetos Digitales obtenidos. |
+| **Tiempo de realización** | Tiempo total dedicado a la Aventura. |
 
-![Cabecera del Detalle del Player con avatar, datos del participante y cuatro indicadores KPI de colores](/img/gamifier/metricas/detalle-player-cabecera.png)
+Debajo de la cabecera, dos pestañas en forma de pastilla, **Recorrido** y **Objetos**, y un botón para recargar los datos.
+
+![Cabecera del Detalle del Player con avatar, nickname, email y las cifras de Retos realizados, Puntos totales y Tiempo de realización](/img/gamifier/metricas/detalle-player-cabecera.png)
 
 :::note
 El indicador de **Objetos** aparece tras abrir la pestaña Objetos por primera vez. Si aún no la has visitado, solo verás tres indicadores.

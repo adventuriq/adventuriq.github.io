@@ -21,9 +21,27 @@ El editor de Aventura es el centro de control donde el Game Master y el Game Des
 
 ## 📍 Dónde se configura
 
-Desde el Gamifier, accede al **listado de Aventuras** y haz clic en la Aventura que quieras configurar. Se abrirá el editor con la cabecera, los indicadores de jugadores y todas las secciones de configuración en una página con scroll vertical.
+Desde el Gamifier, accede al **listado de Aventuras** y haz clic en la Aventura que quieras configurar. Se abrirá la **ficha de la Aventura**: arriba, una cabecera con la imagen, el nombre, el estado y las cifras principales; debajo, un **índice lateral** y todos los apartados de configuración, cada uno en su propia tarjeta.
 
-![Cabecera del editor de Aventura en el Gamifier — imagen de la Aventura, nombre, botones de acción rápida e indicadores de jugadores](/img/gamifier-editor-cabecera.png)
+![Cabecera de la ficha de Aventura en el Gamifier — imagen, nombre, estado, Licencia y GamePIN, cifras de Players con color propio, botones de acceso rápido e índice lateral](/img/gamifier-editor-cabecera.png)
+
+### 🧭 Cómo moverte por la ficha
+
+La ficha de la Aventura es larga, así que no hace falta recorrerla con la rueda del ratón:
+
+1. En el **índice de la izquierda** (en el móvil, una barra de pastillas desplazable en la parte superior), pulsa el apartado que quieras, por ejemplo **Condiciones de fin**.
+2. La página salta directamente a ese apartado y el índice lo marca para que sepas dónde estás.
+3. Edita lo que necesites y pulsa **Guardar Aventura** en la **barra fija del pie**, que te acompaña mientras te desplazas (junto a **Eliminar Aventura**).
+
+El índice agrupa los apartados en bloques (**General**, **Acceso**, **Configuración**, **Contenido**, **Juego** y **Misiones, Retos y Objetos**). Los apartados que no aplican a tu Aventura no aparecen en el índice.
+
+:::tip Colores de los botones
+En todo el Gamifier los botones tienen un color con significado fijo: **verde** para crear o añadir, **azul** para modificar o guardar, **naranja** (y tonos violeta, gris o cian cuando hay varios juntos) para otras acciones como duplicar, ver o descargar, y **rojo** para eliminar. Las opciones de sí/no son siempre **interruptores**.
+:::
+
+:::note Tras una actualización del Gamifier
+Si ves mezclados elementos del diseño anterior y del nuevo, fuerza la recarga de la página con **Ctrl+F5** (Windows) o **Cmd+Shift+R** (Mac).
+:::
 
 ## 🔧 Panel principal y acciones rápidas
 
@@ -49,7 +67,7 @@ Además, cada Player que vuelva a iniciar la Aventura tras un Raze consumirá **
 
 ### Indicadores de jugadores
 
-Justo debajo de la cabecera, cinco indicadores muestran el estado de participación en tiempo real, cada uno con su número, su porcentaje y un anillo de color proporcional:
+Dentro de la propia cabecera, cinco cifras muestran el estado de participación en tiempo real, cada una con su número, su porcentaje y un color propio. Las de los Players que **han iniciado** y los que **han finalizado** la Aventura aparecen destacadas:
 
 | Indicador | Qué mide |
 |---|---|
@@ -61,7 +79,7 @@ Justo debajo de la cabecera, cinco indicadores muestran el estado de participaci
 
 ## 📋 Configuración general
 
-Directamente debajo de los indicadores encontrarás los campos de configuración básica de la Aventura:
+El primer apartado de la ficha, **Datos generales**, recoge los campos básicos de la Aventura. **Estado**, **Idioma por defecto** y **Zona Horaria** aparecen en la misma fila, y justo debajo tienes el apartado **Licencia de Aventura**:
 
 ![Campos de configuración general — fechas, estado, idioma, zona horaria y licencia](/img/gamifier-config-general.png)
 
@@ -71,7 +89,16 @@ Directamente debajo de los indicadores encontrarás los campos de configuración
 | **Estado** | **Published** (jugable por Players) o **Draft** (solo jugable por Game Masters y Game Designers asignados). Al cambiarlo, la Aventura **se guarda sola** (con el resto del formulario) y una ventana confirma el resultado. También se puede cambiar desde el listado de Aventuras. Ver [Publicar una Aventura](publicar-aventura). |
 | **Idioma por defecto** | Idioma principal de la Aventura. Se pueden añadir hasta 9 traducciones adicionales (10 idiomas en total). |
 | **Zona Horaria** | Zona horaria que aplica a las fechas de la Aventura. |
-| **Licencia de Aventura** | Información sobre la Licencia activa, número de Tokens restantes, y accesos a "Asignar licencia" e "Ir a la Tienda". |
+| **Licencia de Aventura** | Apartado propio con la Licencia activa (tipo, fecha de compra y caducidad), los Tokens restantes y los botones **Asignar licencia** e **Ir a la Tienda**. |
+
+### 🎫 Asignar una Licencia
+
+Al pulsar **Asignar licencia** se abre el selector de Licencias. Cada Licencia disponible se muestra con la **imagen de su tipo**, el **nombre del tipo** (por ejemplo, «Aventura Anual (modo individual)») y la **fecha de compra**.
+
+![Selector de Licencia con buscador, orden por fecha y filtro por tipo con el número de Licencias de cada uno](/img/gamifier-aventura-selector-licencia.png)
+
+1. Si tienes muchas, usa el **filtro por tipo** (cada pastilla indica cuántas hay de ese tipo), el **orden** (más recientes, más antiguas o por tipo) o el **buscador**. Si la lista es larga, pulsa **Mostrar más** para cargar la siguiente tanda.
+2. Pulsa una Licencia para marcarla y después **Seleccionar**, o haz **doble clic** sobre ella para elegirla directamente.
 
 :::warning Estado Draft vs Published
 Mientras la Aventura esté en **Draft**, solo tú y los Game Designers asignados podréis jugarla (sin gastar Tokens). Cambia a **Published** cuando esté lista para los Players.
@@ -122,7 +149,7 @@ Los campos traducibles incluyen: Título, Resumen, Descripción visible, Descrip
 
 ## 👁️ Opciones de la Aventura
 
-Esta sección contiene los toggles que controlan qué ve el Player en su experiencia. Son interruptores que activas o desactivas según el diseño de tu Aventura:
+Este apartado contiene los interruptores que controlan qué ve el Player en su experiencia. Actívalos o desactívalos según el diseño de tu Aventura:
 
 ![Toggles de opciones — visibilidad de Puntos, Ranking, Baúl, Galería, Muro y más](/img/gamifier-toggles-visibilidad.png)
 

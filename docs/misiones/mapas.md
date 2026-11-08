@@ -15,7 +15,7 @@ Esta página combina la **vista del Game Master** (configuración en el Gamifier
 
 ## Configuración en el Gamifier 👑
 
-La sección **Mapa** se encuentra en el formulario de edición de la Misión, debajo de las Condiciones de Finalización. Los campos disponibles son:
+El apartado **Mapa** de la ficha de la Misión (entrada **Mapa** del índice lateral) se encuentra debajo de las Condiciones de Finalización. Los campos disponibles son:
 
 | Campo | Descripción |
 |---|---|

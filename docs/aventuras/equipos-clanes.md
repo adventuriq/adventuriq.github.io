@@ -15,7 +15,7 @@ Esta página combina la **vista del Game Master** (configuración en el Gamifier
 
 ## Modo de juego 👑
 
-El modo de juego se establece en el formulario de edición de la Aventura, en la sección **Modo de Juego**. Las dos opciones son:
+El modo de juego se establece en la ficha de la Aventura, en el apartado **Modo de Juego** (entrada **Modo de Juego** del índice lateral). Las dos opciones son:
 
 | Modo | Comportamiento |
 |---|---|
@@ -44,7 +44,7 @@ Cuando la Aventura está en modo **Por Equipos**, aparece la sección de gestió
 
 El Game Master puede asignar Players a un Clan manualmente desde el Gamifier. Para poder añadir un Player, este **debe haber empezado a jugar** la Aventura (haber introducido el GamePIN y consumido un Token).
 
-Desde la gestión del Equipo, el GM puede desvincular miembros del Clan o eliminar el Equipo por completo. Los botones **Guardar** y **Eliminar** permiten gestionar los cambios.
+Cada Clan tiene su propia **ficha**, con el mismo diseño que las de la Aventura y la Misión (cabecera con el icono y el nombre del Clan e índice lateral para saltar a cada apartado). Desde ella, el GM puede desvincular miembros del Clan o eliminar el Equipo por completo; la barra con **Guardar** y **Eliminar** queda fija al pie mientras editas.
 
 :::tip 👑 Para el Game Master
 Si prefieres que los Players elijan su equipo en lugar de asignarlos manualmente, publica la Aventura con los Clanes creados (con nombre e icono) pero sin asignar miembros. Los Players verán el carrusel de equipos en su Bitácora y podrán unirse al que prefieran.

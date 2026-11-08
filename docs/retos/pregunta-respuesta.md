@@ -46,13 +46,15 @@ Como cualquier Reto, Pregunta / Respuesta comparte los campos comunes (cabecera,
 | **Puntuar cada respuesta de manera independiente** | Toggle que permite puntuar por cada respuesta individual en lugar de evaluar el conjunto como un todo. |
 | **Imagen en la cabecera** | Imagen de 1200×640 px que aparece sobre la pregunta. Puede ser distinta de la imagen de cabecera del Reto. |
 
-![Formulario de edición de un Reto Pregunta/Respuesta — sección de mecánica con puntos, toggles y traducciones](/img/gamifier-reto-pregunta-respuesta-mecanica.png)
+![Ficha de un Reto Pregunta/Respuesta — apartado Configuración del Reto con los puntos, los interruptores de la mecánica y la imagen de cabecera](/img/gamifier-reto-pregunta-respuesta-mecanica.png)
 
 ### Respuestas
 
 Debajo de los toggles, el Game Master configura las respuestas posibles:
 
-**Traducciones**: cada pregunta y sus respuestas se traducen a los idiomas activos de la Aventura, con pestañas de banderas por idioma.
+**Traducciones**: cada pregunta y sus respuestas se traducen a los idiomas activos de la Aventura, con pestañas de banderas por idioma, en la sección **Traducciones de la mecánica** (entrada **Textos de la mecánica** del índice). Al añadir un idioma con **Nueva traducción**, las respuestas se copian del idioma existente para que solo tengas que traducirlas.
+
+![Sección Traducciones de la mecánica con el botón Nueva traducción, la pestaña del idioma, el enunciado y las respuestas marcadas como correctas o no](/img/gamifier-reto-pregunta-respuesta-traducciones-mecanica.png)
 
 **Enunciado pregunta**: texto de la pregunta en HTML enriquecido.
 

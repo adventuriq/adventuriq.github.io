@@ -27,9 +27,9 @@ Desde el listado de Aventuras puedes ver cuántas licencias tienes disponibles e
 ## 🎯 Iniciar el asistente
 
 1. En el menú lateral del Gamifier, entra en **Aventuras**.
-2. En el panel **Resumen de tu cuenta**, haz clic en el botón **+ Nueva Aventura**.
+2. Haz clic en el botón verde **+ Nueva Aventura**, en la cabecera del listado (también lo tienes en la tarjeta **Mis Aventuras** del resumen de tu cuenta).
 
-![Panel Resumen de tu cuenta del listado de Aventuras: Mis Aventuras, Saldo de Tokens, Licencias Disponibles y Game Designers, cada uno con su anillo de color, y el botón + Nueva Aventura](/img/gamifier-listado-resumen-cuenta.png)
+![Tarjetas del resumen de tu cuenta en el listado de Aventuras: Mis Aventuras con el enlace + Nueva Aventura, Saldo de Tokens, Licencias Disponibles y Game Designers](/img/gamifier-listado-resumen-cuenta.png)
 
 ### Seleccionar una Licencia
 
@@ -51,7 +51,7 @@ Consulta los precios de cada tipo de licencia y el funcionamiento de los Tokens 
 :::
 
 :::note
-La licencia queda vinculada a la Aventura en el momento de crearla. Puedes ver qué licencia tiene asignada cada Aventura desde su editor, en el apartado **Licencia de Aventura**.
+La licencia queda vinculada a la Aventura en el momento de crearla. Puedes ver qué licencia tiene asignada cada Aventura desde su ficha, en el apartado **Licencia de Aventura**. Si más adelante necesitas cambiarla, pulsa allí **Asignar licencia**: se abre el selector de Licencias con filtro por tipo, orden y buscador (ver [Asignar una Licencia](configuracion#-asignar-una-licencia)).
 :::
 
 ## 📅 Paso 1 — Fechas e idioma
@@ -64,7 +64,7 @@ El primer paso del asistente te pide configurar cuándo estará disponible tu Av
 |---|---|---|
 | **Empieza** | Sí | Fecha y hora en que la Aventura se activará. Los Players no podrán jugar antes de esta fecha. |
 | **Acaba** | Sí | Fecha y hora en que la Aventura finalizará automáticamente. |
-| **Idioma por defecto** | Sí | Idioma principal de la Aventura. Determina en qué idioma verán el contenido los Players. Puedes añadir más idiomas después desde el editor. |
+| **Idioma por defecto** | Sí | Idioma principal de la Aventura. Determina en qué idioma verán el contenido los Players. Pulsa el botón **Idioma por defecto** y elígelo en la ventana de idiomas (con bandera, nombre, código y buscador). Puedes añadir más idiomas después desde el editor. |
 | **Zona Horaria** | No | Por defecto se establece en `Europe/Madrid (UTC+02:00)`. Ajústala si tu Aventura se juega en otra zona geográfica. |
 
 :::tip
@@ -146,12 +146,12 @@ Además del asistente de creación, el Game Master puede **duplicar** una Aventu
 
 1. En el listado de Aventuras, localizar la Aventura que se quiere duplicar.
 2. Pulsar el botón **"Duplicar"** (icono de copia) en la columna de acciones de esa fila.
-3. Se abre el modal **"Duplicar Aventura"** que muestra las Licencias disponibles en la cuenta como tarjetas visuales (con icono según tipo: Básica, Básica Equipo, Anual, etc.).
+3. Se abre la ventana **"Duplicar Aventura"** con las Licencias disponibles en la cuenta: cada fila muestra el icono del tipo, el ID, el tipo, la temporalidad y la fecha de compra.
 4. Seleccionar la Licencia a la que asignar la copia y pulsar **"Continuar"**.
 5. Aparece un popup de espera mientras el sistema copia todos los contenidos.
 6. Al terminar, la nueva Aventura aparece en el listado con el título original seguido del sufijo **"(Copia)"** y en estado **Borrador**, aunque la original estuviera publicada.
 
-![Modal de Duplicar Aventura — selección de Licencia destino con tarjetas por tipo](/img/gamifier-aventura-clonar-modal.png)
+![Ventana Duplicar Aventura — listado de Licencias disponibles con icono, ID, tipo, temporalidad y fecha de compra, y el botón Continuar](/img/gamifier-aventura-clonar-modal.png)
 
 ### Qué se clona
 

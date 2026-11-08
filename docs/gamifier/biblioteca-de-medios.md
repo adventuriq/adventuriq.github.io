@@ -15,7 +15,7 @@ La Biblioteca de Medios es una herramienta exclusiva del Gamifier. Solo el Game 
 
 ## Acceso a la Biblioteca
 
-El botón **"Biblioteca de Medios"** se encuentra en la cabecera del formulario de edición de la Aventura, junto a los botones de Clasificación y Game Board. Al pulsarlo, se abre una ventana modal que ocupa el 75% del ancho de la pantalla.
+El botón **"Biblioteca de Medios"** se encuentra en la cabecera de la ficha de la Aventura, junto a los botones de Clasificación y Game Board. Al pulsarlo, se abre una ventana modal que ocupa el 75% del ancho de la pantalla.
 
 ![Biblioteca de Medios — ventana modal con la galería de archivos multimedia, vistas y panel de propiedades](/img/gamifier-biblioteca-medios-vista-general.png)
 

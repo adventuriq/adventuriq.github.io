@@ -42,10 +42,10 @@ El vídeo de portada tiene dos partes en el editor:
 ## ⚙️ Subir el vídeo de portada
 
 1. Entra en **Aventuras** y abre la Aventura que quieras editar.
-2. Baja hasta el bloque **Traducciones** y selecciona la pestaña del idioma.
+2. En el índice lateral, pulsa **Traducciones** y selecciona la pestaña del idioma.
 3. En el campo **Vídeo de portada**, pulsa **Nuevo vídeo** y elige el archivo, o pulsa **Media Library** para reutilizar un vídeo ya subido a esta Aventura (la Media Library ahora permite elegir vídeos, no solo imágenes).
 4. Al terminar la subida aparece un aviso de confirmación y, debajo, un **reproductor** para revisar el vídeo.
-5. Repite en cada idioma, o pulsa **Usar el mismo vídeo en todos los idiomas** (en el bloque de opciones, fuera de las pestañas) para aplicar el mismo vídeo a todos de una vez.
+5. Repite en cada idioma, o pulsa **Usar el mismo vídeo en todos los idiomas** (en el apartado **Imágenes y vídeo**, fuera de las pestañas) para aplicar el mismo vídeo a todos de una vez.
 6. Guarda la Aventura.
 
 Para **quitar** el vídeo, pulsa **Eliminar vídeo** en la pestaña del idioma. La portada vuelve a mostrar el vídeo de YouTube si lo tenías configurado o, si no, la imagen de cabecera.

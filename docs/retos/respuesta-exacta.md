@@ -47,7 +47,11 @@ Como cualquier Reto, la Respuesta Exacta comparte los campos comunes (cabecera, 
 
 Al crear el Reto, la mecánica nace ya con una **traducción de ejemplo** en el idioma por defecto de la Aventura y los tramos por defecto (100, 80, 50), listos para personalizar.
 
-![Formulario de edición de un Reto Respuesta Exacta — respuesta correcta, pregunta por idioma y configuración de reintentos](/img/gamifier-reto-respuesta-exacta-edicion.png)
+![Ficha de un Reto Respuesta Exacta — apartado Configuración del Reto con puntos, reintentos, tramos de puntuación por intentos y opciones de la mecánica](/img/gamifier-reto-respuesta-exacta-edicion.png)
+
+:::note Dónde se traducen el enunciado y la respuesta correcta de cada idioma
+En la ficha del Reto, el enunciado y la respuesta correcta de cada idioma están en la sección **Traducciones de la mecánica** (entrada **Textos de la mecánica** del índice lateral), separada de la puntuación y las opciones. Para añadir un idioma, pulsa **Nueva traducción** en la cabecera de esa sección y guarda con **Guardar cambios**. Ver [La ficha del Reto](./index.md#la-ficha-del-reto).
+:::
 
 ### Tramos de bonus por intento
 

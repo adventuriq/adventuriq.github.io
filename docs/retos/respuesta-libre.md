@@ -42,7 +42,11 @@ Como cualquier Reto, Respuesta Libre comparte los campos comunes (cabecera, tít
 | **Imagen en la cabecera** | Imagen de 1200×640 px que acompaña al enunciado. |
 | **Enunciado pregunta** | Texto de la pregunta o propuesta en HTML enriquecido, traducible a los idiomas activos de la Aventura. |
 
-![Formulario de edición de un Reto Respuesta Libre — puntos si responde, puntos si no responde y traducciones](/img/gamifier-reto-respuesta-libre-edicion.png)
+![Ficha de un Reto Respuesta Libre — apartado Configuración del Reto con puntos si responde, puntos si no responde, imagen de cabecera y visibilidad en el Muro](/img/gamifier-reto-respuesta-libre-edicion.png)
+
+:::note Dónde se traducen el enunciado de cada idioma
+En la ficha del Reto, el enunciado de cada idioma están en la sección **Traducciones de la mecánica** (entrada **Textos de la mecánica** del índice lateral), separada de la puntuación y las opciones. Para añadir un idioma, pulsa **Nueva traducción** en la cabecera de esa sección y guarda con **Guardar cambios**. Ver [La ficha del Reto](./index.md#la-ficha-del-reto).
+:::
 
 :::tip 👑 Para el Game Master
 Usa **"Puntos si no responde" = 0** y **"Puntos si responde"** con un valor alto para incentivar que los Players escriban. Si quieres que todos avancen sin penalización, pon puntos positivos en ambos campos pero mayor en "Puntos si responde".

@@ -42,7 +42,7 @@ La sección **Condiciones de Finalización** se encuentra en el formulario de ed
 
 Para configurarlas:
 
-1. Abre la Aventura en el Gamifier y desplázate hasta la sección **Condiciones de Finalización**.
+1. Abre la Aventura en el Gamifier y, en el índice lateral de la ficha, pulsa **Condiciones de fin**.
 2. Selecciona el **tipo de condición** en el desplegable.
 3. Introduce el **valor** correspondiente (IDs de Misiones, número de segundos, puntos, etc.).
 4. Pulsa el botón **"+"** para añadir la condición.

@@ -15,13 +15,15 @@ Esta página combina la **vista del Game Master** (Clasificación en el Gamifier
 
 ## Acceso a la Clasificación 👑
 
-El Game Master accede a la Clasificación desde el formulario de edición de la Aventura. En la cabecera del formulario, junto al nombre de la Aventura, se encuentran los botones de acción. El botón **"Clasificación"** abre la vista de ranking.
+El Game Master accede a la Clasificación desde la ficha de la Aventura: en la cabecera, entre los botones de acceso rápido, el botón **"Clasificación"** abre la vista de ranking. También puedes abrirla desde el icono de podio de cada Aventura en el listado.
+
+La Clasificación tiene una cabecera con la imagen y el nombre de la Aventura, el **total de jugadores** y el botón **Sincronizar Clasificación**, y debajo los filtros y la tabla.
 
 ## Tabla de ranking 👑
 
-![Tabla de Clasificación en el Gamifier — ranking de Players con posición, nickname, nombre, email, equipo, fecha última jugada, pruebas realizadas y puntos](/img/gamifier-metricas-clasificacion-tabla.png)
+![Clasificación en el Gamifier — cabecera con el total de jugadores y Sincronizar Clasificación, filtros como interruptores y tabla con los tres primeros puestos en oro, plata y bronce](/img/gamifier-metricas-clasificacion-tabla.png)
 
-La tabla muestra todos los Players que han interactuado con la Aventura, ordenados por puntuación total descendente. Las columnas disponibles son:
+La tabla muestra todos los Players que han interactuado con la Aventura, ordenados por puntuación total descendente. Los tres primeros puestos destacan con una medalla de **oro**, **plata** y **bronce** en la columna **Pos**. Las columnas disponibles son:
 
 | Columna | Descripción |
 |---|---|
@@ -46,7 +48,7 @@ La tabla es paginable con opciones de 12, 24, 48 o 76 registros por página, e i
 
 ### Filtros rápidos
 
-En la cabecera de la tabla aparecen tres filtros tipo checkbox que permiten segmentar la vista:
+Encima de la tabla aparecen tres filtros en forma de **interruptor** que permiten segmentar la vista:
 
 | Filtro | Qué muestra |
 |---|---|

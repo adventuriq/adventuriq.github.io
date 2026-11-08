@@ -56,7 +56,7 @@ Los tipos de condiciones listados se basan en el análisis de la UI y la analog�
 
 ## Configuración paso a paso 👑
 
-1. Abre el formulario de edición de la Misión y desplázate hasta la sección **Condiciones de Finalización de la Misión**.
+1. Abre la ficha de la Misión y, en el índice lateral, pulsa **Condiciones de fin**.
 2. En el selector **"Selecciona una condición para añadir"**, elige el tipo de condición.
 3. En el campo **"Valor de la condición, si aplica"**, introduce el parámetro correspondiente (IDs de Retos separados por coma, número de segundos, puntos, etc.).
 4. Pulsa **+ Añadir** para agregar la condición al Grupo actual.

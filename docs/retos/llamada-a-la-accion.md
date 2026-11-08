@@ -41,7 +41,11 @@ Como cualquier Reto, Llamada a la Acción comparte los campos comunes (cabecera,
 | **Imagen de cabecera** | Imagen de 1200×640 px que acompaña a la frase de acción. |
 | **Frase que leerá el jugador cuando desbloquee el Reto** | Texto en HTML enriquecido, traducible a los idiomas activos de la Aventura. Admite formato, imágenes incrustadas e iFrames (p. ej. vídeos de YouTube). |
 
-![Formulario de edición de un Reto Llamada a la Acción — puntos, imagen de cabecera y editor HTML con frase enriquecida](/img/gamifier-reto-llamada-a-la-accion-edicion.png)
+![Ficha de un Reto Llamada a la Acción — apartado Configuración del Reto con los puntos y la imagen de cabecera, y debajo la sección Traducciones de la mecánica con el editor HTML de la frase](/img/gamifier-reto-llamada-a-la-accion-edicion.png)
+
+:::note Dónde se traduce la frase
+La frase que leerá el Player está en la sección **Traducciones de la mecánica** (entrada **Textos de la mecánica** del índice lateral). Para añadir un idioma, pulsa **Nueva traducción** en la cabecera de esa sección y guarda con **Guardar cambios**. Ver [La ficha del Reto](./index.md#la-ficha-del-reto).
+:::
 
 ### Editor HTML enriquecido
 

@@ -15,7 +15,7 @@ La sección **Todos los Objetos** reúne en una única lista todos los Objetos D
 
 ## Dónde encontrarla
 
-La sección se encuentra en el formulario de edición de la Aventura, justo debajo de la sección **Retos**. El encabezado muestra el título **"Todos los Objetos"** seguido del número total entre paréntesis.
+La sección se encuentra en la ficha de la Aventura, justo debajo de la sección **Retos** (entrada **Todos los Objetos** del índice lateral). El encabezado muestra el título **"Todos los Objetos"** seguido del número total entre paréntesis.
 
 ![Sección "Todos los Objetos" en el formulario de edición de la Aventura — tabla con miniatura, ID, título, origen, Misión/Reto y acciones](/img/gamifier-aventura-todos-los-objetos.png)
 

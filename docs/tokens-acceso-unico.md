@@ -32,9 +32,9 @@ Sin la primera llave, el Player no ve la Aventura en su listado. Sin la segunda,
 
 ### Activar los Tokens en la Aventura
 
-1. En el Gamifier, abre el editor de la Aventura.
-2. Localiza la sección **"Tokens de acceso por player"** (debajo de la sección "Bloqueo por código de acceso").
-3. Activa el toggle. Aparece el texto: *"Cada jugador necesita un token único para acceder a la Aventura."*
+1. En el Gamifier, abre la ficha de la Aventura.
+2. En el índice lateral (bloque **Acceso**), pulsa **Tokens de acceso por player** (justo debajo de "Bloqueo por código de acceso").
+3. Activa el interruptor. Aparece el texto: *"Cada jugador necesita un token único para acceder a la Aventura."*
 4. Guarda la Aventura.
 
 ![Sección de acceso en el editor de Aventura — bloqueo por código de acceso (arriba) y Tokens de acceso por player (abajo), mostrando los dos métodos mutuamente excluyentes](/img/gamifier-token-acceso-bloqueo-section.png)

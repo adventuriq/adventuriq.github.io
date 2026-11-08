@@ -36,7 +36,7 @@ Cada marcador utiliza el **color** de la Misión a la que pertenece el Reto, lo 
 
 ## Configuración del mapa 👑
 
-La sección **Mapa** se encuentra en el formulario de edición de la Aventura.
+La sección **Mapa** se encuentra en la ficha de la Aventura (entrada **Mapa** del índice lateral; los Puntos de Interés tienen su propia entrada, **POIs**).
 
 ![Sección Mapa en el Gamifier — selector de tipo de mapa, campo Identificador y botón Crear Mapa y Vincular a la Aventura](/img/gamifier-aventura-mapa.png)
 
@@ -74,7 +74,7 @@ Cada POI se configura con los siguientes campos:
 | **Imagen** | Imagen asociada al POI. |
 | **Coordenadas** | Latitud y Longitud para posicionar el marcador en el mapa. |
 
-Los POI se crean y gestionan desde la sección de POI del formulario de la Aventura. Se pueden crear tantos como sean necesarios para enriquecer la experiencia del mapa.
+Los POI se crean y gestionan desde el apartado **POIs** de la ficha de la Aventura (entrada **POIs** del índice lateral), con el botón **+ Nuevo POI**. Cada POI tiene su propia ficha con cabecera e índice lateral, igual que la Aventura. Se pueden crear tantos como sean necesarios para enriquecer la experiencia del mapa.
 
 :::tip 👑 Para el Game Master
 Usa los POI para señalar puntos de referencia, servicios (baños, cafetería, punto de información), ubicaciones de interés cultural o cualquier lugar relevante que el Player deba conocer pero donde no haya un Reto que completar. En una gymkana urbana, por ejemplo, un POI puede marcar "Aquí hay una fuente" o "Punto de encuentro".

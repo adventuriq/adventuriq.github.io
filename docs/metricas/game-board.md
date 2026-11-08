@@ -15,21 +15,21 @@ El Game Board es una herramienta exclusiva del Gamifier. El Player no ve esta in
 
 ## Acceso al Game Board 👑
 
-El Game Master accede al Game Board desde el formulario de edición de la Aventura. En la cabecera del formulario, junto al nombre de la Aventura, el botón **"Game Board"** abre el panel de monitorización.
+El Game Master accede al Game Board desde la ficha de la Aventura: en la cabecera, entre los botones de acceso rápido, el botón **"Game Board"** abre el panel de monitorización. También puedes abrirlo desde el icono de gráfico de cada Aventura en el listado.
 
-Mientras reúne los datos, el Game Board muestra el aviso **«Cargando los datos de la partida…»** y no enseña ningún panel. Espera a tener **todos** los datos antes de mostrarlos, así que en Aventuras con muchos Players puede tardar unos segundos: es normal. Así evitas ver los contadores a cero y pensar que la Aventura no tiene actividad.
+El Game Board se abre mucho más rápido que antes porque solo carga al principio los datos generales. Durante ese breve momento muestra el aviso **«Cargando los datos de la partida…»** y no enseña ningún panel, para que no veas los contadores a cero y pienses que la Aventura no tiene actividad.
 
 ![Game Board durante la carga, con el aviso Cargando los datos de la partida…](/img/gamifier-metricas-gameboard-cargando.png)
 
 ## Estructura del Game Board
 
-El Game Board se organiza en tres bloques principales que se muestran de forma vertical:
+El Game Board tiene el mismo diseño que las fichas del Gamifier: una **cabecera** con la imagen y el nombre de la Aventura, las cifras de **Misiones**, **Retos** y **Jugadores** y el botón **Exportar a Excel**, y un **índice lateral** (**Métricas de esta Aventura** y **Actividad registrada**, con una entrada por cada Reto) para saltar directamente a la Misión o al Reto que te interese. El contenido se organiza en tres bloques:
 
-![Métricas de la Aventura en el Game Board — gráficos circulares de Misiones, Retos y Jugadores y botón Exportar a Excel](/img/gamifier-metricas-gameboard-vista-general.png)
+![Game Board — cabecera con las cifras de Misiones, Retos y Jugadores y el botón Exportar a Excel, índice lateral por Misión y Reto y estadísticas por Misión](/img/gamifier-metricas-gameboard-vista-general.png)
 
 ### 1. Métricas de la Aventura
 
-El primer bloque muestra tres indicadores globales con un contador visual:
+Las tres cifras globales se muestran en la cabecera del Game Board:
 
 | Métrica | Descripción |
 |---|---|
@@ -67,11 +67,15 @@ El bloque de **Actividad Registrada** es el más extenso del Game Board. Muestra
 
 **Detalles de la Mecánica**: sección expandible que muestra información específica según el tipo de Reto. Para Retos de Respuesta Libre, muestra las respuestas textuales de los Players. Para Retos de Compartir Foto, muestra la galería de imágenes subidas. Para Retos de Pregunta-Respuesta, muestra las opciones seleccionadas.
 
-**Detalle de los estados de Juego**: tabla que registra cada interacción con el Reto, incluyendo avatar del Player, fecha de inicio, fecha de fin, nickname, acción realizada y puntuación obtenida.
+**Detalle de los estados de Juego**: tabla que registra cada interacción con el Reto, incluyendo avatar del Player, fecha de inicio, fecha de fin, nickname, acción realizada y puntuación obtenida. Junto al título verás cuántos estados de juego tiene el Reto.
+
+Este detalle **se carga solo cuando lo despliegas**: al pulsar **Detalle de los estados de Juego** aparece un indicador de carga y, en un instante, la tabla. Así el Game Board se abre rápido aunque la Aventura tenga muchos Players.
+
+![Detalle de los estados de Juego recién desplegado, con el indicador Cargando los datos de la partida mientras llega la tabla](/img/gamifier-metricas-gameboard-detalle-cargando.png)
 
 #### Galería de Fotos y Vídeos
 
-En Retos que admiten subida de contenido multimedia (Compartir Foto, Pregunta-Respuesta con Vídeo/Audio), el Game Board muestra una **Galería de Fotos y Videos** integrada. Si aún no se han compartido archivos, muestra el mensaje "Aún no se han compartido fotos ni videos en este reto".
+En Retos que admiten subida de contenido multimedia (Subir Foto, Pregunta-Respuesta con Vídeo/Audio), el Game Board muestra una **Galería de Fotos y Videos** integrada. Al pulsar una foto se abre en un **visor a pantalla completa**. Si aún no se han compartido archivos, muestra el mensaje "Aún no se han compartido fotos ni videos en este reto".
 
 #### Enlaces publicados en RRSS
 

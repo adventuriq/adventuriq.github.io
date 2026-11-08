@@ -47,7 +47,11 @@ Como cualquier Reto, la Nube de Palabras comparte los campos comunes (cabecera, 
 
 Al crear el Reto, la mecánica nace ya con una **traducción de ejemplo** en el idioma por defecto de la Aventura, lista para editar.
 
-![Formulario de edición de un Reto Nube de Palabras — breadcrumb de navegación, campos de visibilidad, localización, color del fondo y traducciones por idioma](/img/gamifier-reto-nube-palabras-edicion.png)
+![Ficha de un Reto Nube de Palabras — apartado Configuración del Reto con la puntuación y la imagen de cabecera, y debajo la sección Traducciones de la mecánica con el enunciado](/img/gamifier-reto-nube-palabras-edicion.png)
+
+:::note Dónde se traducen el enunciado de cada idioma
+En la ficha del Reto, el enunciado de cada idioma están en la sección **Traducciones de la mecánica** (entrada **Textos de la mecánica** del índice lateral), separada de la puntuación y las opciones. Para añadir un idioma, pulsa **Nueva traducción** en la cabecera de esa sección y guarda con **Guardar cambios**. Ver [La ficha del Reto](./index.md#la-ficha-del-reto).
+:::
 
 ### Activar la visualización en la Bitácora del Player
 

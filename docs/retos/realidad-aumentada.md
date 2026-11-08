@@ -84,7 +84,7 @@ En el campo **Mecánica** eliges:
 - **Con pregunta (opciones bajo el objeto)**: el Player responde eligiendo una opción.
 - **Solo mostrar el objeto (sin pregunta)**: el Player ve el objeto y el Reto se da por visto.
 
-Con pregunta, indica los **Puntos si acierta** y los **Puntos si falla**, y en el bloque de **Traducciones** escribe el **enunciado** y las **respuestas**, marcando la correcta. En la columna **Animación** de cada respuesta escribe el nombre del clip del modelo que se reproducirá al elegirla: por ejemplo, una animación de acierto y otra de error, o una distinta por cada respuesta.
+Con pregunta, indica los **Puntos si acierta** y los **Puntos si falla**, y en la sección **Traducciones de la mecánica** (entrada **Textos de la mecánica** del índice, que solo aparece si el Reto tiene pregunta) escribe el **enunciado** y las **respuestas**, marcando la correcta. En la columna **Animación** de cada respuesta escribe el nombre del clip del modelo que se reproducirá al elegirla: por ejemplo, una animación de acierto y otra de error, o una distinta por cada respuesta.
 
 ![Mecánica Con pregunta: puntos por acierto y fallo, enunciado y respuestas con la columna Animación](/img/gamifier-reto-ar-respuestas.png)
 

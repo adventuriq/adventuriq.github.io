@@ -15,7 +15,7 @@ Esta página combina la **vista del Game Master** (configuración en el Gamifier
 
 ## Configuración en el Gamifier 👑
 
-La sección **Notificaciones** se encuentra en el formulario de edición de la Misión, debajo de los Objetos. El subtítulo indica "Notificaciones (llamadas) que recibirá el jugador al completar esta misión." El botón **+ Nueva Notificación** permite crear una nueva.
+El apartado **Notificaciones** de la ficha de la Misión (entrada **Notificaciones** del índice lateral) se encuentra debajo de los Objetos. El subtítulo indica "Notificaciones (llamadas) que recibirá el jugador al completar esta misión." El botón **+ Nueva Notificación** permite crear una nueva.
 
 Al crear una Notificación, se configuran los siguientes campos:
 

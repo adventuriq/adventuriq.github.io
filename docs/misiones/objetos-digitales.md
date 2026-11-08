@@ -27,9 +27,9 @@ La sección **Objetos** muestra el listado de Objetos Digitales asociados a esta
 
 ### Editor del Objeto Digital
 
-Al hacer clic sobre un Objeto Digital del listado (o al crear uno nuevo), se abre su editor con las siguientes secciones:
+Al hacer clic sobre un Objeto Digital del listado (o al crear uno nuevo), se abre su **ficha**, con el mismo diseño que las de la Aventura y la Misión: una cabecera con la imagen, el nombre y la Misión a la que pertenece, y un **índice lateral** con tres apartados (**Datos del Objeto**, **Traducciones del Objeto** y **Condiciones de Obtención del Objeto**). La barra con **Guardar cambios** y **Eliminar** queda fija mientras editas:
 
-![Editor de Objeto Digital mostrando los campos de configuración: Aventura asociada, código único, tipo de objeto y traducciones](/img/gamifier-editor-objeto-digital-parte-superior.png)
+![Ficha de un Objeto Digital — cabecera con imagen, nombre y Misión, índice lateral y apartados Datos del Objeto y Traducciones del Objeto](/img/gamifier-editor-objeto-digital-parte-superior.png)
 
 **Campos generales:**
 
