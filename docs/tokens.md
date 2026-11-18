@@ -124,15 +124,17 @@ A diferencia de las Licencias de Aventura, que empiezan a contar al publicar, el
 
 1. Abre la Aventura desde el listado de Aventuras.
 2. Si está publicada, cambia su estado a **Draft** y guarda: con la Aventura publicada, las Licencias Parking aparecen desactivadas en el selector con el texto «Despublica la Aventura para poder asignarle un Parking.».
+
+![Selector de Licencias en una Aventura publicada: la Licencia Parking Aventura (Anual) aparece desactivada con el texto Despublica la Aventura para poder asignarle un Parking](/img/gamifier-licencia-parking-selector-publicada.png)
 3. En el apartado **Licencia de Aventura**, pulsa **Asignar licencia**.
 4. Elige **«Parking Aventura (Mensual)»** o **«Parking Aventura (Anual)»** (insignia con una «P») y pulsa **Seleccionar**.
 5. Pulsa **Guardar Aventura**.
 
 ![Selector de Licencias con los filtros por tipo, las dos Licencias Parking (Mensual y Anual, insignia con una P) y la Parking Mensual seleccionada](/img/gamifier-licencia-parking-selector.png)
 
-El apartado muestra la insignia de Parking y el aviso **«Aventura aparcada»**: se conservan sus archivos, el progreso de los Players y sus fotos, pero no se puede publicar.
+El apartado muestra la insignia de Parking y el aviso **«Aventura aparcada»**: se conservan sus archivos, el progreso de los Players y sus fotos, pero no se puede publicar. El aviso indica también **hasta qué día** dura el Parking, que aparece además en **Caduca en**.
 
-![Apartado Licencia de Aventura de una Aventura aparcada: Parking Aventura (Mensual) con su insignia y el aviso Aventura aparcada](/img/gamifier-licencia-parking-aparcada.png)
+![Apartado Licencia de Aventura de una Aventura aparcada: Parking Aventura (Mensual) con su insignia, el aviso Aventura aparcada con la fecha hasta la que está vigente y la fecha de caducidad](/img/gamifier-licencia-parking-aparcada.png)
 
 ### Volver a jugar una Aventura aparcada
 
@@ -141,6 +143,8 @@ El apartado muestra la insignia de Parking y el aviso **«Aventura aparcada»**:
 3. Cambia el estado a **Published**. Desde ese momento empieza a contar la nueva Licencia.
 
 Si intentas publicar una Aventura aparcada sin cambiarle la Licencia, la ventana de motivos te lo indica: «Está aparcada con un Parking: asígnale una licencia de Aventura para poder publicarla.» (ver [¿Por qué no se ha podido publicar?](aventuras/publicar-aventura.md#-por-qué-no-se-ha-podido-publicar)).
+
+![Ventana No se ha podido publicar la Aventura con el motivo Está aparcada con un Parking](/img/gamifier-publicar-motivo-parking.png)
 
 :::note Lo que conviene saber del Parking
 - **Espacio**: el Parking mantiene el límite de espacio que tenía la última Licencia de la Aventura, Boosters incluidos. Lo que quepa en ese límite se conserva entero.
