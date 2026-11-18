@@ -119,7 +119,7 @@ Muestra **los accesos de Players** a tus Aventuras, del más reciente al más an
 
 ## 🧾 Pestaña Historial
 
-La pestaña tiene cuatro bloques: **Histórico Licencias**, **Histórico Tokens**, **Movimientos de tokens** y **Movimientos de licencias**. Si tienes algún Booster, aparece además el bloque **Boosters de licencia**.
+La pestaña tiene cinco bloques: **Histórico Licencias**, **Copias de seguridad**, **Histórico Tokens**, **Movimientos de tokens** y **Movimientos de licencias**. Si tienes algún Booster, aparece además el bloque **Boosters de licencia**.
 
 ### Histórico Licencias e Histórico Tokens
 
@@ -128,6 +128,21 @@ La pestaña tiene cuatro bloques: **Histórico Licencias**, **Histórico Tokens*
 **Histórico Tokens** muestra tus **compras** de Tokens y el botón **Comprar tokens**, que abre la tienda de AdventuriQ en otra pestaña. Las compras son solo una parte del saldo: cada suma y cada resta está en **Movimientos de tokens**.
 
 ![Pestaña Historial: Licencias de Aventura y compras de Tokens](/img/gamifier-perfil-historial.png)
+
+### Copias de seguridad
+
+Justo debajo de **Histórico Licencias**, el bloque **Copias de seguridad** reúne las copias en ZIP de tus Aventuras para que las vuelvas a descargar sin tener que exportar otra vez. Siempre está visible; si aún no tienes copias, lo indica.
+
+| Columna | Qué muestra |
+|---|---|
+| **Aventura** | Título de la Aventura, su número y cuántos archivos tiene la copia. |
+| **Origen** | **Exportada**: la generaste tú con [Exportar](../aventuras/exportar-importar-aventura.md). **Borrada por inactividad**: se guardó antes de borrar una [Aventura sin Licencia](../tokens.md#-aventuras-sin-licencia-avisos-y-borrado). |
+| **Fecha** y **Tamaño** | Cuándo se generó la copia y cuánto ocupa. |
+| **Disponible hasta** | Último día en que puedes descargarla. Las copias exportadas se conservan **7 días**; las de Aventuras borradas por inactividad, **1 año**. |
+
+Para descargar una copia, pulsa el botón naranja **Descargar** (flecha hacia abajo) de su fila. Para volver a crear la Aventura, usa **Importar** en el listado de Aventuras. Solo aparecen las copias de tus propias Aventuras o las que has exportado tú.
+
+![Bloque Copias de seguridad del Historial con dos copias exportadas: Aventura, Origen, Fecha, Tamaño, Disponible hasta y el botón de descarga](/img/gamifier-perfil-copias-de-seguridad.png)
 
 ### Boosters de licencia
 

@@ -34,7 +34,7 @@ El nombre de cada archivo solo puede tener **letras sin tildes, números, guione
 La comprobación se hace en la Biblioteca de Medios y en la ventana **Media Library** que se abre desde los campos de imagen o vídeo.
 :::
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-biblioteca-medios-nombre-no-valido.png — Biblioteca de Medios con el aviso «Nombre de archivo no válido» tras intentar subir un archivo con espacios -->
+![Aviso Nombre de archivo no válido al intentar subir «Foto portada.jpg» a la Biblioteca de Medios](/img/gamifier-biblioteca-medios-nombre-no-valido.png)
 
 Los formatos soportados incluyen imágenes (JPG, PNG, GIF, WebP), vídeos (MP4, WebM) y audios (MP3, OGG, WAV).
 
@@ -77,7 +77,7 @@ Si la Aventura tiene Retos de tipo Compartir Foto donde los Players ya han subid
 
 En la cabecera de la Biblioteca se muestra el **espacio total ocupado** por la Aventura, calculado recursivamente (incluyendo la subcarpeta `player_images/`). Este indicador ayuda al GM a controlar el consumo de su Licencia.
 
-Cada Aventura tiene un límite de almacenamiento asociado a su Licencia, y se aplica **siempre**: al llegar al 100 %, cualquier intento de subida desde la Biblioteca (o desde cualquier formulario de la Aventura) muestra el aviso **«Límite de espacio alcanzado»**, con el espacio ocupado y el que permite la Licencia. Para seguir subiendo, el GM puede eliminar archivos antiguos o ampliar el espacio de la Licencia con un [Booster](../aventuras/configuracion.md#-ampliar-el-espacio-con-boosters) (+100 MB cada uno).
+Cada Aventura tiene un límite de almacenamiento asociado a su Licencia, y se aplica **siempre**: al llegar al 100 %, cualquier intento de subida desde la Biblioteca (o desde cualquier formulario de la Aventura) muestra el aviso **«Límite de espacio alcanzado»**. Para seguir subiendo, el GM puede eliminar archivos antiguos o ampliar el espacio de la Licencia con un [Booster](../aventuras/configuracion.md#-ampliar-el-espacio-con-boosters) (+100 MB cada uno).
 
 :::tip 👑 Para el Game Master
 Usa la Biblioteca de Medios para centralizar todos los assets multimedia de tu Aventura. En lugar de subir la misma imagen varias veces en distintos Retos, súbela una vez a la Biblioteca y copia su URL para reutilizarla. Esto ahorra espacio y facilita la gestión.

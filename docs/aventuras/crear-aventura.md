@@ -60,11 +60,18 @@ La licencia queda vinculada a la Aventura en el momento de crearla. Puedes ver q
 
 Si tienes un **Plan Mundo** activo, no necesitas comprar Licencias para crear Aventuras. Al pulsar **+ Nueva Aventura**, el modal muestra arriba un aviso con tu **Plan Mundo**: el nombre del plan, el espacio usado frente a su límite y la fecha de caducidad, junto al botón **Emitir Licencia Mundo**.
 
-1. Pulsa **Emitir Licencia Mundo**.
-2. Elige el modo de juego (**Individual** o **Equipo**) y confirma.
-3. La nueva Licencia Mundo aparece en la lista **ya seleccionada**: pulsa **Crear Aventura** y continúa con el asistente.
+![Modal Crear Aventura con el aviso del Plan Mundo (nombre del plan, espacio usado frente al límite y caducidad) y el botón Emitir Licencia Mundo encima de la lista de licencias](/img/gamifier-crear-aventura-plan-mundo.png)
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-crear-aventura-plan-mundo.png — Modal «Nueva Aventura» con el aviso del Plan Mundo y el botón Emitir Licencia Mundo (requiere un usuario de test con Plan Mundo) -->
+1. Pulsa **Emitir Licencia Mundo**.
+2. En la ventana **Emitir Licencia Mundo** (que te recuerda tu Plan, su caducidad y el espacio usado), elige el modo de juego, **Individual** o **Equipo**, y pulsa **Emitir**.
+
+![Ventana Emitir Licencia Mundo con los datos del Plan y la elección del modo de juego Individual o Equipo](/img/gamifier-emitir-licencia-mundo.png)
+
+3. La nueva licencia aparece la primera de la lista y **ya seleccionada** (como Licencia anual del modo que hayas elegido): pulsa **Crear Aventura** y continúa con el asistente.
+
+![Modal Crear Aventura con la licencia recién emitida, anual, seleccionada al principio de la lista y el botón Crear Aventura activo](/img/gamifier-crear-aventura-licencia-mundo-emitida.png)
+
+La Aventura se crea bajo tu contrato Mundo: Tokens ilimitados, y su espacio se descuenta de la cuota global del Plan.
 
 :::note Espacio del Plan agotado
 Si el espacio de tu Plan Mundo está agotado, el botón **Emitir Licencia Mundo** aparece desactivado y, al pasar el ratón por encima, te indica el motivo.

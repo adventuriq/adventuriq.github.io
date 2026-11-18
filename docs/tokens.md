@@ -128,11 +128,11 @@ A diferencia de las Licencias de Aventura, que empiezan a contar al publicar, el
 4. Elige **«Parking Aventura (Mensual)»** o **«Parking Aventura (Anual)»** (insignia con una «P») y pulsa **Seleccionar**.
 5. Pulsa **Guardar Aventura**.
 
-El apartado muestra la insignia de Parking y el aviso **«Aventura aparcada»**, que indica **hasta qué día** dura el Parking.
+![Selector de Licencias con los filtros por tipo, las dos Licencias Parking (Mensual y Anual, insignia con una P) y la Parking Mensual seleccionada](/img/gamifier-licencia-parking-selector.png)
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-licencia-parking-aparcada.png — Apartado Licencia de Aventura de una Aventura aparcada, con la insignia y el aviso «Aventura aparcada» (requiere una Licencia Parking en la cuenta de test) -->
+El apartado muestra la insignia de Parking y el aviso **«Aventura aparcada»**: se conservan sus archivos, el progreso de los Players y sus fotos, pero no se puede publicar.
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-licencia-parking-selector-publicada.png — Selector de Licencias en una Aventura publicada, con el Parking desactivado y su texto -->
+![Apartado Licencia de Aventura de una Aventura aparcada: Parking Aventura (Mensual) con su insignia y el aviso Aventura aparcada](/img/gamifier-licencia-parking-aparcada.png)
 
 ### Volver a jugar una Aventura aparcada
 
@@ -168,11 +168,11 @@ Asígnale una **Licencia de Aventura** (para volver a jugarla) o un **[Parking](
 
 ### Recuperar una Aventura borrada
 
-1. Abre tu **Perfil** y baja hasta el bloque **«Copias de seguridad»**: están todas tus copias en ZIP, las que has exportado tú y las que se guardaron antes de borrar una Aventura inactiva (columna «Origen»: **«Borrada por inactividad»**). La columna «Disponible hasta» indica hasta cuándo puedes descargarla.
+1. Abre tu **Perfil**, pestaña **Historial**, y baja hasta el bloque **«[Copias de seguridad](gamifier/perfil-de-usuario.md#copias-de-seguridad)»**: están todas tus copias en ZIP, las que has exportado tú y las que se guardaron antes de borrar una Aventura inactiva (columna «Origen»: **«Borrada por inactividad»**). La columna «Disponible hasta» indica hasta cuándo puedes descargarla.
 2. Pulsa el botón **Descargar** (icono de flecha).
 3. En el listado de Aventuras, pulsa **Importar** y sigue el asistente (ver [Exportar e importar una Aventura](aventuras/exportar-importar-aventura.md)). Se crea una Aventura nueva, en Borrador y con otro GamePIN.
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-perfil-copias-de-seguridad.png — Perfil, bloque «Copias de seguridad» con una copia exportada y otra borrada por inactividad -->
+![Bloque Copias de seguridad del Perfil con dos copias exportadas: Aventura, Origen, Fecha, Tamaño, Disponible hasta y el botón de descarga](/img/gamifier-perfil-copias-de-seguridad.png)
 
 :::warning Lo que la copia no guarda
 La copia en ZIP guarda todo el diseño (Misiones, Retos, Objetos, textos, mapas, idiomas) y sus archivos, pero **no** las partidas, el progreso de los Players ni sus fotos. Si quieres conservar también eso, usa un **Parking**. La copia se guarda **1 año**; después se elimina y la Aventura ya no se puede recuperar.
@@ -368,9 +368,9 @@ Si quieres monetizar tu Aventura vendiendo acceso individual a tus Players, cons
 
 Cada Licencia de Aventura incluye un **límite de almacenamiento** para archivos multimedia (imágenes, vídeos y audios). El espacio se consume al subir archivos desde cualquier formulario del Gamifier: Aventura, Misión, Reto, Objeto Digital, POI, Clan o la [Biblioteca de Medios](gamifier/biblioteca-de-medios.md).
 
-Si una Aventura llega al **100 %** de su espacio, el Game Master ya no puede subir más archivos, desde ningún formulario ni desde la Biblioteca de Medios. Al intentarlo aparece el aviso **«Límite de espacio alcanzado»**, con el espacio ocupado y el que permite la Licencia. Para seguir subiendo, borra archivos que no uses desde la Biblioteca de Medios o amplía el espacio de la Licencia con un [Booster](aventuras/configuracion.md#-ampliar-el-espacio-con-boosters) (+100 MB cada uno).
+Si una Aventura llega al **100 %** de su espacio, el Game Master ya no puede subir más archivos, desde ningún formulario ni desde la Biblioteca de Medios. Al intentarlo aparece el aviso **«Límite de espacio alcanzado»**. Para seguir subiendo, borra archivos que no uses desde la Biblioteca de Medios o amplía el espacio de la Licencia con un [Booster](aventuras/configuracion.md#-ampliar-el-espacio-con-boosters) (+100 MB cada uno).
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-biblioteca-limite-espacio.png — Aviso «Límite de espacio alcanzado» al intentar subir un archivo con el espacio lleno (requiere una Aventura de test al 100 %) -->
+![Aviso Límite de espacio alcanzado al intentar subir un archivo a la Biblioteca de Medios con el espacio de la Licencia lleno](/img/gamifier-biblioteca-limite-espacio.png)
 
 :::info Las fotos de los Players no se cortan de golpe
 Para no interrumpir una partida en curso, los Players pueden seguir subiendo fotos y vídeos en los Retos de [Subir Foto](retos/subir-foto.md) con un **margen de cortesía** por encima del límite (por defecto, hasta el 150 % del espacio). Si la Aventura supera también ese margen, el Player ve el mensaje «Esta Aventura se ha quedado sin espacio y no admite más fotos ni vídeos. Avisa a quien la organiza.».

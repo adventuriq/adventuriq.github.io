@@ -88,7 +88,7 @@ Para pasar de **Draft** a **Published**, la Aventura tiene que cumplir estas con
 | No ocupar más espacio del que permite su Licencia | «Ocupa más espacio del que permite su Licencia.» | Borra archivos que no uses desde la [Biblioteca de Medios](../gamifier/biblioteca-de-medios.md) o amplía el espacio con un [Booster](configuracion.md#-ampliar-el-espacio-con-boosters). |
 | No estar aparcada con un Parking | «Está aparcada con un Parking: asígnale una licencia de Aventura para poder publicarla.» | Asigna una Licencia de Aventura (ver [Licencia Parking](../tokens.md#-licencia-parking-aparcar-una-aventura)). |
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-listado-estado-publicacion-bloqueada.png — Ventana «No se ha podido publicar la Aventura» con la lista de motivos (requiere una Aventura de prueba que no cumpla alguna condición) -->
+![Ventana No se ha podido publicar la Aventura con el motivo Su Licencia ha caducado](/img/gamifier-listado-estado-publicacion-bloqueada.png)
 
 :::note Licencias recién asignadas
 Una Aventura con una Licencia recién asignada, que todavía no había empezado a contar, a veces no se dejaba publicar como si la Licencia estuviera caducada. Ya está corregido: se publica sin problemas y el periodo de la Licencia empieza a contar en ese momento.

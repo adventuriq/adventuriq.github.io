@@ -36,10 +36,10 @@ En los dos casos la Aventura nueva empieza limpia, sin Players ni partidas.
 3. Aparece el aviso de espera **«Exportando la Aventura»** mientras se prepara el ZIP. Puede tardar un poco si la Aventura tiene muchos vídeos.
 4. Al terminar aparece **«Aventura exportada»**, con el tamaño del ZIP y el número de archivos, y la descarga empieza sola. Si no empieza, el mismo aviso trae un enlace **«pulsa aquí»**.
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-exportar-aventura-exito.png — Aviso «Aventura exportada» con el tamaño del ZIP, el número de archivos y el enlace pulsa aquí -->
+![Aviso Aventura exportada: se está descargando el ZIP, con su tamaño, el número de archivos, el enlace pulsa aquí y la validez de 7 días](/img/gamifier-exportar-aventura-exito.png)
 
 :::warning El enlace de descarga caduca a los 7 días
-El enlace para descargar el ZIP funciona durante **7 días**. Después hay que volver a exportar. Guarda el archivo en cuanto lo descargues.
+El enlace para descargar el ZIP funciona durante **7 días**. Durante esos días también puedes volver a descargarlo desde tu Perfil, en **Historial › [Copias de seguridad](../gamifier/perfil-de-usuario.md#copias-de-seguridad)**. Después hay que volver a exportar. Guarda el archivo en cuanto lo descargues.
 :::
 
 ### Qué incluye el ZIP
@@ -89,14 +89,16 @@ El ZIP solo se puede importar tal y como lo genera «Exportar». Si se modifica 
 - Debajo, **«Elige la licencia para la Aventura nueva»**, con tus Licencias libres. Cada una muestra su número, su tipo, la fecha de compra y su espacio. Las Licencias donde no caben los archivos salen desactivadas con la etiqueta **«Los archivos no caben»**.
 - Elige una y pulsa **«Importar»**. Con **«Elegir otro archivo»** vuelves al paso 1.
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-importar-aventura-paso2.png — Asistente, paso 2: resumen del ZIP y Licencias, con una marcada como «Los archivos no caben» (requiere un ZIP exportado) -->
+![Asistente Importar Aventura, paso 2: título, fecha de exportación e idiomas, recuadros de Misiones, Retos, Objetos y Archivos, Licencias libres con una seleccionada y el botón Importar](/img/gamifier-importar-aventura-paso2.png)
+
+Debajo de las Licencias, un aviso te recuerda que la Aventura se creará en borrador, con un GamePIN nuevo y sin datos de partida.
 
 **Paso 3 — Hecho.** Aparece el mensaje **«Aventura importada»**:
 
 - **«Abrir la Aventura»** te lleva directamente a su ficha.
 - **«Cerrar»** vuelve al listado, donde ya aparece la Aventura nueva.
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-importar-aventura-paso3.png — Asistente, paso 3: Aventura importada, con Abrir la Aventura y Cerrar -->
+![Asistente Importar Aventura, paso 3: Aventura importada, con los botones Cerrar y Abrir la Aventura](/img/gamifier-importar-aventura-paso3.png)
 
 La Aventura importada se crea en **Borrador** y con un **GamePIN nuevo**. Revísala y [publícala](publicar-aventura.md) cuando esté lista.
 

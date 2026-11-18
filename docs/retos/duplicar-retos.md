@@ -46,7 +46,7 @@ Al terminar se muestra **«¡Duplicado!»** y la lista de Retos se actualiza. La
 
 La copia aparece **al final de la lista de Retos de esa Misión**. La ficha de la Misión no se recarga: si tenías cambios sin guardar, se conservan.
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-duplicar-reto-mision-resultado.png — Ficha de la Misión tras duplicar un Reto, con la copia «(Copia)» al final de la lista -->
+![Apartado Retos de una Misión tras duplicar: la copia Testigo Material (Copia) aparece la última de la lista](/img/gamifier-duplicar-reto-mision-resultado.png)
 
 :::warning Un Reto duplicado no nace en Borrador
 A diferencia de una Misión duplicada, la copia de un Reto es visible para los Players en cuanto lo sea su Misión. Si la Aventura está en juego, revisa y renombra la copia enseguida.

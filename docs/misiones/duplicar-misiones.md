@@ -39,7 +39,7 @@ Duplicar una Misión no consume Tokens ni Licencias, ni espacio adicional: la co
 
 La copia aparece **al final de la lista de Misiones**, con el título original seguido de **«(Copia)»** y en **Borrador** (interruptor *Borrador* activado), así que los Players no la ven hasta que la publiques. La lista de Retos de la Aventura también se actualiza con los Retos copiados.
 
-<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-duplicar-mision-resultado.png — Lista de Misiones tras duplicar, con la copia «(Copia)» al final y en Borrador -->
+![Lista de Misiones tras duplicar: la copia El Relicario de los Ecos (Copia) aparece al final con el interruptor Borrador activado](/img/gamifier-duplicar-mision-resultado.png)
 
 ## 📦 Qué se copia
 
