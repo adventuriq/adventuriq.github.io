@@ -51,7 +51,7 @@ Si lo creas desde la ficha de una **Misión** (botón **+ Nuevo Reto** de su apa
 Para terminar de configurarlo, abre el Reto (botón de editar en el apartado **Retos**): su ficha muestra todos los apartados (Datos, Código, Llave, Opciones, Imágenes, Traducciones, Localización, Objetos Digitales y la configuración propia del tipo). Lo que no aparece al crear se guarda con sus valores por defecto.
 
 :::tip ¿Un Reto parecido a otro que ya tienes?
-[Duplícalo](../misiones/duplicar-misiones-y-retos.md) con todo su contenido y cambia solo lo que necesites.
+[Duplícalo](duplicar-retos.md) con todo su contenido y cambia solo lo que necesites.
 :::
 
 :::tip Crea los Retos desde la Misión

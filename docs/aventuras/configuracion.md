@@ -104,6 +104,10 @@ Al pulsar **Asignar licencia** se abre el selector de Licencias. Cada Licencia d
 En el selector también aparecen tus **Licencias Parking** (insignia con una «P»), que **aparcan** la Aventura: conservan todo su contenido, sus archivos, el progreso de los Players y sus fotos, pero la Aventura no se puede publicar ni jugar. Solo se pueden elegir si la Aventura **no está publicada**: con la Aventura publicada aparecen desactivadas con el texto «Despublica la Aventura para poder asignarle un Parking.». Más información en [Licencia Parking](../tokens.md#-licencia-parking-aparcar-una-aventura).
 :::
 
+:::warning ¿Ves el aviso rojo «Esta Aventura se borrará el…»?
+Aparece en la ficha de las Aventuras que llevan meses sin Licencia ni Parking. Asígnale una Licencia de Aventura o un Parking y guarda: la cuenta atrás se cancela en el acto (ver [Aventuras sin Licencia: avisos y borrado](../tokens.md#-aventuras-sin-licencia-avisos-y-borrado)).
+:::
+
 ### 🚀 Ampliar el espacio con Boosters
 
 Cada Licencia de Aventura tiene un límite de espacio para las imágenes, vídeos y audios de la Aventura. Si se te queda corto, puedes ampliarlo con un **Booster**: una ampliación que compras en la Tienda y aplicas a la Licencia de una Aventura. Hoy existe el Booster de espacio, que suma **+100 MB** cada vez (75 MB → 175 MB → 275 MB…), y se pueden aplicar varios a la misma Licencia.

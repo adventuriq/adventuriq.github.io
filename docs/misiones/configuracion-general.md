@@ -29,7 +29,7 @@ Las opciones que no aparecen en el formulario de creación (visibilidad, jugabil
 :::
 
 :::tip ¿Quieres reutilizar una Misión que ya tienes?
-En lugar de crearla de cero, puedes [duplicarla](duplicar-misiones-y-retos.md) con todos sus Retos, Objetos y condiciones.
+En lugar de crearla de cero, puedes [duplicarla](duplicar-misiones.md) con todos sus Retos, Objetos y condiciones.
 :::
 
 La ficha de una Misión tiene el mismo diseño que la de la Aventura. En la **cabecera** se muestran la imagen, el nombre y el estado de la Misión, las cifras de **Retos**, **Objetos** y **Notificaciones** y el botón **Ver Aventura** para volver a la Aventura padre. Debajo, un **índice lateral** te lleva directamente a cada apartado (en el móvil, una barra de pastillas arriba), cada apartado es una tarjeta y la barra con **Guardar cabecera** y **Eliminar Misión** queda fija al pie mientras editas.

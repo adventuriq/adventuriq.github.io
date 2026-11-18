@@ -39,6 +39,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'misiones/index',
         'misiones/configuracion-general',
+        'misiones/duplicar-misiones',
         'misiones/bloqueos-visibilidad',
         'misiones/contenido-imagenes',
         'misiones/descripcion',
@@ -46,7 +47,6 @@ const sidebars: SidebarsConfig = {
         'misiones/objetos-digitales',
         'misiones/notificaciones',
         'misiones/condiciones-finalizacion',
-        'misiones/duplicar-misiones-y-retos',
       ],
     },
     {
@@ -54,6 +54,7 @@ const sidebars: SidebarsConfig = {
       label: '⚔️ Retos',
       items: [
         'retos/index',
+        'retos/duplicar-retos',
         'retos/pregunta-respuesta',
         'retos/preguntas-encadenadas',
         'retos/respuesta-libre',

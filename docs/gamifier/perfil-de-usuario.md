@@ -83,6 +83,8 @@ El perfil te avisa automáticamente de:
 
 ![Avisos del perfil: una Aventura que ocupa el 88 % del espacio de su Licencia y cuatro Boosters sin aplicar](/img/gamifier-perfil-avisos-boosters.png)
 
+Los mismos avisos, con los mismos límites, te llegan también por correo: ver [Avisos por correo](../tokens.md#-avisos-por-correo).
+
 ![Aviso del perfil: una Aventura que supera el espacio de su Licencia](/img/gamifier-perfil-avisos.png)
 
 ### Gráficos

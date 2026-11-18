@@ -101,6 +101,8 @@ Lo que pasa después depende de cómo esté configurada la Aventura:
 
 Si lo escrito no contiene ningún GamePIN, el propio campo lo indica.
 
+![Pantalla del nickname tras pulsar Unirme en una Aventura con Jugar sin registro: nombre de la Aventura, campo Nickname y botón Jugar](/img/webapp-acceso-unirse-nickname.png)
+
 ![Aviso Atención: Esta Aventura requiere iniciar sesión, con el botón Aceptar](/img/webapp-aviso-requiere-login.png)
 
 :::tip 🖥️ Imprescindible en la App instalada en el ordenador

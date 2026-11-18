@@ -2,7 +2,7 @@
 sidebar_position: 4
 title: 🪙 Tokens y Licencias
 description: Cómo funcionan los Tokens y las Licencias en AdventuriQ — precios, planes anuales, ventajas y preguntas frecuentes sobre el modelo económico de la plataforma.
-keywords: [tokens, licencias, precios, plan luna, plan mundo, parking, booster, espacio, adventuriq, gamificación, coste, presupuesto, pay per use, branderización]
+keywords: [tokens, licencias, precios, plan luna, plan mundo, parking, booster, espacio, avisos, correo, aventuras inactivas, copia de seguridad, adventuriq, gamificación, coste, presupuesto, pay per use, branderización]
 ---
 
 # 🪙 Tokens y Licencias
@@ -71,7 +71,7 @@ Cuando una Licencia vence, la Aventura deja de ser accesible para los Players: e
 Si no vas a jugarla durante un tiempo pero quieres conservarla tal cual (con el progreso y las fotos de los Players), asígnale una [Licencia Parking](#-licencia-parking-aparcar-una-aventura).
 
 :::info
-El sistema notifica al Game Master con antelación antes de la caducidad, para que puedas renovar sin interrupciones.
+AdventuriQ te avisa por correo con antelación antes de la caducidad, para que puedas renovar sin interrupciones (ver [Avisos por correo](#-avisos-por-correo)).
 :::
 
 La Licencia se gestiona desde la [configuración de la Aventura](aventuras/configuracion) en el Gamifier.
@@ -81,6 +81,29 @@ La Licencia se gestiona desde la [configuración de la Aventura](aventuras/confi
 - **Mensual** si tu Aventura dura 1-3 meses: máxima flexibilidad, pagas solo por lo que usas.
 - **Anual** si tu Aventura va a estar activa 4 meses o más: te ahorras la gestión de renovaciones y optimizas coste.
 - **[Planes Luna o Mundo](#-alternativa-planes-anuales)** si necesitas Players ilimitados, varias Aventuras o quieres branderizar la experiencia con tu identidad visual.
+:::
+
+## 📧 Avisos por correo
+
+AdventuriQ te escribe **antes** de que algo se acabe, para que puedas actuar a tiempo y tu Aventura no se despublique. Recibes un correo cuando:
+
+| Situación | Cuándo te avisamos (por defecto) |
+|---|---|
+| La **Licencia** de una de tus Aventuras va a caducar y no tiene otra Licencia que la releve | Unos 7 días antes |
+| Una **Licencia de Game Designer** va a caducar | Unos 7 días antes |
+| Tu **Plan Luna o Mundo** va a caducar | Unos 30 días antes |
+| Te quedan **pocos Tokens** (5 o menos) o se te han **agotado**, y tienes Aventuras publicadas que los consumen | En el mismo momento en que un Player gasta el Token que cruza el límite |
+| Una **Aventura publicada** (o tu Plan) llega al **85 %** de su espacio, o al **100 %** | En cuanto ocurre |
+| Tienes **Boosters** comprados hace más de 3 días que aún no has aplicado | Unos días después de la compra |
+
+- Todos los avisos llegan **juntos en un único correo**, en tu idioma preferido (español o inglés), con un botón para ir directamente a la Aventura o a tu Perfil.
+- **Cada situación se avisa una sola vez.** Si la resuelves (compras Tokens, renuevas la Licencia…) y más adelante vuelve a ocurrir, te avisamos de nuevo.
+- No tienes que activar nada: los avisos llegan al correo de tu cuenta de Game Master. Los mismos avisos aparecen en tu [Perfil](gamifier/perfil-de-usuario.md#avisos).
+
+<!-- 📸 CAPTURA PENDIENTE: /img/tokens-correo-avisos.png — Correo «Tienes 3 avisos sobre tu cuenta» con varios bloques (Tokens, Licencia, Booster) -->
+
+:::tip Del correo a la solución en un clic
+Si recibes, por ejemplo, «La licencia de *Mi Aventura* caduca el 21/11/2026», pulsa **Abrir la Aventura** en el correo y asigna una Licencia nueva desde el apartado **Licencia de Aventura** de su ficha. A partir de ahí no recibirás más avisos de esa Licencia.
 :::
 
 ## 🚗 Licencia Parking: aparcar una Aventura
@@ -122,8 +145,40 @@ Si intentas publicar una Aventura aparcada sin cambiarle la Licencia, la ventana
 :::note Lo que conviene saber del Parking
 - **Espacio**: el Parking mantiene el límite de espacio que tenía la última Licencia de la Aventura, Boosters incluidos. Lo que quepa en ese límite se conserva entero.
 - **No sirve para** publicar, crear una Aventura nueva, duplicar ni importar: esas pantallas no ofrecen las Licencias Parking.
-- **Al caducar el Parking**, la Aventura sigue sin poder publicarse, igual que con una Licencia caducada. Para seguir conservándola, asígnale otro Parking o una Licencia de Aventura.
+- **Al caducar el Parking**, la Aventura sigue sin poder publicarse, igual que con una Licencia caducada. Para seguir conservándola, asígnale otro Parking o una Licencia de Aventura. Si una Aventura se queda mucho tiempo sin Licencia ni Parking, se acaba borrando: ver [Aventuras sin Licencia](#-aventuras-sin-licencia-avisos-y-borrado).
 :::
+
+## 🧹 Aventuras sin Licencia: avisos y borrado
+
+Una Aventura **no publicada**, sin Licencia de Aventura vigente y sin Parking, que ocupa al menos 1 MB, se considera **inactiva**. Si pasa mucho tiempo así, AdventuriQ borra sus archivos, pero antes te avisa varias veces y siempre guarda una **copia en ZIP** que puedes descargar.
+
+| Tiempo sin Licencia ni Parking (por defecto) | Qué pasa |
+|---|---|
+| **3 meses** | Recibes el correo «Una Aventura sin licencia se va a borrar». |
+| **30 días** y **7 días** antes del borrado | Nuevos recordatorios por correo. |
+| **6 meses** | Se borran los archivos de la Aventura (imágenes, vídeos, audios y fotos de los Players) y desaparece del listado. Recibes el correo «Hemos borrado los archivos de una Aventura inactiva». |
+
+Mientras dura la cuenta atrás, la ficha de la Aventura muestra arriba el aviso en rojo **«Esta Aventura se borrará el (fecha).»**, con los días que faltan y cómo evitarlo.
+
+<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-aventura-inactiva-aviso-borrado.png — Ficha de una Aventura en cuenta atrás, con el aviso rojo de borrado -->
+
+:::tip Cómo evitar el borrado
+Asígnale una **Licencia de Aventura** (para volver a jugarla) o un **[Parking](#-licencia-parking-aparcar-una-aventura)** (para solo conservarla) desde **Asignar licencia** y pulsa **Guardar Aventura**. La cuenta atrás se cancela en el acto.
+:::
+
+### Recuperar una Aventura borrada
+
+1. Abre tu **Perfil** y baja hasta el bloque **«Copias de seguridad»**: están todas tus copias en ZIP, las que has exportado tú y las que se guardaron antes de borrar una Aventura inactiva (columna «Origen»: **«Borrada por inactividad»**). La columna «Disponible hasta» indica hasta cuándo puedes descargarla.
+2. Pulsa el botón **Descargar** (icono de flecha).
+3. En el listado de Aventuras, pulsa **Importar** y sigue el asistente (ver [Exportar e importar una Aventura](aventuras/exportar-importar-aventura.md)). Se crea una Aventura nueva, en Borrador y con otro GamePIN.
+
+<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-perfil-copias-de-seguridad.png — Perfil, bloque «Copias de seguridad» con una copia exportada y otra borrada por inactividad -->
+
+:::warning Lo que la copia no guarda
+La copia en ZIP guarda todo el diseño (Misiones, Retos, Objetos, textos, mapas, idiomas) y sus archivos, pero **no** las partidas, el progreso de los Players ni sus fotos. Si quieres conservar también eso, usa un **Parking**. La copia se guarda **1 año**; después se elimina y la Aventura ya no se puede recuperar.
+:::
+
+Las Aventuras de cuentas con un **Plan Luna o Mundo** no se borran. El plazo empieza a contar desde que caduca la última Licencia o el último Parking de la Aventura, pero nunca antes del 16 de noviembre de 2026.
 
 ## 🎟️ Tokens de juego
 
@@ -288,7 +343,7 @@ Si tu Aventura va a estar activa 1-3 meses, la Licencia Mensual te da máxima fl
 La Licencia Individual genera solo un ranking de jugadores. La Licencia de Equipo añade rankings por equipo y del jugador dentro de su equipo, e incluye la gestión de equipos (clanes) desde el Gamifier. La elección se hace al [crear la Aventura](aventuras/crear-aventura) y determina el modo de juego.
 
 **¿Qué pasa si mi Licencia caduca?**
-La Aventura deja de ser accesible para los Players hasta que se active una nueva Licencia. La configuración y el contenido se mantienen intactos — solo tienes que activar una Licencia nueva para que vuelva a ser jugable. El sistema te avisa con antelación antes de que esto ocurra.
+La Aventura deja de ser accesible para los Players hasta que se active una nueva Licencia. La configuración y el contenido se mantienen intactos — solo tienes que activar una Licencia nueva para que vuelva a ser jugable. AdventuriQ te avisa por correo con antelación antes de que esto ocurra (ver [Avisos por correo](#-avisos-por-correo)).
 
 **¿Cuándo empieza a contar la caducidad de la Licencia?**
 La caducidad se activa cuando **publicas tu Aventura** (el momento en el que los Players pueden empezar a jugarla), no cuando compras la Licencia ni mientras la estás construyendo. Esto significa que puedes adquirir la Licencia con antelación y trabajar en tu Aventura a tu ritmo — el contador solo arranca al publicar. Si asignas una Licencia nueva a una Aventura que **ya está publicada** (por ejemplo, para renovarla), el contador arranca en ese momento; si la Aventura está en borrador, espera a que la publiques.

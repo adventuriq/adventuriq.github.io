@@ -234,7 +234,7 @@ Si impartes la misma formación a varios grupos, clona la Aventura tras diseñar
 :::
 
 :::info ¿Solo una parte, o una copia fuera de AdventuriQ?
-- Para copiar solo una **Misión** o un **Reto** dentro de la misma Aventura, usa [Duplicar Misiones y Retos](../misiones/duplicar-misiones-y-retos.md).
+- Para copiar solo una **Misión** o un **Reto** dentro de la misma Aventura, usa [Duplicar una Misión](../misiones/duplicar-misiones.md) o [Duplicar un Reto](../retos/duplicar-retos.md).
 - Para guardar una **copia de seguridad en un archivo** o llevar la Aventura **a otra cuenta**, usa [Exportar e importar una Aventura](exportar-importar-aventura.md).
 :::
 

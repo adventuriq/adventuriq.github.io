@@ -18,6 +18,7 @@ Una Misión define **qué Retos** ve el Player, **cuándo** los puede jugar (blo
 | Página | Descripción |
 |---|---|
 | [Configuración General](./configuracion-general.md) | Cómo crear una Misión, campos básicos (orden, color, estado), códigos de acceso y opciones generales del formulario. |
+| [Duplicar una Misión](./duplicar-misiones.md) | Copia completa de una Misión, con todos sus Retos, dentro de la misma Aventura, con un solo clic. |
 | [Bloqueos y Visibilidad](./bloqueos-visibilidad.md) | Controles de visibilidad, jugabilidad y ventanas temporales que determinan cuándo el Player puede ver y acceder a una Misión. |
 | [Contenido e Imágenes](./contenido-imagenes.md) | Imágenes de listado y cabecera, tipo de fondo y assets visuales de la Misión. |
 | [Descripción](./descripcion.md) | Textos descriptivos multiidioma con HTML enriquecido, audio descripción y vídeo de YouTube. |
@@ -25,7 +26,6 @@ Una Misión define **qué Retos** ve el Player, **cuándo** los puede jugar (blo
 | [Objetos Digitales](./objetos-digitales.md) | Objetos Digitales entregados al completar la Misión, con condiciones de obtención configurables mediante bloques AND/OR. |
 | [Notificaciones](./notificaciones.md) | Sistema de notificaciones (llamadas) que el Player recibe al completar la Misión — simulaciones de llamada telefónica con audio y avatar. |
 | [Condiciones de Finalización](./condiciones-finalizacion.md) | Cuándo se considera una Misión finalizada para el Player, con sistema de condiciones combinables mediante bloques AND/OR. |
-| [Duplicar Misiones y Retos](./duplicar-misiones-y-retos.md) | Copia completa de una Misión o de un Reto dentro de la misma Aventura, con un solo clic. |
 
 ## Antes de empezar
 

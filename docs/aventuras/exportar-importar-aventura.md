@@ -107,5 +107,5 @@ Si la importación no termina, no queda ninguna Aventura a medias y la Licencia 
 ## 📚 Continúa aprendiendo
 
 - [Crear una Aventura](crear-aventura.md) — incluye cómo clonar una Aventura dentro de tu cuenta.
-- [Duplicar Misiones y Retos](../misiones/duplicar-misiones-y-retos.md) — copiar solo una parte de la Aventura.
+- [Duplicar una Misión](../misiones/duplicar-misiones.md) y [Duplicar un Reto](../retos/duplicar-retos.md) — copiar solo una parte de la Aventura.
 - [Tokens y Licencias](../tokens.md) — qué Licencia necesitas para importar.
