@@ -85,7 +85,8 @@ Para pasar de **Draft** a **Published**, la Aventura tiene que cumplir estas con
 | Tener una Licencia asignada | «No tiene ninguna Licencia asignada.» | Asigna una Licencia en el apartado **Licencia de Aventura** del editor. |
 | Que la Licencia no haya caducado | «Su Licencia ha caducado.» | Asigna una Licencia nueva (ver [Tokens y Licencias](/tokens)). |
 | Que su propietario tenga Tokens disponibles (no aplica con Plan Luna o Plan Mundo) | «Su propietario no tiene Tokens disponibles.» | Compra Tokens en la [Tienda](/tokens). |
-| No ocupar más espacio del que permite su Licencia | «Ocupa más espacio del que permite su Licencia.» | Borra archivos que no uses desde la [Biblioteca de Medios](../gamifier/biblioteca-de-medios.md). |
+| No ocupar más espacio del que permite su Licencia | «Ocupa más espacio del que permite su Licencia.» | Borra archivos que no uses desde la [Biblioteca de Medios](../gamifier/biblioteca-de-medios.md) o amplía el espacio con un [Booster](configuracion.md#-ampliar-el-espacio-con-boosters). |
+| No estar aparcada con un Parking | «Está aparcada con un Parking: asígnale una licencia de Aventura para poder publicarla.» | Asigna una Licencia de Aventura (ver [Licencia Parking](../tokens.md#-licencia-parking-aparcar-una-aventura)). |
 
 <!-- 📸 CAPTURA PENDIENTE: /img/gamifier-listado-estado-publicacion-bloqueada.png — Ventana «No se ha podido publicar la Aventura» con la lista de motivos (requiere una Aventura de prueba que no cumpla alguna condición) -->
 

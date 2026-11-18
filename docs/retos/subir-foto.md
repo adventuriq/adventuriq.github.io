@@ -67,6 +67,12 @@ El proceso es guiado en **3 fases**:
 
 **Fase 3 — Enviar**: el Player confirma el envío. La imagen se sube al servidor, se asignan los puntos y la foto aparece automáticamente en la **Galería de la Aventura**, visible para todos los participantes.
 
+:::note Si la Aventura se queda sin espacio
+Para no cortar una partida en curso, los Players pueden seguir subiendo fotos y vídeos aunque la Aventura haya llegado a su límite de espacio, con un **margen de cortesía** (por defecto, hasta el 150 % del espacio de la Licencia). Si la Aventura supera también ese margen, el Player ve el mensaje **«Esta Aventura se ha quedado sin espacio y no admite más fotos ni vídeos. Avisa a quien la organiza.»** y el Reto no se da por completado. Para evitarlo, revisa el espacio de tus Aventuras y amplíalo a tiempo con un [Booster](../aventuras/configuracion.md#-ampliar-el-espacio-con-boosters) (ver [Almacenamiento por Aventura](../tokens.md#-almacenamiento-por-aventura)).
+:::
+
+<!-- 📸 CAPTURA PENDIENTE: /img/webapp-reto-subir-foto-sin-espacio.png — Reto Subir Foto con el mensaje de Aventura sin espacio (requiere una Aventura de test por encima del 150 %) -->
+
 ## Vista en la Galería
 
 Las fotos enviadas por los Players a través de este tipo de Reto se agregan a la **Galería de fotos de la Aventura**, un espacio compartido donde todos los participantes pueden ver las imágenes del grupo. La Galería es accesible desde la Webapp.

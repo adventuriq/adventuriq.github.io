@@ -28,6 +28,14 @@ Para subir archivos a la Biblioteca:
 3. Se pueden subir varios archivos a la vez.
 4. Los archivos aparecen en la galería a medida que se completa la subida.
 
+:::warning Nombres de archivo válidos
+El nombre de cada archivo solo puede tener **letras sin tildes, números, guiones (`-`), guiones bajos (`_`) y puntos**: sin espacios, sin tildes ni «ñ», sin apóstrofes, comas, paréntesis ni letras de otros alfabetos. Si un archivo no cumple la regla, **no se sube** y aparece el aviso **«Nombre de archivo no válido»**, que indica qué archivo es. Renómbralo en tu ordenador (por ejemplo, de `Foto portada.jpg` a `Foto_portada.jpg`) y vuelve a subirlo. Si subes varios a la vez, los válidos se suben con normalidad.
+
+La comprobación se hace en la Biblioteca de Medios y en la ventana **Media Library** que se abre desde los campos de imagen o vídeo.
+:::
+
+<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-biblioteca-medios-nombre-no-valido.png — Biblioteca de Medios con el aviso «Nombre de archivo no válido» tras intentar subir un archivo con espacios -->
+
 Los formatos soportados incluyen imágenes (JPG, PNG, GIF, WebP), vídeos (MP4, WebM) y audios (MP3, OGG, WAV).
 
 ## Vistas de la galería
@@ -57,8 +65,8 @@ Desde el panel de propiedades o la galería, el GM puede realizar las siguientes
 
 | Acción | Descripción |
 |---|---|
-| **Renombrar** | Cambia el nombre del archivo. El sistema valida que el nombre sea seguro (sin caracteres especiales ni rutas). |
-| **Eliminar** | Borra el archivo con confirmación previa para evitar borrados accidentales. |
+| **Renombrar** | Cambia el nombre del archivo. El nombre nuevo debe cumplir la misma regla que al subir (letras sin tildes, números, `-`, `_` y puntos, sin espacios). Sirve también para **corregir el nombre de archivos antiguos** que se subieron con espacios o caracteres especiales (por ejemplo, de `Plaza Neri web.mp3` a `Plaza_Neri_web.mp3`). |
+| **Eliminar** | Borra el archivo con confirmación previa para evitar borrados accidentales. Funciona con **cualquier archivo** de la Biblioteca, sea cual sea su nombre, y libera su espacio. Si un archivo no se puede eliminar, el aviso explica el motivo. |
 | **Copiar URL** | Copia al portapapeles la URL del archivo con un clic. Útil para pegarla en editores de texto enriquecido (descripciones de Retos, Misiones, etc.). |
 
 ## Subcarpeta player_images
@@ -69,7 +77,7 @@ Si la Aventura tiene Retos de tipo Compartir Foto donde los Players ya han subid
 
 En la cabecera de la Biblioteca se muestra el **espacio total ocupado** por la Aventura, calculado recursivamente (incluyendo la subcarpeta `player_images/`). Este indicador ayuda al GM a controlar el consumo de su Licencia.
 
-Cada Aventura tiene un límite de almacenamiento asociado a su Licencia. Si el espacio está agotado, cualquier intento de subida desde la Biblioteca (o desde cualquier formulario de la Aventura) mostrará el aviso **"Límite de almacenamiento alcanzado"**. Para liberar espacio, el GM puede eliminar archivos antiguos o ampliar su Licencia.
+Cada Aventura tiene un límite de almacenamiento asociado a su Licencia, y se aplica **siempre**: al llegar al 100 %, cualquier intento de subida desde la Biblioteca (o desde cualquier formulario de la Aventura) muestra el aviso **«Límite de espacio alcanzado»**, con el espacio ocupado y el que permite la Licencia. Para seguir subiendo, el GM puede eliminar archivos antiguos o ampliar el espacio de la Licencia con un [Booster](../aventuras/configuracion.md#-ampliar-el-espacio-con-boosters) (+100 MB cada uno).
 
 :::tip 👑 Para el Game Master
 Usa la Biblioteca de Medios para centralizar todos los assets multimedia de tu Aventura. En lugar de subir la misma imagen varias veces en distintos Retos, súbela una vez a la Biblioteca y copia su URL para reutilizarla. Esto ahorra espacio y facilita la gestión.

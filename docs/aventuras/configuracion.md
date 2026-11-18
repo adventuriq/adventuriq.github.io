@@ -89,7 +89,7 @@ El primer apartado de la ficha, **Datos generales**, recoge los campos básicos 
 | **Estado** | **Published** (jugable por Players) o **Draft** (solo jugable por Game Masters y Game Designers asignados). Al cambiarlo, la Aventura **se guarda sola** (con el resto del formulario) y una ventana confirma el resultado. También se puede cambiar desde el listado de Aventuras. Ver [Publicar una Aventura](publicar-aventura). |
 | **Idioma por defecto** | Idioma principal de la Aventura. Se pueden añadir hasta 9 traducciones adicionales (10 idiomas en total). |
 | **Zona Horaria** | Zona horaria que aplica a las fechas de la Aventura. |
-| **Licencia de Aventura** | Apartado propio con la Licencia activa (tipo, fecha de compra y caducidad), los Tokens restantes y los botones **Asignar licencia** e **Ir a la Tienda**. |
+| **Licencia de Aventura** | Apartado propio con la Licencia activa (tipo, fecha de compra y caducidad), los Tokens restantes, el **Espacio** ocupado frente al límite de la Licencia, los **Boosters** aplicados y los botones **Asignar licencia**, **Aplicar booster** e **Ir a la Tienda**. Ver [Ampliar el espacio con Boosters](#-ampliar-el-espacio-con-boosters). |
 
 ### 🎫 Asignar una Licencia
 
@@ -99,6 +99,55 @@ Al pulsar **Asignar licencia** se abre el selector de Licencias. Cada Licencia d
 
 1. Si tienes muchas, usa el **filtro por tipo** (cada pastilla indica cuántas hay de ese tipo), el **orden** (más recientes, más antiguas o por tipo) o el **buscador**. Si la lista es larga, pulsa **Mostrar más** para cargar la siguiente tanda.
 2. Pulsa una Licencia para marcarla y después **Seleccionar**, o haz **doble clic** sobre ella para elegirla directamente.
+
+:::info Licencias Parking
+En el selector también aparecen tus **Licencias Parking** (insignia con una «P»), que **aparcan** la Aventura: conservan todo su contenido, sus archivos, el progreso de los Players y sus fotos, pero la Aventura no se puede publicar ni jugar. Solo se pueden elegir si la Aventura **no está publicada**: con la Aventura publicada aparecen desactivadas con el texto «Despublica la Aventura para poder asignarle un Parking.». Más información en [Licencia Parking](../tokens.md#-licencia-parking-aparcar-una-aventura).
+:::
+
+### 🚀 Ampliar el espacio con Boosters
+
+Cada Licencia de Aventura tiene un límite de espacio para las imágenes, vídeos y audios de la Aventura. Si se te queda corto, puedes ampliarlo con un **Booster**: una ampliación que compras en la Tienda y aplicas a la Licencia de una Aventura. Hoy existe el Booster de espacio, que suma **+100 MB** cada vez (75 MB → 175 MB → 275 MB…), y se pueden aplicar varios a la misma Licencia.
+
+En el apartado **Licencia de Aventura** ves:
+
+- **Espacio**: lo que ocupa la Aventura frente al límite de su Licencia, con una barra que se vuelve naranja a partir del 85 % y roja al llegar al 100 %.
+- **Boosters**: cuántos Boosters tiene aplicados la Licencia, cuántos MB suman, el **límite base** de la Licencia y en qué fechas se aplicaron.
+
+![Apartado Licencia de Aventura con las filas Espacio y Boosters y los botones Asignar licencia, Aplicar booster e Ir a la Tienda](/img/gamifier-licencia-aventura-boosters.png)
+
+Hay un Booster de espacio para cada periodo de Licencia, y cada uno solo se aplica a una Licencia de su tipo:
+
+| Producto de la Tienda | Para qué Licencias |
+|---|---|
+| **Ampliación espacio Aventura Mensual (+100MB)** | Licencias de Aventura **mensuales** |
+| **Ampliación espacio Aventura Anual (+100MB)** | Licencias de Aventura **anuales** (modo individual o equipo) y el Parking anual |
+
+**Para aplicar un Booster:**
+
+1. Compra el Booster que corresponde a tu Licencia en la Tienda (botón **Ir a la Tienda** del apartado). Aparece en tu cuenta nada más completarse el pago.
+2. Abre la Aventura y baja al apartado **Licencia de Aventura**.
+3. Pulsa **Aplicar booster**. Se abre la ventana **Boosters de licencia**, con la Licencia, si es **Licencia mensual** o **Licencia anual**, su límite de espacio actual y tus Boosters disponibles (tipo y fecha de compra). Los que sirven para esa Licencia aparecen primero; los del otro periodo, desactivados con el motivo «Solo para licencias mensuales» o «Solo para licencias anuales».
+4. Elige un Booster y pulsa **Aplicar booster**. Aparece la confirmación con el límite antes y después (por ejemplo, «El límite de espacio pasará de 275 MB a 375 MB»).
+5. Pulsa **Confirmar**. Aparece el mensaje «Booster aplicado» y el apartado muestra el nuevo límite en **Espacio** y el Booster en **Boosters**.
+
+![Ventana Boosters de licencia sobre una Licencia anual: dos Boosters anuales disponibles (uno seleccionado) y dos mensuales desactivados con el motivo Solo para licencias mensuales](/img/gamifier-boosters-de-licencia-periodo.png)
+
+![Confirmación en la ventana Boosters de licencia: ¿Sumar 100 MB a la licencia? El límite de espacio pasará de 275 MB a 375 MB, con los botones Cancelar y Confirmar](/img/gamifier-boosters-de-licencia-confirmar.png)
+
+Si no tienes ningún Booster válido para esa Licencia, la ventana te indica cuál necesitas (por ejemplo, «Esta licencia es anual y tus boosters disponibles son para licencias mensuales…») y te ofrece **Ir a la Tienda**.
+
+:::warning El Booster se queda en la Licencia
+Un Booster aplicado **no se puede deshacer** ni pasar a otra Licencia. Si más adelante la Aventura cambia de Licencia (por ejemplo, al renovarla con una Licencia nueva), la nueva vuelve a su límite base y haría falta otro Booster. Si compraste un Booster del periodo equivocado, contacta con soporte.
+:::
+
+**Cuándo no se puede aplicar un Booster.** El botón **Aplicar booster** aparece desactivado (y explica el motivo al pasar el ratón por encima) si:
+
+- no eres el **propietario de la Licencia** (un Game Designer ve el espacio y los Boosters aplicados, pero no puede aplicarlos);
+- la Licencia es de un **Plan Luna o Plan Mundo** (su límite lo marca el Plan) o no tiene límite de espacio;
+- la Licencia está caducada o desactivada;
+- acabas de elegir la Licencia y todavía **no has guardado** la Aventura: guárdala antes de aplicar el Booster.
+
+Tus Boosters, disponibles y usados, se consultan en tu [perfil](../gamifier/perfil-de-usuario.md#boosters-de-licencia), pestaña **Historial**.
 
 :::warning Estado Draft vs Published
 Mientras la Aventura esté en **Draft**, solo tú y los Game Designers asignados podréis jugarla (sin gastar Tokens). Cambia a **Published** cuando esté lista para los Players.

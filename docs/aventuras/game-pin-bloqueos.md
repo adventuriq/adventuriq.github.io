@@ -10,9 +10,9 @@ title: Game Pin y Bloqueos
 
 El **Game Pin** es el número que se genera automáticamente una vez se crea la Aventura. Es el código que los jugadores usan para cargar la Aventura en la Web App.
 
-Lo tienes siempre a mano en el **listado de Aventuras** del Gamifier: cada Aventura muestra en su propia fila el **GamePIN** y el **enlace directo para jugar** (Deep link) destacados, con un botón para copiar el enlace. En la ficha de la Aventura los encontrarás también en el apartado **Acceso a la Aventura**, junto al código QR.
+Lo tienes siempre a mano en el **listado de Aventuras** del Gamifier: cada Aventura muestra en su propia fila el **GamePIN** y la tarjeta **Acceso directo a la Aventura** con el enlace para jugar, un botón para copiarlo y otro para **descargar su QR listo para imprimir** (ver [Acceder a una Aventura](acceder-a-una-aventura.md#copiar-el-enlace-o-descargar-el-qr-desde-el-listado-de-aventuras)). En la ficha de la Aventura los encontrarás también en el apartado **Acceso a la Aventura**, junto al código QR.
 
-![Fila del listado de Aventuras con la imagen, la Licencia, el GamePIN y el enlace directo para jugar destacados y el botón de copiar](/img/gamifier-listado-enlace-jugar.png)
+![Fila del listado de Aventuras con la imagen, la Licencia y sus fechas, el GamePIN y la tarjeta Acceso directo a la Aventura con los botones de copiar y de QR](/img/gamifier-listado-licencia-fechas.png)
 
 ## Códigos de bloqueo
 

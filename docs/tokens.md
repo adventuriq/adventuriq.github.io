@@ -2,7 +2,7 @@
 sidebar_position: 4
 title: 🪙 Tokens y Licencias
 description: Cómo funcionan los Tokens y las Licencias en AdventuriQ — precios, planes anuales, ventajas y preguntas frecuentes sobre el modelo económico de la plataforma.
-keywords: [tokens, licencias, precios, plan luna, plan mundo, adventuriq, gamificación, coste, presupuesto, pay per use, branderización]
+keywords: [tokens, licencias, precios, plan luna, plan mundo, parking, booster, espacio, adventuriq, gamificación, coste, presupuesto, pay per use, branderización]
 ---
 
 # 🪙 Tokens y Licencias
@@ -46,6 +46,8 @@ AdventuriQ ofrece cuatro tipos de Licencia por Aventura, según el **modo de jue
 | **Licencia Anual (individual)** | 200 € / año | 12 meses desde la publicación | Individual | Ranking de jugadores |
 | **Licencia Anual (equipo)** | 400 € / año | 12 meses desde la publicación | Equipo | Ranking de jugadores + ranking por equipos |
 
+Además de estas cuatro, existe la **[Licencia Parking](#-licencia-parking-aparcar-una-aventura)** (mensual o anual), que no sirve para jugar sino para **conservar** una Aventura que no se está usando, a un coste menor.
+
 La elección entre **Individual y Equipo** se hace en el momento de [crear la Aventura](aventuras/crear-aventura) y determina si los Players compiten solo a nivel individual o también agrupados en equipos (clanes). Con una Licencia de Equipo, además del ranking individual, se generan rankings por equipo y del jugador dentro de su equipo.
 
 :::tip 🕐 La caducidad empieza cuando publicas, no cuando compras
@@ -66,6 +68,8 @@ Si **renuevas** la Licencia de una Aventura que ya está publicada, la Licencia 
 
 Cuando una Licencia vence, la Aventura deja de ser accesible para los Players: en la revisión automática de cada noche, la Aventura publicada se **despublica** y recibes un correo con los motivos. La **configuración y el contenido se mantienen intactos** — solo tienes que activar una Licencia nueva para que vuelva a ser jugable.
 
+Si no vas a jugarla durante un tiempo pero quieres conservarla tal cual (con el progreso y las fotos de los Players), asígnale una [Licencia Parking](#-licencia-parking-aparcar-una-aventura).
+
 :::info
 El sistema notifica al Game Master con antelación antes de la caducidad, para que puedas renovar sin interrupciones.
 :::
@@ -77,6 +81,48 @@ La Licencia se gestiona desde la [configuración de la Aventura](aventuras/confi
 - **Mensual** si tu Aventura dura 1-3 meses: máxima flexibilidad, pagas solo por lo que usas.
 - **Anual** si tu Aventura va a estar activa 4 meses o más: te ahorras la gestión de renovaciones y optimizas coste.
 - **[Planes Luna o Mundo](#-alternativa-planes-anuales)** si necesitas Players ilimitados, varias Aventuras o quieres branderizar la experiencia con tu identidad visual.
+:::
+
+## 🚗 Licencia Parking: aparcar una Aventura
+
+La **Licencia Parking** sirve para **aparcar** una Aventura que no se está jugando y conservarla entera a un coste menor que una Licencia de Aventura. Mientras está aparcada:
+
+- Se conserva **todo**: el contenido, los archivos, el progreso de los Players y sus fotos.
+- La Aventura **no se puede publicar ni jugar**.
+
+| Parking | Duración |
+|---|---|
+| **Parking Aventura (Mensual)** | 31 días desde que se asigna a la Aventura |
+| **Parking Aventura (Anual)** | 12 meses desde que se asigna a la Aventura |
+
+A diferencia de las Licencias de Aventura, que empiezan a contar al publicar, el Parking empieza a contar **en cuanto lo asignas**. Se compra en la Tienda y llega a tu cuenta como cualquier otra Licencia.
+
+### Aparcar una Aventura
+
+1. Abre la Aventura desde el listado de Aventuras.
+2. Si está publicada, cambia su estado a **Draft** y guarda: con la Aventura publicada, las Licencias Parking aparecen desactivadas en el selector con el texto «Despublica la Aventura para poder asignarle un Parking.».
+3. En el apartado **Licencia de Aventura**, pulsa **Asignar licencia**.
+4. Elige **«Parking Aventura (Mensual)»** o **«Parking Aventura (Anual)»** (insignia con una «P») y pulsa **Seleccionar**.
+5. Pulsa **Guardar Aventura**.
+
+El apartado muestra la insignia de Parking y el aviso **«Aventura aparcada»**, que indica **hasta qué día** dura el Parking.
+
+<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-licencia-parking-aparcada.png — Apartado Licencia de Aventura de una Aventura aparcada, con la insignia y el aviso «Aventura aparcada» (requiere una Licencia Parking en la cuenta de test) -->
+
+<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-licencia-parking-selector-publicada.png — Selector de Licencias en una Aventura publicada, con el Parking desactivado y su texto -->
+
+### Volver a jugar una Aventura aparcada
+
+1. Abre la Aventura aparcada y pulsa **Asignar licencia**.
+2. Elige una **Licencia de Aventura** (mensual o anual) y guarda.
+3. Cambia el estado a **Published**. Desde ese momento empieza a contar la nueva Licencia.
+
+Si intentas publicar una Aventura aparcada sin cambiarle la Licencia, la ventana de motivos te lo indica: «Está aparcada con un Parking: asígnale una licencia de Aventura para poder publicarla.» (ver [¿Por qué no se ha podido publicar?](aventuras/publicar-aventura.md#-por-qué-no-se-ha-podido-publicar)).
+
+:::note Lo que conviene saber del Parking
+- **Espacio**: el Parking mantiene el límite de espacio que tenía la última Licencia de la Aventura, Boosters incluidos. Lo que quepa en ese límite se conserva entero.
+- **No sirve para** publicar, crear una Aventura nueva, duplicar ni importar: esas pantallas no ofrecen las Licencias Parking.
+- **Al caducar el Parking**, la Aventura sigue sin poder publicarse, igual que con una Licencia caducada. Para seguir conservándola, asígnale otro Parking o una Licencia de Aventura.
 :::
 
 ## 🎟️ Tokens de juego
@@ -267,7 +313,15 @@ Si quieres monetizar tu Aventura vendiendo acceso individual a tus Players, cons
 
 Cada Licencia de Aventura incluye un **límite de almacenamiento** para archivos multimedia (imágenes, vídeos y audios). El espacio se consume al subir archivos desde cualquier formulario del Gamifier: Aventura, Misión, Reto, Objeto Digital, POI, Clan o la [Biblioteca de Medios](gamifier/biblioteca-de-medios.md).
 
-Si una Aventura alcanza su límite, la plataforma bloquea nuevas subidas y muestra el aviso "Límite de almacenamiento alcanzado". Para liberar espacio, elimina archivos antiguos desde la Biblioteca de Medios o amplía tu Licencia.
+Si una Aventura llega al **100 %** de su espacio, el Game Master ya no puede subir más archivos, desde ningún formulario ni desde la Biblioteca de Medios. Al intentarlo aparece el aviso **«Límite de espacio alcanzado»**, con el espacio ocupado y el que permite la Licencia. Para seguir subiendo, borra archivos que no uses desde la Biblioteca de Medios o amplía el espacio de la Licencia con un [Booster](aventuras/configuracion.md#-ampliar-el-espacio-con-boosters) (+100 MB cada uno).
+
+<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-biblioteca-limite-espacio.png — Aviso «Límite de espacio alcanzado» al intentar subir un archivo con el espacio lleno (requiere una Aventura de test al 100 %) -->
+
+:::info Las fotos de los Players no se cortan de golpe
+Para no interrumpir una partida en curso, los Players pueden seguir subiendo fotos y vídeos en los Retos de [Subir Foto](retos/subir-foto.md) con un **margen de cortesía** por encima del límite (por defecto, hasta el 150 % del espacio). Si la Aventura supera también ese margen, el Player ve el mensaje «Esta Aventura se ha quedado sin espacio y no admite más fotos ni vídeos. Avisa a quien la organiza.».
+:::
+
+Tu [perfil](gamifier/perfil-de-usuario.md#avisos) te avisa cuando una Aventura supera el 85 % de su espacio.
 
 El espacio ocupado se puede consultar en la cabecera de la Biblioteca de Medios y en el listado de Aventuras, donde se muestra el indicador de consumo (ej. "127 MB / 1.46 GB").
 

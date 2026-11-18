@@ -37,6 +37,23 @@ Al pulsar **+ Nuevo Reto** se abre el catálogo **Elige el tipo de Reto**: una t
 2. O filtra por **familia**: **Preguntas** (Pregunta / Respuesta y sus variantes con audio y vídeo, Preguntas Encadenadas, Respuesta Exacta y Respuesta Libre), **Participación** (Subir Foto, Llamada a la Acción y Nube de Palabras) o **Experiencias** (Ruleta de la Fortuna y Realidad Aumentada). Cada pastilla indica cuántos tipos contiene.
 3. Pulsa la tarjeta del tipo que quieras para crear el Reto.
 
+### Título y descripción
+
+Elegido el tipo, el Gamifier solo te pide lo básico: el **Título** (obligatorio) y, si quieres, la **Descripción**, en el idioma por defecto de la Aventura. Pulsa **Crear Reto**.
+
+Si lo creas desde la ficha de una **Misión** (botón **+ Nuevo Reto** de su apartado **Retos**), el tipo se elige en la ventana **Crear Reto - Seleccionar tipo** y el título y la descripción en **Crear Reto - Información básica**, donde **Volver** te deja cambiar el tipo:
+
+![Ventana Crear Reto - Información básica: tipo elegido, idioma por defecto de la Aventura, Título del Reto, Descripción y botón Crear Reto](/img/gamifier-reto-crear.png)
+
+- **Creado desde una Misión**: el Reto queda enlazado a ella y vuelves a la ficha de la Misión, donde aparece en su apartado **Retos**.
+- **Creado desde la Aventura**: se abre directamente la ficha del Reto.
+
+Para terminar de configurarlo, abre el Reto (botón de editar en el apartado **Retos**): su ficha muestra todos los apartados (Datos, Código, Llave, Opciones, Imágenes, Traducciones, Localización, Objetos Digitales y la configuración propia del tipo). Lo que no aparece al crear se guarda con sus valores por defecto.
+
+:::tip ¿Un Reto parecido a otro que ya tienes?
+[Duplícalo](../misiones/duplicar-misiones-y-retos.md) con todo su contenido y cambia solo lo que necesites.
+:::
+
 :::tip Crea los Retos desde la Misión
 Si pulsas **+ Nuevo Reto** desde el apartado **Retos** de la ficha de la Aventura, el Gamifier te avisa de que ese Reto no quedará enlazado a ninguna Misión (y no será visible hasta que lo enlaces). Para que aparezca directamente en la Aventura, créalo desde la ficha de la Misión.
 :::

@@ -14,6 +14,7 @@ const sidebars: SidebarsConfig = {
       label: '🎮 Aventuras',
       items: [
         'aventuras/crear-aventura',
+        'aventuras/exportar-importar-aventura',
         'aventuras/configuracion',
         'aventuras/video-portada',
         'aventuras/terminos-y-condiciones',
@@ -45,6 +46,7 @@ const sidebars: SidebarsConfig = {
         'misiones/objetos-digitales',
         'misiones/notificaciones',
         'misiones/condiciones-finalizacion',
+        'misiones/duplicar-misiones-y-retos',
       ],
     },
     {

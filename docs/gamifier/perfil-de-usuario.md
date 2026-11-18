@@ -17,7 +17,7 @@ Tu perfil del Gamifier es tu **panel de control**: de un vistazo sabes cuántos 
 
 - **¿Cuántos Tokens me quedan y en qué los he gastado?** Saldo actual y cada suma y resta, con el saldo que quedó después.
 - **¿Está funcionando mi Aventura?** Accesos de Players de los últimos 30 días, tendencia y gráfico de 12 meses.
-- **¿Se me acaba algo?** Avisos automáticos de Tokens bajos, Licencias que caducan y Aventuras cerca de su límite de espacio.
+- **¿Se me acaba algo?** Avisos automáticos de Tokens bajos, Licencias o Plan que caducan, Aventuras cerca de su límite de espacio y Boosters sin aplicar.
 - **¿Cuándo caduca mi Plan o mi Licencia?** Fechas de caducidad e historial de cada Licencia.
 
 ## 📍 Cómo acceder
@@ -75,9 +75,13 @@ La imagen se **recorta en cuadrado** (centrada) automáticamente, y la nueva fot
 
 El perfil te avisa automáticamente de:
 
-- **Tokens agotados o bajos**, con un enlace para comprar más (no aparece si tienes un Plan activo).
-- **Licencias que caducan** en los próximos 30 días.
+- **Tokens agotados o bajos** (por defecto, 5 o menos), con un enlace para comprar más (no aparece si tienes un Plan activo).
+- **Licencias que caducan pronto**, tanto de Aventura como de **Game Designer**.
+- Tu **Plan Luna o Mundo**, si caduca pronto.
 - **Aventuras que superan el 85 %** de su espacio.
+- **Boosters sin aplicar**: Boosters comprados que todavía no has aplicado a ninguna Licencia (ver [Ampliar el espacio con Boosters](../aventuras/configuracion.md#-ampliar-el-espacio-con-boosters)).
+
+![Avisos del perfil: una Aventura que ocupa el 88 % del espacio de su Licencia y cuatro Boosters sin aplicar](/img/gamifier-perfil-avisos-boosters.png)
 
 ![Aviso del perfil: una Aventura que supera el espacio de su Licencia](/img/gamifier-perfil-avisos.png)
 
@@ -113,7 +117,7 @@ Muestra **los accesos de Players** a tus Aventuras, del más reciente al más an
 
 ## 🧾 Pestaña Historial
 
-La pestaña tiene cuatro bloques: **Histórico Licencias**, **Histórico Tokens**, **Movimientos de tokens** y **Movimientos de licencias**.
+La pestaña tiene cuatro bloques: **Histórico Licencias**, **Histórico Tokens**, **Movimientos de tokens** y **Movimientos de licencias**. Si tienes algún Booster, aparece además el bloque **Boosters de licencia**.
 
 ### Histórico Licencias e Histórico Tokens
 
@@ -122,6 +126,12 @@ La pestaña tiene cuatro bloques: **Histórico Licencias**, **Histórico Tokens*
 **Histórico Tokens** muestra tus **compras** de Tokens y el botón **Comprar tokens**, que abre la tienda de AdventuriQ en otra pestaña. Las compras son solo una parte del saldo: cada suma y cada resta está en **Movimientos de tokens**.
 
 ![Pestaña Historial: Licencias de Aventura y compras de Tokens](/img/gamifier-perfil-historial.png)
+
+### Boosters de licencia
+
+Aparece cuando tienes al menos un [Booster](../aventuras/configuracion.md#-ampliar-el-espacio-con-boosters). La cabecera indica cuántos tienes **Disponibles** y la tabla lista cada uno: su tipo (**Licencia mensual** o **Licencia anual**), cuándo se compró, el pedido de la Tienda, si está **Disponible** o **Usado** y, si está usado, en qué Licencia y Aventura se aplicó y cuándo.
+
+![Bloque Boosters de licencia del Historial con Boosters anuales y mensuales, disponibles y usados](/img/gamifier-perfil-boosters-de-licencia.png)
 
 ### Movimientos de tokens
 
@@ -154,6 +164,7 @@ Muestra lo que ha pasado con cada una de tus Licencias, tanto de Aventura como d
 | **Alta** | Comprada, dada de alta, añadida por AdventuriQ, del Plan Luna, del Plan Mundo, creada al importar Game Designers |
 | **Uso** | Asignada, liberada, empieza la vigencia, caducidad modificada |
 | **Cambios de AdventuriQ** | Modificada, desactivada y eliminada por AdventuriQ |
+| **Boosters** | Booster comprado, Booster añadido por AdventuriQ, Booster aplicado a la licencia (con el límite de espacio antes y después) |
 
 ### Movimientos «reconstruido»
 

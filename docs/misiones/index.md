@@ -25,6 +25,7 @@ Una Misión define **qué Retos** ve el Player, **cuándo** los puede jugar (blo
 | [Objetos Digitales](./objetos-digitales.md) | Objetos Digitales entregados al completar la Misión, con condiciones de obtención configurables mediante bloques AND/OR. |
 | [Notificaciones](./notificaciones.md) | Sistema de notificaciones (llamadas) que el Player recibe al completar la Misión — simulaciones de llamada telefónica con audio y avatar. |
 | [Condiciones de Finalización](./condiciones-finalizacion.md) | Cuándo se considera una Misión finalizada para el Player, con sistema de condiciones combinables mediante bloques AND/OR. |
+| [Duplicar Misiones y Retos](./duplicar-misiones-y-retos.md) | Copia completa de una Misión o de un Reto dentro de la misma Aventura, con un solo clic. |
 
 ## Antes de empezar
 

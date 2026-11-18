@@ -2,7 +2,7 @@
 sidebar_position: 0
 title: 🚀 Crear una Aventura
 description: Cómo crear una nueva Aventura en AdventuriQ usando el asistente de creación paso a paso — selección de licencia, fechas, idioma, título y estructura inicial.
-keywords: [aventura, crear, nueva, asistente, wizard, licencia, gamifier, adventuriq]
+keywords: [aventura, crear, nueva, asistente, wizard, licencia, plan mundo, caducidad, duplicar, gamifier, adventuriq]
 ---
 
 # 🚀 Crear una Aventura
@@ -17,11 +17,13 @@ Crear una Aventura es el primer paso para construir tu experiencia gamificada en
 
 Para crear una Aventura necesitas:
 
-- Tener una **Licencia disponible** (sin asignar). Si no tienes ninguna, puedes comprarla desde el panel de resumen o desde la [Tienda de Tokens](/tokens).
+- Tener una **Licencia disponible** (sin asignar y sin caducar), o un **Plan Mundo** activo, que permite emitir la Licencia al crear la Aventura (ver [Con Plan Mundo](#-con-plan-mundo-emitir-la-licencia-al-crear-la-aventura)). Si no tienes ninguna, puedes comprarla desde el panel de resumen o desde la [Tienda de Tokens](/tokens).
 - Contar con **Tokens** suficientes para que los Players puedan acceder cuando publiques la Aventura. Los Tokens no se consumen al crear la Aventura, solo cuando los Players la inician.
 
 :::tip ¿No tienes licencias?
-Desde el listado de Aventuras puedes ver cuántas licencias tienes disponibles en la tarjeta **Licencias Disponibles**. Si el número es 0, haz clic en **Comprar Licencias** para adquirir una nueva.
+Desde el listado de Aventuras puedes ver cuántas licencias tienes disponibles en la tarjeta **Licencias Disponibles**. Cuenta las Licencias de Aventura **sin asignar y sin caducar**: exactamente las que te aparecerán al crear la Aventura. Si el número es 0, haz clic en **Comprar Licencias** para adquirir una nueva. Si tienes un **Plan Mundo**, no hace falta comprar: emite la Licencia desde el propio modal de creación.
+
+La tarjeta **Game Designers** funciona igual: cuenta las Licencias de Game Designer sin asignar que no han caducado.
 :::
 
 ## 🎯 Iniciar el asistente
@@ -53,6 +55,38 @@ Consulta los precios de cada tipo de licencia y el funcionamiento de los Tokens 
 :::note
 La licencia queda vinculada a la Aventura en el momento de crearla. Puedes ver qué licencia tiene asignada cada Aventura desde su ficha, en el apartado **Licencia de Aventura**. Si más adelante necesitas cambiarla, pulsa allí **Asignar licencia**: se abre el selector de Licencias con filtro por tipo, orden y buscador (ver [Asignar una Licencia](configuracion#-asignar-una-licencia)).
 :::
+
+### 🌍 Con Plan Mundo: emitir la Licencia al crear la Aventura
+
+Si tienes un **Plan Mundo** activo, no necesitas comprar Licencias para crear Aventuras. Al pulsar **+ Nueva Aventura**, el modal muestra arriba un aviso con tu **Plan Mundo**: el nombre del plan, el espacio usado frente a su límite y la fecha de caducidad, junto al botón **Emitir Licencia Mundo**.
+
+1. Pulsa **Emitir Licencia Mundo**.
+2. Elige el modo de juego (**Individual** o **Equipo**) y confirma.
+3. La nueva Licencia Mundo aparece en la lista **ya seleccionada**: pulsa **Crear Aventura** y continúa con el asistente.
+
+<!-- 📸 CAPTURA PENDIENTE: /img/gamifier-crear-aventura-plan-mundo.png — Modal «Nueva Aventura» con el aviso del Plan Mundo y el botón Emitir Licencia Mundo (requiere un usuario de test con Plan Mundo) -->
+
+:::note Espacio del Plan agotado
+Si el espacio de tu Plan Mundo está agotado, el botón **Emitir Licencia Mundo** aparece desactivado y, al pasar el ratón por encima, te indica el motivo.
+:::
+
+### 📆 Fechas de la Licencia en el listado de Aventuras
+
+En el **listado de Aventuras**, bajo la imagen de cada Aventura, la tarjeta de la Licencia muestra su **tipo**, la fecha de **Compra** y la fecha en que **Caduca**. Así sabes de un vistazo cuándo tienes que renovar, sin abrir cada Aventura.
+
+![Fila del listado de Aventuras con la tarjeta de la Licencia: tipo, fecha de compra y fecha de caducidad](/img/gamifier-listado-licencia-fechas.png)
+
+Si la Licencia **ha caducado**, la tarjeta se vuelve naranja con el aviso **«Licencia caducada»** e indica el tipo, la fecha de compra y cuándo caducó (**«Caducó»**).
+
+![Fila del listado con la tarjeta naranja Licencia caducada: tipo, fecha de compra y fecha en que caducó](/img/gamifier-listado-licencia-caducada.png)
+
+| Lo que ves en «Caduca» | Qué significa |
+|---|---|
+| Una fecha | La Licencia está en marcha y caduca ese día. |
+| **Sin caducidad** | La Licencia todavía no tiene fecha de caducidad porque aún no ha empezado a contar (empieza al [publicar](publicar-aventura.md) la Aventura). No quiere decir que no vaya a caducar nunca. |
+| **Licencia caducada** (tarjeta naranja) | La Licencia ya ha caducado: asígnale una nueva para que vuelva a ser jugable. |
+
+Las Aventuras sin Licencia muestran **«Sin licencia asignada»**.
 
 ## 📅 Paso 1 — Fechas e idioma
 
@@ -144,6 +178,8 @@ Además del asistente de creación, el Game Master puede **duplicar** una Aventu
 
 ### Cómo clonar
 
+Solo puede duplicar una Aventura quien puede gestionarla (su Game Master propietario o el Game Designer asignado como creador).
+
 1. En el listado de Aventuras, localizar la Aventura que se quiere duplicar.
 2. Pulsar el botón **"Duplicar"** (icono de copia) en la columna de acciones de esa fila.
 3. Se abre la ventana **"Duplicar Aventura"** con las Licencias disponibles en la cuenta: cada fila muestra el icono del tipo, el ID, el tipo, la temporalidad y la fecha de compra.
@@ -155,6 +191,8 @@ Además del asistente de creación, el Game Master puede **duplicar** una Aventu
 
 ### Qué se clona
 
+Todo se crea **de nuevo** en la copia: cada Misión, Reto, Objeto Digital, Llave digital, mapa, Punto de Interés y Clan es un elemento nuevo e independiente del original. Puedes editar o borrar cualquier cosa en la copia sin que cambie la Aventura original (ni al revés).
+
 La copia incluye **todo** el contenido de diseño de la Aventura original:
 
 - **Misiones**, con sus llamadas y notificaciones.
@@ -163,7 +201,8 @@ La copia incluye **todo** el contenido de diseño de la Aventura original:
 - **Condiciones de finalización** de Aventura y de Misión, y condiciones de entrega de Objetos, **con sus grupos Y/O** tal como estaban.
 - **Tipos de voto** de las Votaciones e interruptores de Votaciones y Nube de Palabras.
 - **Opciones del Modo Arena**: cuenta atrás, puntos por rapidez y selección de Misiones.
-- **Puntos de Interés**, Clanes (sin miembros), Etiquetas, traducciones, Términos y Condiciones, archivos multimedia (carpeta `user_images/`) y configuración.
+- **Puntos de Interés**, Clanes (sin miembros), Etiquetas, traducciones, Términos y Condiciones y configuración.
+- **Todos los archivos multimedia de la Aventura**: imágenes, **vídeos (también el de portada y el de finalización)**, audios, modelos de Realidad Aumentada, imágenes de mapas, de Objetos Digitales, de POI, de Clanes y de notificaciones. No hay que volver a subir nada: los textos con imágenes o enlaces a archivos de la Aventura apuntan a los archivos de la copia.
 - **Mapas y puntos de localización propios de la copia**: puedes mover un punto GPS o retocar un mapa indoor en la copia sin que cambie la Aventura original (ni al revés).
 
 ### Qué NO se clona
@@ -178,7 +217,7 @@ La copia incluye **todo** el contenido de diseño de la Aventura original:
 | **Votos emitidos** | Los Tipos de voto sí se copian; los votos de los Players, no. |
 | **Códigos de premio de un solo uso** | Duplicarlos entregaría el mismo código en dos Aventuras. |
 | **Aceptaciones de Términos y Condiciones** | Los Players de la copia tienen que aceptarlos de nuevo. |
-| **Archivos de vídeo de portada** | Se conserva el nombre del vídeo configurado, pero el archivo no se copia: hay que volver a subirlo. |
+| **Game Designers asignados** | La copia no hereda los Game Designers asignados a la Aventura original: hay que asignarlos de nuevo si deben trabajar en ella. |
 
 ### Notas importantes
 
@@ -192,6 +231,11 @@ La copia incluye **todo** el contenido de diseño de la Aventura original:
 
 :::tip 👑 Para el Game Master
 Si impartes la misma formación a varios grupos, clona la Aventura tras diseñarla. Cada grupo tendrá su propia copia con GamePIN distinto, ranking independiente y sin interferencias entre grupos.
+:::
+
+:::info ¿Solo una parte, o una copia fuera de AdventuriQ?
+- Para copiar solo una **Misión** o un **Reto** dentro de la misma Aventura, usa [Duplicar Misiones y Retos](../misiones/duplicar-misiones-y-retos.md).
+- Para guardar una **copia de seguridad en un archivo** o llevar la Aventura **a otra cuenta**, usa [Exportar e importar una Aventura](exportar-importar-aventura.md).
 :::
 
 ## 🔜 Siguientes pasos

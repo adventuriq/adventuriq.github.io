@@ -101,6 +101,33 @@ Un Game Designer está **siempre vinculado** a al menos un Game Master. La relac
 - Un GM puede tener **varios GDs** vinculados (equipo de diseño).
 - La asignación es por Aventura: tener un GD vinculado no le da acceso automático a todas las Aventuras — el GM asigna explícitamente cuáles puede editar.
 
+## 🔐 Qué Aventuras ve y gestiona cada rol
+
+Cada usuario solo ve y gestiona **sus propias** Aventuras:
+
+| Rol | Ve y gestiona |
+|---|---|
+| **Game Master** | Las Aventuras de las que es **propietario** (verlas, editarlas, publicarlas, duplicarlas, exportarlas, borrarlas, Game Board, Clasificación, estadísticas y Modo Arena), y solo **sus** Game Designers (los vinculados a su cuenta) con sus datos y Licencias. |
+| **Game Designer** | Solo las Aventuras en las que su Game Master le ha **asignado como creador** con **Asignar Game Designer**. Ya no ve las demás Aventuras de su Game Master aunque trabaje para él. En sus Aventuras trabaja con las mismas herramientas de diseño y seguimiento que el Game Master (editar, Game Board, Clasificación, Modo Arena, duplicar, exportar…), con las limitaciones de [Qué NO puede hacer](#qué-no-puede-hacer-un-game-designer). |
+| **Player** | El contenido, la Clasificación, las votaciones, los premios, la galería y el muro solo de las Aventuras en las que participa. Un Player no puede ver el progreso de otro ni borrarlo. |
+
+**Para que un Game Designer trabaje en una Aventura:**
+
+1. En el listado de Aventuras, pulsa el botón **Asignar Game Designer** (icono de flechas junto al **Creador** de la Aventura).
+2. Elige el Game Designer. Desde ese momento la Aventura aparece en su listado y puede gestionarla.
+
+Para que trabaje en varias Aventuras, asígnaselas una a una (cada Aventura tiene un creador). Tú conservas siempre el control de tus Aventuras, aunque las tengas asignadas a un Game Designer.
+
+**Si alguien abre algo que no es suyo** (por ejemplo, con un enlace antiguo a una Aventura, Misión o Reto de otra cuenta), el Gamifier muestra el aviso **«No tienes permiso sobre esta Aventura…»** y le devuelve al listado de Aventuras. Las pantallas que no corresponden a su rol muestran «No tienes permiso para abrir esa pantalla».
+
+![Aviso rojo No tienes permiso sobre esta Aventura sobre el listado de Aventuras del Gamifier](/img/gamifier-aviso-sin-permiso.png)
+
+Al eliminar uno de tus Game Designers, vuelves a tu listado de Game Designers.
+
+:::note Los Players no notan nada
+Los Players siguen uniéndose a las Aventuras con su GamePIN, enlace, QR o invitación y juegan como siempre (también sin conexión). Abrir a mano la dirección de una Aventura a la que no se han unido no muestra su contenido.
+:::
+
 ## Cómo se ve el Gamifier desde un Game Designer
 
 Cuando un Game Designer inicia sesión en el Gamifier, la interfaz es similar a la del Game Master pero con elementos ausentes:

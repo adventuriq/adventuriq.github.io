@@ -2,8 +2,8 @@
 sidebar_position: 4.5
 title: 🙋 Jugar sin registro (nickname)
 description: Activa el acceso por nickname para que tus Players entren a jugar una Aventura desde el enlace directo o el QR sin crear cuenta ni dar su email.
-keywords: [aventura, acceso, nickname, sin registro, invitado, game pin, enlace directo, qr, modo arena, adventuriq]
-last_updated: 2026-07-28
+keywords: [aventura, acceso, nickname, sin registro, invitado, game pin, enlace directo, qr, app instalada, modo arena, adventuriq]
+last_updated: 2026-11-18
 ---
 
 # 🙋 Jugar sin registro (nickname)
@@ -77,6 +77,8 @@ El Player abre el enlace directo de la Aventura o escanea su QR:
 ```
 https://play.adventuriq.com/#/{GamePIN}
 ```
+
+También puede entrar sin el enlace: en la pantalla de acceso de la Webapp, el botón **«¿Tienes un GamePIN, enlace o QR?»** le deja escribir el **GamePIN**, pegar el **enlace** o escanear el **QR**. Pulsa **Unirme** y llega a la misma pantalla del nickname. Es la forma de entrar desde la **App instalada en el ordenador**, que no tiene barra de direcciones donde pegar el enlace (ver [Acceder a una Aventura](acceder-a-una-aventura.md#sin-haber-iniciado-sesión)).
 
 En lugar de la pantalla de acceso habitual, ve el nombre de la Aventura y un único campo: **Nickname**. Esta pantalla es deliberadamente mínima: la imagen de la Aventura y el resto de su identidad visual aparecen en cuanto entra.
 

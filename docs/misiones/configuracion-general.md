@@ -15,7 +15,22 @@ La configuración general de una Misión es el punto de partida del formulario d
 
 ## Crear una Misión
 
-Para crear una nueva Misión, abre una Aventura en el Gamifier y localiza el apartado **Misiones** en la página de la Aventura. Pulsa el botón **+ Nueva Misión**. Se creará una Misión vacía con valores por defecto y se abrirá su formulario de edición.
+Para crear una nueva Misión, abre una Aventura en el Gamifier y localiza el apartado **Misiones** en la página de la Aventura.
+
+1. Pulsa el botón **+ Nueva Misión**.
+2. El formulario de creación solo pide lo básico: el **Título** (obligatorio: sin él, el botón **Crear Misión** está desactivado) y, si quieres, la **Descripción**, en el idioma por defecto de la Aventura.
+3. Pulsa **Crear Misión**.
+4. Se abre la **ficha completa** de la Misión, con todos sus apartados (Datos, Acceso por Código, Acceso por Llave digital, Opciones y disponibilidad, Imágenes, Traducciones, Condiciones de fin, Mapa, Objetos, Notificaciones y Retos), para que termines de configurarla y pulses **Guardar**.
+
+![Formulario Nueva Misión: apartado Traducciones con el idioma por defecto, los campos Título y Descripción y el botón Crear Misión](/img/gamifier-mision-crear.png)
+
+:::note Lo que no ves al crear
+Las opciones que no aparecen en el formulario de creación (visibilidad, jugabilidad, fechas, códigos, vídeo de YouTube…) se crean con sus valores por defecto y las cambias después desde la ficha. Si la Aventura tiene varios idiomas, al crear solo se rellena el idioma por defecto; los demás se añaden desde **Traducciones** en la ficha.
+:::
+
+:::tip ¿Quieres reutilizar una Misión que ya tienes?
+En lugar de crearla de cero, puedes [duplicarla](duplicar-misiones-y-retos.md) con todos sus Retos, Objetos y condiciones.
+:::
 
 La ficha de una Misión tiene el mismo diseño que la de la Aventura. En la **cabecera** se muestran la imagen, el nombre y el estado de la Misión, las cifras de **Retos**, **Objetos** y **Notificaciones** y el botón **Ver Aventura** para volver a la Aventura padre. Debajo, un **índice lateral** te lleva directamente a cada apartado (en el móvil, una barra de pastillas arriba), cada apartado es una tarjeta y la barra con **Guardar cabecera** y **Eliminar Misión** queda fija al pie mientras editas.
 

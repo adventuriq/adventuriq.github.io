@@ -1,8 +1,8 @@
 ---
 sidebar_position: 4
 title: 🔗 Acceder a una Aventura
-description: Las 3 rutas para que un Player vincule una Aventura a su cuenta de AdventuriQ — deep link, GamePIN manual y listado de Aventuras.
-keywords: [player, webapp, gamepin, deep-link, qr, aventura, vinculacion, acceder, adventuriq]
+description: Las rutas para que un Player entre en una Aventura de AdventuriQ — enlace directo o QR, GamePIN (también sin haber iniciado sesión) y listado de Aventuras.
+keywords: [player, webapp, gamepin, deep-link, acceso directo, qr, app instalada, aventura, vinculacion, acceder, adventuriq]
 ---
 
 # 🔗 Acceder a una Aventura
@@ -18,7 +18,7 @@ Existen **tres formas** de que una Aventura aparezca en el listado del Player:
 | Ruta | Cómo funciona | Cuándo usarla |
 |---|---|---|
 | **Deep link** | El Player pulsa un enlace o escanea un QR que el GM le comparte | Ruta preferida — sin fricción, un solo clic |
-| **GamePIN manual** | El Player teclea el código de 9 dígitos en la Webapp | Cuando el enlace no es práctico (dictado en persona, pantalla compartida) |
+| **GamePIN manual** | El Player teclea el código de 9 dígitos (o pega el enlace, o escanea el QR) en la Webapp, con o sin sesión iniciada | Cuando el enlace no es práctico (dictado en persona, pantalla compartida) o en la App instalada en el ordenador |
 | **Listado** | El Player abre una Aventura que ya tiene vinculada | Acceso cotidiano a Aventuras ya conocidas |
 
 Las dos primeras rutas son **mecanismos de vinculación**: asocian una Aventura nueva a la cuenta del Player. La tercera es simplemente **acceso recurrente** a una Aventura que ya fue vinculada en su momento.
@@ -45,8 +45,23 @@ Al pulsar **Adelante**, el Player tiene que aceptar los [Términos y Condiciones
 
 ![Pantalla de la Aventura tras pulsar un deep link — la vinculación ha ocurrido automáticamente y el Player ya ve la información de la Aventura](/img/webapp-acceder-deeplink-aterrizaje.png)
 
+### 📲 Si el Player tiene la App instalada
+
+Si el Player tiene la Webapp [instalada como App](../instalar-la-app.md) en **Android** o en el **ordenador** (Chrome o Edge), al pulsar el enlace o escanear el QR se abre **la App instalada** en lugar del navegador, y aterriza directamente en la Aventura. Si la App ya estaba abierta, no se abre una segunda ventana: la misma ventana navega a la Aventura.
+
+<!-- 📸 CAPTURA PENDIENTE: /img/webapp-acceder-qr-app-instalada.png — App instalada en Android abierta en la Aventura tras escanear el QR (requiere un móvil Android con la App instalada) -->
+
+:::warning Cuándo se sigue abriendo en el navegador
+- **iPhone y iPad**: iOS no permite que un enlace abra una App instalada desde la web. El enlace y el QR se abren en Safari y la Aventura funciona igual.
+- **App instalada desde la dirección antigua**: la App tiene que estar instalada desde `play.adventuriq.com`. Si se instaló desde `webapp.adventuriq.com`, los enlaces nuevos se abren en el navegador; basta con desinstalarla y volver a instalarla desde `play.adventuriq.com`.
+- **Android con otro navegador**: en Android la App debe haberse instalado desde **Chrome**. Si se añadió desde otro navegador es un simple acceso directo y los enlaces se abren en el navegador.
+- **Apps lectoras de QR**: algunas abren el enlace en su propio visor en lugar de pasarlo al sistema. Con la **cámara** del móvil funciona.
+
+Quien ya tenía la App instalada recibe este cambio automáticamente (Chrome actualiza la App en segundo plano, normalmente en menos de un día): no hace falta reinstalarla.
+:::
+
 :::tip 👑 Para el Game Master
-El deep link es la opción más cómoda tanto para ti como para tus Players. Lo tienes a mano en dos sitios: en el **listado de Aventuras** del Gamifier, en la fila de cada Aventura, destacado junto al **GamePIN** y con un botón para copiarlo; y en el detalle de la Aventura, sección **Acceso a la Aventura**, donde además está el QR. Comparte la URL por email, WhatsApp, intranet o cualquier canal digital. Si preparas una experiencia presencial (evento, gymkana, escape room), usa el **código QR** impreso en un cartel o folleto — funciona igual que el enlace.
+El deep link es la opción más cómoda tanto para ti como para tus Players. Lo tienes a mano en dos sitios: en el **listado de Aventuras** del Gamifier, en la tarjeta **Acceso directo a la Aventura** de cada fila, junto al **GamePIN**, con un botón para copiarlo y otro para **descargar su QR listo para imprimir** (ver [Copiar el enlace o descargar el QR](#copiar-el-enlace-o-descargar-el-qr-desde-el-listado-de-aventuras)); y en el detalle de la Aventura, sección **Acceso a la Aventura**. Comparte la URL por email, WhatsApp, intranet o cualquier canal digital. Si preparas una experiencia presencial (evento, gymkana, escape room), usa el **código QR** impreso en un cartel o folleto — funciona igual que el enlace.
 :::
 
 :::note Sin cuenta: entrar solo con un nickname
@@ -57,9 +72,44 @@ Si activas la opción **Jugar sin registro (nickname)** en las Opciones de la Av
 
 El **GamePIN** es un código numérico de **9 dígitos** que la plataforma asigna automáticamente a cada Aventura cuando se crea. Es útil cuando compartir un enlace no resulta práctico — por ejemplo, si el Game Master dicta el código en voz alta durante una presentación.
 
-### Cómo introducir el GamePIN
+El mismo campo donde se escribe el GamePIN acepta también:
 
-El Player tiene **dos caminos** para abrir el diálogo de vinculación:
+- el **enlace directo** completo de la Aventura (también el que incluye un [Token de acceso único](../tokens-acceso-unico.md); en ese caso el token aparece ya escrito en la pantalla del código de acceso);
+- el **QR** de la Aventura, leído con la cámara pulsando el icono de QR del campo (en el ordenador, con la webcam).
+
+El GamePIN se puede escribir con espacios o guiones: la Webapp los ignora.
+
+### Sin haber iniciado sesión
+
+No hace falta tener cuenta ni haber iniciado sesión para unirse a una Aventura. En la **pantalla de acceso** de la Webapp, el botón **«¿Tienes un GamePIN, enlace o QR?»** (entre «He olvidado la contraseña» y «Crear una cuenta») lleva a una pantalla propia para unirse.
+
+![Pantalla de acceso de la Webapp con el botón ¿Tienes un GamePIN, enlace o QR? sobre Crear una cuenta](/img/webapp-acceso-boton-unirse.png)
+
+1. Pulsa **«¿Tienes un GamePIN, enlace o QR?»**.
+2. Escribe el GamePIN o pega el enlace en el campo **GamePIN o enlace** (o pulsa el icono de QR y enfoca el QR con la cámara).
+3. Pulsa **Unirme**. Con **«< Ir al Login»** vuelves a la pantalla de acceso.
+
+![Pantalla ¿Tienes un GamePIN, enlace o QR? con el campo GamePIN o enlace, el icono para escanear el QR y el botón Unirme](/img/webapp-acceso-unirse-gamepin.png)
+
+Lo que pasa después depende de cómo esté configurada la Aventura:
+
+| Si la Aventura… | El Player ve… |
+|---|---|
+| Tiene activado [Jugar sin registro (nickname)](jugar-sin-registro.md) | La pantalla del **nickname**: escribe uno, pulsa **Jugar** y entra. |
+| Requiere iniciar sesión | El aviso **«Esta Aventura requiere iniciar sesión. Accede o crea una cuenta para jugarla.»** y vuelve a la pantalla de acceso. Al iniciar sesión o crear la cuenta, entra **directamente en esa Aventura**. |
+| No existe (GamePIN equivocado) | El aviso **«Game PIN no válido»**. |
+
+Si lo escrito no contiene ningún GamePIN, el propio campo lo indica.
+
+![Aviso Atención: Esta Aventura requiere iniciar sesión, con el botón Aceptar](/img/webapp-aviso-requiere-login.png)
+
+:::tip 🖥️ Imprescindible en la App instalada en el ordenador
+La App instalada en el ordenador no tiene barra de direcciones donde pegar un enlace. Si tus Players la usan, indícales que escriban el GamePIN o peguen el enlace con el botón **«¿Tienes un GamePIN, enlace o QR?»** de la pantalla de acceso.
+:::
+
+### Con la sesión iniciada
+
+El Player tiene **dos caminos** para abrir el diálogo **Añadir Aventura**:
 
 **Desde el menú lateral** (recomendado): pulsar el icono de menú (☰) y seleccionar **+ Añadir Aventura**.
 
@@ -67,27 +117,23 @@ El Player tiene **dos caminos** para abrir el diálogo de vinculación:
 
 **Desde la barra de búsqueda**: en el listado de Aventuras, pulsar el botón **+** a la izquierda de la barra de búsqueda.
 
-En ambos casos se abre el mismo diálogo:
+En ambos casos se abre el mismo diálogo, con el campo **GamePIN o enlace** y el icono para escanear el QR:
 
-![Diálogo "Añadir Aventura" con el campo vacío mostrando el placeholder "GamePIN..." y el contador 0/9](/img/webapp-acceder-gamepin-dialog.png)
+![Diálogo Añadir Aventura con un enlace de Aventura pegado en el campo GamePIN o enlace, el icono de QR y el botón Añadir](/img/webapp-anadir-aventura-enlace.png)
 
-### Paso a paso
-
-1. Abre el diálogo "Añadir Aventura" por cualquiera de los dos caminos.
-2. Escribe los **9 dígitos** del GamePIN. El campo solo acepta números y el contador indica cuántos dígitos llevas (por ejemplo, 9/9 cuando está completo).
+1. Abre el diálogo «Añadir Aventura» por cualquiera de los dos caminos.
+2. Escribe el GamePIN, pega el enlace o pulsa el icono de QR para escanearlo.
 3. Pulsa **AÑADIR**.
 
-![Diálogo con el GamePIN válido introducido — el contador muestra 9/9 y el botón AÑADIR está listo para confirmar](/img/webapp-acceder-gamepin-input.png)
+La Aventura se añade a tu listado y la Webapp **entra directamente en ella**. Si ya estaba en tu listado, también entra en ella.
 
-Si el GamePIN es correcto, la Aventura se añade al listado y la Webapp navega automáticamente a la sección Aventuras para que veas la nueva entrada.
+### Avisos y errores
 
-![Listado de Aventuras actualizado tras la vinculación — la nueva Aventura aparece junto con las que ya tenías](/img/webapp-acceder-gamepin-confirmacion.png)
+Los avisos y errores de estas pantallas (acceso, registro, recuperar la contraseña, unirse, nickname y «Añadir Aventura») aparecen en una **ventana con el texto completo y un botón «Aceptar»**. La ventana no se cierra sola: el Player la cierra al pulsar **Aceptar**.
 
-### Si el GamePIN no es válido
+Si el GamePIN no corresponde a ninguna Aventura disponible, el aviso es **«Game PIN no válido»**:
 
-Cuando el código introducido no corresponde a ninguna Aventura (por error tipográfico, porque la Aventura fue despublicada o por cualquier otro motivo), la Webapp muestra un aviso en rojo en la parte inferior de la pantalla. El mensaje es genérico para simplificar: la Webapp no distingue entre un PIN que no existe y uno que apunta a una Aventura no disponible.
-
-![Aviso en rojo "Aventura inexistente o incorrecta" tras introducir un GamePIN no válido](/img/webapp-acceder-gamepin-error.png)
+![Ventana de aviso Error: Game PIN no válido, con el botón Aceptar](/img/webapp-aviso-ventana-gamepin-no-valido.png)
 
 Si ves este error, verifica que has escrito los 9 dígitos correctamente y, si persiste, contacta con tu Game Master para confirmar el código.
 
@@ -119,15 +165,19 @@ Para más detalles sobre cómo funcionan los Tokens y cómo adquirirlos, consult
 
 ## 👑 Para el Game Master
 
-Como Game Master, tú decides qué mecanismo de acceso compartir con tus Players. Los tres están disponibles en la sección **Acceso a la Aventura** del editor del Gamifier:
+Como Game Master, tú decides qué mecanismo de acceso compartir con tus Players. Los tres están disponibles en la sección **Acceso a la Aventura** del editor del Gamifier y en el listado de Aventuras:
 
 - **Deep link (URL)**: copia el enlace con el botón "Copiar enlace" y compártelo por el canal que prefieras. Es la opción con menos fricción para el Player.
+- **Código QR**: descárgalo como imagen para cartelería, pantallas o materiales impresos de experiencias presenciales. El del listado de Aventuras está pensado para imprimir (ver abajo).
+- **GamePIN**: un código numérico de 9 dígitos asignado automáticamente. Útil para dictar en voz alta cuando no puedes compartir un enlace.
 
-### Copiar el enlace desde el listado de Aventuras
+### Copiar el enlace o descargar el QR desde el listado de Aventuras
 
-No hace falta entrar en cada Aventura para conseguir su enlace. En el **listado de Aventuras** (la pantalla de inicio del Gamifier), bajo los datos de cada Aventura, aparece su enlace para jugar con el icono de eslabón:
+No hace falta entrar en cada Aventura para conseguir su enlace o su QR. En el **listado de Aventuras** (la pantalla de inicio del Gamifier), junto al **GamePIN** de cada Aventura, la tarjeta **«Acceso directo a la Aventura»** muestra su enlace para jugar con dos botones a la derecha: **Copiar enlace** (naranja) y **Descargar QR para imprimir** (violeta, icono de QR).
 
-![Fila del listado de Aventuras del Gamifier con el enlace para jugar y el botón de copiar](/img/gamifier-listado-enlace-jugar.png)
+![Tarjeta Acceso directo a la Aventura en el listado del Gamifier, con el enlace, el botón de copiar y el botón Descargar QR para imprimir](/img/gamifier-listado-acceso-directo-qr.png)
+
+**Copiar el enlace:**
 
 1. Localiza la Aventura (puedes usar el buscador de la parte superior).
 2. Pulsa el botón de copiar que hay a la derecha del enlace.
@@ -136,8 +186,22 @@ No hace falta entrar en cada Aventura para conseguir su enlace. En el **listado 
 ![Mensaje ¡Enlace copiado! junto al enlace para jugar en el listado de Aventuras](/img/gamifier-listado-enlace-copiado.png)
 
 Si pulsas sobre el propio enlace, se abre en una pestaña nueva para que compruebes cómo lo verá el Player. Recuerda que la Aventura tiene que estar **publicada** para que el Player pueda jugar.
-- **Código QR**: haz clic en el QR para descargarlo como imagen. Úsalo en cartelería, pantallas o materiales impresos para experiencias presenciales.
-- **GamePIN**: un código numérico de 9 dígitos asignado automáticamente. Útil para dictar en voz alta cuando no puedes compartir un enlace.
+
+**Descargar el QR para imprimir:**
+
+1. Localiza la Aventura y pulsa el botón violeta con el icono de **QR**.
+2. El navegador descarga al momento una imagen PNG del QR del enlace.
+3. Ábrela o insértala en el diseño de tu cartel, folleto o tarjeta e imprímela.
+
+La imagen está preparada para imprenta:
+
+- **Alta resolución** (unos 2400 × 2400 píxeles), apta para carteles grandes.
+- **Margen blanco de seguridad** alrededor, necesario para que los móviles lo lean bien.
+- **Sin texto**: ni título ni GamePIN dentro de la imagen, para que la integres en tu propio diseño y añadas lo que necesites.
+- **Nombre de archivo** con el título de la Aventura y su GamePIN (p. ej. `QR-Mi-Aventura-123456789.png`), para distinguir los QR de varias Aventuras.
+- **Corrección de errores alta**: se sigue leyendo aunque coloques un pequeño logo encima o el papel se deteriore un poco.
+
+Al escanearlo, el Player aterriza directamente en la Aventura, igual que con el enlace. El QR de la sección **Acceso a la Aventura** del detalle codifica el mismo enlace; el del listado es el pensado para imprimir.
 
 :::tip Recomendación
 Siempre que sea posible, comparte el **deep link** o el **QR** en lugar del GamePIN. Para el Player es mucho más cómodo pulsar un enlace que teclear 9 dígitos, y se evitan errores de transcripción.
