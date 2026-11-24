@@ -52,6 +52,8 @@ El campo **Tipo de Fondo para el listado** controla el estilo visual del fondo d
 
 En la Webapp, el Player ve el **listado de Misiones** al entrar en una Aventura. Cada Misión aparece como una tarjeta con su imagen de listado (100×100), su título y el fondo del color configurado. Al pulsar sobre una Misión, se abre su detalle con la imagen de cabecera (1200×640) en la parte superior, seguida de la descripción y el listado de Retos.
 
+La imagen de cabecera se usa además **de fondo**: en la portada de la Misión, dentro de la Misión (en el listado de Retos) y en sus pantallas de objetos y de «¡Misión Completada!». En horizontal, el listado muestra cada Misión como una tarjeta grande con su imagen de cabecera y, si la portada tiene descripción, la imagen se ve entera en un panel junto al texto. Ver [La Webapp en horizontal](../webapp/webapp-en-horizontal.md).
+
 ![Vista del Player — listado de Misiones mostrando las imágenes de listado (100×100), nombres, número de retos y fondo de color](/img/webapp-misiones-listado.png)
 
 :::tip 👑 Para el Game Master

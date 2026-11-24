@@ -80,7 +80,8 @@ La Licencia se gestiona desde la [configuración de la Aventura](aventuras/confi
 - **Individual** si cada Player compite por separado. **Equipo** si quieres que los Players jueguen agrupados en equipos (clanes) con ranking por equipo.
 - **Mensual** si tu Aventura dura 1-3 meses: máxima flexibilidad, pagas solo por lo que usas.
 - **Anual** si tu Aventura va a estar activa 4 meses o más: te ahorras la gestión de renovaciones y optimizas coste.
-- **[Planes Luna o Mundo](#-alternativa-planes-anuales)** si necesitas Players ilimitados, varias Aventuras o quieres branderizar la experiencia con tu identidad visual.
+- **[Planes Luna o Mundo](#-alternativa-planes-anuales)** si necesitas Players ilimitados o varias Aventuras.
+- **[Branderización del Webapp](#branderizacion-del-webapp)** si quieres que los Players jueguen con tu identidad visual: es un servicio aparte que puedes contratar con cualquier Licencia o Plan.
 :::
 
 ## 📧 Avisos por correo
@@ -135,6 +136,25 @@ A diferencia de las Licencias de Aventura, que empiezan a contar al publicar, el
 El apartado muestra la insignia de Parking y el aviso **«Aventura aparcada»**: se conservan sus archivos, el progreso de los Players y sus fotos, pero no se puede publicar. El aviso indica también **hasta qué día** dura el Parking, que aparece además en **Caduca en**.
 
 ![Apartado Licencia de Aventura de una Aventura aparcada: Parking Aventura (Mensual) con su insignia, el aviso Aventura aparcada con la fecha hasta la que está vigente y la fecha de caducidad](/img/gamifier-licencia-parking-aparcada.png)
+
+### Si la Aventura ya tenía una Licencia de Aventura
+
+Lo que ocurre al guardar depende de si esa Licencia ya ha empezado a contar:
+
+| La Licencia de Aventura… | Qué pasa al guardar con el Parking |
+|---|---|
+| **Está sin estrenar**: la Aventura nunca se ha publicado (recién creada, duplicada o importada) y **Caduca en** está vacío | El Parking pasa a ser la Licencia de la Aventura y la Licencia anterior **vuelve a quedar libre**: la verás de nuevo en el selector para usarla en otra Aventura. |
+| **Ya está en uso**: la Aventura se publicó, tiene fecha en **Caduca en** y todavía no ha caducado | El Parking **no se asigna ni se consume**: sigue disponible y sin empezar a contar. Aparece la ventana **«No se ha asignado el Parking»**: «La Aventura tiene una licencia vigente que ya está en uso. Podrás aparcarla con un Parking cuando esa licencia caduque.». Al cerrarla, la ficha vuelve a mostrar la Licencia de Aventura. |
+
+![Ventana No se ha asignado el Parking sobre la ficha de la Aventura, con el texto La Aventura tiene una licencia vigente que ya está en uso y el botón OK](/img/gamifier-licencia-parking-aviso-licencia-en-uso.png)
+
+Las Licencias ya caducadas siguen apareciendo en el historial de la Aventura, como hasta ahora.
+
+### Reconocer las Aventuras aparcadas en el listado
+
+En el [listado de Aventuras](aventuras/crear-aventura.md#-fechas-de-la-licencia-en-el-listado-de-aventuras), la tarjeta de Licencia de una Aventura aparcada con un Parking vigente se muestra en **lila**, con «Parking Aventura (Mensual)» o «Parking Aventura (Anual)» y sus fechas de **Compra** y **Caduca**. Un Parking caducado se muestra en naranja, como cualquier Licencia caducada.
+
+![Listado de Aventuras con dos filas: arriba una Aventura con Licencia de Aventura Anual y debajo una Aventura aparcada, con la tarjeta lila Parking Aventura (Mensual) y sus fechas de Compra y Caduca](/img/gamifier-licencia-parking-listado.png)
 
 ### Volver a jugar una Aventura aparcada
 
@@ -254,13 +274,7 @@ Si un Player quiere repetir una Aventura — por ejemplo, en una segunda edició
 
 ## 📦 Alternativa: Planes anuales
 
-Si tu caso requiere volumen — muchos Players, muchas Aventuras o uso continuado a lo largo del año — los planes anuales te ofrecen **tarifa plana durante un año completo, sin renovaciones mensuales, con Players ilimitados y con Branderización del Webapp incluida**.
-
-:::tip ✨ Branderización del Webapp — exclusiva de los planes anuales
-Con Plan Luna o Plan Mundo puedes personalizar la Webapp que ven los Players con los **colores y el logo de tu organización**. Tus Players viven la Aventura con tu identidad visual, reforzando tu marca en cada momento del juego.
-
-Esta personalización **no está disponible en pay-per-use** (Licencias Mensual o Anual).
-:::
+Si tu caso requiere volumen — muchos Players, muchas Aventuras o uso continuado a lo largo del año — los planes anuales te ofrecen **tarifa plana durante un año completo, sin renovaciones mensuales, con Players ilimitados**.
 
 ### Plan Luna
 
@@ -270,7 +284,6 @@ Una Aventura, Players ilimitados durante un año. Ideal si tienes una experienci
 
 - 1 Licencia Anual de Aventura
 - **Tokens en tarifa plana** — Players ilimitados todo el año
-- **Branderización del Webapp** — tus colores y tu logo corporativo
 - Renovación anual
 
 **Desde 750 € / año** *(precio sin impuestos)*
@@ -295,7 +308,6 @@ Aventuras ilimitadas, Players ilimitados durante un año. Pensado para organizac
 
 - **Licencias de Aventura ilimitadas** — crea todas las que necesites
 - **Tokens en tarifa plana** — Players ilimitados todo el año
-- **Branderización del Webapp** — tus colores y tu logo en todas tus Aventuras
 - Contratación anual
 
 **Desde 3.600 € / año** *(precio sin impuestos)*
@@ -316,6 +328,12 @@ Tu caso encaja con Plan Mundo si eres:
 Cada organización es diferente. [Contáctanos](mailto:start@adventuriq.com) y te preparamos una propuesta personalizada que se adapte a tu volumen, tu sector y tu forma de trabajar.
 :::
 
+## ✨ Branderización del Webapp {#branderizacion-del-webapp}
+
+Puedes personalizar la Webapp que ven los Players con los **colores y el logo de tu organización**, en tu **propio dominio** o en un subdominio de AdventuriQ. Tus Players viven la Aventura con tu identidad visual, reforzando tu marca en cada momento del juego.
+
+La branderización **se contrata y se cobra aparte**, y está disponible con **cualquier Licencia o Plan**, no solo con los planes anuales. [Contáctanos](mailto:start@adventuriq.com?subject=Consulta%20Branderizaci%C3%B3n) cuando la necesites. Una vez activa, sigues las versiones de tu App desde [Mi App](gamifier/mi-app.md).
+
 ## 📊 ¿Qué modelo me conviene?
 
 | Escenario | Mejor opción |
@@ -323,8 +341,9 @@ Cada organización es diferente. [Contáctanos](mailto:start@adventuriq.com) y t
 | Evento puntual, 1-3 meses, Players compiten individualmente | **Licencia Mensual (individual)** + Tokens |
 | Evento puntual, 1-3 meses, Players compiten por equipos | **Licencia Mensual (equipo)** + Tokens |
 | Aventura activa todo el año, Players conocidos | **Licencia Anual (individual o equipo)** + Tokens |
-| Aventura estable con muchos Players anuales y quieres tu marca en el juego | **Plan Luna** (incluye branderización) |
-| Múltiples Aventuras en un catálogo profesional y quieres tu marca en el juego | **Plan Mundo** (incluye branderización) |
+| Aventura estable con muchos Players anuales | **Plan Luna** |
+| Múltiples Aventuras en un catálogo profesional | **Plan Mundo** |
+| Quieres tu marca en el juego (colores, logo y dominio) | **Branderización del Webapp**, con cualquiera de las opciones anteriores |
 
 ## ❓ Preguntas frecuentes
 
@@ -341,7 +360,7 @@ Se quedan en tu cuenta sin caducidad, listos para futuras Aventuras. No hay pena
 No — el precio es plano: 1 € por Token independientemente de la cantidad. Si buscas volumen, valora los [planes anuales](#-alternativa-planes-anuales) que incluyen Tokens en tarifa plana.
 
 **¿Licencia Mensual o Licencia Anual — cuál me conviene?**
-Si tu Aventura va a estar activa 1-3 meses, la Licencia Mensual te da máxima flexibilidad. A partir del cuarto mes, la Licencia Anual empieza a ser más rentable y te ahorra la gestión de renovaciones. Si vas a tener muchos Players o quieres branderizar la Webapp, considera los [planes anuales](#-alternativa-planes-anuales).
+Si tu Aventura va a estar activa 1-3 meses, la Licencia Mensual te da máxima flexibilidad. A partir del cuarto mes, la Licencia Anual empieza a ser más rentable y te ahorra la gestión de renovaciones. Si vas a tener muchos Players, considera los [planes anuales](#-alternativa-planes-anuales).
 
 **¿Cuál es la diferencia entre Licencia Individual y de Equipo?**
 La Licencia Individual genera solo un ranking de jugadores. La Licencia de Equipo añade rankings por equipo y del jugador dentro de su equipo, e incluye la gestión de equipos (clanes) desde el Gamifier. La elección se hace al [crear la Aventura](aventuras/crear-aventura) y determina el modo de juego.
@@ -353,7 +372,7 @@ La Aventura deja de ser accesible para los Players hasta que se active una nueva
 La caducidad se activa cuando **publicas tu Aventura** (el momento en el que los Players pueden empezar a jugarla), no cuando compras la Licencia ni mientras la estás construyendo. Esto significa que puedes adquirir la Licencia con antelación y trabajar en tu Aventura a tu ritmo — el contador solo arranca al publicar. Si asignas una Licencia nueva a una Aventura que **ya está publicada** (por ejemplo, para renovarla), el contador arranca en ese momento; si la Aventura está en borrador, espera a que la publiques.
 
 **¿Qué es la Branderización del Webapp?**
-Es una personalización de la Webapp que ven los Players: colores corporativos y logo de tu organización. Refuerza tu marca en cada partida y es una característica **exclusiva** de los Planes Luna y Mundo. No está disponible con Licencias Mensuales ni Anuales.
+Es una personalización de la Webapp que ven los Players: colores corporativos y logo de tu organización, en tu propio dominio o en un subdominio de AdventuriQ. Refuerza tu marca en cada partida. Es un servicio que **se contrata y se cobra aparte** y que puedes añadir a cualquier Licencia o Plan.
 
 **¿Un Raze consume Tokens?**
 No. El Raze solo resetea el progreso de la Aventura — no consume ni devuelve Tokens. Es una herramienta para "limpiar" el estado de una Aventura sin coste adicional.

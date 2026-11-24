@@ -45,7 +45,7 @@ Las Notificaciones (llamadas) solo existen a nivel de Misión. No están disponi
 
 Cuando se dispara la Notificación, la experiencia del Player es la siguiente:
 
-**Pantalla de llamada entrante**: el Player ve una pantalla que simula una llamada telefónica con el nombre del personaje ficticio, su avatar, un número de teléfono ficticio y los botones **Colgar** y **Aceptar**. La estética imita la interfaz nativa de una llamada de teléfono.
+**Pantalla de llamada entrante**: el Player ve una pantalla que simula una llamada telefónica con el nombre del personaje ficticio, su avatar, un número de teléfono ficticio y los botones **Colgar** y **Aceptar**. La estética imita la interfaz nativa de una llamada de teléfono. Mientras suena, unas ondas animadas con los colores de la marca salen de la foto de quien llama.
 
 ![Vista del Player — pantalla de llamada entrante con avatar del personaje, nombre, número ficticio y botones Colgar/Aceptar](/img/webapp-mision-notificacion-llamada.png)
 

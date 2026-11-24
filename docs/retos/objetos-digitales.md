@@ -88,6 +88,8 @@ La condición **"Basada en resultado"** es muy potente para crear sistemas de re
 
 Cuando el Player completa un Reto y cumple las Condiciones de Obtención de un Objeto Digital, este se presenta inmediatamente a pantalla completa con su imagen, título, descripción y un botón **Continuar** para avanzar al siguiente Reto o volver al listado de la Misión. El Objeto queda guardado en el **Baúl** del Player, accesible desde la Webapp.
 
+Cuando el Reto entrega **varios Objetos a la vez**, **Continuar** pasa al siguiente y solo sale al llegar al último: el Player los ve todos.
+
 ## Continúa aprendiendo
 
 - Editor del Objeto y condiciones AND/OR en detalle: [Objetos Digitales de Misión](../misiones/objetos-digitales.md).

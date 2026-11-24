@@ -99,6 +99,12 @@ Con la portada a pantalla completa, el vídeo ocupa toda la pantalla y arranca s
 
 En las Misiones y los Retos funciona igual, con el botón de entrar encima del vídeo.
 
+- **Si la forma del vídeo no coincide con la de la pantalla** (un vídeo vertical en una pantalla apaisada, por ejemplo), el vídeo a pantalla completa se ve entero, sobre la imagen de la Aventura en lugar de bandas negras.
+
+  ![Portada a pantalla completa en horizontal con un vídeo vertical: el vídeo se ve entero en el centro, sobre la imagen de la Aventura](/img/webapp-horizontal-video-pantalla-completa.png)
+
+- **Sin pantalla completa y en horizontal**, el vídeo se muestra a la izquierda y la descripción a la derecha. Ver [La Webapp en horizontal](../webapp/webapp-en-horizontal.md).
+
 :::tip 🛠️ Pruébalo tú mismo
 Entra en la Webapp con tu usuario de Game Master y abre la Aventura **desde el listado y desde el enlace directo**: así comprobarás cómo arranca el sonido en cada caso (ver la nota de abajo).
 :::

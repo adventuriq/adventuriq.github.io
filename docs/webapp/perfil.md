@@ -96,8 +96,8 @@ Permite elegir el **idioma de las Aventuras** entre los disponibles. La selecci�
 Si tienes cuenta en el Gamifier, esta misma preferencia se elige también desde tu [perfil de usuario del Gamifier](../gamifier/perfil-de-usuario.md#idioma-preferido).
 :::
 
-:::note Idioma de las Aventuras ≠ idioma de la app
-Esta opción cambia el **contenido**: títulos, descripciones, Misiones, Retos y premios. Los textos propios de la app (botones, menús, mensajes) siguen el idioma de tu navegador o dispositivo.
+:::note El idioma cambia también la app
+Esta opción cambia el **contenido** (títulos, descripciones, Misiones, Retos y premios) y, en el mismo momento, los textos propios de la app (botones, menús, mensajes), siempre que la app esté traducida a ese idioma. Si no lo está, la app sigue en el idioma de tu navegador o dispositivo.
 :::
 
 Los idiomas de la interfaz de la Webapp son: Español, Inglés, Català y Francés. Si el idioma de tu dispositivo no coincide con ninguno de estos, se usa Inglés por defecto.

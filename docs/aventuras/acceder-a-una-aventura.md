@@ -96,7 +96,7 @@ Lo que pasa después depende de cómo esté configurada la Aventura:
 | Si la Aventura… | El Player ve… |
 |---|---|
 | Tiene activado [Jugar sin registro (nickname)](jugar-sin-registro.md) | La pantalla del **nickname**: escribe uno, pulsa **Jugar** y entra. |
-| Requiere iniciar sesión | El aviso **«Esta Aventura requiere iniciar sesión. Accede o crea una cuenta para jugarla.»** y vuelve a la pantalla de acceso. Al iniciar sesión o crear la cuenta, entra **directamente en esa Aventura**. |
+| Requiere iniciar sesión | El aviso **«Esta Aventura requiere iniciar sesión. Accede o crea una cuenta para jugarla.»** y vuelve a la pantalla de acceso. Al iniciar sesión o crear la cuenta, el aviso se cierra solo y entra **directamente en esa Aventura**. |
 | No existe (GamePIN equivocado) | El aviso **«Game PIN no válido»**. |
 
 Si lo escrito no contiene ningún GamePIN, el propio campo lo indica.

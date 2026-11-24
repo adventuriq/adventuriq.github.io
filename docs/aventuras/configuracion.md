@@ -101,7 +101,7 @@ Al pulsar **Asignar licencia** se abre el selector de Licencias. Cada Licencia d
 2. Pulsa una Licencia para marcarla y después **Seleccionar**, o haz **doble clic** sobre ella para elegirla directamente.
 
 :::info Licencias Parking
-En el selector también aparecen tus **Licencias Parking** (insignia con una «P»), que **aparcan** la Aventura: conservan todo su contenido, sus archivos, el progreso de los Players y sus fotos, pero la Aventura no se puede publicar ni jugar. Solo se pueden elegir si la Aventura **no está publicada**: con la Aventura publicada aparecen desactivadas con el texto «Despublica la Aventura para poder asignarle un Parking.». Más información en [Licencia Parking](../tokens.md#-licencia-parking-aparcar-una-aventura).
+En el selector también aparecen tus **Licencias Parking** (insignia con una «P»), que **aparcan** la Aventura: conservan todo su contenido, sus archivos, el progreso de los Players y sus fotos, pero la Aventura no se puede publicar ni jugar. Solo se pueden elegir si la Aventura **no está publicada**: con la Aventura publicada aparecen desactivadas con el texto «Despublica la Aventura para poder asignarle un Parking.». Si la Aventura tenía una Licencia de Aventura que todavía no ha usado, al guardar con el Parking esa Licencia vuelve a quedar libre para otra Aventura. Si su Licencia ya está en uso, el Parking no se asigna. Más información en [Licencia Parking](../tokens.md#-licencia-parking-aparcar-una-aventura).
 :::
 
 :::warning ¿Ves el aviso rojo «Esta Aventura se borrará el…»?
@@ -223,6 +223,8 @@ Este apartado contiene los interruptores que controlan qué ve el Player en su e
 Combina estos toggles para crear diferentes [dinámicas de juego](/conceptos-basicos#-dinámicas-de-juego): competitiva (todo visible), auto-competitiva (Puntos sí, Ranking no), o exploratoria (sin puntos, solo Objetos Digitales).
 :::
 
+En este mismo apartado está el bloque **«Mapa del Player»**, donde eliges el estilo del mapa (ilustrado de día, ilustrado de noche o clásico), si los premios se enseñan sobre los puntos del mapa y si la Aventura se abre en Misiones o en el Mapa. Lo tienes explicado en [Mapa del Player](mapas-poi.md#mapa-del-player).
+
 > Ver detalle en [Opciones de la Aventura](visibilidad-controles).
 
 ## 🗺️ Mapas y geolocalización
@@ -235,6 +237,8 @@ Tu Aventura puede tener un Mapa que se muestra en la Webapp. Existen dos tipos:
 | **Mapa Imagen** | Recurso gráfico personalizado (tamaño recomendado 1200 × 1950 px) |
 
 Los Retos geoposicionados de las Misiones pueden heredar sus coordenadas y pintarse como marcadores en el Mapa de la Aventura.
+
+En la Webapp, el mapa geoposicionado se muestra por defecto como **mapa ilustrado de día**. Puedes cambiarlo en el bloque **«Mapa del Player»** de las Opciones de la Aventura.
 
 > Ver detalle en [Mapas y Puntos de Interés](mapas-poi).
 

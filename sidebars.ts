@@ -96,6 +96,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'gamifier/biblioteca-de-medios',
         'gamifier/perfil-de-usuario',
+        'gamifier/mi-app',
       ],
     },
     {
@@ -105,6 +106,8 @@ const sidebars: SidebarsConfig = {
         'webapp/perfil',
         'webapp/jugar-sin-conexion',
         'webapp/recuperacion-permisos-gps-camara',
+        'webapp/avisos-y-problemas-de-conexion',
+        'webapp/webapp-en-horizontal',
       ],
     },
   ],

@@ -24,6 +24,7 @@ Dependiendo del dispositivo donde se juegue, las imágenes pueden aparecer corta
 
 - En el **listado de Aventuras** del jugador.
 - En la **cabecera de la Aventura**, junto con las fechas de inicio y final automáticos.
+- De **fondo a pantalla completa** en la portada y en la pantalla de «¡Aventura completada!». En horizontal, si la portada tiene descripción, la imagen se ve además **entera en un panel** junto al texto y el Player puede tocarla para ampliarla. Ver [La Webapp en horizontal](../webapp/webapp-en-horizontal.md).
 
 :::tip La portada también puede ser un vídeo
 Además de la imagen de cabecera, puedes subir un vídeo propio para la portada y mostrarlo incluso a pantalla completa. Lo tienes en [Vídeo de portada](./video-portada.md).

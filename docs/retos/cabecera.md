@@ -28,3 +28,7 @@ Si la Misión tiene desactivado **«Mostrar el detalle de los Retos»**, el Play
 
 - **Título del Reto**: nombre visible en la Web App.
 - **Descripción del Reto**: contenido narrativo con soporte HTML e iFrames.
+
+## Cómo se ve la imagen de cabecera 🎮
+
+La **Imagen cabecera** se usa de fondo a pantalla completa en la portada del Reto y en su pantalla de resultado. En horizontal, si el Reto tiene descripción, la imagen se ve entera en un panel junto al texto, y el Player puede tocarla para ampliarla; al jugar, queda a un lado y el enunciado y las respuestas al otro. Ver [La Webapp en horizontal](../webapp/webapp-en-horizontal.md).

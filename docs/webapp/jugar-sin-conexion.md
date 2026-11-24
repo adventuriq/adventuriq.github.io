@@ -137,7 +137,8 @@ Abre el **menú lateral → «Descargas»**. Ahí verás:
 Las jugadas pendientes siguen en el dispositivo aunque cierres el navegador o el móvil se apague sin batería. Solo se pierden si **borras los datos del navegador**, juegas en una **ventana de incógnito** o **desinstalas la app**.
 :::
 
-- **Qué necesita conexión siempre:** el Modo Arena (en directo), las votaciones, la Galería y el Muro, unirse a un Clan, canjear un Token, aceptar los Términos y Condiciones, los mapas de Google y los vídeos de YouTube o contenidos incrustados de otras webs (Genially, Wordwall…).
+- **Si hay conexión pero el servidor falla o no responde**, tus jugadas también se guardan en el dispositivo y se envían solas después. Más en [Avisos de la app y problemas de conexión](./avisos-y-problemas-de-conexion.md).
+- **Qué necesita conexión siempre:** el Modo Arena (en directo), las votaciones, la Galería y el Muro, unirse a un Clan, canjear un Token, aceptar los Términos y Condiciones, los mapas geoposicionados (el ilustrado y el clásico de Google), las rutas de «Cómo llegar» y los vídeos de YouTube o contenidos incrustados de otras webs (Genially, Wordwall…).
 - **Si juegas sin registro**, no puedes cerrar sesión mientras tengas jugadas pendientes. Si lo hicieras, solo podrías recuperarlas entrando con el mismo apodo en el mismo dispositivo. Más en [Jugar sin registro](../aventuras/jugar-sin-registro.md).
 - **Si juegas el mismo Reto en dos dispositivos**, vale la última jugada que se sincroniza.
 - **Si ya tenías la Aventura descargada antes del 30 de octubre de 2026**, bórrala en «Descargas» y vuelve a entrar para poder conseguir Llaves sin conexión.
@@ -156,3 +157,4 @@ No hay nada que activar, pero conviene tenerlo en cuenta al diseñar:
 - Conseguir y abrir Llaves: [Llaves Digitales](../aventuras/llaves-digitales.md).
 - Dónde ver tus objetos, puntos y llaves: [Bitácora del Player](../aventuras/bitacora.md).
 - Tu perfil y preferencias: [Perfil del Player](./perfil.md).
+- Qué significan los avisos de la app: [Avisos de la app y problemas de conexión](./avisos-y-problemas-de-conexion.md).

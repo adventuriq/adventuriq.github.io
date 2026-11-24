@@ -17,6 +17,12 @@ El Player accede a la Bitácora pulsando el icono **Bitácora** en la barra de n
 
 ![Vista general de la Bitácora con todas las zonas activas — cabecera con avatar y puntos, botón de equipo, estrellas de votos, y los seis cuadrantes de navegación](/img/webapp-bitacora-vista-general.png)
 
+:::note En horizontal
+Con el móvil tumbado, en una tableta o en un ordenador, el acceso a la Bitácora está en el menú lateral. El Player aparece arriba, a todo el ancho (avatar, nombre, posición, Retos realizados, puntos y Clan), y las secciones van debajo. Ver [La Webapp en horizontal](../webapp/webapp-en-horizontal.md#-la-bitácora-en-horizontal).
+:::
+
+![Bitácora en horizontal: menú lateral a la izquierda, franja del Player arriba con avatar, nombre, posición, Retos realizados y puntos, y debajo las secciones Baúl y Galería](/img/webapp-horizontal-bitacora.png)
+
 ## Anatomía de la Bitácora
 
 La Bitácora se compone de **zonas fijas** que siempre están presentes y **zonas condicionales** que aparecen según la configuración del Game Master y el estado de la Aventura.
@@ -79,6 +85,24 @@ El Baúl muestra los **Objetos Digitales** que el Player ha obtenido como recomp
 
 :::note El Baúl no guarda las Llaves
 Los Objetos Digitales de tipo **Llave** no van al Baúl: tienen su propio espacio, el **Llavero**. Ver más abajo.
+:::
+
+Si el Player todavía no tiene Objetos Digitales, la pestaña **Todos** muestra «Objetos del Baúl — No hay nada por aquí.». En la pestaña de una **etiqueta** vacía, el aviso nombra la etiqueta:
+
+| La etiqueta es… | El Player ve… |
+|---|---|
+| **Una sola palabra en singular** («Diamante», «PREMIO») | La etiqueta en plural: «No hay Diamantes por aquí.», «No hay PREMIOS por aquí.» |
+| Cualquier otra cosa: ya en plural («PISTAS»), varias palabras («Final Boss»), números, siglas o signos | La etiqueta tal cual, entre comillas: «No hay nada en «Final Boss» por aquí.» |
+
+![Baúl con las pestañas Todos, CROMO, PREMIO y PISTA: en la pestaña PREMIO, sin Objetos Digitales, el aviso dice No hay PREMIOS por aquí](/img/webapp-bitacora-baul-vacio-etiqueta.png)
+<!-- 📸 CAPTURA PENDIENTE: /img/webapp-bitacora-baul-vacio-etiqueta-citada.png — Baúl, pestaña de una etiqueta de varias palabras («No hay nada en «Final Boss» por aquí») -->
+
+:::tip 👑 Escribe las etiquetas como un nombre en singular
+No hay nada que configurar, pero si quieres que el aviso suene natural, escribe la etiqueta como **una sola palabra en singular** («Diamante», «Pista», «Medalla»): la Webapp la pone en plural sola.
+
+- El plural se forma con las reglas del idioma en que está escrita la etiqueta (castellano, catalán, inglés o francés). La frase va en el idioma de la interfaz del Player.
+- Si la etiqueta va entera en MAYÚSCULAS, el plural también.
+- Una palabra suelta que no sea un nombre también se pone en plural: la etiqueta «APRENDE» daría «No hay APRENDES por aquí.».
 :::
 
 ### Galería

@@ -51,6 +51,8 @@ Los Retos geoposicionados de las Misiones pueden **heredar sus coordenadas** y p
 
 El Player accede al mapa de la Misión desde la pestaña **Mapa** en la interfaz de la Webapp. Si la Misión tiene un mapa de geolocalización, ve un mapa interactivo con marcadores en las ubicaciones de los Retos. Si tiene un mapa imagen, ve la imagen personalizada a pantalla completa.
 
+En el mapa de geolocalización, el Player puede abrir la ficha de cada punto, jugar el Reto desde el mapa y pedir la ruta con «Cómo llegar», igual que en el mapa de la Aventura: ver [Cómo lo ve el Player](../aventuras/mapas-poi.md#como-lo-ve-el-player).
+
 ![Vista del Player — mapa imagen de una Misión mostrando un plano isométrico personalizado](/img/webapp-mision-mapa.png)
 
 ## Continúa aprendiendo

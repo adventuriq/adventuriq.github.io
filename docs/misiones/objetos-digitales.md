@@ -136,6 +136,8 @@ Combina condiciones de puntos y tiempo para crear Objetos "premium" que solo rec
 
 Cuando el Player completa la Misión y cumple las Condiciones de Obtención de un Objeto Digital, este se presenta a pantalla completa con su imagen, título, descripción y un botón **Continuar** para avanzar. El Objeto también queda guardado en el **Baúl** del Player (accesible desde la Webapp). Si la Misión también tiene una [Notificación](./notificaciones.md) configurada, esta se muestra después de la entrega del Objeto.
 
+Cuando el Player consigue **varios Objetos a la vez**, **Continuar** pasa al siguiente y solo sale al llegar al último: los ve todos. Si el Reto que completa la Misión también da un Objeto, después del Objeto del Reto se muestran los de la Misión.
+
 ![Vista del Player — Objeto Digital entregado al completar una Misión, con imagen, ID, descripción y botón Continuar](/img/webapp-mision-objeto.png)
 
 ## Continúa aprendiendo
