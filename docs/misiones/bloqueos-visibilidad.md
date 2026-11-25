@@ -29,6 +29,8 @@ Los controles de visibilidad están en el apartado **Opciones y disponibilidad**
 
 ![Controles de visibilidad y jugabilidad — toggles de visible, jugable, detalle de retos, imágenes de listado y cabecera](/img/gamifier-mision-visibilidad-jugabilidad.png)
 
+Al final de este apartado está también el bloque **«Al entrar en la Misión, abrir»**, que decide si el Player entra en el listado de **Retos** (por defecto) o directamente en el **Mapa** de la Misión. Lo tienes explicado en [Abrir la Misión en su mapa](./mapas.md#abrir-la-mision-en-su-mapa).
+
 ## Combinaciones de estados
 
 Los toggles de visibilidad y jugabilidad se combinan para crear diferentes comportamientos:

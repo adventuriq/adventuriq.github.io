@@ -91,7 +91,7 @@ En la ficha de la Aventura, dentro de **Opciones de la Aventura**, el bloque **�
 | **Estilo del mapa** | **Ilustrado de día** (por defecto), **Ilustrado de noche** o **Clásico** | El mapa ilustrado es un mapa dibujado, con la cámara inclinada, edificios en relieve y los puntos de los Retos como medallones con su imagen. El clásico es el mapa de Google de siempre. |
 | **Con los colores de la marca** | Interruptor, apagado por defecto. Solo aparece con un estilo ilustrado | El suelo, los edificios y las calles toman un tono del color de la marca, y las avenidas, el color de acento. El agua y los parques no cambian. |
 | **Premios en el mapa** | **No mostrar** (por defecto), **Cubo sorpresa** u **Objeto a la vista** | Qué ve el Player sobre el punto de un Reto que da Objetos Digitales: nada, un cubo con «?» que no desvela el Objeto, o una miniatura del Objeto. Vale para toda la Aventura. |
-| **Al entrar en la Aventura, abrir** | **Misiones** (por defecto) o **Mapa** | La primera pantalla que ve el Player al entrar. Si la Aventura no tiene mapa, se abre en Misiones. |
+| **Al entrar en la Aventura, abrir** | **Misiones** (por defecto) o **Mapa** | La primera pantalla que ve el Player al entrar. Si la Aventura no tiene mapa, se abre en Misiones. Cada Misión tiene su propia opción, independiente de esta: [Abrir la Misión en su mapa](../misiones/mapas.md#abrir-la-mision-en-su-mapa). |
 
 :::info El mapa ilustrado de día es ahora el mapa por defecto
 Todas las Aventuras usan el estilo **Ilustrado de día** mientras no elijas otro, también las que creaste antes de que existiera esta opción. Si prefieres el mapa de Google de siempre, elige **Clásico**.
