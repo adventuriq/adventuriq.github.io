@@ -229,11 +229,12 @@ En este mismo apartado está el bloque **«Mapa del Player»**, donde eliges el 
 
 ## 🗺️ Mapas y geolocalización
 
-Tu Aventura puede tener un Mapa que se muestra en la Webapp. Existen dos tipos:
+Tu Aventura puede tener un Mapa que se muestra en la Webapp. Existen tres tipos:
 
 | Tipo | Descripción |
 |---|---|
 | **Geolocalización** | Mapa de Google Maps con posición Latitud/Longitud |
+| **Heredado** | Se compone solo con los puntos de todos los Retos geolocalizados de la Aventura más los POI. Solo necesita un identificador |
 | **Mapa Imagen** | Recurso gráfico personalizado (tamaño recomendado 1200 × 1950 px) |
 
 Los Retos geoposicionados de las Misiones pueden heredar sus coordenadas y pintarse como marcadores en el Mapa de la Aventura.

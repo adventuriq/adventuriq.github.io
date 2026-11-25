@@ -15,12 +15,13 @@ Esta página combina la **vista del Game Master** (configuración en el Gamifier
 
 ## Tipos de mapa 👑
 
-Al crear un mapa para la Aventura, el Game Master elige entre dos tipos:
+Al crear un mapa para la Aventura, el Game Master elige entre tres tipos:
 
 | Tipo | Descripción | Caso de uso |
 |---|---|---|
 | **Mapa imagen** | Imagen personalizada (recurso gráfico) que se muestra como mapa. | Plano de un edificio, mapa de fantasía, esquema de un recinto ferial, pistas visuales. |
 | **Mapa Google Maps** | Mapa interactivo de Google Maps con coordenadas Latitud/Longitud. | Gymkanas urbanas, rutas turísticas, eventos al aire libre. |
+| **Heredado** | Mapa que se compone solo, con los puntos de todos los Retos geolocalizados de la Aventura más los POI. | Rutas en las que cada Reto ya tiene su ubicación y quieres verlos todos juntos sin configurar nada más. |
 
 ### Mapa imagen
 
@@ -34,22 +35,34 @@ El mapa geoposicionado utiliza Google Maps con coordenadas Latitud/Longitud. Los
 
 Cada marcador utiliza el **color** de la Misión a la que pertenece el Reto, lo que permite distinguir visualmente qué Retos pertenecen a qué Misión.
 
+### Heredado (puntos de los Retos geolocalizados) {#mapa-heredado}
+
+El mapa heredado se compone **automáticamente** con los puntos de **todos los Retos geolocalizados de la Aventura** (Retos con Localización de tipo **Geolocalización** o **Geolocalización + QR**, de todas sus Misiones) más los **POI**, y los dibuja todos juntos en un mismo mapa. No hay que poner coordenadas: **solo necesita un identificador**.
+
+Las Misiones también pueden tener su propio mapa heredado, que se compone solo con los Retos de esa Misión: ver [Mapas de Misión](../misiones/mapas.md#mapa-heredado).
+
 ## Configuración del mapa 👑
 
 La sección **Mapa** se encuentra en la ficha de la Aventura (entrada **Mapa** del índice lateral; los Puntos de Interés tienen su propia entrada, **POIs**).
 
 ![Sección Mapa en el Gamifier — selector de tipo de mapa, campo Identificador y botón Crear Mapa y Vincular a la Aventura](/img/gamifier-aventura-mapa.png)
 
+![Desplegable Tipo de mapa abierto con las tres opciones: Geolocalización, Heredado (puntos de los Retos geolocalizados) y Mapa imagen](/img/gamifier-mapa-tipo-desplegable.png)
+
 Los campos disponibles son:
 
 | Campo | Descripción |
 |---|---|
-| **Tipo de mapa** | Selector: **Mapa imagen** o **Geolocalización** (Google Maps). |
+| **Tipo de mapa** | Selector: **Geolocalización** (Google Maps), **Heredado (puntos de los Retos geolocalizados)** o **Mapa imagen**. Una vez creado el mapa, el tipo ya no se puede cambiar: para usar otro, elimina el mapa y créalo de nuevo. |
 | **Identificador** | Título o nombre identificativo del mapa (texto libre). |
 | **Imagen del mapa** | Si el tipo es "Mapa imagen", campo para subir la imagen. |
-| **Latitud / Longitud** | Si el tipo es "Geolocalización", coordenadas del centro del mapa. |
+| **Latitud / Longitud** | Si el tipo es "Geolocalización", coordenadas del centro del mapa. El tipo "Heredado" no las necesita. |
 
 Los botones **Guardar cambios** y **Eliminar Mapa** permiten gestionar la configuración.
+
+:::tip 👑 Si no asignas ningún mapa
+Mientras la Aventura no tenga mapa, el Gamifier avisa de que **se generará uno por defecto** a partir de los puntos geolocalizados de los Retos. Para eso es necesario que **todos** los Retos tengan una Localización de tipo Geolocalización o Geolocalización + QR.
+:::
 
 ### Restricciones
 

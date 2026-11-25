@@ -1,13 +1,13 @@
 ---
 sidebar_position: 5
 title: 🗺️ Mapas
-description: Configuración del mapa de una Misión en AdventuriQ — geolocalización o mapa imagen, identificador, Retos geoposicionados y cómo hacer que la Misión se abra directamente en su mapa.
-keywords: [misión, mapa, geolocalización, google maps, mapa imagen, geoposición, POI, abrir en el mapa, jugar desde el mapa, gamifier, webapp, adventuriq]
+description: Configuración del mapa de una Misión en AdventuriQ — geolocalización, mapa heredado de los Retos o mapa imagen, identificador y cómo hacer que la Misión se abra directamente en su mapa.
+keywords: [misión, mapa, geolocalización, mapa heredado, google maps, mapa imagen, geoposición, POI, abrir en el mapa, jugar desde el mapa, gamifier, webapp, adventuriq]
 ---
 
 # 🗺️ Mapas
 
-Cada Misión puede tener un **mapa asociado** que se muestra al Player en la Webapp. El mapa puede ser un mapa de Google Maps con coordenadas reales (geolocalización) o una imagen personalizada que actúa como recurso gráfico (plano de un edificio, mapa de fantasía, esquema de un recinto). Los Retos geoposicionados de la Misión pueden heredar sus coordenadas y pintarse como marcadores en el mapa.
+Cada Misión puede tener un **mapa asociado** que se muestra al Player en la Webapp. El mapa puede ser un mapa con coordenadas reales (geolocalización), un mapa **heredado** que se compone solo con los puntos de los Retos de la Misión, o una imagen personalizada que actúa como recurso gráfico (plano de un edificio, mapa de fantasía, esquema de un recinto). Los Retos geoposicionados de la Misión pueden heredar sus coordenadas y pintarse como marcadores en el mapa.
 
 :::info 🎯 Vista combinada
 Esta página combina la **vista del Game Master** (configuración en el Gamifier) y la **vista del Player** (experiencia en la Webapp). Cada sección está marcada con 👑 o 🎮 según corresponda.
@@ -19,7 +19,7 @@ El apartado **Mapa** de la ficha de la Misión (entrada **Mapa** del índice lat
 
 | Campo | Descripción |
 |---|---|
-| **Tipo de mapa** | Selector con dos opciones: **Geolocalización** (mapa de Google Maps con coordenadas Latitud/Longitud) o **Mapa imagen** (recurso gráfico personalizado). |
+| **Tipo de mapa** | Selector con tres opciones: **Geolocalización** (mapa con coordenadas Latitud/Longitud), **Heredado (puntos de los Retos geolocalizados)** o **Mapa imagen** (recurso gráfico personalizado). Una vez creado el mapa, el tipo ya no se puede cambiar: para usar otro, elimina el mapa y créalo de nuevo. |
 | **Identificador** | Título o nombre identificativo del mapa (texto libre). Se usa como referencia interna. |
 | **Mapa de imagen (1200×1950)** | Si el tipo es "Mapa imagen", campo para subir la imagen. Tamaño recomendado: 1200 × 1950 px. Se puede subir mediante **Cambiar imagen** o seleccionar desde la **Biblioteca** de medios. |
 
@@ -32,6 +32,18 @@ Los botones **Guardar cambios** y **Eliminar Mapa** permiten guardar la configur
 ### Geolocalización
 
 El mapa de geolocalización utiliza Google Maps con coordenadas Latitud/Longitud. Los Retos de esta Misión que tengan posición geográfica configurada aparecen como marcadores en el mapa, usando el **color** asignado a la Misión. Los Retos con indicadores "Es Inicio" o "Es Fin" se muestran con banderitas especiales.
+
+### Heredado (puntos de los Retos geolocalizados) {#mapa-heredado}
+
+El mapa heredado se compone **automáticamente** con los puntos de los Retos geolocalizados de la Misión (Retos con Localización de tipo **Geolocalización** o **Geolocalización + QR**) más los **POI de la Aventura**, y los dibuja todos juntos en un mismo mapa. No hay que poner coordenadas ni subir nada: **solo necesita un identificador**.
+
+![Mapa de tipo Heredado en la ficha de la Misión: el tipo aparece bloqueado, el identificador y el aviso que explica de dónde salen los puntos, con los botones Eliminar Mapa y Guardar cambios](/img/gamifier-mision-mapa-heredado.png)
+
+:::tip 👑 Si no asignas ningún mapa
+Mientras la Misión no tenga mapa, el Gamifier avisa de que **se generará uno por defecto** a partir de los puntos geolocalizados de los Retos. Para eso es necesario que **todos** los Retos de la Misión tengan una Localización de tipo Geolocalización o Geolocalización + QR.
+:::
+
+Es el tipo que mejor encaja con una ruta: cada Reto ya tiene su sitio, y el mapa de la Misión los enseña juntos sin trabajo extra. También sirve para [abrir la Misión directamente en su mapa](#abrir-la-mision-en-su-mapa).
 
 ### Mapa imagen
 
@@ -91,7 +103,7 @@ Los Retos que no tienen punto en el mapa solo se pueden jugar desde la pestaña 
 
 ## Cómo lo ve el Player 🎮
 
-El Player accede al mapa de la Misión desde la pestaña **Mapa** en la interfaz de la Webapp, o entra directamente en él si la Misión está configurada para [abrirse en su mapa](#abrir-la-mision-en-su-mapa). Si la Misión tiene un mapa de geolocalización, ve un mapa interactivo con marcadores en las ubicaciones de los Retos. Si tiene un mapa imagen, ve la imagen personalizada a pantalla completa.
+El Player accede al mapa de la Misión desde la pestaña **Mapa** en la interfaz de la Webapp, o entra directamente en él si la Misión está configurada para [abrirse en su mapa](#abrir-la-mision-en-su-mapa). Si la Misión tiene un mapa de geolocalización o heredado, ve un mapa interactivo con marcadores en las ubicaciones de los Retos. Si tiene un mapa imagen, ve la imagen personalizada a pantalla completa.
 
 En el mapa de geolocalización, el Player puede abrir la ficha de cada punto, jugar el Reto desde el mapa y pedir la ruta con «Cómo llegar», igual que en el mapa de la Aventura: ver [Cómo lo ve el Player](../aventuras/mapas-poi.md#como-lo-ve-el-player).
 
